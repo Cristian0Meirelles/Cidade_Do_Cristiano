@@ -318,16 +318,48 @@ const frames = document.getElementById("frames");
 const cache = {};
 let cur = -1;
 let lastFocus = null;
+function placeUrl(k, lang) {
+  return `/${k === "terminal" ? "pt" : lang}/${k}/`;
+}
+
+const warmed = new Set();
+
+function warmUp(lang) {
+  for (const { k } of B) {
+    const url = placeUrl(k, lang);
+    if (warmed.has(url)) continue;
+    warmed.add(url);
+    fetch(url)
+      .then((response) => response.text())
+      .then((html) => {
+        const fonts = html.matchAll(
+          /<link[^>]+href="(https:\/\/fonts\.googleapis\.com\/[^"]+)"/g,
+        );
+        for (const [, href] of fonts) {
+          const link = document.createElement("link");
+          link.rel = "prefetch";
+          link.as = "style";
+          link.href = href.replace(/&amp;/g, "&");
+          document.head.appendChild(link);
+        }
+      })
+      .catch(() => {});
+  }
+}
+
 function frameFor(k) {
   const ck = `${LANG}:${k}`;
   if (cache[ck]) return cache[ck];
   const f = document.createElement("iframe");
   f.title = bt(B.filter((b) => b.k === k)[0]).nm;
-  document.getElementById("loading").hidden = false;
-  f.addEventListener("load", () => {
-    document.getElementById("loading").hidden = true;
-  });
-  f.src = `/${k === "terminal" ? "pt" : LANG}/${k}/`;
+  f.className = "pending";
+  f.reveal = () => {
+    f.classList.remove("pending");
+    if (!f.hidden) document.getElementById("loading").hidden = true;
+  };
+  f.addEventListener("load", f.reveal);
+  setTimeout(f.reveal, 5000);
+  f.src = placeUrl(k, LANG);
   frames.appendChild(f);
   cache[ck] = f;
   return f;
@@ -344,8 +376,7 @@ function openPlace(i) {
   });
   const f = frameFor(b.k);
   f.hidden = false;
-  document.getElementById("loading").hidden = !!f.dataset.ok;
-  f.dataset.ok = "1";
+  document.getElementById("loading").hidden = !f.classList.contains("pending");
   placeEl.hidden = false;
   document.body.style.overflow = "hidden";
   setTimeout(() => {
@@ -424,6 +455,11 @@ addEventListener("keydown", (e) => {
 addEventListener("message", (e) => {
   const m = e.data;
   if (e.origin !== location.origin || !m || !m.cm) return;
+  if (m.cm === "ready") {
+    Object.values(cache)
+      .find((f) => f.contentWindow === e.source)
+      ?.reveal();
+  }
   if (m.cm === "close" && !placeEl.hidden) closePlace();
   if (m.cm === "open") {
     const i = B.map((b) => b.k).indexOf(m.place);
@@ -476,7 +512,12 @@ lsel.onchange = () => {
   } catch (e) {}
   if (!placeEl.hidden) closePlace();
   applyLang();
+  warmUp(LANG);
 };
+
+const whenIdle =
+  window.requestIdleCallback || ((callback) => setTimeout(callback, 1200));
+addEventListener("load", () => whenIdle(() => warmUp(LANG)));
 addEventListener("resize", () => {
   place(sel, false);
 });

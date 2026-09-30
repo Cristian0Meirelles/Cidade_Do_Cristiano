@@ -53,7 +53,16 @@ function translate(html, entries, lang, used) {
 fs.rmSync(DIST, { recursive: true, force: true });
 fs.mkdirSync(DIST);
 
-for (const item of ["index.html", "css", "js", "shared", "assets"]) {
+for (const item of [
+  "index.html",
+  "favicon.svg",
+  "favicon.ico",
+  "apple-touch-icon.png",
+  "css",
+  "js",
+  "shared",
+  "assets",
+]) {
   const source = path.join(SRC, item);
   const target = path.join(DIST, item);
   if (fs.statSync(source).isDirectory()) {

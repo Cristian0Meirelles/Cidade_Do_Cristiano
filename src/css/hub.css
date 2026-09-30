@@ -851,7 +851,10 @@ footer {
   width: 100%;
   height: 100%;
   border: 0;
-  background: #fff;
+  background: transparent;
+}
+.frames iframe.pending {
+  visibility: hidden;
 }
 .frames iframe[hidden] {
   display: none;
@@ -862,6 +865,12 @@ footer {
   display: grid;
   place-items: center;
   font-family: var(--px);
+  animation: blink 1s steps(2) infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0.35;
+  }
 }
 @media (max-width: 560px) {
   .pbar .hide-sm {
