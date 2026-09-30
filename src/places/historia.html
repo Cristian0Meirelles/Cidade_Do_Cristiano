@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>A história do Cristiano</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Libre+Caslon+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/shared/base.css" />
+    <style>
+      :root {
+        --bg: #f6f1e7;
+        --page: #fffdf8;
+        --ink: #2b2520;
+        --muted: #6f6356;
+        --line: #e4d9c6;
+        --acc: #8c2f39;
+        color-scheme: light;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --bg: #15120f;
+          --page: #1d1915;
+          --ink: #e9e0d2;
+          --muted: #a99a86;
+          --line: #352d25;
+          --acc: #e38a8f;
+          color-scheme: dark;
+        }
+      }
+      :root[data-theme="dark"] {
+        --bg: #15120f;
+        --page: #1d1915;
+        --ink: #e9e0d2;
+        --muted: #a99a86;
+        --line: #352d25;
+        --acc: #e38a8f;
+        color-scheme: dark;
+      }
+      body {
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Literata", Georgia, serif;
+        font-size: 1.12rem;
+        line-height: 1.78;
+      }
+      .progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 3px;
+        background: var(--acc);
+        width: 0;
+        z-index: 30;
+      }
+      .layout {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 230px 1fr;
+        gap: 48px;
+        padding: 56px 24px 80px;
+      }
+      nav {
+        position: sticky;
+        top: 30px;
+        align-self: start;
+        font-size: 0.95rem;
+      }
+      nav p {
+        font-family: "Libre Caslon Display", serif;
+        font-size: 1.3rem;
+        margin: 0 0 10px;
+      }
+      nav ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav a {
+        display: grid;
+        grid-template-columns: 28px 1fr;
+        text-decoration: none;
+        color: var(--muted);
+        padding: 4px 0;
+        line-height: 1.35;
+      }
+      nav a.on {
+        color: var(--acc);
+      }
+      nav a span:first-child {
+        font-style: italic;
+      }
+      @media (max-width: 860px) {
+        .layout {
+          grid-template-columns: 1fr;
+          gap: 10px;
+        }
+        nav {
+          position: static;
+        }
+        nav ol {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 4px 14px;
+        }
+        nav a {
+          display: inline;
+        }
+        nav a span:first-child {
+          display: none;
+        }
+      }
+      .book {
+        background: var(--page);
+        border: 1px solid var(--line);
+        padding: 56px min(7vw, 72px) 60px;
+        box-shadow:
+          0 2px 0 var(--line),
+          0 20px 40px rgba(60, 40, 20, 0.06);
+      }
+      .cover {
+        text-align: center;
+        padding-bottom: 40px;
+        border-bottom: 1px solid var(--line);
+        margin-bottom: 40px;
+      }
+      .cover small {
+        color: var(--muted);
+        font-style: italic;
+      }
+      .cover h1 {
+        font-family: "Libre Caslon Display", serif;
+        font-weight: 400;
+        font-size: clamp(2.4rem, 6vw, 3.8rem);
+        line-height: 1.05;
+        margin: 10px 0 12px;
+      }
+      .cover p {
+        margin: 0 auto;
+        max-width: 44ch;
+        color: var(--muted);
+      }
+      .ch {
+        margin: 0 0 56px;
+        max-width: 62ch;
+      }
+      .ch header {
+        margin: 0 0 18px;
+      }
+      .ch header span {
+        display: block;
+        color: var(--acc);
+        font-style: italic;
+        font-size: 0.95rem;
+      }
+      .ch h2 {
+        font-family: "Libre Caslon Display", serif;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 1.15;
+        margin: 2px 0 0;
+      }
+      .ch p {
+        margin: 0 0 1em;
+        text-align: left;
+      }
+      .ch > p:first-of-type::first-letter {
+        font-family: "Libre Caslon Display", serif;
+        float: left;
+        font-size: 3.6em;
+        line-height: 0.85;
+        padding: 0.06em 0.1em 0 0;
+        color: var(--acc);
+      }
+      .aside {
+        border-left: 3px solid var(--acc);
+        padding: 2px 0 2px 16px;
+        font-style: italic;
+        color: var(--muted);
+      }
+      .orn {
+        text-align: center;
+        color: var(--acc);
+        margin: 0 0 56px;
+        letter-spacing: 0.6em;
+      }
+      .end {
+        text-align: center;
+        font-style: italic;
+        color: var(--muted);
+      }
+      .end a {
+        color: var(--acc);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="progress" id="prog"></div>
+    <button
+      class="theme-btn"
+      id="themeBtn"
+      data-key="cm-hist-theme"
+      data-dark-label="Dia"
+      data-light-label="Noite"
+    >
+      Tema
+    </button>
+    <div class="layout">
+      <nav aria-label="Capítulos">
+        <p>Sumário</p>
+        <ol id="toc"></ol>
+      </nav>
+      <main class="book">
+        <header class="cover">
+          <small>Um relato meio jogo, meio diário</small>
+          <h1>A história do Cristiano</h1>
+          <p>
+            Um jogo desenvolvido em 2000 por Adir e Soraia, com muitas
+            colaborações pelo caminho. Ainda em atualização.
+          </p>
+        </header>
+
+        <section class="ch" id="c1">
+          <header>
+            <span>Capítulo 1, 2000</span>
+            <h2>Um jogo bem ralo</h2>
+          </header>
+          <p>
+            Eu nasci em Itaboraí, no Rio de Janeiro. Se eu fosse um jogo, a
+            primeira versão seria bem simples: poucos gráficos, desenhos meio
+            sem graça, uma trilha sonora que não chamava atenção. Os
+            desenvolvedores ainda eram iniciantes, e tudo bem. Todo jogo começa
+            assim.
+          </p>
+          <p>
+            Mudar de lugar virou costume cedo, e com isso veio uma coisa que me
+            acompanha até hoje: recomeçar não me assusta tanto.
+          </p>
+        </section>
+
+        <section class="ch" id="c2">
+          <header>
+            <span>Capítulo 2, 2012 em diante</span>
+            <h2>A cidade grande e o pacote de expansão</h2>
+          </header>
+          <p>
+            Em 2012 a história foi pro Rio de Janeiro, no Méier. Foi a primeira
+            atualização grande de verdade: gente nova entrando no jogo e criando
+            ramos que eu não imaginava. Depois vieram Salvador e a Tijuca, com
+            sotaque novo, escola nova e gente nova a cada mudança.
+          </p>
+          <p>
+            No ano seguinte veio um pacote de expansão com cara de outro gênero:
+            um parque de diversões, na Disney. Os jogadores ficaram mais
+            exigentes. Queriam mais idiomas, mais músicas, mais coisas pra
+            fazer.
+          </p>
+        </section>
+
+        <section class="ch" id="c3">
+          <header>
+            <span>Capítulo 3, 2017 a 2019</span>
+            <h2>Tudo em inglês</h2>
+          </header>
+          <p>
+            Em 2017 saiu o trailer de um jogo totalmente diferente. Pra ele
+            melhorar de verdade, seria preciso mudar tudo, inclusive a língua. E
+            foi assim que, aos 17 anos, eu fui pro Canadá.
+          </p>
+          <p>
+            Bridgewater, na Nova Scotia. Neve, skate, bike, trilhas. O inglês
+            deixou de ser matéria e virou dia a dia. Participei de uma exposição
+            de arte como artista, com desenhos que eu guardo até hoje, e escrevi
+            minhas primeiras linhas de código.
+          </p>
+          <p class="aside">
+            A crítica mais comum das versões anteriores era que o inventário era
+            pequeno e as habilidades eram poucas. Tudo nessa fase foi planejado
+            em cima disso.
+          </p>
+        </section>
+
+        <section class="ch" id="c4">
+          <header>
+            <span>Capítulo 4, 2019 a 2021</span>
+            <h2>De volta, e pra longe de novo</h2>
+          </header>
+          <p>
+            Voltei pro Rio e arrumei meu primeiro emprego, como aprendiz
+            bilíngue na Walpax, atendendo estrangeiros e traduzindo num
+            congresso internacional. Foi minha primeira escola de cliente.
+          </p>
+          <p>
+            Aí passei na faculdade, em Análise e Desenvolvimento de Sistemas, e
+            a história mudou de cidade outra vez: Canoinhas, em Santa Catarina,
+            um lugar que quase ninguém conhecia e que era cheio de coisa nova.
+            Tinha habilidades escondidas que só destravavam estudando.
+          </p>
+          <p>
+            Em plena pandemia, sentei com a secretária da associação de doadores
+            de sangue da cidade. Eles faziam tudo em ficha de papel. Foram três
+            meses de conversa e protótipo até virar um sistema com mais de cinco
+            mil doadores. O projeto saiu no jornal.
+          </p>
+        </section>
+
+        <section class="ch" id="c5">
+          <header>
+            <span>Capítulo 5, 2021</span>
+            <h2>O dia em que o PC queimou</h2>
+          </header>
+          <p>
+            Eu estava terminando meu jogo em Unity, um jogo de zumbi. Era o
+            motivo de eu ter começado a programar. Um dia o PC queimou e levou
+            tudo junto. Sem backup, sem repositório, sem nada.
+          </p>
+          <p>
+            Sobrou só o primeiro teste de fase, que ainda está no itch.io. Doeu
+            bastante. Mas foi a lição que mais ficou: hoje tudo que eu começo
+            vai pro Git no primeiro dia.
+          </p>
+        </section>
+
+        <section class="ch" id="c6">
+          <header>
+            <span>Capítulo 6, 2022 a 2026</span>
+            <h2>Os dois lados da mesa</h2>
+          </header>
+          <p>
+            A carreira começou na CI&amp;T, num time internacional de uma
+            plataforma global, e eu vi como se trabalha em escala. Depois, na
+            ESX, aprendi a manter vivo um software que não podia parar, e virei
+            product owner e Scrum Master.
+          </p>
+          <p>
+            Na Automais, liderei um time pela primeira vez e fiquei na linha de
+            frente com o cliente. Na Sigaway, mergulhei em dados de telemetria
+            na nuvem. Em cada lugar eu fui sentando um pouco mais do outro lado
+            da mesa, e isso mudou o tipo de pergunta que eu faço antes de
+            começar.
+          </p>
+          <p class="aside">
+            Os detalhes de cada trabalho estão no Escritório, ali na cidade.
+          </p>
+        </section>
+
+        <section class="ch" id="c7">
+          <header>
+            <span>Capítulo 7</span>
+            <h2>A loja da vó</h2>
+          </header>
+          <p>
+            Minha avó faleceu lendo um devocional. Dali nasceu um projeto de
+            família, a 515 Sanctuary Beauty, uma loja de cosméticos de banho de
+            inspiração cristã. O nome carrega isso.
+          </p>
+          <p>
+            Quando a gente começou a anunciar, percebemos que estávamos gastando
+            sem saber se estávamos lucrando. Então eu construí uma ferramenta
+            pra descobrir. Ela virou o Zevi, e o Zevi está virando produto. Já
+            funciona, e falta pouco pra lançar.
+          </p>
+        </section>
+
+        <section class="ch" id="c8">
+          <header>
+            <span>Capítulo 8, agora</span>
+            <h2>Continua</h2>
+          </header>
+          <p>
+            Hoje eu estudo inteligência artificial na FIAP e coloco IA em
+            produto que alguém usa de verdade. Ainda desenho, ainda canto mal,
+            ainda olho pro céu nos dias difíceis.
+          </p>
+          <p>
+            Esse jogo sempre foi feito em cima de crítica, e tudo melhorou por
+            causa dela. Ele definitivamente pode melhorar, e a próxima fase que
+            eu quero jogar é voltar a liderar, com um time e um produto maiores.
+          </p>
+        </section>
+        <p class="orn">✦ ✦ ✦</p>
+        <p class="end">
+          Quem gosta de criticar, critique. Quem quiser escrever o próximo
+          capítulo junto:
+          <a href="mailto:cristianocmeirelles@gmail.com"
+            >cristianocmeirelles@gmail.com</a
+          >
+        </p>
+      </main>
+    </div>
+    <script type="module">
+      const ch = [].slice.call(document.querySelectorAll(".ch"));
+      const toc = document.getElementById("toc");
+      toc.innerHTML = ch
+        .map(
+          (c, i) =>
+            `<li><a href="#${c.id}"><span>${i + 1}.</span><span>${c.querySelector("h2").textContent}</span></a></li>`,
+        )
+        .join("");
+      const links = [].slice.call(toc.querySelectorAll("a"));
+      const io = new IntersectionObserver(
+        (es) => {
+          es.forEach((e) => {
+            if (e.isIntersecting)
+              links.forEach((l) => {
+                l.classList.toggle(
+                  "on",
+                  l.getAttribute("href") === `#${e.target.id}`,
+                );
+              });
+          });
+        },
+        { rootMargin: "-30% 0px -60% 0px" },
+      );
+      ch.forEach((c) => {
+        io.observe(c);
+      });
+      const pr = document.getElementById("prog");
+      addEventListener(
+        "scroll",
+        () => {
+          const m = document.documentElement.scrollHeight - innerHeight;
+          pr.style.width = `${m > 0 ? (scrollY / m) * 100 : 0}%`;
+        },
+        { passive: true },
+      );
+    </script>
+    <script type="module" src="/shared/theme.js"></script>
+    <script type="module" src="/shared/bridge.js"></script>
+  </body>
+</html>

@@ -1,0 +1,778 @@
+[
+  {
+    "pt": "Empresas",
+    "en": "Companies",
+    "es": "Empresas",
+    "fr": "Entreprises",
+    "de": "Unternehmen",
+    "ja": "会社"
+  },
+  {
+    "pt": "Tema",
+    "en": "Theme",
+    "es": "Tema",
+    "fr": "Thème",
+    "de": "Design",
+    "ja": "テーマ"
+  },
+  {
+    "pt": "Onde eu trabalhei, e o que eu fiz lá",
+    "en": "Where I’ve worked, and what I did there",
+    "es": "Dónde trabajé y qué hice allí",
+    "fr": "Où j’ai travaillé, et ce que j’y ai fait",
+    "de": "Wo ich gearbeitet habe und was ich dort gemacht habe",
+    "ja": "働いてきた場所と、そこでやったこと"
+  },
+  {
+    "pt": "Cada empresa com o contexto, o que eu fiz de verdade, as ferramentas e o resultado. Escolha uma pasta.",
+    "en": "Each company with its context, what I actually did, the tools and the results. Pick a folder.",
+    "es": "Cada empresa con el contexto, lo que hice de verdad, las herramientas y el resultado. Elige una carpeta.",
+    "fr": "Chaque entreprise avec son contexte, ce que j’ai vraiment fait, les outils et le résultat. Choisissez un dossier.",
+    "de": "Jedes Unternehmen mit Kontext, dem, was ich wirklich gemacht habe, den Tools und dem Ergebnis. Wähle einen Ordner.",
+    "ja": "会社ごとに、背景、実際にやったこと、使った道具、結果をまとめました。フォルダを選んでください。"
+  },
+  {
+    "pt": "<b>2019 a 2026</b>de estrada",
+    "en": "<b>2019 to 2026</b>on the road",
+    "es": "<b>2019 a 2026</b>de camino",
+    "fr": "<b>2019 à 2026</b>de parcours",
+    "de": "<b>2019 bis 2026</b>unterwegs",
+    "ja": "<b>2019〜2026</b>のキャリア"
+  },
+  {
+    "pt": "<b>6</b>lugares",
+    "en": "<b>6</b>places",
+    "es": "<b>6</b>lugares",
+    "fr": "<b>6</b>endroits",
+    "de": "<b>6</b>Stationen",
+    "ja": "<b>6</b>か所"
+  },
+  {
+    "pt": "<b>3</b>papéis: dev, PO e tech lead",
+    "en": "<b>3</b>roles: dev, PO and tech lead",
+    "es": "<b>3</b>roles: dev, PO y tech lead",
+    "fr": "<b>3</b>rôles : dev, PO et tech lead",
+    "de": "<b>3</b>Rollen: Dev, PO und Tech Lead",
+    "ja": "<b>3</b>つの役割：開発、PO、テックリード"
+  },
+  {
+    "pt": "<b>Remoto</b>na maior parte do tempo",
+    "en": "<b>Remote</b>most of the time",
+    "es": "<b>Remoto</b>la mayor parte del tiempo",
+    "fr": "<b>À distance</b>la plupart du temps",
+    "de": "<b>Remote</b>die meiste Zeit",
+    "ja": "<b>リモート</b>がほとんど"
+  },
+  {
+    "pt": "Contexto",
+    "en": "Context",
+    "es": "Contexto",
+    "fr": "Contexte",
+    "de": "Kontext",
+    "ja": "背景"
+  },
+  {
+    "pt": "O que eu fiz",
+    "en": "What I did",
+    "es": "Qué hice",
+    "fr": "Ce que j’ai fait",
+    "de": "Was ich gemacht habe",
+    "ja": "やったこと"
+  },
+  {
+    "pt": "O que eu levei",
+    "en": "What I took away",
+    "es": "Lo que me llevé",
+    "fr": "Ce que j’en retiens",
+    "de": "Was ich mitgenommen habe",
+    "ja": "得たもの"
+  },
+  {
+    "pt": "Resultados",
+    "en": "Results",
+    "es": "Resultados",
+    "fr": "Résultats",
+    "de": "Ergebnisse",
+    "ja": "成果"
+  },
+  {
+    "pt": "Ferramentas",
+    "en": "Tools",
+    "es": "Herramientas",
+    "fr": "Outils",
+    "de": "Werkzeuge",
+    "ja": "ツール"
+  },
+  {
+    "pt": "Mais recente",
+    "en": "More recent",
+    "es": "Más reciente",
+    "fr": "Plus récent",
+    "de": "Neuer",
+    "ja": "新しい順へ"
+  },
+  {
+    "pt": "Mais antigo",
+    "en": "Older",
+    "es": "Más antiguo",
+    "fr": "Plus ancien",
+    "de": "Älter",
+    "ja": "古い順へ"
+  },
+  {
+    "pt": "Trabalhos do Cristiano",
+    "en": "Cristiano’s work",
+    "es": "Trabajos de Cristiano",
+    "fr": "Le parcours pro de Cristiano",
+    "de": "Cristianos Berufserfahrung",
+    "ja": "クリスティアーノの職歴"
+  },
+  {
+    "pt": "Desenvolvedor Full Stack",
+    "en": "Full Stack Developer",
+    "es": "Desarrollador Full Stack",
+    "fr": "Développeur Full Stack",
+    "de": "Full-Stack-Entwickler",
+    "ja": "フルスタック開発者"
+  },
+  {
+    "pt": "Jul 2025 a Mai 2026",
+    "en": "Jul 2025 to May 2026",
+    "es": "Jul 2025 a may 2026",
+    "fr": "Juil. 2025 à mai 2026",
+    "de": "Juli 2025 bis Mai 2026",
+    "ja": "2025年7月〜2026年5月"
+  },
+  {
+    "pt": "Plataforma de telemetria de frotas: caminhões mandando dados o tempo todo, e clientes que precisam de resposta rápida sobre onde estão e como estão os seus ativos.",
+    "en": "A fleet telemetry platform: trucks sending data all the time, and clients who need fast answers about where their assets are and how they’re doing.",
+    "es": "Plataforma de telemetría de flotas: camiones enviando datos todo el tiempo y clientes que necesitan respuestas rápidas sobre dónde están y cómo están sus activos.",
+    "fr": "Une plateforme de télémétrie de flottes : des camions qui envoient des données en permanence, et des clients qui ont besoin de réponses rapides sur l’emplacement et l’état de leurs véhicules.",
+    "de": "Eine Telemetrieplattform für Fahrzeugflotten: Lkw senden ständig Daten, und Kunden brauchen schnelle Antworten darauf, wo ihre Fahrzeuge sind und wie es ihnen geht.",
+    "ja": "車両フリートのテレマティクス基盤。トラックが常にデータを送り、顧客は車両がどこでどんな状態かをすぐに知る必要があります。"
+  },
+  {
+    "pt": "Construí um pipeline de dados massivos na AWS com Kinesis, Glue, Athena e S3, sobre PostgreSQL.",
+    "en": "I built a large-scale data pipeline on AWS with Kinesis, Glue, Athena and S3, on top of PostgreSQL.",
+    "es": "Construí un pipeline de datos masivos en AWS con Kinesis, Glue, Athena y S3, sobre PostgreSQL.",
+    "fr": "J’ai construit un pipeline de données massives sur AWS avec Kinesis, Glue, Athena et S3, au-dessus de PostgreSQL.",
+    "de": "Ich habe eine Datenpipeline für große Datenmengen auf AWS mit Kinesis, Glue, Athena und S3 auf PostgreSQL gebaut.",
+    "ja": "AWSのKinesis、Glue、Athena、S3とPostgreSQLで大規模データパイプラインを構築しました。"
+  },
+  {
+    "pt": "Migrei regras de negócio de Java pra Python sem parar a operação.",
+    "en": "I migrated business rules from Java to Python without stopping operations.",
+    "es": "Migré reglas de negocio de Java a Python sin detener la operación.",
+    "fr": "J’ai migré des règles métier de Java vers Python sans arrêter l’activité.",
+    "de": "Ich habe Geschäftslogik von Java nach Python migriert, ohne den Betrieb zu stoppen.",
+    "ja": "業務を止めずに、ビジネスルールをJavaからPythonへ移行しました。"
+  },
+  {
+    "pt": "Integrei o sistema legado a uma nova arquitetura serverless.",
+    "en": "I integrated the legacy system with a new serverless architecture.",
+    "es": "Integré el sistema legado con una nueva arquitectura serverless.",
+    "fr": "J’ai intégré le système existant à une nouvelle architecture serverless.",
+    "de": "Ich habe das Altsystem an eine neue Serverless-Architektur angebunden.",
+    "ja": "レガシーシステムを新しいサーバーレス構成につなぎました。"
+  },
+  {
+    "pt": "Fiz provas de conceito com LLMs pra automatizar análises.",
+    "en": "I built proofs of concept with LLMs to automate analysis.",
+    "es": "Hice pruebas de concepto con LLMs para automatizar análisis.",
+    "fr": "J’ai réalisé des preuves de concept avec des LLM pour automatiser des analyses.",
+    "de": "Ich habe Proofs of Concept mit LLMs gebaut, um Analysen zu automatisieren.",
+    "ja": "分析を自動化するため、LLMで概念実証を行いました。"
+  },
+  {
+    "pt": "Redesenhei a tela de mapa da plataforma num painel com status e resumo dos ativos, já na identidade visual nova.",
+    "en": "I redesigned the platform’s map screen into a dashboard with the status and summary of each asset, already in the new visual identity.",
+    "es": "Rediseñé la pantalla de mapa de la plataforma como un panel con estado y resumen de los activos, ya con la nueva identidad visual.",
+    "fr": "J’ai repensé l’écran de carte de la plateforme en un tableau de bord avec l’état et le résumé des véhicules, dans la nouvelle identité visuelle.",
+    "de": "Ich habe den Kartenscreen der Plattform zu einem Dashboard mit Status und Übersicht der Fahrzeuge umgestaltet, schon im neuen Corporate Design.",
+    "ja": "地図画面を、車両の状態とサマリーを示すダッシュボードに作り直しました。新しいビジュアルアイデンティティに合わせています。"
+  },
+  {
+    "pt": "Sem parar",
+    "en": "Non-stop",
+    "es": "Sin parar",
+    "fr": "Sans arrêt",
+    "de": "Ohne Stillstand",
+    "ja": "無停止"
+  },
+  {
+    "pt": "a operação durante a migração pra Python",
+    "en": "operations kept running during the move to Python",
+    "es": "la operación durante la migración a Python",
+    "fr": "l’activité pendant la migration vers Python",
+    "de": "im Betrieb während der Migration zu Python",
+    "ja": "Pythonへの移行中も業務は稼働"
+  },
+  {
+    "pt": "no lugar de parte do legado",
+    "en": "replacing part of the legacy",
+    "es": "en lugar de parte del legado",
+    "fr": "à la place d’une partie de l’existant",
+    "de": "anstelle eines Teils des Altsystems",
+    "ja": "レガシーの一部を置き換え"
+  },
+  {
+    "pt": "Volume alto muda tudo: consulta que precisa responder rápido obriga a pensar no dado antes do código.",
+    "en": "High volume changes everything: queries that must answer fast force you to think about the data before the code.",
+    "es": "El volumen alto lo cambia todo: consultas que deben responder rápido obligan a pensar en el dato antes que en el código.",
+    "fr": "Le volume change tout : des requêtes qui doivent répondre vite obligent à penser aux données avant le code.",
+    "de": "Hohe Datenmengen ändern alles: Abfragen, die schnell antworten müssen, zwingen dazu, zuerst an die Daten und dann an den Code zu denken.",
+    "ja": "大量データはすべてを変えます。速く返すべきクエリがあると、コードより先にデータを考えることになります。"
+  },
+  {
+    "pt": "Tech Lead e Product Owner",
+    "en": "Tech Lead and Product Owner",
+    "es": "Tech Lead y Product Owner",
+    "fr": "Tech Lead et Product Owner",
+    "de": "Tech Lead und Product Owner",
+    "ja": "テックリード兼プロダクトオーナー"
+  },
+  {
+    "pt": "Mai 2024 a Jan 2025",
+    "en": "May 2024 to Jan 2025",
+    "es": "May 2024 a ene 2025",
+    "fr": "Mai 2024 à janv. 2025",
+    "de": "Mai 2024 bis Jan. 2025",
+    "ja": "2024年5月〜2025年1月"
+  },
+  {
+    "pt": "Híbrido",
+    "en": "Hybrid",
+    "es": "Híbrido",
+    "fr": "Hybride",
+    "de": "Hybrid",
+    "ja": "ハイブリッド"
+  },
+  {
+    "pt": "Projetos pra clientes de setores bem diferentes, de uma rede de postos a um hospital, com um time de front-end que precisava de direção e clientes que precisavam de alguém falando a língua deles.",
+    "en": "Projects for clients in very different sectors, from a gas station network to a hospital, with a front-end team that needed direction and clients who needed someone who spoke their language.",
+    "es": "Proyectos para clientes de sectores muy distintos, de una red de gasolineras a un hospital, con un equipo de front-end que necesitaba dirección y clientes que necesitaban a alguien que hablara su idioma.",
+    "fr": "Des projets pour des clients de secteurs très différents, d’un réseau de stations-service à un hôpital, avec une équipe front-end qui avait besoin d’un cap et des clients qui avaient besoin de quelqu’un qui parle leur langue.",
+    "de": "Projekte für Kunden aus sehr unterschiedlichen Branchen, von einer Tankstellenkette bis zu einem Krankenhaus, mit einem Frontend-Team, das Richtung brauchte, und Kunden, die jemanden brauchten, der ihre Sprache spricht.",
+    "ja": "ガソリンスタンドのチェーンから病院まで、業種がまったく違う顧客のプロジェクト。方向性を必要とするフロントエンドチームと、自分たちの言葉で話せる相手を求める顧客がいました。"
+  },
+  {
+    "pt": "Liderei o time de front-end em React e TypeScript: arquitetura das telas, divisão dos épicos e acompanhamento de quem estava travado.",
+    "en": "I led the front-end team in React and TypeScript: screen architecture, splitting epics and supporting whoever was stuck.",
+    "es": "Lideré el equipo de front-end en React y TypeScript: arquitectura de pantallas, división de épicas y seguimiento de quien estaba bloqueado.",
+    "fr": "J’ai dirigé l’équipe front-end en React et TypeScript : architecture des écrans, découpage des epics et accompagnement de ceux qui étaient bloqués.",
+    "de": "Ich habe das Frontend-Team mit React und TypeScript geleitet: Screen-Architektur, Epics aufteilen und Unterstützung bei Blockaden.",
+    "ja": "ReactとTypeScriptのフロントエンドチームを率いました。画面設計、エピックの分割、つまずいているメンバーのフォロー。"
+  },
+  {
+    "pt": "Fiquei na linha de frente com o cliente como product owner, transformando pedido em requisito e requisito em tarefa.",
+    "en": "I was on the front line with the client as product owner, turning requests into requirements and requirements into tasks.",
+    "es": "Estuve en primera línea con el cliente como product owner, convirtiendo pedidos en requisitos y requisitos en tareas.",
+    "fr": "J’étais en première ligne avec le client en tant que product owner, transformant les demandes en exigences et les exigences en tâches.",
+    "de": "Als Product Owner war ich an vorderster Front beim Kunden und habe Wünsche in Anforderungen und Anforderungen in Aufgaben übersetzt.",
+    "ja": "プロダクトオーナーとして顧客の最前線に立ち、要望を要件に、要件をタスクに変えました。"
+  },
+  {
+    "pt": "Integrei o OCR do Google pra reconhecimento de placas de veículos numa rede de postos, ligando a leitura ao back-end e ao banco.",
+    "en": "I integrated Google’s OCR for license plate recognition across a gas station network, connecting the reading to the back-end and the database.",
+    "es": "Integré el OCR de Google para reconocer matrículas en una red de gasolineras, conectando la lectura con el back-end y la base de datos.",
+    "fr": "J’ai intégré l’OCR de Google pour reconnaître les plaques d’immatriculation dans un réseau de stations-service, en reliant la lecture au back-end et à la base de données.",
+    "de": "Ich habe Googles OCR zur Kennzeichenerkennung in einer Tankstellenkette integriert und die Erkennung an Backend und Datenbank angebunden.",
+    "ja": "ガソリンスタンドのチェーンでナンバープレート認識のためにGoogleのOCRを組み込み、読み取り結果をバックエンドとデータベースにつなげました。"
+  },
+  {
+    "pt": "Reorganizei a operação em Scrum com Jira, com cerimônias e fluxo claros.",
+    "en": "I reorganized operations around Scrum with Jira, with clear ceremonies and flow.",
+    "es": "Reorganicé la operación en Scrum con Jira, con ceremonias y flujo claros.",
+    "fr": "J’ai réorganisé le fonctionnement en Scrum avec Jira, avec des cérémonies et un flux clairs.",
+    "de": "Ich habe die Abläufe mit Scrum und Jira neu organisiert, mit klaren Meetings und klarem Flow.",
+    "ja": "JiraでScrumを導入し、セレモニーと流れを明確にして運用を立て直しました。"
+  },
+  {
+    "pt": "Num projeto hospitalar, implementei autenticação biométrica nos apps Android e iOS.",
+    "en": "In a hospital project, I implemented biometric authentication in the Android and iOS apps.",
+    "es": "En un proyecto hospitalario, implementé autenticación biométrica en las apps de Android e iOS.",
+    "fr": "Dans un projet hospitalier, j’ai mis en place l’authentification biométrique dans les applis Android et iOS.",
+    "de": "In einem Krankenhausprojekt habe ich biometrische Authentifizierung in den Android- und iOS-Apps umgesetzt.",
+    "ja": "病院向けプロジェクトで、AndroidとiOSアプリに生体認証を実装しました。"
+  },
+  {
+    "pt": "mais rápido na validação de placas",
+    "en": "faster license plate validation",
+    "es": "más rápida la validación de matrículas",
+    "fr": "plus rapide pour valider les plaques",
+    "de": "schnellere Kennzeichenprüfung",
+    "ja": "ナンバー照合が高速化"
+  },
+  {
+    "pt": "menos tempo de resposta do time",
+    "en": "less team response time",
+    "es": "menos tiempo de respuesta del equipo",
+    "fr": "de temps de réponse en moins pour l’équipe",
+    "de": "weniger Reaktionszeit im Team",
+    "ja": "チームの応答時間を短縮"
+  },
+  {
+    "pt": "melhor rastreamento de tarefas",
+    "en": "better task tracking",
+    "es": "mejor seguimiento de tareas",
+    "fr": "de meilleur suivi des tâches",
+    "de": "bessere Aufgabenverfolgung",
+    "ja": "タスク追跡が向上"
+  },
+  {
+    "pt": "mais usabilidade com biometria",
+    "en": "more usability with biometrics",
+    "es": "más usabilidad con biometría",
+    "fr": "d’utilisabilité en plus avec la biométrie",
+    "de": "mehr Benutzerfreundlichkeit mit Biometrie",
+    "ja": "生体認証で使いやすさ向上"
+  },
+  {
+    "pt": "OCR do Google",
+    "en": "Google OCR",
+    "es": "OCR de Google",
+    "fr": "OCR de Google",
+    "de": "Google-OCR",
+    "ja": "Google OCR"
+  },
+  {
+    "pt": "Liderar é mais tirar pedra do caminho do que dar ordem.",
+    "en": "Leading is more about clearing rocks from the path than giving orders.",
+    "es": "Liderar es más quitar piedras del camino que dar órdenes.",
+    "fr": "Diriger, c’est plus enlever des cailloux du chemin que donner des ordres.",
+    "de": "Führen heißt mehr, Steine aus dem Weg zu räumen, als Befehle zu geben.",
+    "ja": "率いるとは、命令することより、道の石をどけることです。"
+  },
+  {
+    "pt": "Full Stack, Product Owner e Scrum Master",
+    "en": "Full Stack, Product Owner and Scrum Master",
+    "es": "Full Stack, Product Owner y Scrum Master",
+    "fr": "Full Stack, Product Owner et Scrum Master",
+    "de": "Full Stack, Product Owner und Scrum Master",
+    "ja": "フルスタック、プロダクトオーナー、スクラムマスター"
+  },
+  {
+    "pt": "Mai 2023 a Abr 2024",
+    "en": "May 2023 to Apr 2024",
+    "es": "May 2023 a abr 2024",
+    "fr": "Mai 2023 à avr. 2024",
+    "de": "Mai 2023 bis Apr. 2024",
+    "ja": "2023年5月〜2024年4月"
+  },
+  {
+    "pt": "Um sistema legado em produção que não podia parar, com demanda chegando de vários lados e pouca clareza sobre o que vinha primeiro.",
+    "en": "A legacy system in production that couldn’t stop, with demand coming from many sides and little clarity about what came first.",
+    "es": "Un sistema legado en producción que no podía parar, con demandas llegando de varios lados y poca claridad sobre qué iba primero.",
+    "fr": "Un système existant en production qui ne pouvait pas s’arrêter, avec des demandes venant de partout et peu de clarté sur les priorités.",
+    "de": "Ein Altsystem in Produktion, das nicht stillstehen durfte, mit Anforderungen von allen Seiten und wenig Klarheit, was zuerst kommt.",
+    "ja": "止められない本番のレガシーシステム。要望は四方から届き、何を先にやるかがはっきりしていませんでした。"
+  },
+  {
+    "pt": "Mantive e evoluí o sistema em produção, com Python, JavaScript e Java 8 e 11.",
+    "en": "I maintained and evolved the system in production, with Python, JavaScript and Java 8 and 11.",
+    "es": "Mantuve y evolucioné el sistema en producción, con Python, JavaScript y Java 8 y 11.",
+    "fr": "J’ai maintenu et fait évoluer le système en production, avec Python, JavaScript et Java 8 et 11.",
+    "de": "Ich habe das System in Produktion gewartet und weiterentwickelt, mit Python, JavaScript sowie Java 8 und 11.",
+    "ja": "Python、JavaScript、Java 8と11で本番システムを保守・改善しました。"
+  },
+  {
+    "pt": "Estruturei testes e aumentei a cobertura de código.",
+    "en": "I structured tests and increased code coverage.",
+    "es": "Estructuré pruebas y aumenté la cobertura de código.",
+    "fr": "J’ai structuré les tests et augmenté la couverture de code.",
+    "de": "Ich habe Tests strukturiert und die Codeabdeckung erhöht.",
+    "ja": "テストを整備し、カバレッジを上げました。"
+  },
+  {
+    "pt": "Refatorei partes pra microsserviços.",
+    "en": "I refactored parts into microservices.",
+    "es": "Refactoricé partes hacia microservicios.",
+    "fr": "J’ai refactorisé certaines parties en microservices.",
+    "de": "Ich habe Teile in Microservices refaktoriert.",
+    "ja": "一部をマイクロサービスへリファクタリングしました。"
+  },
+  {
+    "pt": "Assumi o papel de product owner: backlog, priorização e conversa com os stakeholders.",
+    "en": "I took on the product owner role: backlog, prioritization and conversations with stakeholders.",
+    "es": "Asumí el rol de product owner: backlog, priorización y conversación con los stakeholders.",
+    "fr": "J’ai pris le rôle de product owner : backlog, priorisation et échanges avec les parties prenantes.",
+    "de": "Ich habe die Rolle des Product Owners übernommen: Backlog, Priorisierung und Abstimmung mit Stakeholdern.",
+    "ja": "プロダクトオーナーとして、バックログ、優先順位付け、ステークホルダーとの対話を担当しました。"
+  },
+  {
+    "pt": "Como Scrum Master, organizei o fluxo ágil de ponta a ponta.",
+    "en": "As Scrum Master, I organized the agile flow end to end.",
+    "es": "Como Scrum Master, organicé el flujo ágil de punta a punta.",
+    "fr": "En tant que Scrum Master, j’ai organisé le flux agile de bout en bout.",
+    "de": "Als Scrum Master habe ich den agilen Ablauf von Anfang bis Ende organisiert.",
+    "ja": "スクラムマスターとして、アジャイルの流れを端から端まで整えました。"
+  },
+  {
+    "pt": "mais estabilidade no legado",
+    "en": "more stability in the legacy system",
+    "es": "más estabilidad en el legado",
+    "fr": "de stabilité en plus sur l’existant",
+    "de": "mehr Stabilität im Altsystem",
+    "ja": "レガシーの安定性向上"
+  },
+  {
+    "pt": "mais rápido no processamento",
+    "en": "faster processing",
+    "es": "más rápido el procesamiento",
+    "fr": "plus rapide en traitement",
+    "de": "schnellere Verarbeitung",
+    "ja": "処理速度向上"
+  },
+  {
+    "pt": "menos tempo de entrega",
+    "en": "less delivery time",
+    "es": "menos tiempo de entrega",
+    "fr": "de délai de livraison en moins",
+    "de": "kürzere Lieferzeit",
+    "ja": "リードタイム短縮"
+  },
+  {
+    "pt": "Java 8 e 11",
+    "en": "Java 8 and 11",
+    "es": "Java 8 y 11",
+    "fr": "Java 8 et 11",
+    "de": "Java 8 und 11",
+    "ja": "Java 8・11"
+  },
+  {
+    "pt": "Microsserviços",
+    "en": "Microservices",
+    "es": "Microservicios",
+    "fr": "Microservices",
+    "de": "Microservices",
+    "ja": "マイクロサービス"
+  },
+  {
+    "pt": "Manter software vivo é tão importante quanto criar. E dizer o que não fazer é a decisão mais difícil.",
+    "en": "Keeping software alive matters as much as creating it. And deciding what not to do is the hardest decision.",
+    "es": "Mantener vivo el software es tan importante como crearlo. Y decidir qué no hacer es la decisión más difícil.",
+    "fr": "Faire vivre un logiciel compte autant que le créer. Et décider de ce qu’on ne fait pas est la décision la plus difficile.",
+    "de": "Software am Leben zu halten ist genauso wichtig, wie sie zu bauen. Und zu entscheiden, was man nicht tut, ist die schwierigste Entscheidung.",
+    "ja": "ソフトウェアを生かし続けることは、つくることと同じくらい大切です。そして、やらないことを決めるのがいちばん難しい判断です。"
+  },
+  {
+    "pt": "Fev 2022 a Dez 2022",
+    "en": "Feb 2022 to Dec 2022",
+    "es": "Feb 2022 a dic 2022",
+    "fr": "Févr. 2022 à déc. 2022",
+    "de": "Feb. 2022 bis Dez. 2022",
+    "ja": "2022年2月〜2022年12月"
+  },
+  {
+    "pt": "Time internacional da BEES, a plataforma B2B global da AB InBev, no período de expansão pra novos países, incluindo o Canadá.",
+    "en": "An international team on BEES, AB InBev’s global B2B platform, during its expansion into new countries, including Canada.",
+    "es": "Equipo internacional de BEES, la plataforma B2B global de AB InBev, durante su expansión a nuevos países, incluido Canadá.",
+    "fr": "Une équipe internationale sur BEES, la plateforme B2B mondiale d’AB InBev, pendant son expansion vers de nouveaux pays, dont le Canada.",
+    "de": "Ein internationales Team bei BEES, der globalen B2B-Plattform von AB InBev, während der Expansion in neue Länder, darunter Kanada.",
+    "ja": "AB InBevのグローバルB2BプラットフォームBEESの国際チーム。カナダを含む新しい国への展開期でした。"
+  },
+  {
+    "pt": "Desenvolvi funcionalidades no back-end em Java e Spring Boot, numa arquitetura de microsserviços.",
+    "en": "I built back-end features in Java and Spring Boot, in a microservices architecture.",
+    "es": "Desarrollé funcionalidades de back-end en Java y Spring Boot, en una arquitectura de microservicios.",
+    "fr": "J’ai développé des fonctionnalités back-end en Java et Spring Boot, dans une architecture de microservices.",
+    "de": "Ich habe Backend-Funktionen mit Java und Spring Boot in einer Microservice-Architektur entwickelt.",
+    "ja": "マイクロサービス構成の中で、JavaとSpring Bootでバックエンド機能を開発しました。"
+  },
+  {
+    "pt": "Trabalhei com mensageria em Kafka e dados em MongoDB, com os serviços rodando em Kubernetes.",
+    "en": "I worked with messaging in Kafka and data in MongoDB, with services running on Kubernetes.",
+    "es": "Trabajé con mensajería en Kafka y datos en MongoDB, con los servicios corriendo en Kubernetes.",
+    "fr": "J’ai travaillé avec la messagerie Kafka et des données MongoDB, avec des services tournant sur Kubernetes.",
+    "de": "Ich habe mit Messaging über Kafka und Daten in MongoDB gearbeitet, die Services liefen auf Kubernetes.",
+    "ja": "Kafkaのメッセージング、MongoDBのデータ、Kubernetes上のサービスを扱いました。"
+  },
+  {
+    "pt": "Escrevi testes unitários e automatizados que reduziram bugs em produção.",
+    "en": "I wrote unit and automated tests that reduced bugs in production.",
+    "es": "Escribí pruebas unitarias y automatizadas que redujeron bugs en producción.",
+    "fr": "J’ai écrit des tests unitaires et automatisés qui ont réduit les bugs en production.",
+    "de": "Ich habe Unit- und automatisierte Tests geschrieben, die Bugs in Produktion reduziert haben.",
+    "ja": "ユニットテストと自動テストを書き、本番のバグを減らしました。"
+  },
+  {
+    "pt": "Otimizei microsserviços pra acelerar o processamento de dados.",
+    "en": "I optimized microservices to speed up data processing.",
+    "es": "Optimicé microservicios para acelerar el procesamiento de datos.",
+    "fr": "J’ai optimisé des microservices pour accélérer le traitement des données.",
+    "de": "Ich habe Microservices optimiert, um die Datenverarbeitung zu beschleunigen.",
+    "ja": "マイクロサービスを最適化し、データ処理を速くしました。"
+  },
+  {
+    "pt": "Trabalhei no dia a dia em inglês, com gente de vários países.",
+    "en": "I worked in English every day, with people from many countries.",
+    "es": "Trabajé en inglés todos los días, con gente de varios países.",
+    "fr": "J’ai travaillé en anglais au quotidien, avec des gens de nombreux pays.",
+    "de": "Ich habe täglich auf Englisch gearbeitet, mit Menschen aus vielen Ländern.",
+    "ja": "毎日英語で、さまざまな国の人と働きました。"
+  },
+  {
+    "pt": "mais rápido no processamento de dados",
+    "en": "faster data processing",
+    "es": "más rápido el procesamiento de datos",
+    "fr": "plus rapide pour le traitement des données",
+    "de": "schnellere Datenverarbeitung",
+    "ja": "データ処理が高速化"
+  },
+  {
+    "pt": "Menos bugs",
+    "en": "Fewer bugs",
+    "es": "Menos bugs",
+    "fr": "Moins de bugs",
+    "de": "Weniger Bugs",
+    "ja": "バグ減少"
+  },
+  {
+    "pt": "em produção com testes automatizados",
+    "en": "in production with automated tests",
+    "es": "en producción con pruebas automatizadas",
+    "fr": "en production grâce aux tests automatisés",
+    "de": "in Produktion durch automatisierte Tests",
+    "ja": "自動テストで本番のバグを削減"
+  },
+  {
+    "pt": "Vi como se trabalha em escala: primeiro o teste, depois o deploy.",
+    "en": "I saw how work happens at scale: first the test, then the deploy.",
+    "es": "Vi cómo se trabaja a escala: primero la prueba, después el deploy.",
+    "fr": "J’ai vu comment on travaille à grande échelle : d’abord le test, ensuite le déploiement.",
+    "de": "Ich habe gesehen, wie man im großen Maßstab arbeitet: erst der Test, dann das Deployment.",
+    "ja": "スケールする現場の働き方を学びました。まずテスト、それからデプロイ。"
+  },
+  {
+    "pt": "Desenvolvedor Front-end (projeto de extensão do IFSC)",
+    "en": "Front-end Developer (IFSC outreach project)",
+    "es": "Desarrollador Front-end (proyecto de extensión del IFSC)",
+    "fr": "Développeur Front-end (projet solidaire de l’IFSC)",
+    "de": "Frontend-Entwickler (Gemeinschaftsprojekt des IFSC)",
+    "ja": "フロントエンド開発者（IFSCの地域連携プロジェクト）"
+  },
+  {
+    "pt": "Set 2021 a Dez 2021",
+    "en": "Sep 2021 to Dec 2021",
+    "es": "Sep 2021 a dic 2021",
+    "fr": "Sept. 2021 à déc. 2021",
+    "de": "Sept. 2021 bis Dez. 2021",
+    "ja": "2021年9月〜2021年12月"
+  },
+  {
+    "pt": "A associação de doadores de sangue de Canoinhas controlava tudo em fichas de papel preenchidas à mão, no meio da pandemia, quando doação era urgente.",
+    "en": "The blood donor association in Canoinhas kept everything on handwritten paper forms, in the middle of the pandemic, when donations were urgent.",
+    "es": "La asociación de donantes de sangre de Canoinhas controlaba todo en fichas de papel escritas a mano, en plena pandemia, cuando donar era urgente.",
+    "fr": "L’association des donneurs de sang de Canoinhas gérait tout sur des fiches papier remplies à la main, en pleine pandémie, alors que les dons étaient urgents.",
+    "de": "Der Blutspendeverein in Canoinhas verwaltete alles auf handschriftlichen Papierbögen, mitten in der Pandemie, als Spenden dringend gebraucht wurden.",
+    "ja": "カノイーニャスの献血者協会は、献血が急務だったパンデミックのさなか、すべてを手書きの紙で管理していました。"
+  },
+  {
+    "pt": "Passei três meses em pesquisa, reuniões e protótipos com a secretária da associação, validando cada etapa.",
+    "en": "I spent three months on research, meetings and prototypes with the association’s secretary, validating every step.",
+    "es": "Pasé tres meses en investigación, reuniones y prototipos con la secretaria de la asociación, validando cada etapa.",
+    "fr": "J’ai passé trois mois en recherche, réunions et prototypes avec la secrétaire de l’association, en validant chaque étape.",
+    "de": "Ich habe drei Monate mit Recherche, Meetings und Prototypen mit der Sekretärin des Vereins verbracht und jeden Schritt abgestimmt.",
+    "ja": "協会の事務担当の方と3か月かけて調査、打ち合わせ、プロトタイプを重ね、一つずつ確認しました。"
+  },
+  {
+    "pt": "Desenvolvi o front-end do sistema de cadastro de doadores em React.",
+    "en": "I built the front-end of the donor registration system in React.",
+    "es": "Desarrollé el front-end del sistema de registro de donantes en React.",
+    "fr": "J’ai développé le front-end du système d’inscription des donneurs en React.",
+    "de": "Ich habe das Frontend des Spenderregistrierungssystems mit React entwickelt.",
+    "ja": "献血者登録システムのフロントエンドをReactで開発しました。"
+  },
+  {
+    "pt": "Levei as fichas de papel pra um sistema com busca.",
+    "en": "I moved the paper forms into a searchable system.",
+    "es": "Llevé las fichas de papel a un sistema con búsqueda.",
+    "fr": "J’ai fait passer les fiches papier dans un système avec recherche.",
+    "de": "Ich habe die Papierbögen in ein durchsuchbares System überführt.",
+    "ja": "紙の記録を検索できるシステムに移しました。"
+  },
+  {
+    "pt": "O projeto foi financiado por edital do IFSC.",
+    "en": "The project was funded by an IFSC grant.",
+    "es": "El proyecto fue financiado por una convocatoria del IFSC.",
+    "fr": "Le projet a été financé par un appel à projets de l’IFSC.",
+    "de": "Das Projekt wurde durch eine Förderung des IFSC finanziert.",
+    "ja": "このプロジェクトはIFSCの公募で資金を得ました。"
+  },
+  {
+    "pt": "doadores cadastrados",
+    "en": "registered donors",
+    "es": "donantes registrados",
+    "fr": "donneurs inscrits",
+    "de": "registrierte Spender",
+    "ja": "人の献血者を登録"
+  },
+  {
+    "pt": "mais rápido pra buscar dados",
+    "en": "faster to search data",
+    "es": "más rápido para buscar datos",
+    "fr": "plus rapide pour chercher les données",
+    "de": "schnellere Datensuche",
+    "ja": "検索が高速化"
+  },
+  {
+    "pt": "Notícia",
+    "en": "In the news",
+    "es": "Noticia",
+    "fr": "Dans la presse",
+    "de": "In der Presse",
+    "ja": "ニュース"
+  },
+  {
+    "pt": "o projeto saiu no jornal",
+    "en": "the project made the local paper",
+    "es": "el proyecto salió en el periódico",
+    "fr": "le projet est passé dans le journal",
+    "de": "das Projekt kam in die Zeitung",
+    "ja": "新聞に掲載"
+  },
+  {
+    "pt": "Protótipos",
+    "en": "Prototypes",
+    "es": "Prototipos",
+    "fr": "Prototypes",
+    "de": "Prototypen",
+    "ja": "プロトタイプ"
+  },
+  {
+    "pt": "A primeira conversa decide o projeto. Quem vai usar tem que ver cada tela antes da próxima.",
+    "en": "The first conversation decides the project. The people who will use it have to see each screen before the next one.",
+    "es": "La primera conversación decide el proyecto. Quien lo va a usar tiene que ver cada pantalla antes de la siguiente.",
+    "fr": "La première conversation décide du projet. Ceux qui vont l’utiliser doivent voir chaque écran avant le suivant.",
+    "de": "Das erste Gespräch entscheidet über das Projekt. Wer es nutzen wird, muss jeden Screen vor dem nächsten sehen.",
+    "ja": "プロジェクトは最初の会話で決まります。使う人が、次の画面の前に一つひとつの画面を見ることが大切です。"
+  },
+  {
+    "pt": "Aprendiz Bilíngue",
+    "en": "Bilingual Apprentice",
+    "es": "Aprendiz bilingüe",
+    "fr": "Apprenti bilingue",
+    "de": "Zweisprachiger Auszubildender",
+    "ja": "バイリンガル研修生"
+  },
+  {
+    "pt": "Meu primeiro emprego, logo depois de voltar do Canadá, atendendo gente de fora.",
+    "en": "My first job, right after coming back from Canada, serving people from abroad.",
+    "es": "Mi primer empleo, justo después de volver de Canadá, atendiendo a gente de afuera.",
+    "fr": "Mon premier emploi, juste après mon retour du Canada, à accueillir des gens venus de l’étranger.",
+    "de": "Mein erster Job, direkt nach der Rückkehr aus Kanada, mit Kunden aus dem Ausland.",
+    "ja": "カナダから帰ってすぐの初めての仕事で、海外から来た人たちの対応をしていました。"
+  },
+  {
+    "pt": "Atendi clientes estrangeiros em inglês.",
+    "en": "I served foreign clients in English.",
+    "es": "Atendí a clientes extranjeros en inglés.",
+    "fr": "J’ai accueilli des clients étrangers en anglais.",
+    "de": "Ich habe ausländische Kunden auf Englisch betreut.",
+    "ja": "海外の顧客を英語で対応しました。"
+  },
+  {
+    "pt": "Fiz tradução no congresso IGCS 2019.",
+    "en": "I worked as a translator at the IGCS 2019 conference.",
+    "es": "Hice traducción en el congreso IGCS 2019.",
+    "fr": "J’ai fait de la traduction au congrès IGCS 2019.",
+    "de": "Ich habe auf dem Kongress IGCS 2019 übersetzt.",
+    "ja": "IGCS 2019の学会で通訳・翻訳をしました。"
+  },
+  {
+    "pt": "Aprendi a lidar com gente de outros países e outras expectativas.",
+    "en": "I learned to deal with people from other countries and other expectations.",
+    "es": "Aprendí a tratar con gente de otros países y otras expectativas.",
+    "fr": "J’ai appris à travailler avec des gens d’autres pays et d’autres attentes.",
+    "de": "Ich habe gelernt, mit Menschen aus anderen Ländern und mit anderen Erwartungen umzugehen.",
+    "ja": "ほかの国の人や、違う期待を持つ人と向き合うことを学びました。"
+  },
+  {
+    "pt": "congresso internacional",
+    "en": "international conference",
+    "es": "congreso internacional",
+    "fr": "congrès international",
+    "de": "internationaler Kongress",
+    "ja": "国際学会"
+  },
+  {
+    "pt": "Inglês",
+    "en": "English",
+    "es": "Inglés",
+    "fr": "Anglais",
+    "de": "Englisch",
+    "ja": "英語"
+  },
+  {
+    "pt": "usado no trabalho desde o primeiro emprego",
+    "en": "used at work since my first job",
+    "es": "usado en el trabajo desde el primer empleo",
+    "fr": "utilisé au travail dès mon premier emploi",
+    "de": "seit dem ersten Job im Beruf genutzt",
+    "ja": "最初の仕事から業務で使用"
+  },
+  {
+    "pt": "Tradução",
+    "en": "Translation",
+    "es": "Traducción",
+    "fr": "Traduction",
+    "de": "Übersetzung",
+    "ja": "翻訳"
+  },
+  {
+    "pt": "Minha primeira escola de cliente: entender o que a pessoa quer vem antes de qualquer resposta.",
+    "en": "My first school of clients: understanding what the person wants comes before any answer.",
+    "es": "Mi primera escuela de clientes: entender qué quiere la persona va antes de cualquier respuesta.",
+    "fr": "Ma première école du client : comprendre ce que la personne veut passe avant toute réponse.",
+    "de": "Meine erste Schule im Umgang mit Kunden: verstehen, was jemand will, kommt vor jeder Antwort.",
+    "ja": "顧客対応の最初の学校でした。どんな答えよりも先に、相手が何を求めているかを理解すること。"
+  },
+  {
+    "pt": "2019 a 2020",
+    "en": "2019 to 2020",
+    "es": "2019 a 2020",
+    "fr": "2019 à 2020",
+    "de": "2019 bis 2020",
+    "ja": "2019〜2020年"
+  },
+  {
+    "pt": "Atendimento",
+    "en": "Customer service",
+    "es": "Atención al cliente",
+    "fr": "Accueil client",
+    "de": "Kundenbetreuung",
+    "ja": "接客"
+  },
+  {
+    "pt": "Remoto",
+    "en": "Remote",
+    "es": "Remoto",
+    "fr": "À distance",
+    "de": "Remote",
+    "ja": "リモート"
+  },
+  {
+    "pt": "Testes",
+    "en": "Testing",
+    "es": "Pruebas",
+    "fr": "Tests",
+    "de": "Tests",
+    "ja": "テスト"
+  },
+  {
+    "pt": "Claro",
+    "en": "Light",
+    "es": "Claro",
+    "fr": "Clair",
+    "de": "Hell",
+    "ja": "ライト"
+  },
+  {
+    "pt": "Escuro",
+    "en": "Dark",
+    "es": "Oscuro",
+    "fr": "Sombre",
+    "de": "Dunkel",
+    "ja": "ダーク"
+  }
+]

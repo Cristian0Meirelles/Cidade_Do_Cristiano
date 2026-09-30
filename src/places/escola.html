@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>O que o Cristiano sabe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/shared/base.css" />
+    <style>
+      :root {
+        --wall: #e9e4da;
+        --board: #fbfbf7;
+        --frame: #b98a5a;
+        --chalk: #23303a;
+        --muted: #5b6670;
+        --c1: #1e6fd9;
+        --c2: #d63a3a;
+        --c3: #18925a;
+        color-scheme: light;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --wall: #1d2320;
+          --board: #27463a;
+          --frame: #8a6440;
+          --chalk: #f2f2ea;
+          --muted: #b9cbbf;
+          --c1: #9cc9ff;
+          --c2: #ffadad;
+          --c3: #b8f5c8;
+          color-scheme: dark;
+        }
+      }
+      :root[data-theme="dark"] {
+        --wall: #1d2320;
+        --board: #27463a;
+        --frame: #8a6440;
+        --chalk: #f2f2ea;
+        --muted: #b9cbbf;
+        --c1: #9cc9ff;
+        --c2: #ffadad;
+        --c3: #b8f5c8;
+        color-scheme: dark;
+      }
+      body {
+        background: var(--wall);
+        color: var(--chalk);
+        font-family: "Nunito", system-ui, sans-serif;
+        font-size: 1.04rem;
+        line-height: 1.6;
+      }
+      .wrap {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 50px 20px 70px;
+      }
+      .board {
+        background: var(--board);
+        border: 16px solid var(--frame);
+        border-radius: 6px;
+        box-shadow:
+          inset 0 0 60px rgba(0, 0, 0, 0.08),
+          0 14px 30px rgba(0, 0, 0, 0.18);
+        padding: 40px min(5vw, 52px) 44px;
+        position: relative;
+      }
+      .board::after {
+        content: "";
+        position: absolute;
+        left: 10%;
+        right: 10%;
+        bottom: -30px;
+        height: 14px;
+        background: var(--frame);
+        border-radius: 0 0 6px 6px;
+      }
+      h1 {
+        font-family: "Patrick Hand", cursive;
+        font-weight: 400;
+        font-size: clamp(2.4rem, 6vw, 4rem);
+        line-height: 1;
+        margin: 0 0 6px;
+      }
+      .date {
+        font-family: "Patrick Hand", cursive;
+        color: var(--muted);
+        font-size: 1.2rem;
+        margin: 0 0 30px;
+      }
+      h2 {
+        font-family: "Patrick Hand", cursive;
+        font-weight: 400;
+        font-size: 2rem;
+        margin: 40px 0 14px;
+        display: inline-block;
+        position: relative;
+      }
+      h2::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: -6px;
+        bottom: 2px;
+        height: 3px;
+        border-radius: 3px;
+        background: currentColor;
+        opacity: 0.5;
+        transform: rotate(-1deg);
+      }
+      .edu {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+      }
+      .edu article {
+        border: 2px dashed color-mix(in srgb, var(--chalk) 35%, transparent);
+        border-radius: 10px;
+        padding: 16px 18px;
+      }
+      .edu .y {
+        font-family: "Patrick Hand", cursive;
+        font-size: 1.3rem;
+        color: var(--c1);
+      }
+      .edu h3 {
+        margin: 2px 0 4px;
+        font-size: 1.15rem;
+      }
+      .edu p {
+        margin: 0 0 6px;
+        color: var(--muted);
+      }
+      .edu .now {
+        color: var(--c3);
+        font-family: "Patrick Hand", cursive;
+        font-size: 1.15rem;
+      }
+      @media (max-width: 860px) {
+        .edu {
+          grid-template-columns: 1fr;
+        }
+      }
+      .langs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px 40px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .langs li {
+        font-family: "Patrick Hand", cursive;
+        font-size: 1.5rem;
+      }
+      .langs small {
+        font-family: "Nunito", sans-serif;
+        font-size: 0.9rem;
+        color: var(--muted);
+        margin-left: 8px;
+      }
+      .groups {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 26px 30px;
+      }
+      @media (max-width: 900px) {
+        .groups {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (max-width: 600px) {
+        .groups {
+          grid-template-columns: 1fr;
+        }
+      }
+      .grp h3 {
+        font-family: "Patrick Hand", cursive;
+        font-weight: 400;
+        font-size: 1.5rem;
+        margin: 0 0 6px;
+        color: var(--c);
+      }
+      .grp ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .grp li {
+        padding: 3px 0;
+      }
+      .grp button {
+        background: none;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+        text-align: left;
+        font-size: 1.02rem;
+        border-bottom: 2px dotted transparent;
+      }
+      .grp button:hover,
+      .grp button[aria-expanded="true"] {
+        border-bottom-color: var(--c);
+      }
+      .grp .where {
+        display: block;
+        font-size: 0.9rem;
+        color: var(--muted);
+        padding: 2px 0 4px 14px;
+        font-style: italic;
+      }
+      .grp .where[hidden] {
+        display: none;
+      }
+      .tip {
+        font-family: "Patrick Hand", cursive;
+        color: var(--c2);
+        font-size: 1.2rem;
+        margin: 0 0 16px;
+      }
+      .tray {
+        display: flex;
+        gap: 18px;
+        justify-content: center;
+        margin-top: 44px;
+      }
+      .tray i {
+        width: 46px;
+        height: 12px;
+        border-radius: 3px;
+        background: var(--c);
+      }
+    </style>
+  </head>
+  <body>
+    <button
+      class="theme-btn"
+      id="themeBtn"
+      data-key="cm-escola-theme"
+      data-dark-label="Quadro branco"
+      data-light-label="Quadro-negro"
+    >
+      Tema
+    </button>
+    <main class="wrap">
+      <div class="board">
+        <h1>O que eu sei, e onde aprendi</h1>
+        <p class="date">Aula de hoje: formação, idiomas e habilidades</p>
+
+        <h2>Formação</h2>
+        <div class="edu">
+          <article>
+            <div class="y">2018 a 2019</div>
+            <h3>Ensino médio no Canadá</h3>
+            <p>Park View Education Centre, Bridgewater, Nova Scotia.</p>
+            <p>
+              Inglês de verdade, aulas de artes e as primeiras linhas de código.
+            </p>
+          </article>
+          <article>
+            <div class="y">2020 a 2022</div>
+            <h3>Tecnólogo em Análise e Desenvolvimento de Sistemas</h3>
+            <p>IFSC, Canoinhas, Santa Catarina. Média 8,8.</p>
+            <p>Onde eu fiz a ADOSAREC e o Mercado Virtual.</p>
+          </article>
+          <article>
+            <div class="y">2026</div>
+            <h3>Pós-graduação em Inteligência Artificial</h3>
+            <p>FIAP. LLMs, RAG e agentes generativos.</p>
+            <p>
+              Primeiro Tech Challenge: machine learning pra prever recorrência
+              de câncer de tireoide.
+            </p>
+            <div class="now">em andamento</div>
+          </article>
+        </div>
+
+        <h2>Idiomas</h2>
+        <ul class="langs">
+          <li>Português<small>nativo</small></li>
+          <li>Inglês<small>fluente, morei no Canadá</small></li>
+          <li>Francês<small>básico</small></li>
+        </ul>
+
+        <h2>Habilidades</h2>
+        <p class="tip">Toque em qualquer uma pra ver onde eu usei.</p>
+        <div class="groups" id="groups"></div>
+        <div class="tray" aria-hidden="true">
+          <i style="--c: var(--c1)"></i><i style="--c: var(--c2)"></i
+          ><i style="--c: var(--c3)"></i><i style="--c: var(--c4)"></i>
+        </div>
+      </div>
+    </main>
+    <script type="module">
+      const G = [
+        {
+          t: "Back-end e APIs",
+          c: "var(--c1)",
+          i: [
+            ["Java 8 e 11", "ESX, CI&T e a API do E-TCG (Java 21)"],
+            ["Spring Boot", "CI&T, na plataforma BEES, e no E-TCG"],
+            ["Python", "Sigaway, ESX e o Tech Challenge da FIAP"],
+            ["FastAPI e Flask", "APIs em Python"],
+            ["Node.js", "ADOSAREC e automações"],
+            [
+              "REST e WebSockets",
+              "Integrações em todos os trabalhos e streaming de respostas de IA",
+            ],
+            ["Microsserviços", "CI&T e ESX"],
+          ],
+        },
+        {
+          t: "Front-end e mobile",
+          c: "var(--c2)",
+          i: [
+            ["React", "Automais, ADOSAREC, Zevi e o app de treino"],
+            ["TypeScript", "Liderando o front-end na Automais"],
+            ["Next.js", "O Zevi, hospedado na Vercel"],
+            ["Vue.js", "Projetos web"],
+            ["Tailwind", "Interfaces rápidas e consistentes"],
+            ["React Query", "Consumo de APIs com cache"],
+            [
+              "Android e iOS",
+              "Biometria em apps num projeto hospitalar, na Automais",
+            ],
+            ["Capacitor", "O app do E-TCG"],
+          ],
+        },
+        {
+          t: "Nuvem e infra",
+          c: "var(--c3)",
+          i: [
+            ["AWS Kinesis, Glue e Athena", "Pipeline de telemetria na Sigaway"],
+            ["AWS S3", "Sigaway e as fotos do E-TCG"],
+            ["Serverless", "A nova arquitetura da Sigaway"],
+            ["Docker", "Ambientes de desenvolvimento e deploy"],
+            ["Kubernetes", "Serviços da CI&T"],
+            [
+              "CI/CD",
+              "Deploy contínuo e o agendador do Zevi no GitHub Actions",
+            ],
+            ["DNS, SPF, DKIM e MX", "Minha infra de e-mail, montada na mão"],
+          ],
+        },
+        {
+          t: "Dados e mensageria",
+          c: "var(--c4)",
+          i: [
+            ["PostgreSQL", "Sigaway e E-TCG"],
+            ["MySQL", "Mercado Virtual e projetos da faculdade"],
+            ["MongoDB", "Microsserviços na CI&T"],
+            ["Kafka", "Mensageria na CI&T"],
+            ["Oracle", "Sistemas corporativos"],
+            ["RabbitMQ", "Filas e mensageria"],
+          ],
+        },
+        {
+          t: "Inteligência artificial",
+          c: "var(--c1)",
+          i: [
+            ["Claude API", "Diagnóstico e plano de ação do Zevi"],
+            ["OpenAI API", "Projetos com LLM"],
+            ["Amazon Bedrock", "LLM dentro de aplicação real"],
+            [
+              "MCP servers e tool calling",
+              "Dar ao modelo acesso controlado a sistema e ação, como no chat do app de treino",
+            ],
+            ["RAG e agentes", "Pós na FIAP"],
+            [
+              "Visão computacional",
+              "Leitura de placas com OCR na Automais e CNN no Tech Challenge",
+            ],
+            ["scikit-learn e SHAP", "Tech Challenge da FIAP"],
+          ],
+        },
+        {
+          t: "Produto e gestão",
+          c: "var(--c2)",
+          i: [
+            ["Product owner", "ESX e Automais"],
+            ["Scrum Master", "ESX"],
+            ["Scrum e Kanban", "Organização de time na ESX e na Automais"],
+            [
+              "Jira",
+              "A reestruturação da Automais, com tempo de resposta 66% menor",
+            ],
+            ["Levantamento de requisitos", "ADOSAREC, Automais e o Zevi"],
+            ["Figma e design de interface", "Telas da Sigaway e protótipos"],
+            ["Git", "Desde que eu perdi um jogo inteiro"],
+          ],
+        },
+      ];
+      function esc(s) {
+        return s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+      }
+      let n = 0;
+      document.getElementById("groups").innerHTML = G.map(
+        (g) =>
+          `<section class="grp" style="--c:${g.c}"><h3>${esc(g.t)}</h3><ul>${g.i
+            .map((it) => {
+              n++;
+              return `<li><button aria-expanded="false" aria-controls="w${n}">${esc(it[0])}</button><span class="where" id="w${n}" hidden>${esc(it[1])}</span></li>`;
+            })
+            .join("")}</ul></section>`,
+      ).join("");
+      [].forEach.call(document.querySelectorAll(".grp button"), (b) => {
+        b.onclick = () => {
+          const o = b.getAttribute("aria-expanded") !== "true";
+          b.setAttribute("aria-expanded", o);
+          document.getElementById(b.getAttribute("aria-controls")).hidden = !o;
+        };
+      });
+    </script>
+    <script type="module" src="/shared/theme.js"></script>
+    <script type="module" src="/shared/bridge.js"></script>
+  </body>
+</html>

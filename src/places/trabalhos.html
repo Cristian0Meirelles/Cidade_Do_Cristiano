@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Trabalhos do Cristiano</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/shared/base.css" />
+    <style>
+      :root {
+        --bg: #eef1f5;
+        --paper: #ffffff;
+        --ink: #16213a;
+        --muted: #56607a;
+        --line: #d6dce6;
+        --soft: #e6eaf1;
+        color-scheme: light;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --bg: #0f1524;
+          --paper: #18203a;
+          --ink: #e8edf8;
+          --muted: #9aa6c2;
+          --line: #2a3452;
+          --soft: #1f2946;
+          color-scheme: dark;
+        }
+      }
+      :root[data-theme="dark"] {
+        --bg: #0f1524;
+        --paper: #18203a;
+        --ink: #e8edf8;
+        --muted: #9aa6c2;
+        --line: #2a3452;
+        --soft: #1f2946;
+        color-scheme: dark;
+      }
+      body {
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "IBM Plex Sans", system-ui, sans-serif;
+        font-size: 1.03rem;
+        line-height: 1.62;
+      }
+      .mono {
+        font-family: "IBM Plex Mono", ui-monospace, monospace;
+      }
+      .wrap {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 56px 24px 70px;
+      }
+      h1 {
+        font-size: clamp(2rem, 5vw, 3.1rem);
+        line-height: 1.05;
+        margin: 0 0 10px;
+        font-weight: 700;
+        letter-spacing: -0.015em;
+      }
+      .intro {
+        color: var(--muted);
+        max-width: 60ch;
+        margin: 0 0 30px;
+        font-size: 1.1rem;
+      }
+      .sum {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 28px;
+        margin: 0 0 34px;
+        padding: 0;
+        list-style: none;
+      }
+      .sum li {
+        font-size: 0.95rem;
+        color: var(--muted);
+      }
+      .sum b {
+        display: block;
+        font-size: 1.6rem;
+        color: var(--ink);
+        line-height: 1.1;
+      }
+      .layout {
+        display: grid;
+        grid-template-columns: 270px 1fr;
+        gap: 28px;
+        align-items: start;
+      }
+      .tabs {
+        position: sticky;
+        top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .tab {
+        text-align: left;
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-left: 5px solid var(--c);
+        border-radius: 8px;
+        padding: 10px 14px;
+        cursor: pointer;
+      }
+      .tab b {
+        display: block;
+        font-weight: 600;
+      }
+      .tab span {
+        font-size: 0.85rem;
+        color: var(--muted);
+      }
+      .tab[aria-selected="true"] {
+        background: var(--ink);
+        color: var(--bg);
+        border-color: var(--ink);
+        border-left-color: var(--c);
+      }
+      .tab[aria-selected="true"] span {
+        color: inherit;
+        opacity: 0.75;
+      }
+      @media (max-width: 900px) {
+        .layout {
+          grid-template-columns: 1fr;
+        }
+        .tabs {
+          position: static;
+          flex-direction: row;
+          overflow-x: auto;
+          padding-bottom: 6px;
+        }
+        .tab {
+          flex: none;
+        }
+      }
+      .file {
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        overflow: hidden;
+      }
+      .fhead {
+        padding: 24px 28px 20px;
+        border-top: 8px solid var(--c);
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 10px 20px;
+        align-items: start;
+      }
+      .fhead h2 {
+        margin: 0;
+        font-size: 2rem;
+        line-height: 1.1;
+      }
+      .fhead .role {
+        margin: 4px 0 0;
+        font-size: 1.12rem;
+        font-weight: 500;
+      }
+      .meta {
+        text-align: right;
+        color: var(--muted);
+        font-size: 0.92rem;
+        line-height: 1.5;
+      }
+      @media (max-width: 640px) {
+        .fhead {
+          grid-template-columns: 1fr;
+        }
+        .meta {
+          text-align: left;
+        }
+      }
+      .fbody {
+        padding: 0 28px 26px;
+        display: grid;
+        grid-template-columns: 1fr 250px;
+        gap: 30px;
+      }
+      @media (max-width: 760px) {
+        .fbody {
+          grid-template-columns: 1fr;
+        }
+      }
+      .lbl {
+        font-size: 0.78rem;
+        letter-spacing: 0.02em;
+        color: var(--muted);
+        margin: 22px 0 8px;
+      }
+      .ctx {
+        margin: 0;
+        max-width: 62ch;
+      }
+      .did {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        counter-reset: d;
+      }
+      .did li {
+        position: relative;
+        padding: 8px 0 8px 40px;
+        border-bottom: 1px solid var(--soft);
+      }
+      .did li::before {
+        counter-increment: d;
+        content: counter(d, decimal-leading-zero);
+        position: absolute;
+        left: 0;
+        top: 9px;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.8rem;
+        color: var(--c);
+      }
+      .res {
+        display: grid;
+        gap: 10px;
+      }
+      .res div {
+        background: var(--soft);
+        border-radius: 10px;
+        padding: 12px 14px;
+      }
+      .res b {
+        display: block;
+        font-size: 1.7rem;
+        line-height: 1.1;
+        color: var(--c);
+      }
+      .res span {
+        font-size: 0.9rem;
+      }
+      .stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .stack li {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.78rem;
+        background: var(--soft);
+        border-radius: 5px;
+        padding: 3px 8px;
+      }
+      .learn {
+        margin: 0;
+        font-style: italic;
+        border-left: 3px solid var(--c);
+        padding-left: 12px;
+      }
+      .pager {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 16px;
+      }
+      .pager button {
+        background: none;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 8px 14px;
+        cursor: pointer;
+      }
+      .pager button[disabled] {
+        opacity: 0.35;
+        cursor: default;
+      }
+    </style>
+  </head>
+  <body>
+    <button
+      class="theme-btn"
+      id="themeBtn"
+      data-key="cm-trab-theme"
+      data-dark-label="Claro"
+      data-light-label="Escuro"
+    >
+      Tema
+    </button>
+    <main class="wrap">
+      <h1>Onde eu trabalhei, e o que eu fiz lá</h1>
+      <p class="intro">
+        Cada empresa com o contexto, o que eu fiz de verdade, as ferramentas e o
+        resultado. Escolha uma pasta.
+      </p>
+      <ul class="sum">
+        <li><b>2019 a 2026</b>de estrada</li>
+        <li><b>6</b>lugares</li>
+        <li><b>3</b>papéis: dev, PO e tech lead</li>
+        <li><b>Remoto</b>na maior parte do tempo</li>
+      </ul>
+      <div class="layout">
+        <div class="tabs" role="tablist" id="tabs" aria-label="Empresas"></div>
+        <div id="panel" role="tabpanel"></div>
+      </div>
+    </main>
+    <script type="module">
+      const J = [
+        {
+          n: "Sigaway",
+          c: "#1f9d8b",
+          role: "Desenvolvedor Full Stack",
+          when: "Jul 2025 a Mai 2026",
+          mode: "Remoto",
+          ctx: "Plataforma de telemetria de frotas: caminhões mandando dados o tempo todo, e clientes que precisam de resposta rápida sobre onde estão e como estão os seus ativos.",
+          did: [
+            "Construí um pipeline de dados massivos na AWS com Kinesis, Glue, Athena e S3, sobre PostgreSQL.",
+            "Migrei regras de negócio de Java pra Python sem parar a operação.",
+            "Integrei o sistema legado a uma nova arquitetura serverless.",
+            "Fiz provas de conceito com LLMs pra automatizar análises.",
+            "Redesenhei a tela de mapa da plataforma num painel com status e resumo dos ativos, já na identidade visual nova.",
+          ],
+          res: [
+            ["Sem parar", "a operação durante a migração pra Python"],
+            ["Serverless", "no lugar de parte do legado"],
+          ],
+          stack: [
+            "Python",
+            "Java",
+            "AWS Kinesis",
+            "AWS Glue",
+            "Athena",
+            "S3",
+            "PostgreSQL",
+            "Serverless",
+            "LLMs",
+          ],
+          learn:
+            "Volume alto muda tudo: consulta que precisa responder rápido obriga a pensar no dado antes do código.",
+        },
+        {
+          n: "Automais",
+          c: "#e2476b",
+          role: "Tech Lead e Product Owner",
+          when: "Mai 2024 a Jan 2025",
+          mode: "Híbrido",
+          ctx: "Projetos pra clientes de setores bem diferentes, de uma rede de postos a um hospital, com um time de front-end que precisava de direção e clientes que precisavam de alguém falando a língua deles.",
+          did: [
+            "Liderei o time de front-end em React e TypeScript: arquitetura das telas, divisão dos épicos e acompanhamento de quem estava travado.",
+            "Fiquei na linha de frente com o cliente como product owner, transformando pedido em requisito e requisito em tarefa.",
+            "Integrei o OCR do Google pra reconhecimento de placas de veículos numa rede de postos, ligando a leitura ao back-end e ao banco.",
+            "Reorganizei a operação em Scrum com Jira, com cerimônias e fluxo claros.",
+            "Num projeto hospitalar, implementei autenticação biométrica nos apps Android e iOS.",
+          ],
+          res: [
+            ["75%", "mais rápido na validação de placas"],
+            ["66%", "menos tempo de resposta do time"],
+            ["30%", "melhor rastreamento de tarefas"],
+            ["30%", "mais usabilidade com biometria"],
+          ],
+          stack: [
+            "React",
+            "TypeScript",
+            "OCR do Google",
+            "Android",
+            "iOS",
+            "Scrum",
+            "Jira",
+          ],
+          learn: "Liderar é mais tirar pedra do caminho do que dar ordem.",
+        },
+        {
+          n: "ESX",
+          c: "#f0a020",
+          role: "Full Stack, Product Owner e Scrum Master",
+          when: "Mai 2023 a Abr 2024",
+          mode: "Remoto",
+          ctx: "Um sistema legado em produção que não podia parar, com demanda chegando de vários lados e pouca clareza sobre o que vinha primeiro.",
+          did: [
+            "Mantive e evoluí o sistema em produção, com Python, JavaScript e Java 8 e 11.",
+            "Estruturei testes e aumentei a cobertura de código.",
+            "Refatorei partes pra microsserviços.",
+            "Assumi o papel de product owner: backlog, priorização e conversa com os stakeholders.",
+            "Como Scrum Master, organizei o fluxo ágil de ponta a ponta.",
+          ],
+          res: [
+            ["20%", "mais estabilidade no legado"],
+            ["15%", "mais rápido no processamento"],
+            ["30%", "menos tempo de entrega"],
+          ],
+          stack: [
+            "Python",
+            "JavaScript",
+            "Java 8 e 11",
+            "Microsserviços",
+            "Testes",
+            "Scrum",
+          ],
+          learn:
+            "Manter software vivo é tão importante quanto criar. E dizer o que não fazer é a decisão mais difícil.",
+        },
+        {
+          n: "CI&T",
+          c: "#5b6ee8",
+          role: "Desenvolvedor Full Stack",
+          when: "Fev 2022 a Dez 2022",
+          mode: "Remoto",
+          ctx: "Time internacional da BEES, a plataforma B2B global da AB InBev, no período de expansão pra novos países, incluindo o Canadá.",
+          did: [
+            "Desenvolvi funcionalidades no back-end em Java e Spring Boot, numa arquitetura de microsserviços.",
+            "Trabalhei com mensageria em Kafka e dados em MongoDB, com os serviços rodando em Kubernetes.",
+            "Escrevi testes unitários e automatizados que reduziram bugs em produção.",
+            "Otimizei microsserviços pra acelerar o processamento de dados.",
+            "Trabalhei no dia a dia em inglês, com gente de vários países.",
+          ],
+          res: [
+            ["10%", "mais rápido no processamento de dados"],
+            ["Menos bugs", "em produção com testes automatizados"],
+          ],
+          stack: [
+            "Java",
+            "Spring Boot",
+            "Kafka",
+            "MongoDB",
+            "Kubernetes",
+            "Microsserviços",
+          ],
+          learn:
+            "Vi como se trabalha em escala: primeiro o teste, depois o deploy.",
+        },
+        {
+          n: "ADOSAREC",
+          c: "#c8323c",
+          role: "Desenvolvedor Front-end (projeto de extensão do IFSC)",
+          when: "Set 2021 a Dez 2021",
+          mode: "Canoinhas, SC",
+          ctx: "A associação de doadores de sangue de Canoinhas controlava tudo em fichas de papel preenchidas à mão, no meio da pandemia, quando doação era urgente.",
+          did: [
+            "Passei três meses em pesquisa, reuniões e protótipos com a secretária da associação, validando cada etapa.",
+            "Desenvolvi o front-end do sistema de cadastro de doadores em React.",
+            "Levei as fichas de papel pra um sistema com busca.",
+            "O projeto foi financiado por edital do IFSC.",
+          ],
+          res: [
+            ["5.000+", "doadores cadastrados"],
+            ["65%", "mais rápido pra buscar dados"],
+            ["Notícia", "o projeto saiu no jornal"],
+          ],
+          stack: ["React", "Node.js", "Yarn", "Protótipos"],
+          learn:
+            "A primeira conversa decide o projeto. Quem vai usar tem que ver cada tela antes da próxima.",
+        },
+        {
+          n: "Walpax / Havas",
+          c: "#8a8f9e",
+          role: "Aprendiz Bilíngue",
+          when: "2019 a 2020",
+          mode: "Rio de Janeiro",
+          ctx: "Meu primeiro emprego, logo depois de voltar do Canadá, atendendo gente de fora.",
+          did: [
+            "Atendi clientes estrangeiros em inglês.",
+            "Fiz tradução no congresso IGCS 2019.",
+            "Aprendi a lidar com gente de outros países e outras expectativas.",
+          ],
+          res: [
+            ["IGCS 2019", "congresso internacional"],
+            ["Inglês", "usado no trabalho desde o primeiro emprego"],
+          ],
+          stack: ["Inglês", "Atendimento", "Tradução"],
+          learn:
+            "Minha primeira escola de cliente: entender o que a pessoa quer vem antes de qualquer resposta.",
+        },
+      ];
+      const tabs = document.getElementById("tabs");
+      const panel = document.getElementById("panel");
+      let cur = 0;
+      function esc(s) {
+        return s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+      }
+      tabs.innerHTML = J.map(
+        (j, i) =>
+          `<button class="tab" role="tab" id="t${i}" style="--c:${j.c}" aria-selected="false" tabindex="-1"><b>${esc(j.n)}</b><span>${esc(j.when)}</span></button>`,
+      ).join("");
+      const tb = [].slice.call(tabs.children);
+      function show(i, focus) {
+        cur = i;
+        const j = J[i];
+        tb.forEach((t, k) => {
+          t.setAttribute("aria-selected", k === i);
+          t.tabIndex = k === i ? 0 : -1;
+        });
+        panel.setAttribute("aria-labelledby", `t${i}`);
+        panel.innerHTML = `<article class="file" style="--c:${j.c}"><div class="fhead"><div><h2>${esc(j.n)}</h2><p class="role">${esc(j.role)}</p></div><div class="meta">${esc(j.when)}<br>${esc(j.mode)}</div></div><div class="fbody"><div><p class="lbl mono">Contexto</p><p class="ctx">${esc(j.ctx)}</p><p class="lbl mono">O que eu fiz</p><ol class="did">${j.did
+          .map((d) => `<li>${esc(d)}</li>`)
+          .join(
+            "",
+          )}</ol><p class="lbl mono">O que eu levei</p><p class="learn">${esc(j.learn)}</p></div><div><p class="lbl mono">Resultados</p><div class="res">${j.res
+          .map((r) => `<div><b>${esc(r[0])}</b><span>${esc(r[1])}</span></div>`)
+          .join(
+            "",
+          )}</div><p class="lbl mono">Ferramentas</p><ul class="stack">${j.stack
+          .map((s) => `<li>${esc(s)}</li>`)
+          .join(
+            "",
+          )}</ul></div></div></article><div class="pager"><button id="pv" ${i === 0 ? "disabled" : ""}>Mais recente</button><button id="nx" ${i === J.length - 1 ? "disabled" : ""}>Mais antigo</button></div>`;
+        document.getElementById("pv").onclick = () => {
+          show(i - 1);
+        };
+        document.getElementById("nx").onclick = () => {
+          show(i + 1);
+        };
+        if (focus) tb[i].focus();
+      }
+      tb.forEach((t, i) => {
+        t.onclick = () => {
+          show(i);
+        };
+        t.onkeydown = (e) => {
+          const d = { ArrowDown: 1, ArrowRight: 1, ArrowUp: -1, ArrowLeft: -1 }[
+            e.key
+          ];
+          if (!d) return;
+          e.preventDefault();
+          show((i + d + J.length) % J.length, true);
+        };
+      });
+      show(0);
+    </script>
+    <script type="module" src="/shared/theme.js"></script>
+    <script type="module" src="/shared/bridge.js"></script>
+  </body>
+</html>

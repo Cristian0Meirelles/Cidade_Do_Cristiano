@@ -1,0 +1,354 @@
+[
+  {
+    "pt": "Capítulos",
+    "en": "Chapters",
+    "es": "Capítulos",
+    "fr": "Chapitres",
+    "de": "Kapitel",
+    "ja": "章"
+  },
+  {
+    "pt": "Tema",
+    "en": "Theme",
+    "es": "Tema",
+    "fr": "Thème",
+    "de": "Design",
+    "ja": "テーマ"
+  },
+  {
+    "pt": "Sumário",
+    "en": "Contents",
+    "es": "Índice",
+    "fr": "Sommaire",
+    "de": "Inhalt",
+    "ja": "目次"
+  },
+  {
+    "pt": "A história do Cristiano",
+    "en": "Cristiano’s story",
+    "es": "La historia de Cristiano",
+    "fr": "L’histoire de Cristiano",
+    "de": "Cristianos Geschichte",
+    "ja": "クリスティアーノの物語"
+  },
+  {
+    "pt": "Um jogo desenvolvido em 2000 por Adir e Soraia, com muitas colaborações pelo caminho. Ainda em atualização.",
+    "en": "A game developed in 2000 by Adir and Soraia, with many collaborations along the way. Still being updated.",
+    "es": "Un juego desarrollado en 2000 por Adir y Soraia, con muchas colaboraciones en el camino. Todavía en actualización.",
+    "fr": "Un jeu développé en 2000 par Adir et Soraia, avec beaucoup de collaborations en chemin. Toujours en cours de mise à jour.",
+    "de": "Ein Spiel, entwickelt im Jahr 2000 von Adir und Soraia, mit vielen Mitwirkenden unterwegs. Wird noch aktualisiert.",
+    "ja": "2000年にアジールとソライアが開発したゲーム。道中でたくさんの協力を得てきました。いまもアップデート中。"
+  },
+  {
+    "pt": "Um jogo bem ralo",
+    "en": "A pretty bare-bones game",
+    "es": "Un juego bien básico",
+    "fr": "Un jeu bien sommaire",
+    "de": "Ein ziemlich spärliches Spiel",
+    "ja": "かなり素朴なゲーム"
+  },
+  {
+    "pt": "Eu nasci em Itaboraí, no Rio de Janeiro. Se eu fosse um jogo, a primeira versão seria bem simples: poucos gráficos, desenhos meio sem graça, uma trilha sonora que não chamava atenção. Os desenvolvedores ainda eram iniciantes, e tudo bem. Todo jogo começa assim.",
+    "en": "I was born in Itaboraí, in Rio de Janeiro. If I were a game, the first version would be very simple: few graphics, kind of dull drawings, a soundtrack that didn’t catch anyone’s attention. The developers were still beginners, and that’s fine. Every game starts like this.",
+    "es": "Nací en Itaboraí, en Río de Janeiro. Si yo fuera un juego, la primera versión sería bien simple: pocos gráficos, dibujos medio sosos, una banda sonora que no llamaba la atención. Los desarrolladores todavía eran principiantes, y está bien. Todo juego empieza así.",
+    "fr": "Je suis né à Itaboraí, dans l’État de Rio de Janeiro. Si j’étais un jeu, la première version serait très simple : peu de graphismes, des dessins un peu fades, une bande-son qui n’attirait pas l’attention. Les développeurs débutaient encore, et c’est normal. Tout jeu commence comme ça.",
+    "de": "Ich wurde in Itaboraí im Bundesstaat Rio de Janeiro geboren. Wäre ich ein Spiel, wäre die erste Version sehr einfach: wenig Grafik, ziemlich blasse Zeichnungen, ein Soundtrack, der niemandem auffiel. Die Entwickler waren noch Anfänger, und das ist okay. Jedes Spiel fängt so an.",
+    "ja": "リオデジャネイロ州のイタボライで生まれました。もし自分がゲームなら、最初のバージョンはとてもシンプルです。グラフィックは少なく、絵もどこか地味で、BGMも目立たない。開発者はまだ初心者でしたが、それでいいんです。どんなゲームもそこから始まります。"
+  },
+  {
+    "pt": "Mudar de lugar virou costume cedo, e com isso veio uma coisa que me acompanha até hoje: recomeçar não me assusta tanto.",
+    "en": "Moving around became a habit early, and it brought something that stays with me to this day: starting over doesn’t scare me that much.",
+    "es": "Mudarme de lugar se volvió costumbre temprano, y trajo algo que me acompaña hasta hoy: empezar de nuevo no me asusta tanto.",
+    "fr": "Déménager est devenu une habitude très tôt, et ça m’a apporté quelque chose qui me suit encore aujourd’hui : recommencer ne me fait pas si peur.",
+    "de": "Umziehen wurde früh zur Gewohnheit, und das hat mir etwas mitgegeben, das mich bis heute begleitet: Neuanfänge machen mir nicht so viel Angst.",
+    "ja": "引っ越しは早くから当たり前になり、いまも自分を支えるものをくれました。やり直すことが、それほど怖くないということです。"
+  },
+  {
+    "pt": "A cidade grande e o pacote de expansão",
+    "en": "The big city and the expansion pack",
+    "es": "La gran ciudad y el paquete de expansión",
+    "fr": "La grande ville et le pack d’extension",
+    "de": "Die große Stadt und das Erweiterungspaket",
+    "ja": "大都会と拡張パック"
+  },
+  {
+    "pt": "Em 2012 a história foi pro Rio de Janeiro, no Méier. Foi a primeira atualização grande de verdade: gente nova entrando no jogo e criando ramos que eu não imaginava. Depois vieram Salvador e a Tijuca, com sotaque novo, escola nova e gente nova a cada mudança.",
+    "en": "In 2012 the story moved to the city of Rio de Janeiro, to Méier. It was the first really big update: new people joining the game and creating branches I never imagined. Then came Salvador and Tijuca, with a new accent, a new school and new people with every move.",
+    "es": "En 2012 la historia se fue a la ciudad de Río de Janeiro, al Méier. Fue la primera gran actualización de verdad: gente nueva entrando al juego y creando ramas que yo no imaginaba. Después vinieron Salvador y Tijuca, con acento nuevo, escuela nueva y gente nueva en cada mudanza.",
+    "fr": "En 2012, l’histoire est partie à Rio de Janeiro, dans le quartier du Méier. C’était la première vraie grosse mise à jour : de nouvelles personnes qui entraient dans le jeu et créaient des branches que je n’imaginais pas. Puis sont venus Salvador et Tijuca, avec un nouvel accent, une nouvelle école et de nouvelles personnes à chaque déménagement.",
+    "de": "2012 zog die Geschichte in die Stadt Rio de Janeiro, nach Méier. Das war das erste wirklich große Update: neue Leute im Spiel, die Handlungsstränge schufen, die ich mir nie vorgestellt hätte. Dann kamen Salvador und Tijuca, mit neuem Akzent, neuer Schule und neuen Leuten bei jedem Umzug.",
+    "ja": "2012年、物語はリオデジャネイロ市のメイエル地区へ移りました。初めての本格的な大型アップデートです。新しい人たちがゲームに加わり、想像もしなかった分岐が生まれました。その後はサルヴァドール、そしてチジュカへ。引っ越すたびに新しいなまり、新しい学校、新しい人たち。"
+  },
+  {
+    "pt": "No ano seguinte veio um pacote de expansão com cara de outro gênero: um parque de diversões, na Disney. Os jogadores ficaram mais exigentes. Queriam mais idiomas, mais músicas, mais coisas pra fazer.",
+    "en": "The next year came an expansion pack that felt like another genre: an amusement park, at Disney. The players became more demanding. They wanted more languages, more music, more things to do.",
+    "es": "Al año siguiente llegó un paquete de expansión con cara de otro género: un parque de diversiones, en Disney. Los jugadores se volvieron más exigentes. Querían más idiomas, más música, más cosas para hacer.",
+    "fr": "L’année suivante est arrivé un pack d’extension qui ressemblait à un autre genre : un parc d’attractions, à Disney. Les joueurs sont devenus plus exigeants. Ils voulaient plus de langues, plus de musique, plus de choses à faire.",
+    "de": "Im Jahr darauf kam ein Erweiterungspaket, das wie ein anderes Genre wirkte: ein Freizeitpark, bei Disney. Die Spieler wurden anspruchsvoller. Sie wollten mehr Sprachen, mehr Musik, mehr zu tun.",
+    "ja": "翌年には、別ジャンルのような拡張パックが登場しました。ディズニーの遊園地です。プレイヤーの要求は高くなり、もっと多くの言語、音楽、やることを求めるようになりました。"
+  },
+  {
+    "pt": "Tudo em inglês",
+    "en": "Everything in English",
+    "es": "Todo en inglés",
+    "fr": "Tout en anglais",
+    "de": "Alles auf Englisch",
+    "ja": "すべて英語で"
+  },
+  {
+    "pt": "Em 2017 saiu o trailer de um jogo totalmente diferente. Pra ele melhorar de verdade, seria preciso mudar tudo, inclusive a língua. E foi assim que, aos 17 anos, eu fui pro Canadá.",
+    "en": "In 2017 a trailer came out for a completely different game. For it to truly get better, everything would have to change, including the language. And that’s how, at 17, I went to Canada.",
+    "es": "En 2017 salió el tráiler de un juego totalmente distinto. Para que mejorara de verdad, había que cambiar todo, incluso el idioma. Y así, a los 17 años, me fui a Canadá.",
+    "fr": "En 2017 est sortie la bande-annonce d’un jeu complètement différent. Pour qu’il s’améliore vraiment, il fallait tout changer, y compris la langue. C’est comme ça qu’à 17 ans, je suis parti au Canada.",
+    "de": "2017 erschien der Trailer zu einem völlig anderen Spiel. Damit es wirklich besser wurde, musste sich alles ändern, auch die Sprache. Und so ging ich mit 17 nach Kanada.",
+    "ja": "2017年、まったく違うゲームの予告編が公開されました。本当に良くするには、言語も含めてすべてを変える必要がありました。こうして17歳でカナダへ渡りました。"
+  },
+  {
+    "pt": "Bridgewater, na Nova Scotia. Neve, skate, bike, trilhas. O inglês deixou de ser matéria e virou dia a dia. Participei de uma exposição de arte como artista, com desenhos que eu guardo até hoje, e escrevi minhas primeiras linhas de código.",
+    "en": "Bridgewater, in Nova Scotia. Snow, skateboarding, biking, trails. English stopped being a school subject and became everyday life. I took part in an art exhibition as an artist, with drawings I still keep, and wrote my first lines of code.",
+    "es": "Bridgewater, en Nueva Escocia. Nieve, skate, bici, senderos. El inglés dejó de ser una materia y se volvió el día a día. Participé en una exposición de arte como artista, con dibujos que guardo hasta hoy, y escribí mis primeras líneas de código.",
+    "fr": "Bridgewater, en Nouvelle-Écosse. De la neige, du skate, du vélo, des sentiers. L’anglais a cessé d’être une matière pour devenir le quotidien. J’ai participé à une exposition d’art en tant qu’artiste, avec des dessins que je garde encore, et j’ai écrit mes premières lignes de code.",
+    "de": "Bridgewater in Nova Scotia. Schnee, Skaten, Radfahren, Wanderwege. Englisch war kein Schulfach mehr, sondern Alltag. Ich habe als Künstler an einer Kunstausstellung teilgenommen, mit Zeichnungen, die ich bis heute aufbewahre, und meine ersten Zeilen Code geschrieben.",
+    "ja": "ノバスコシア州のブリッジウォーター。雪、スケートボード、自転車、トレイル。英語は教科ではなく日常になりました。アーティストとして美術展に参加し、いまも大切にしている絵を出品しました。初めてコードを書いたのもここです。"
+  },
+  {
+    "pt": "A crítica mais comum das versões anteriores era que o inventário era pequeno e as habilidades eram poucas. Tudo nessa fase foi planejado em cima disso.",
+    "en": "The most common criticism of the previous versions was that the inventory was small and there were few skills. Everything in this phase was planned around that.",
+    "es": "La crítica más común de las versiones anteriores era que el inventario era pequeño y las habilidades, pocas. Todo en esta fase se planeó en base a eso.",
+    "fr": "La critique la plus fréquente des versions précédentes, c’était un inventaire trop petit et trop peu de compétences. Tout dans cette phase a été pensé à partir de ça.",
+    "de": "Die häufigste Kritik an den früheren Versionen: zu kleines Inventar und zu wenige Fähigkeiten. Alles in dieser Phase wurde danach geplant.",
+    "ja": "以前のバージョンへのいちばん多い批判は、持ち物が少なく、スキルも少ないことでした。このフェーズはすべてそれを踏まえて計画されました。"
+  },
+  {
+    "pt": "De volta, e pra longe de novo",
+    "en": "Back, and far away again",
+    "es": "De vuelta, y lejos otra vez",
+    "fr": "De retour, et loin à nouveau",
+    "de": "Zurück, und wieder weit weg",
+    "ja": "帰国、そしてまた遠くへ"
+  },
+  {
+    "pt": "Voltei pro Rio e arrumei meu primeiro emprego, como aprendiz bilíngue na Walpax, atendendo estrangeiros e traduzindo num congresso internacional. Foi minha primeira escola de cliente.",
+    "en": "I came back to Rio and got my first job, as a bilingual apprentice at Walpax, serving foreigners and translating at an international conference. It was my first school of clients.",
+    "es": "Volví a Río y conseguí mi primer empleo, como aprendiz bilingüe en Walpax, atendiendo a extranjeros y traduciendo en un congreso internacional. Fue mi primera escuela de clientes.",
+    "fr": "Je suis rentré à Rio et j’ai trouvé mon premier emploi, comme apprenti bilingue chez Walpax, à accueillir des étrangers et à traduire lors d’un congrès international. Ce fut ma première école du client.",
+    "de": "Ich kam zurück nach Rio und fand meinen ersten Job als zweisprachiger Auszubildender bei Walpax, betreute Menschen aus dem Ausland und übersetzte auf einem internationalen Kongress. Das war meine erste Schule im Umgang mit Kunden.",
+    "ja": "リオに戻り、Walpaxでバイリンガル研修生として初めて働きました。外国の人たちを案内し、国際学会で通訳をしました。顧客対応を学んだ最初の場所です。"
+  },
+  {
+    "pt": "Aí passei na faculdade, em Análise e Desenvolvimento de Sistemas, e a história mudou de cidade outra vez: Canoinhas, em Santa Catarina, um lugar que quase ninguém conhecia e que era cheio de coisa nova. Tinha habilidades escondidas que só destravavam estudando.",
+    "en": "Then I got into college, in Systems Analysis and Development, and the story changed cities once more: Canoinhas, in Santa Catarina, a place almost nobody knew and that was full of new things. There were hidden skills that only unlocked through studying.",
+    "es": "Después entré en la universidad, en Análisis y Desarrollo de Sistemas, y la historia cambió de ciudad otra vez: Canoinhas, en Santa Catarina, un lugar que casi nadie conocía y que estaba lleno de cosas nuevas. Había habilidades ocultas que solo se desbloqueaban estudiando.",
+    "fr": "Puis je suis entré à la fac, en analyse et développement de systèmes, et l’histoire a encore changé de ville : Canoinhas, dans l’État de Santa Catarina, un endroit que presque personne ne connaissait et qui était plein de nouveautés. Il y avait des compétences cachées qui ne se débloquaient qu’en étudiant.",
+    "de": "Dann kam ich an die Hochschule, Systemanalyse und -entwicklung, und die Geschichte wechselte wieder die Stadt: Canoinhas in Santa Catarina, ein Ort, den fast niemand kannte und der voller neuer Dinge war. Es gab versteckte Fähigkeiten, die sich nur durch Lernen freischalten ließen.",
+    "ja": "その後、システム分析・開発の学科に合格し、物語はまた街を移ります。サンタカタリーナ州のカノイーニャス。ほとんど誰も知らない、でも新しいことにあふれた場所でした。勉強しないと解放されない隠しスキルがありました。"
+  },
+  {
+    "pt": "Em plena pandemia, sentei com a secretária da associação de doadores de sangue da cidade. Eles faziam tudo em ficha de papel. Foram três meses de conversa e protótipo até virar um sistema com mais de cinco mil doadores. O projeto saiu no jornal.",
+    "en": "In the middle of the pandemic, I sat down with the secretary of the city’s blood donor association. They did everything on paper forms. It took three months of conversations and prototypes to become a system with more than five thousand donors. The project made the local paper.",
+    "es": "En plena pandemia, me senté con la secretaria de la asociación de donantes de sangre de la ciudad. Hacían todo en fichas de papel. Fueron tres meses de conversación y prototipos hasta convertirlo en un sistema con más de cinco mil donantes. El proyecto salió en el periódico.",
+    "fr": "En pleine pandémie, je me suis assis avec la secrétaire de l’association des donneurs de sang de la ville. Ils faisaient tout sur des fiches papier. Il a fallu trois mois de discussions et de prototypes pour en faire un système avec plus de cinq mille donneurs. Le projet est passé dans le journal.",
+    "de": "Mitten in der Pandemie setzte ich mich mit der Sekretärin des örtlichen Blutspendevereins zusammen. Sie machten alles auf Papierbögen. Nach drei Monaten Gesprächen und Prototypen wurde daraus ein System mit über fünftausend Spendern. Das Projekt kam in die Zeitung.",
+    "ja": "パンデミックのさなか、街の献血者協会の事務担当の方と向き合いました。すべてが紙の記録でした。3か月の対話とプロトタイプを経て、5,000人以上の献血者を扱うシステムになり、新聞にも載りました。"
+  },
+  {
+    "pt": "O dia em que o PC queimou",
+    "en": "The day my PC burned out",
+    "es": "El día que se quemó la PC",
+    "fr": "Le jour où mon PC a grillé",
+    "de": "Der Tag, an dem mein PC durchbrannte",
+    "ja": "PCが壊れた日"
+  },
+  {
+    "pt": "Eu estava terminando meu jogo em Unity, um jogo de zumbi. Era o motivo de eu ter começado a programar. Um dia o PC queimou e levou tudo junto. Sem backup, sem repositório, sem nada.",
+    "en": "I was finishing my game in Unity, a zombie game. It was the reason I had started programming. One day the PC burned out and took everything with it. No backup, no repository, nothing.",
+    "es": "Estaba terminando mi juego en Unity, un juego de zombis. Era el motivo por el que había empezado a programar. Un día la PC se quemó y se llevó todo. Sin backup, sin repositorio, sin nada.",
+    "fr": "J’étais en train de terminer mon jeu sous Unity, un jeu de zombies. C’était la raison pour laquelle j’avais commencé à programmer. Un jour, le PC a grillé et a tout emporté. Pas de sauvegarde, pas de dépôt, rien.",
+    "de": "Ich war dabei, mein Unity-Spiel fertigzustellen, ein Zombiespiel. Es war der Grund, warum ich mit dem Programmieren angefangen hatte. Eines Tages brannte der PC durch und nahm alles mit. Kein Backup, kein Repository, nichts.",
+    "ja": "Unityで作っていたゾンビゲームを仕上げているところでした。プログラミングを始めた理由そのものです。ある日PCが壊れ、すべてが消えました。バックアップもリポジトリも、何もありませんでした。"
+  },
+  {
+    "pt": "Sobrou só o primeiro teste de fase, que ainda está no itch.io. Doeu bastante. Mas foi a lição que mais ficou: hoje tudo que eu começo vai pro Git no primeiro dia.",
+    "en": "All that survived was the first level test, which is still on itch.io. It hurt a lot. But it was the lesson that stuck the most: today everything I start goes into Git on day one.",
+    "es": "Solo quedó la primera prueba de nivel, que sigue en itch.io. Dolió bastante. Pero fue la lección que más quedó: hoy todo lo que empiezo va a Git el primer día.",
+    "fr": "Il n’est resté que le premier test de niveau, qui est toujours sur itch.io. Ça a fait très mal. Mais c’est la leçon qui est le plus restée : aujourd’hui, tout ce que je commence va dans Git dès le premier jour.",
+    "de": "Übrig blieb nur der erste Level-Test, der noch auf itch.io liegt. Das tat ziemlich weh. Aber es war die Lektion, die am meisten hängen blieb: Heute kommt alles, was ich anfange, am ersten Tag in Git.",
+    "ja": "残ったのは最初のステージのテスト版だけで、いまもitch.ioにあります。とてもつらかった。でもいちばん身についた教訓でした。いまは何を始めても初日にGitに入れます。"
+  },
+  {
+    "pt": "Os dois lados da mesa",
+    "en": "Both sides of the table",
+    "es": "Los dos lados de la mesa",
+    "fr": "Les deux côtés de la table",
+    "de": "Beide Seiten des Tisches",
+    "ja": "テーブルの両側"
+  },
+  {
+    "pt": "A carreira começou na CI&amp;T, num time internacional de uma plataforma global, e eu vi como se trabalha em escala. Depois, na ESX, aprendi a manter vivo um software que não podia parar, e virei product owner e Scrum Master.",
+    "en": "My career started at CI&amp;T, on an international team for a global platform, and I saw how work happens at scale. Then, at ESX, I learned to keep alive software that couldn’t stop, and became a product owner and Scrum Master.",
+    "es": "La carrera empezó en CI&amp;T, en un equipo internacional de una plataforma global, y vi cómo se trabaja a escala. Después, en ESX, aprendí a mantener vivo un software que no podía parar, y me volví product owner y Scrum Master.",
+    "fr": "Ma carrière a commencé chez CI&amp;T, dans une équipe internationale sur une plateforme mondiale, et j’ai vu comment on travaille à grande échelle. Puis, chez ESX, j’ai appris à faire vivre un logiciel qui ne pouvait pas s’arrêter, et je suis devenu product owner et Scrum Master.",
+    "de": "Meine Karriere begann bei CI&amp;T, in einem internationalen Team für eine globale Plattform, und ich sah, wie man im großen Maßstab arbeitet. Danach lernte ich bei ESX, Software am Leben zu halten, die nicht stillstehen durfte, und wurde Product Owner und Scrum Master.",
+    "ja": "キャリアはCI&amp;Tで始まりました。グローバルなプラットフォームの国際チームで、スケールする現場の働き方を知りました。その後ESXでは、止められないソフトウェアを生かし続ける方法を学び、プロダクトオーナーとスクラムマスターになりました。"
+  },
+  {
+    "pt": "Na Automais, liderei um time pela primeira vez e fiquei na linha de frente com o cliente. Na Sigaway, mergulhei em dados de telemetria na nuvem. Em cada lugar eu fui sentando um pouco mais do outro lado da mesa, e isso mudou o tipo de pergunta que eu faço antes de começar.",
+    "en": "At Automais, I led a team for the first time and was on the front line with the client. At Sigaway, I dove into telemetry data in the cloud. At each place I sat a little more on the other side of the table, and that changed the kind of questions I ask before I start.",
+    "es": "En Automais lideré un equipo por primera vez y estuve en primera línea con el cliente. En Sigaway me sumergí en datos de telemetría en la nube. En cada lugar me fui sentando un poco más del otro lado de la mesa, y eso cambió el tipo de preguntas que hago antes de empezar.",
+    "fr": "Chez Automais, j’ai dirigé une équipe pour la première fois et j’étais en première ligne avec le client. Chez Sigaway, j’ai plongé dans des données de télémétrie dans le cloud. À chaque étape, je me suis assis un peu plus de l’autre côté de la table, et ça a changé le genre de questions que je pose avant de commencer.",
+    "de": "Bei Automais habe ich zum ersten Mal ein Team geleitet und stand beim Kunden an vorderster Front. Bei Sigaway bin ich in Telemetriedaten in der Cloud eingetaucht. An jeder Station saß ich ein bisschen mehr auf der anderen Seite des Tisches, und das hat verändert, welche Fragen ich stelle, bevor ich anfange.",
+    "ja": "Automaisでは初めてチームを率い、顧客の最前線に立ちました。Sigawayではクラウド上のテレマティクスデータに深く取り組みました。場所が変わるたびにテーブルの向こう側へ少しずつ座るようになり、始める前にする質問が変わりました。"
+  },
+  {
+    "pt": "Os detalhes de cada trabalho estão no Escritório, ali na cidade.",
+    "en": "The details of each job are in the Office, right there in the city.",
+    "es": "Los detalles de cada trabajo están en la Oficina, ahí en la ciudad.",
+    "fr": "Les détails de chaque poste sont au Bureau, là, dans la ville.",
+    "de": "Die Details zu jeder Station findest du im Büro, gleich dort in der Stadt.",
+    "ja": "それぞれの仕事の詳細は、街のオフィスにあります。"
+  },
+  {
+    "pt": "A loja da vó",
+    "en": "Grandma’s store",
+    "es": "La tienda de la abuela",
+    "fr": "La boutique de mamie",
+    "de": "Omas Laden",
+    "ja": "おばあちゃんのお店"
+  },
+  {
+    "pt": "Minha avó faleceu lendo um devocional. Dali nasceu um projeto de família, a 515 Sanctuary Beauty, uma loja de cosméticos de banho de inspiração cristã. O nome carrega isso.",
+    "en": "My grandmother passed away while reading a devotional. From there a family project was born, 515 Sanctuary Beauty, a Christian-inspired bath cosmetics store. The name carries that.",
+    "es": "Mi abuela falleció leyendo un devocional. De ahí nació un proyecto familiar, 515 Sanctuary Beauty, una tienda de cosméticos de baño de inspiración cristiana. El nombre lleva eso.",
+    "fr": "Ma grand-mère est décédée en lisant un livre de dévotion. De là est né un projet familial, 515 Sanctuary Beauty, une boutique de cosmétiques pour le bain d’inspiration chrétienne. Le nom porte cette histoire.",
+    "de": "Meine Großmutter starb beim Lesen einer Andacht. Daraus entstand ein Familienprojekt, 515 Sanctuary Beauty, ein christlich inspirierter Shop für Badekosmetik. Der Name trägt das in sich.",
+    "ja": "祖母はデボーション（信仰の書）を読みながら亡くなりました。そこから家族のプロジェクト、キリスト教にインスピレーションを受けたバス用コスメのストア「515 Sanctuary Beauty」が生まれました。名前にその想いが込められています。"
+  },
+  {
+    "pt": "Quando a gente começou a anunciar, percebemos que estávamos gastando sem saber se estávamos lucrando. Então eu construí uma ferramenta pra descobrir. Ela virou o Zevi, e o Zevi está virando produto. Já funciona, e falta pouco pra lançar.",
+    "en": "When we started advertising, we realized we were spending without knowing if we were making a profit. So I built a tool to find out. It became Zevi, and Zevi is becoming a product. It already works, and it’s close to launch.",
+    "es": "Cuando empezamos a anunciar, nos dimos cuenta de que gastábamos sin saber si estábamos ganando. Entonces construí una herramienta para descubrirlo. Se convirtió en Zevi, y Zevi se está convirtiendo en producto. Ya funciona, y falta poco para lanzarlo.",
+    "fr": "Quand on a commencé la pub, on s’est rendu compte qu’on dépensait sans savoir si on était rentables. Alors j’ai construit un outil pour le découvrir. Il est devenu Zevi, et Zevi est en train de devenir un produit. Il marche déjà, et le lancement est proche.",
+    "de": "Als wir mit Werbung anfingen, merkten wir, dass wir Geld ausgaben, ohne zu wissen, ob es sich lohnt. Also habe ich ein Tool gebaut, um das herauszufinden. Daraus wurde Zevi, und Zevi wird gerade zum Produkt. Es funktioniert schon, und der Launch ist nah.",
+    "ja": "広告を始めてみると、利益が出ているのかわからないままお金を使っていることに気づきました。そこで、それを知るためのツールをつくりました。それがZeviになり、いまプロダクトになろうとしています。すでに動いていて、ローンチまであと少しです。"
+  },
+  {
+    "pt": "Continua",
+    "en": "To be continued",
+    "es": "Continuará",
+    "fr": "À suivre",
+    "de": "Fortsetzung folgt",
+    "ja": "つづく"
+  },
+  {
+    "pt": "Hoje eu estudo inteligência artificial na FIAP e coloco IA em produto que alguém usa de verdade. Ainda desenho, ainda canto mal, ainda olho pro céu nos dias difíceis.",
+    "en": "Today I study artificial intelligence at FIAP and put AI into products people really use. I still draw, I still sing badly, I still look at the sky on hard days.",
+    "es": "Hoy estudio inteligencia artificial en FIAP y pongo IA en productos que alguien usa de verdad. Todavía dibujo, todavía canto mal, todavía miro el cielo en los días difíciles.",
+    "fr": "Aujourd’hui, j’étudie l’intelligence artificielle à la FIAP et je mets de l’IA dans des produits que des gens utilisent vraiment. Je dessine encore, je chante toujours mal, je regarde encore le ciel les jours difficiles.",
+    "de": "Heute studiere ich künstliche Intelligenz an der FIAP und baue KI in Produkte ein, die wirklich genutzt werden. Ich zeichne noch, singe immer noch schlecht und schaue an schweren Tagen noch in den Himmel.",
+    "ja": "いまはFIAPで人工知能を学び、実際に使われるプロダクトにAIを組み込んでいます。いまも絵を描き、下手な歌を歌い、つらい日には空を見上げます。"
+  },
+  {
+    "pt": "Esse jogo sempre foi feito em cima de crítica, e tudo melhorou por causa dela. Ele definitivamente pode melhorar, e a próxima fase que eu quero jogar é voltar a liderar, com um time e um produto maiores.",
+    "en": "This game has always been built on criticism, and everything got better because of it. It can definitely improve, and the next phase I want to play is leading again, with a bigger team and a bigger product.",
+    "es": "Este juego siempre se hizo a partir de la crítica, y todo mejoró gracias a ella. Definitivamente puede mejorar, y la próxima fase que quiero jugar es volver a liderar, con un equipo y un producto más grandes.",
+    "fr": "Ce jeu a toujours été construit à partir des critiques, et tout s’est amélioré grâce à elles. Il peut encore s’améliorer, et la prochaine phase que je veux jouer, c’est diriger à nouveau, avec une équipe et un produit plus grands.",
+    "de": "Dieses Spiel wurde immer auf Basis von Kritik gebaut, und alles wurde dadurch besser. Es kann definitiv noch besser werden, und die nächste Phase, die ich spielen will, ist wieder zu führen, mit einem größeren Team und einem größeren Produkt.",
+    "ja": "このゲームはいつも批判をもとにつくられ、そのおかげで良くなってきました。まだまだ改善できます。次にプレイしたいフェーズは、より大きなチームとプロダクトで、もう一度率いることです。"
+  },
+  {
+    "pt": "Quem gosta de criticar, critique. Quem quiser escrever o próximo capítulo junto: <a href=\"mailto:cristianocmeirelles@gmail.com\">cristianocmeirelles@gmail.com</a>",
+    "en": "If you like to criticize, go ahead. If you want to write the next chapter together: <a href=\"mailto:cristianocmeirelles@gmail.com\">cristianocmeirelles@gmail.com</a>",
+    "es": "Si te gusta criticar, critica. Si quieres escribir el próximo capítulo juntos: <a href=\"mailto:cristianocmeirelles@gmail.com\">cristianocmeirelles@gmail.com</a>",
+    "fr": "Si vous aimez critiquer, critiquez. Si vous voulez écrire le prochain chapitre ensemble : <a href=\"mailto:cristianocmeirelles@gmail.com\">cristianocmeirelles@gmail.com</a>",
+    "de": "Wer gern kritisiert, soll kritisieren. Wer das nächste Kapitel gemeinsam schreiben will: <a href=\"mailto:cristianocmeirelles@gmail.com\">cristianocmeirelles@gmail.com</a>",
+    "ja": "批判したい人は、どうぞ。次の章を一緒に書きたい人は：<a href=\"mailto:cristianocmeirelles@gmail.com\">cristianocmeirelles@gmail.com</a>"
+  },
+  {
+    "pt": "Um relato meio jogo, meio diário",
+    "en": "A story that’s half game, half diary",
+    "es": "Un relato mitad juego, mitad diario",
+    "fr": "Un récit moitié jeu, moitié journal",
+    "de": "Eine Geschichte, halb Spiel, halb Tagebuch",
+    "ja": "半分ゲーム、半分日記の物語"
+  },
+  {
+    "pt": "Capítulo 1, 2000",
+    "en": "Chapter 1, 2000",
+    "es": "Capítulo 1, 2000",
+    "fr": "Chapitre 1, 2000",
+    "de": "Kapitel 1, 2000",
+    "ja": "第1章、2000年"
+  },
+  {
+    "pt": "Capítulo 2, 2012 em diante",
+    "en": "Chapter 2, 2012 onward",
+    "es": "Capítulo 2, desde 2012",
+    "fr": "Chapitre 2, à partir de 2012",
+    "de": "Kapitel 2, ab 2012",
+    "ja": "第2章、2012年から"
+  },
+  {
+    "pt": "Capítulo 3, 2017 a 2019",
+    "en": "Chapter 3, 2017 to 2019",
+    "es": "Capítulo 3, 2017 a 2019",
+    "fr": "Chapitre 3, 2017 à 2019",
+    "de": "Kapitel 3, 2017 bis 2019",
+    "ja": "第3章、2017〜2019年"
+  },
+  {
+    "pt": "Capítulo 4, 2019 a 2021",
+    "en": "Chapter 4, 2019 to 2021",
+    "es": "Capítulo 4, 2019 a 2021",
+    "fr": "Chapitre 4, 2019 à 2021",
+    "de": "Kapitel 4, 2019 bis 2021",
+    "ja": "第4章、2019〜2021年"
+  },
+  {
+    "pt": "Capítulo 5, 2021",
+    "en": "Chapter 5, 2021",
+    "es": "Capítulo 5, 2021",
+    "fr": "Chapitre 5, 2021",
+    "de": "Kapitel 5, 2021",
+    "ja": "第5章、2021年"
+  },
+  {
+    "pt": "Capítulo 6, 2022 a 2026",
+    "en": "Chapter 6, 2022 to 2026",
+    "es": "Capítulo 6, 2022 a 2026",
+    "fr": "Chapitre 6, 2022 à 2026",
+    "de": "Kapitel 6, 2022 bis 2026",
+    "ja": "第6章、2022〜2026年"
+  },
+  {
+    "pt": "Capítulo 7",
+    "en": "Chapter 7",
+    "es": "Capítulo 7",
+    "fr": "Chapitre 7",
+    "de": "Kapitel 7",
+    "ja": "第7章"
+  },
+  {
+    "pt": "Capítulo 8, agora",
+    "en": "Chapter 8, now",
+    "es": "Capítulo 8, ahora",
+    "fr": "Chapitre 8, maintenant",
+    "de": "Kapitel 8, jetzt",
+    "ja": "第8章、いま"
+  },
+  {
+    "pt": "Dia",
+    "en": "Day",
+    "es": "Día",
+    "fr": "Jour",
+    "de": "Tag",
+    "ja": "昼"
+  },
+  {
+    "pt": "Noite",
+    "en": "Night",
+    "es": "Noche",
+    "fr": "Nuit",
+    "de": "Nacht",
+    "ja": "夜"
+  }
+]

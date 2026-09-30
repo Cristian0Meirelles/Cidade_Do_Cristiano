@@ -1,0 +1,1709 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>A aventura do Cristiano</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --page: #f4f6f1;
+        --sheet: #ffffff;
+        --bar: #e3f0e1;
+        --ink: #233023;
+        --dim: #617061;
+        --accent: #1f5fa8;
+        --hole: #d7dbd3;
+        --edge: #c3cbc0;
+        --hi: #233023;
+        --hi-ink: #ffffff;
+        --mono: "Courier Prime", "Courier New", monospace;
+        --size: 1rem;
+        --lh: 1.6rem;
+        --mapsize: 0.74rem;
+        color-scheme: light;
+        box-sizing: border-box;
+        padding-top: env(safe-area-inset-top, 0px);
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --page: #120d05;
+          --sheet: #1c1408;
+          --bar: #221809;
+          --ink: #ffb347;
+          --dim: #b7843a;
+          --accent: #ffd27a;
+          --hole: #0c0803;
+          --edge: #3a2a10;
+          --hi: #ffb347;
+          --hi-ink: #1c1408;
+          --mono: "VT323", "Courier New", monospace;
+          --size: 1.3rem;
+          --lh: 1.6rem;
+          --mapsize: 1.02rem;
+          color-scheme: dark;
+        }
+      }
+      :root[data-theme="dark"] {
+        --page: #120d05;
+        --sheet: #1c1408;
+        --bar: #221809;
+        --ink: #ffb347;
+        --dim: #b7843a;
+        --accent: #ffd27a;
+        --hole: #0c0803;
+        --edge: #3a2a10;
+        --hi: #ffb347;
+        --hi-ink: #1c1408;
+        --mono: "VT323", "Courier New", monospace;
+        --size: 1.3rem;
+        --lh: 1.6rem;
+        --mapsize: 1.02rem;
+        color-scheme: dark;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        background: var(--page);
+        color: var(--ink);
+        font-family: var(--mono);
+        font-size: var(--size);
+        line-height: var(--lh);
+        display: flex;
+        flex-direction: column;
+      }
+      a {
+        color: var(--accent);
+      }
+      button,
+      input {
+        font: inherit;
+        color: inherit;
+      }
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px 18px;
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 12px 18px 8px;
+        flex-wrap: wrap;
+      }
+      .top h1 {
+        font-size: 1.05em;
+        font-weight: 700;
+        margin: 0;
+      }
+      .top .st {
+        color: var(--dim);
+        display: flex;
+        gap: 6px 18px;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .top .st b {
+        color: var(--ink);
+      }
+      .top button {
+        background: none;
+        border: 1px solid var(--edge);
+        padding: 0 10px;
+        cursor: pointer;
+      }
+      .main {
+        flex: 1;
+        min-height: 0;
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 18px;
+        display: grid;
+        grid-template-columns: 1fr 430px;
+        gap: 18px;
+      }
+      .sheet {
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background: var(--sheet);
+        border-left: 1px solid var(--edge);
+        border-right: 1px solid var(--edge);
+        padding: 0 56px;
+        background-image:
+          radial-gradient(circle at 20px 50%, var(--hole) 6px, transparent 7px),
+          radial-gradient(
+            circle at calc(100% - 20px) 50%,
+            var(--hole) 6px,
+            transparent 7px
+          ),
+          repeating-linear-gradient(
+            var(--bar) 0 calc(var(--lh) * 3),
+            transparent calc(var(--lh) * 3) calc(var(--lh) * 6)
+          );
+        background-size:
+          100% 36px,
+          100% 36px,
+          100% 100%;
+        background-repeat: repeat-y, repeat-y, repeat;
+        background-attachment: local;
+      }
+      .sheet::before,
+      .sheet::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background: repeating-linear-gradient(
+          var(--edge) 0 6px,
+          transparent 6px 10px
+        );
+      }
+      .sheet::before {
+        left: 40px;
+      }
+      .sheet::after {
+        right: 40px;
+      }
+      :root[data-theme="dark"] .sheet {
+        background-image: none;
+        padding: 0 20px;
+        text-shadow: 0 0 6px rgba(255, 160, 40, 0.4);
+      }
+      :root[data-theme="dark"] .sheet::before,
+      :root[data-theme="dark"] .sheet::after {
+        display: none;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) .sheet {
+          background-image: none;
+          padding: 0 20px;
+          text-shadow: 0 0 6px rgba(255, 160, 40, 0.4);
+        }
+        :root:not([data-theme="light"]) .sheet::before,
+        :root:not([data-theme="light"]) .sheet::after {
+          display: none;
+        }
+      }
+      #out {
+        flex: 1;
+        min-height: 0;
+        overflow-y: auto;
+        padding: 16px 0 8px;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      #out p {
+        margin: 0 0 calc(var(--lh) * 0.6);
+      }
+      #out .cmd {
+        color: var(--dim);
+        margin: calc(var(--lh) * 0.4) 0 2px;
+      }
+      #out .room {
+        font-weight: 700;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        margin-top: calc(var(--lh) * 0.4);
+      }
+      #out .sys {
+        color: var(--dim);
+      }
+      #out .hl {
+        color: var(--accent);
+        font-weight: 700;
+      }
+      #out .box {
+        border: 1px dashed var(--edge);
+        padding: 8px 12px;
+      }
+      #out .npc {
+        padding-left: 16px;
+        border-left: 3px solid var(--edge);
+      }
+      .inrow {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding: 8px 0 10px;
+        border-top: 1px dashed var(--edge);
+      }
+      .inrow label {
+        font-weight: 700;
+      }
+      .inrow input {
+        flex: 1;
+        min-width: 0;
+        background: transparent;
+        border: 0;
+        outline: none;
+        caret-color: var(--accent);
+      }
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 8px;
+        padding: 0 0 12px;
+        max-height: 9.5rem;
+        overflow: auto;
+      }
+      .chips span {
+        color: var(--dim);
+        font-size: 0.85em;
+        align-self: center;
+        margin-right: 2px;
+      }
+      .chips button {
+        background: transparent;
+        border: 1px solid var(--edge);
+        padding: 0 9px;
+        cursor: pointer;
+        color: var(--ink);
+        font-size: 0.92em;
+      }
+      .chips button:hover {
+        border-color: var(--ink);
+      }
+      .chips .go {
+        border-style: dashed;
+      }
+      .main > * {
+        min-width: 0;
+      }
+      aside {
+        min-height: 0;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        padding-bottom: 10px;
+      }
+      .panel {
+        background: var(--sheet);
+        border: 1px solid var(--edge);
+        padding: 10px 14px;
+      }
+      .panel h2 {
+        font-size: 1em;
+        margin: 0 0 6px;
+      }
+      .panel p {
+        margin: 0 0 6px;
+      }
+      .panel ol {
+        margin: 0;
+        padding-left: 1.3em;
+      }
+      .mission li {
+        margin: 0;
+      }
+      .mission li.ok {
+        text-decoration: line-through;
+        color: var(--dim);
+      }
+      pre.map {
+        margin: 0;
+        font-family: var(--mono);
+        font-size: var(--mapsize);
+        line-height: 1.35;
+        overflow-x: auto;
+        white-space: pre;
+      }
+      .map .rm {
+        color: var(--dim);
+      }
+      .map .rm.seen {
+        color: var(--ink);
+      }
+      .map .rm.here {
+        background: var(--hi);
+        color: var(--hi-ink);
+      }
+      .map button.rm {
+        background: none;
+        border: 0;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+      }
+      .map button.rm.here {
+        background: var(--hi);
+      }
+      .bottom {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 6px 18px 12px;
+        color: var(--dim);
+        font-size: 0.85em;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      @media (max-width: 1000px) {
+        .main {
+          grid-template-columns: 1fr;
+        }
+        aside {
+          display: none;
+        }
+      }
+      @media (max-width: 600px) {
+        body {
+          font-size: calc(var(--size) * 0.9);
+        }
+        .top {
+          padding: 8px 10px 4px;
+          font-size: 0.9em;
+        }
+        .top h1 {
+          display: none;
+        }
+        .bottom {
+          display: none;
+        }
+        .chips {
+          flex-wrap: nowrap;
+          overflow-x: auto;
+          max-height: none;
+          padding-bottom: 10px;
+        }
+        .chips button,
+        .chips span {
+          flex: none;
+        }
+        .sheet {
+          padding: 0 12px;
+          background-image: none;
+        }
+        .sheet::before,
+        .sheet::after {
+          display: none;
+        }
+        .main {
+          padding: 0 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <h1>A aventura do Cristiano</h1>
+      <div class="st">
+        <span>Lugar: <b id="where"></b></span
+        ><span>Fragmentos: <b id="frags"></b></span
+        ><span>Pontos: <b id="pts"></b></span><button id="theme">Tela</button>
+      </div>
+    </div>
+    <div class="main">
+      <div class="sheet">
+        <div id="out" role="log" aria-live="polite"></div>
+        <form class="inrow" id="form" autocomplete="off">
+          <label for="cmd">&gt;</label
+          ><input
+            id="cmd"
+            placeholder="digite um comando (ex.: falar com guia) ou toque numa sugestão"
+            spellcheck="false"
+            autocapitalize="off"
+          />
+        </form>
+        <div class="chips" id="chips" aria-label="Sugestões de comando"></div>
+      </div>
+      <aside aria-label="Guia do jogo">
+        <section class="panel">
+          <h2>Como jogar</h2>
+          <p>
+            Você explora uma cidade feita da história do Cristiano. Ande com
+            NORTE, SUL, LESTE, OESTE, SUBIR e DESCER, ou clique num lugar do
+            mapa. Examine as coisas, converse com as pessoas e pegue o que
+            achar.
+          </p>
+          <p>Travou? Digite DICA.</p>
+        </section>
+        <section class="panel">
+          <h2>Missão</h2>
+          <p>
+            Abrir a Porta do Próximo Nível, no fim do corredor. Ela pede 4
+            fragmentos:
+          </p>
+          <ol class="mission" id="mission"></ol>
+        </section>
+        <section class="panel">
+          <h2>Mapa</h2>
+          <pre class="map" id="map"></pre>
+        </section>
+      </aside>
+    </div>
+    <div class="bottom">
+      <span
+        >Um jogo de texto sobre Cristiano Meirelles, engenheiro de software full
+        stack, tech lead e product owner.</span
+      ><span
+        ><a href="mailto:cristianocmeirelles@gmail.com"
+          >cristianocmeirelles@gmail.com</a
+        ></span
+      >
+    </div>
+
+    <script type="module">
+      const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const inHub = window.parent !== window;
+      const CITY = "/";
+      const SITES = {
+        sobre: "a Casa, sobre mim",
+        trabalhos: "o Escritório, com cada trabalho em detalhe",
+        projetos: "a Oficina, com os projetos",
+        historia: "a Biblioteca, com a minha história",
+        trilha: "a Rodoviária, com os lugares por onde passei",
+        escola: "a Escola, com formação e habilidades",
+        atelie: "o Ateliê, com meus desenhos",
+        futuro: "o Observatório, sobre pra onde eu vou",
+        jogo: "o Fliperama, o jogo de plataforma",
+      };
+      const DISP = {
+        cracha: "crachá",
+        prototipo: "protótipo",
+        lapis: "lápis",
+        familia: "família",
+        secretaria: "secretária",
+        estatua: "estátua",
+        violao: "violão",
+        caminhoes: "caminhões",
+        telescopio: "telescópio",
+        maquina: "máquina",
+      };
+      function dn(k) {
+        return DISP[k] || k;
+      }
+      const FR = {
+        passaporte: "Inglês",
+        git: "Git",
+        cracha: "Liderança",
+        prototipo: "Produto",
+      };
+      const FRHINT = {
+        passaporte: "no Canadá, a oeste de Itaboraí",
+        git: "no Porão, descendo da Praça",
+        cracha: "na Automais, no fim do corredor",
+        prototipo: "na Oficina, ao sul da Praça",
+      };
+      const R = {
+        praca: {
+          nm: "Praça central",
+          d: "O centro da cidade. Daqui dá pra ir pra qualquer parte da história do Cristiano. No meio tem uma ESTÁTUA meio torta de um cara de óculos segurando um lápis, e uma PLACA com setas pra todo lado. Um GUIA de colete amarelo acena pra você.",
+          ex: {
+            norte: "faculdade",
+            sul: "oficina",
+            leste: "corredor",
+            oeste: "itaborai",
+            subir: "observatorio",
+            descer: "arcade",
+          },
+          x: {
+            placa:
+              "NORTE: IFSC Canoinhas. SUL: Oficina de projetos. LESTE: Corredor das empresas. OESTE: Itaboraí, onde tudo começou. SUBIR: Observatório. DESCER: Porão do fliperama.",
+            estatua:
+              "Na base: Cristiano Meirelles, engenheiro de software full stack, tech lead e product owner. Alguém prendeu uma FICHA do personagem nela.",
+            ficha: {
+              t: "Nome: Cristiano. Classe: full stack, tech lead e product owner. Idiomas: português e inglês. Super trunfo: persistência e criatividade. Fraqueza: a mesma persistência virando teimosia.",
+              open: "sobre",
+            },
+          },
+          npc: {
+            guia: [
+              "Bem-vindo! O objetivo é abrir a PORTA DO PRÓXIMO NÍVEL, no fim do corredor, a leste.",
+              "Ela pede 4 fragmentos: INGLÊS, GIT, LIDERANÇA e PRODUTO. Estão espalhados pela cidade. Quando achar um, é só PEGAR.",
+              "Digite MISSÃO pra ver o que falta, MAPA pra se localizar e DICA se travar. Ah, e IR PARA leva direto a qualquer lugar, tipo IR PARA OFICINA.",
+              "Se quiser só conhecer o Cristiano rápido, EXAMINE A FICHA aqui na estátua.",
+            ],
+          },
+        },
+        itaborai: {
+          nm: "Itaboraí, 2000",
+          d: "Uma casa simples em Itaboraí, no Rio. O jogo acabou de ser lançado e ainda é bem ralo: poucos gráficos, trilha sonora sem graça. Tem uma MOCHILA encostada na porta e uma JANELA virada pro oeste. Sua FAMÍLIA está na cozinha.",
+          ex: { leste: "praca", oeste: "canada" },
+          it: {
+            mochila:
+              "Vazia por enquanto. Vai carregar essa mochila por vários estados e um país.",
+          },
+          x: {
+            mochila: "Uma mochila gasta. Cabe muita coisa.",
+            janela: {
+              t: "Lá fora, uma cidade pequena. Depois dela, o Rio. Depois do Rio, um aeroporto a oeste. Dá pra ver a linha inteira de lugares por onde o Cristiano passou.",
+              open: "trilha",
+            },
+          },
+          npc: {
+            familia: [
+              "Sua família te olha arrumando a mochila. Vai, mas liga quando chegar.",
+              "Morar em outros estados já te ensinou uma coisa: recomeçar não assusta tanto.",
+            ],
+          },
+        },
+        canada: {
+          nm: "Bridgewater, Canadá, 2018",
+          d: "Neve até o joelho. Você tem 17 anos e está no ensino médio em Nova Scotia. Tem um SKATE no corredor da escola, uma sala com DESENHOS pendurados, a COSTA gelada lá fora e um PASSAPORTE em cima da mesa. Uma PROFESSORA de artes passa com uma pasta.",
+          ex: { leste: "itaborai" },
+          it: {
+            passaporte:
+              "Carimbado. Junto com ele vem o inglês de verdade, falado todo dia. Esse é o fragmento INGLÊS.",
+          },
+          x: {
+            skate:
+              "O skate te ensina que cair faz parte de aprender qualquer coisa.",
+            desenhos:
+              "São seus: grafite, aquarela, relevo em metal. Estão numa exposição, e você participa como artista. É daqui que vem o olho pra interface: espaço, proporção e o que dá pra tirar sem perder o sentido.",
+            costa:
+              "Mar gelado e árvores retorcidas. Você tira umas fotos que vai guardar por anos.",
+            passaporte: "Tem cara de fragmento. Tente PEGAR PASSAPORTE.",
+          },
+          npc: {
+            professora: [
+              "Your drawings are going into the exhibition, Cristiano.",
+              "Ela fala inglês, e você entende tudo. Também foi aqui que você escreveu as primeiras linhas de código.",
+            ],
+          },
+        },
+        faculdade: {
+          nm: "IFSC Canoinhas, 2020",
+          d: "Um campus numa cidade de Santa Catarina que quase ninguém conhecia. Tem um QUADRO de avisos, um MURAL com um edital e um DIPLOMA esperando por você. Um COLEGA está no laboratório.",
+          ex: { sul: "praca", norte: "adosarec", oeste: "atelie" },
+          it: {
+            diploma:
+              "Tecnólogo em Análise e Desenvolvimento de Sistemas. Média 8,8.",
+          },
+          x: {
+            quadro: {
+              t: "Análise e Desenvolvimento de Sistemas, 2020 a 2022. Embaixo, a lista de tudo que o Cristiano estudou e sabe usar.",
+              open: "escola",
+            },
+            mural:
+              "Um edital de projetos com a comunidade. Alguém rabiscou embaixo: associação de doadores de sangue, ao NORTE.",
+            diploma: "Ainda com a tinta fresca.",
+          },
+          npc: {
+            colega: [
+              "Lembra do Mercado Virtual? A loja em Django que você fez com o banco modelado do zero, com administrador, cliente, itens e pagamento.",
+              "E aquele Task Manager, pra time nenhum esquecer tarefa. Você sempre voltava pro mesmo assunto: organizar.",
+            ],
+          },
+        },
+        adosarec: {
+          nm: "Associação de doadores de sangue",
+          d: "Uma sala pequena, cheia de FICHAS de papel preenchidas à mão. Na parede, um recorte de JORNAL. A SECRETÁRIA da associação sorri quando você entra.",
+          ex: { sul: "faculdade" },
+          it: {
+            jornal:
+              "O recorte da notícia sobre o sistema. Você guarda com carinho.",
+          },
+          x: {
+            fichas:
+              "Mais de cinco mil doadores, tudo no papel. Buscar alguém levava uma eternidade.",
+            jornal:
+              "O sistema da ADOSAREC virou notícia. Financiado por edital do IFSC.",
+          },
+          npc: {
+            secretaria: [
+              "Antes a gente fazia tudo no papel. Você passou três meses aqui comigo, perguntando como era o nosso dia, no meio da pandemia.",
+              "Hoje são mais de 5.000 doadores no sistema e a busca ficou 65% mais rápida. E você me mostrava cada tela antes de fazer a próxima.",
+            ],
+          },
+        },
+        atelie: {
+          nm: "Ateliê",
+          d: "Cheiro de grafite. Uma mesa cheia de DESENHOS, um VIOLÃO encostado, um MICROFONE e um CADERNO de rascunhos aberto.",
+          ex: { leste: "faculdade" },
+          it: { lapis: "Um lápis 2B, bem apontado." },
+          x: {
+            desenhos:
+              "Grafite, aquarela e nanquim, relevo em metal. Desenho desde criança.",
+            violao:
+              "Você ainda não sabe tocar. Está na lista das próximas atualizações.",
+            microfone: "Tente CANTAR.",
+            caderno: {
+              t: "Um caderno com os desenhos do Cristiano: grafite, aquarela e relevo em metal, da exposição no Canadá.",
+              open: "atelie",
+            },
+            lapis: "Tente PEGAR LAPIS.",
+          },
+          npc: {},
+        },
+        corredor: {
+          nm: "Corredor das empresas",
+          d: "Um corredor comprido de escritórios. Uma porta ao NORTE tem o logo da CI&T, outra ao SUL diz ESX. Na parede, um MURAL. O corredor continua pro LESTE.",
+          ex: {
+            oeste: "praca",
+            norte: "cit",
+            sul: "esx",
+            leste: "corredor2",
+          },
+          x: {
+            mural: {
+              t: "Um mural com uma pasta pra cada empresa: contexto, o que ele fez, ferramentas e resultados.",
+              open: "trabalhos",
+            },
+          },
+          npc: {},
+        },
+        cit: {
+          nm: "CI&T, 2022",
+          d: "Um time internacional trabalha na BEES, a plataforma global da AB InBev, que está chegando a novos países, incluindo o Canadá. Tem um PAINEL de deploy, uma caixa de TESTES automatizados e uma DEV sênior tomando café.",
+          ex: { sul: "corredor" },
+          it: { testes: "Menos bug chega em produção por causa deles." },
+          x: {
+            painel:
+              "Java, Spring Boot, Kafka, MongoDB e Kubernetes. Aqui você vê como se trabalha em escala.",
+            testes:
+              "O processamento de dados ficou 10% mais rápido depois dos microsserviços.",
+          },
+          npc: {
+            dev: [
+              "Aqui primeiro vem o teste, depois o deploy. Escala não perdoa.",
+              "Seu inglês ajuda muito nas reuniões com o pessoal de fora.",
+            ],
+          },
+        },
+        esx: {
+          nm: "ESX, 2023",
+          d: "Um sistema LEGADO em Java zumbe num servidor que não pode parar. No quadro, um BACKLOG gigante. Um STAKEHOLDER espera na porta.",
+          ex: { norte: "corredor" },
+          it: { backlog: "Priorizado. Agora ele cabe numa sprint." },
+          x: {
+            legado:
+              "Com testes estruturados e cobertura de código, ele ficou 20% mais estável. O processamento ficou 15% mais rápido com microsserviços.",
+            backlog:
+              "Você virou product owner e Scrum Master. As entregas ficaram 30% mais rápidas.",
+          },
+          npc: {
+            stakeholder: [
+              "O que eu mais gostei é que você perguntava o problema, não só a tarefa.",
+              "E você sabia dizer o que NÃO fazer. Isso é raro.",
+            ],
+          },
+        },
+        corredor2: {
+          nm: "Fim do corredor",
+          d: "A porta ao NORTE é da Automais, a do SUL é da Sigaway. No LESTE tem uma PORTA enorme, diferente das outras, com uma luz passando por baixo.",
+          ex: {
+            oeste: "corredor",
+            norte: "automais",
+            sul: "sigaway",
+            leste: "portao",
+          },
+          x: {
+            porta:
+              "É a Porta do Próximo Nível. Siga pro LESTE pra chegar perto.",
+          },
+          npc: {},
+        },
+        automais: {
+          nm: "Automais, 2024",
+          d: "Um TIME de front-end parado, esperando alguém destravar. Um CLIENTE de uma rede de postos quer validar PLACAS de carro mais rápido. No gancho da parede, um CRACHÁ de tech lead.",
+          ex: { sul: "corredor2" },
+          it: {
+            cracha:
+              "Tech lead e product owner. Primeira vez liderando um time. Esse é o fragmento LIDERANÇA.",
+          },
+          x: {
+            time: "Você define a arquitetura das telas, quebra os épicos e destrava quem está parado. Com Scrum e Jira, o tempo de resposta do time caiu 66%.",
+            placas:
+              "Você integrou o OCR do Google ao back-end e ao banco. O fluxo ficou 75% mais rápido.",
+            cracha: "Tem cara de fragmento. Tente PEGAR CRACHA.",
+            biometria:
+              "Num projeto hospitalar, a biometria nos apps Android e iOS aumentou a usabilidade em 30%.",
+          },
+          npc: {
+            cliente: [
+              "Antes a validação das placas travava tudo. Agora ficou 75% mais rápido.",
+              "E foi bom ter alguém que falava a minha língua, não a língua do código.",
+            ],
+          },
+        },
+        sigaway: {
+          nm: "Sigaway, 2025",
+          d: "Telas cheias de CAMINHÕES em movimento. Um PIPELINE de dados na AWS, um código antigo em JAVA pedindo migração e o MAPA da frota na parede.",
+          ex: { norte: "corredor2" },
+          it: {
+            pipeline:
+              "Kinesis, Glue, Athena e S3 sobre PostgreSQL. Volume alto e consulta que precisa responder.",
+          },
+          x: {
+            caminhoes: "Frotas inteiras mandando telemetria sem parar.",
+            pipeline:
+              "Você construiu isso. Tente PEGAR PIPELINE pra guardar a lembrança.",
+            java: "Você migrou a lógica de negócio pra Python sem parar a operação e ligou o legado a uma arquitetura serverless.",
+            mapa: "Você redesenhou essa tela como um painel de status e resumo dos ativos, na identidade visual nova.",
+          },
+          npc: {},
+        },
+        portao: {
+          nm: "Porta do Próximo Nível",
+          d: "Uma PORTA enorme. Uma PLACA diz: Próximo nível. Tem quatro encaixes na fechadura.",
+          ex: { oeste: "corredor2" },
+          x: {
+            placa:
+              "Próximo nível: o próximo desafio. Um time novo, um problema que ainda ninguém resolveu.",
+            porta:
+              "Quatro encaixes: INGLÊS, GIT, LIDERANÇA e PRODUTO. Tente ABRIR PORTA.",
+          },
+          npc: {},
+        },
+        oficina: {
+          nm: "Oficina de projetos",
+          d: "Bancadas por todo lado. Na primeira, o painel do ZEVI rodando. Tem a vitrine da 515, uma CARTA holográfica girando, um celular com o APP de treino, um monitor com um MODELO de machine learning e um ARQUIVO com um livro velho. Todas as BANCADAS têm uma planta técnica pendurada.",
+          ex: { norte: "praca" },
+          it: {
+            prototipo:
+              "O primeiro protótipo do Zevi, rabiscado num guardanapo. Esse é o fragmento PRODUTO.",
+          },
+          x: {
+            zevi: "Seu produto, em desenvolvimento. Já funciona, falta o acabamento pro lançamento. Lê as contas de anúncio de Meta, TikTok, Google Ads e YouTube, cruza com as vendas reais da loja e mostra onde a verba vaza. Auditando contra a loja, você pegou o Meta inflando as compras em 33%. Do lado tem um PROTOTIPO rabiscado.",
+            515: "A 515 Sanctuary Beauty, loja de cosméticos de banho de inspiração cristã. Projeto de família que nasceu depois que sua avó faleceu lendo um devocional. Foi dela que nasceu o Zevi.",
+            carta:
+              "O E-TCG, loja de cartas Pokémon TCG com cartas holográficas em 3D, zoom de inspeção de 8x, API em Spring Boot e app com Capacitor.",
+            app: "Lê a ficha de treino por print e tem um chat com IA que troca o exercício quando a máquina está ocupada.",
+            modelo:
+              "O Tech Challenge da FIAP: prever a recorrência de câncer de tireoide priorizando recall, com Random Forest explicado por SHAP e uma CNN pra ultrassom.",
+            arquivo: {
+              t: "Um livro de capa gasta: A história do Cristiano, em oito capítulos.",
+              open: "historia",
+            },
+            bancadas: {
+              t: "Cada bancada tem a planta técnica de um projeto: problema, solução, detalhes e ferramentas.",
+              open: "projetos",
+            },
+            prototipo: "Tem cara de fragmento. Tente PEGAR PROTOTIPO.",
+          },
+          npc: {},
+        },
+        arcade: {
+          nm: "Porão do fliperama",
+          d: "Luz de neon. Um PC queimado no canto, um FLIPERAMA piscando COMECE AQUI, uma MÁQUINA escrita SELECIONE A FASE e, colado no PC, um post-it escrito GIT.",
+          ex: { subir: "praca" },
+          it: {
+            git: "O hábito mais caro que você já aprendeu: versionar tudo desde o primeiro dia. Esse é o fragmento GIT.",
+          },
+          x: {
+            pc: "Ele queimou e levou a versão final do seu jogo em Unity. Sem backup, sem repositório. Sobrou o teste de fase no itch.io: crifalcon.itch.io/zombie-apocalypse-stage-test",
+            fliperama: {
+              t: "Um jogo de plataforma com as 15 fases da vida do Cristiano. Tem bug pra pisar e bloco pra bater.",
+              open: "jogo",
+            },
+            maquina:
+              "Uma máquina de seleção de fases. Todas as fases levam pro mesmo jogo, no FLIPERAMA do lado.",
+            git: "Um post-it. Tente PEGAR GIT.",
+          },
+          npc: {},
+        },
+        observatorio: {
+          nm: "Observatório",
+          d: "Uma cúpula aberta pro céu. Tem um TELESCÓPIO apontado pra umas constelações e um CADERNO de notas do observador. Nos dias difíceis, é aqui que o Cristiano vem.",
+          ex: { descer: "praca" },
+          x: {
+            telescopio: {
+              t: "O telescópio não aponta pro passado. Aponta pra onde o Cristiano está indo: IA em produção e voltar a liderar, com times cada vez maiores.",
+              open: "futuro",
+            },
+            caderno:
+              "Notas do observador. O que me move: ficar entre o time e o cliente. O que quero melhorar: enxergar a arquitetura antes de começar, liderar sem microgerenciar, desenhar melhor e tocar um instrumento. No medidor de personalidade, a agulha está bem pro lado do extrovertido.",
+            ceu: "Você olha pro céu. A cabeça volta pro lugar.",
+          },
+          npc: {},
+        },
+      };
+      const ALIAS = {
+        praca: ["praca", "centro", "inicio"],
+        itaborai: ["itaborai", "casa", "rio"],
+        canada: ["canada", "bridgewater", "escola"],
+        faculdade: ["faculdade", "ifsc", "canoinhas", "campus"],
+        adosarec: ["adosarec", "associacao", "doadores"],
+        atelie: ["atelie", "desenho", "arte"],
+        corredor: ["corredor", "empresas"],
+        cit: ["cit", "ci&t", "ci t", "bees"],
+        esx: ["esx"],
+        corredor2: ["fim do corredor", "fim"],
+        automais: ["automais"],
+        sigaway: ["sigaway"],
+        portao: ["porta", "portao", "proximo nivel"],
+        oficina: ["oficina", "projetos"],
+        arcade: ["porao", "arcade", "fliperama"],
+        observatorio: ["observatorio", "ceu", "telescopio"],
+      };
+      const DIRS = {
+        norte: "norte",
+        n: "norte",
+        sul: "sul",
+        s: "sul",
+        leste: "leste",
+        l: "leste",
+        e: "leste",
+        oeste: "oeste",
+        o: "oeste",
+        w: "oeste",
+        subir: "subir",
+        sobe: "subir",
+        cima: "subir",
+        descer: "descer",
+        desce: "descer",
+        baixo: "descer",
+      };
+      let ST = {
+        here: "praca",
+        inv: [],
+        pts: 0,
+        seen: {},
+        talk: {},
+        got: {},
+        ach: {},
+        open: false,
+      };
+      try {
+        const sv = JSON.parse(localStorage.getItem("cm-aventura") || "null");
+        if (sv && R[sv.here]) ST = sv;
+      } catch (e) {}
+      function save() {
+        try {
+          localStorage.setItem("cm-aventura", JSON.stringify(ST));
+        } catch (e) {}
+      }
+
+      const out = document.getElementById("out");
+      const inp = document.getElementById("cmd");
+      const chips = document.getElementById("chips");
+      const queue = [];
+      let busy = false;
+      function norm(s) {
+        return s
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .replace(/[^\w\s&]/g, " ")
+          .replace(/\s+/g, " ")
+          .trim();
+      }
+      function say(t, cls, html) {
+        queue.push([t, cls || "", html]);
+        if (!busy) flush();
+      }
+      function flush() {
+        if (!queue.length) {
+          busy = false;
+          return;
+        }
+        busy = true;
+        const q = queue.shift();
+        const p = document.createElement("p");
+        if (q[1]) p.className = q[1];
+        out.appendChild(p);
+        if (q[2] || reduce || q[1] === "cmd" || q[0].length > 420) {
+          if (q[2]) p.innerHTML = q[0];
+          else p.textContent = q[0];
+          out.scrollTop = out.scrollHeight;
+          flush();
+          return;
+        }
+        let i = 0;
+        const t = q[0];
+        (function step() {
+          i += 4;
+          p.textContent = t.slice(0, i);
+          out.scrollTop = out.scrollHeight;
+          if (i < t.length) setTimeout(step, 10);
+          else flush();
+        })();
+      }
+      function esc(s) {
+        return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
+      }
+      function nfr() {
+        return Object.keys(FR).filter((k) => ST.inv.includes(k)).length;
+      }
+      function status() {
+        document.getElementById("where").textContent = R[ST.here].nm;
+        document.getElementById("frags").textContent = `${nfr()} de 4`;
+        document.getElementById("pts").textContent = ST.pts;
+        document.getElementById("mission").innerHTML = `${Object.keys(FR)
+          .map((k) => {
+            const ok = ST.inv.includes(k);
+            return `<li class="${ok ? "ok" : ""}">${FR[k]}${ok ? "" : `, ${FRHINT[k]}`}</li>`;
+          })
+          .join(
+            "",
+          )}<li class="${ST.open ? "ok" : ""}">Abrir a porta, no fim do corredor</li>`;
+        drawMap();
+        save();
+      }
+      const MAPROWS = [
+        [[18, "ADOSAREC", "adosarec"]],
+        [[22, "│"]],
+        [
+          [11, "Ateliê", "atelie"],
+          [17, " ─ "],
+          [20, "IFSC", "faculdade"],
+          [30, "CI&T", "cit"],
+          [36, "Automais", "automais"],
+        ],
+        [
+          [22, "│"],
+          [31, "│"],
+          [40, "│"],
+        ],
+        [
+          [0, "Canadá", "canada"],
+          [6, " ─ "],
+          [9, "Itaboraí", "itaborai"],
+          [17, " ─ "],
+          [20, "Praça", "praca"],
+          [25, " ─ "],
+          [28, "Corredor", "corredor"],
+          [36, " ─ "],
+          [39, "Fim", "corredor2"],
+          [42, " ─ "],
+          [45, "Porta", "portao"],
+        ],
+        [
+          [22, "│"],
+          [31, "│"],
+          [40, "│"],
+        ],
+        [
+          [19, "Oficina", "oficina"],
+          [30, "ESX", "esx"],
+          [37, "Sigaway", "sigaway"],
+        ],
+        [],
+        [
+          [0, "Da Praça: subir "],
+          [16, "Observatório", "observatorio"],
+        ],
+        [
+          [0, "          descer "],
+          [17, "Porão", "arcade"],
+        ],
+      ];
+      function mapHTML(buttons) {
+        return MAPROWS.map((row) => {
+          let s = "";
+          let col = 0;
+          row.forEach((g) => {
+            while (col < g[0]) {
+              s += " ";
+              col++;
+            }
+            if (g[2]) {
+              const cls = `rm${ST.seen[g[2]] ? " seen" : ""}${ST.here === g[2] ? " here" : ""}`;
+              s += buttons
+                ? `<button class="${cls}" data-go="${g[2]}" title="Ir para ${esc(R[g[2]].nm)}">${esc(g[1])}</button>`
+                : `<span class="${cls}">${esc(g[1])}</span>`;
+            } else s += esc(g[1]);
+            col += g[1].length;
+          });
+          return s;
+        }).join("\n");
+      }
+      function drawMap() {
+        const m = document.getElementById("map");
+        m.innerHTML = mapHTML(true);
+        [].forEach.call(m.querySelectorAll("button"), (b) => {
+          b.onclick = () => {
+            if (b.dataset.go !== ST.here)
+              run(`ir para ${ALIAS[b.dataset.go][0]}`);
+          };
+        });
+      }
+      function items(r) {
+        return Object.keys(r.it || {}).filter((k) => !ST.got[k]);
+      }
+      function look() {
+        const r = R[ST.here];
+        say(r.nm, "room");
+        say(r.d);
+        const its = items(r);
+        if (its.length)
+          say(
+            `Dá pra pegar: ${its.map((k) => dn(k).toUpperCase()).join(", ")}.`,
+            "sys",
+          );
+        const np = Object.keys(r.npc || {});
+        if (np.length)
+          say(
+            `Pra conversar: ${np
+              .map((k) => `FALAR COM ${dn(k).toUpperCase()}`)
+              .join(", ")}.`,
+            "sys",
+          );
+        exitsLine();
+        sugg();
+      }
+      function exitsLine() {
+        const r = R[ST.here];
+        say(
+          `Saídas: ${Object.keys(r.ex)
+            .map((d) => `${d.toUpperCase()} (${R[r.ex[d]].nm.split(",")[0]})`)
+            .join(", ")}.`,
+          "sys",
+        );
+      }
+      function move(to, how) {
+        if (!R[to]) return;
+        ST.here = to;
+        const first = !ST.seen[to];
+        if (first) {
+          ST.seen[to] = 1;
+          ST.pts += 5;
+        }
+        if (how) say(how, "sys");
+        look();
+        if (Object.keys(R).every((k) => ST.seen[k]))
+          ach("turista", "Turista: visitou todos os lugares");
+        status();
+      }
+      function ach(k, t) {
+        if (ST.ach[k]) return;
+        ST.ach[k] = 1;
+        ST.pts += 15;
+        say(`Conquista desbloqueada: ${t}. Mais 15 pontos.`, "hl");
+        status();
+      }
+      function sugg() {
+        const r = R[ST.here];
+        const g = [];
+        function add(lbl, cmd, cls) {
+          g.push(
+            `<button type="button" class="${cls || ""}" data-c="${esc(cmd)}">${esc(lbl)}</button>`,
+          );
+        }
+        g.push("<span>Ir:</span>");
+        Object.keys(r.ex).forEach((d) => {
+          add(`${d} → ${R[r.ex[d]].nm.split(",")[0]}`, d, "go");
+        });
+        const np = Object.keys(r.npc || {});
+        if (np.length) {
+          g.push("<span>Falar:</span>");
+          np.forEach((n) => {
+            add(dn(n), `falar com ${n}`);
+          });
+        }
+        const xs = Object.keys(r.x || {});
+        if (xs.length) {
+          g.push("<span>Examinar:</span>");
+          xs.forEach((k) => {
+            add(dn(k), `examinar ${k}`);
+          });
+        }
+        const its = items(r);
+        if (its.length) {
+          g.push("<span>Pegar:</span>");
+          its.forEach((k) => {
+            add(dn(k), `pegar ${k}`);
+          });
+        }
+        if (ST.here === "portao") add("abrir porta", "abrir porta");
+        g.push("<span>Sempre:</span>");
+        ["missão", "dica", "mapa", "inventário", "ajuda"].forEach((c) => {
+          add(c, c);
+        });
+        chips.innerHTML = g.join("");
+        [].forEach.call(chips.querySelectorAll("button"), (b) => {
+          b.onclick = () => {
+            run(b.dataset.c);
+            if (matchMedia("(pointer:fine)").matches)
+              inp.focus({ preventScroll: true });
+          };
+        });
+      }
+      function openSite(k) {
+        const s = SITES[k];
+        if (inHub) {
+          say(`Abrindo ${s}...`, "hl");
+          try {
+            parent.postMessage({ cm: "open", place: k }, "*");
+          } catch (e) {}
+        } else
+          say(
+            `Isso fica em ${esc(s)}, na Cidade do Cristiano: <a href="${CITY}" target="_blank" rel="noopener">abrir a cidade</a>.`,
+            "hl",
+            true,
+          );
+      }
+      function findIn(obj, w) {
+        if (!obj) return null;
+        const ks = Object.keys(obj);
+        for (let i = 0; i < ks.length; i++) if (norm(ks[i]) === w) return ks[i];
+        for (let i = 0; i < ks.length; i++) {
+          const n = norm(ks[i]);
+          if (w && (n.indexOf(w) === 0 || w.indexOf(n) === 0)) return ks[i];
+        }
+        return null;
+      }
+      function findRoom(w) {
+        if (!w) return null;
+        let k;
+        for (k in ALIAS) if (ALIAS[k].includes(w)) return k;
+        for (k in R) if (norm(R[k].nm) === w) return k;
+        for (k in ALIAS)
+          if (ALIAS[k].some((a) => w.indexOf(a) === 0 || a.indexOf(w) === 0))
+            return k;
+        for (k in R) if (norm(R[k].nm).includes(w)) return k;
+        for (k in ALIAS) if (ALIAS[k].some((a) => w.includes(a))) return k;
+        return null;
+      }
+      function hint() {
+        if (!ST.talk.praca_guia && ST.here === "praca")
+          return "Comece falando com o guia: FALAR COM GUIA.";
+        const miss = Object.keys(FR).filter((k) => !ST.inv.includes(k));
+        if (!miss.length)
+          return ST.open
+            ? "Você já zerou! Digite CONTATO pra falar com o Cristiano de verdade."
+            : "Você tem os 4 fragmentos. Vá até a Porta, a leste no fim do corredor, e digite ABRIR PORTA. Ou IR PARA PORTA.";
+        const k = miss[0];
+        return `Falta o fragmento ${FR[k].toUpperCase()}. Ele está ${FRHINT[k]}. Dá pra ir direto com IR PARA ${
+          {
+            passaporte: "CANADA",
+            git: "PORAO",
+            cracha: "AUTOMAIS",
+            prototipo: "OFICINA",
+          }[k]
+        }.`;
+      }
+      function run(raw) {
+        let c = norm(raw);
+        if (!c) return;
+        say(`> ${raw}`, "cmd");
+        c = c.replace(/^(eu quero|quero|vou|por favor) /, "");
+        const w = c.split(" ");
+        const v = w[0];
+
+        const rest = w
+          .slice(1)
+          .join(" ")
+          .replace(/^(o|a|os|as|no|na|pro|pra|para|com|em|ao) /, "")
+          .replace(/^(o|a) /, "");
+
+        const r = R[ST.here];
+        if (
+          ["oi", "ola", "eai", "opa", "hello", "hi", "bom", "boa"].includes(v)
+        ) {
+          say(
+            "Oi! Que bom que você veio. Aqui você explora a história do Cristiano. Pra começar, digite TUTORIAL, ou fale com o guia na Praça.",
+          );
+          return;
+        }
+        if (["ajuda", "help", "comandos", "h", "?"].includes(v)) {
+          say(
+            "ANDAR: NORTE, SUL, LESTE, OESTE, SUBIR, DESCER (ou só N, S, L, O). IR PARA lugar leva direto, ex.: IR PARA OFICINA.\nOLHAR descreve onde você está. SAÍDAS mostra pra onde dá pra ir.\nEXAMINAR coisa, PEGAR coisa, FALAR COM pessoa, ABRIR coisa.\nINVENTÁRIO, MISSÃO, DICA, MAPA, PONTOS, CONQUISTAS.\nSOBRE, CONTATO, CURRÍCULO. REINICIAR começa do zero.\nE tente coisas da vida real. Às vezes funciona.",
+            "sys box",
+          );
+          return;
+        }
+        if (v === "tutorial" || c === "como jogar" || v === "comecar") {
+          say(
+            "COMO JOGAR\n1. Você está numa cidade feita da história do Cristiano. Cada lugar é um pedaço da vida dele.\n2. Leia a descrição. Palavras em MAIÚSCULAS são coisas que dá pra EXAMINAR ou PEGAR, e pessoas pra FALAR.\n3. Ande pelas saídas: NORTE, SUL, LESTE, OESTE, SUBIR e DESCER.\n4. Sua missão é juntar 4 fragmentos e abrir a Porta do Próximo Nível.\n5. Travou? DICA. Perdido? MAPA. Com pressa? IR PARA e o nome do lugar.\nExperimente agora: FALAR COM GUIA.",
+            "sys box",
+          );
+          return;
+        }
+        if (["olhar", "ver", "descrever"].includes(v) && !rest) {
+          look();
+          return;
+        }
+        if (["saidas", "saida", "sair"].includes(v) && !rest) {
+          exitsLine();
+          return;
+        }
+        const dir = DIRS[v] || (v === "ir" && DIRS[rest]);
+        if (dir && (!rest || DIRS[rest] || v !== "ir")) {
+          const to = r.ex[dir];
+          if (to) move(to);
+          else
+            say(
+              `Não tem saída pro ${dir.toUpperCase()} daqui. Digite SAÍDAS.`,
+              "sys",
+            );
+          return;
+        }
+        if (
+          v === "ir" ||
+          (v === "voltar" && rest) ||
+          v === "viajar" ||
+          v === "teleportar"
+        ) {
+          const k = findRoom(rest);
+          if (k) {
+            if (k === ST.here) {
+              say("Você já está aqui.", "sys");
+              return;
+            }
+            move(k, "Você atravessa a cidade...");
+          } else
+            say("Não conheço esse lugar. Digite MAPA pra ver os nomes.", "sys");
+          return;
+        }
+        if (v === "voltar") {
+          say(
+            "Não existe voltar no tempo aqui, mas dá pra andar. Digite SAÍDAS.",
+            "sys",
+          );
+          return;
+        }
+        if (["inventario", "i", "inv", "itens"].includes(v)) {
+          say(
+            ST.inv.length
+              ? `Você carrega: ${ST.inv
+                  .map((k) => dn(k) + (FR[k] ? ` (fragmento ${FR[k]})` : ""))
+                  .join(", ")}.`
+              : "Você não carrega nada ainda. Procure palavras em maiúsculas e use PEGAR.",
+            "sys",
+          );
+          return;
+        }
+        if (["missao", "objetivo", "quest", "missoes"].includes(v)) {
+          say(
+            `MISSÃO: abrir a Porta do Próximo Nível. Fragmentos: ${Object.keys(
+              FR,
+            )
+              .map(
+                (k) =>
+                  FR[k] +
+                  (ST.inv.includes(k) ? " [ok]" : ` [falta, ${FRHINT[k]}]`),
+              )
+              .join("; ")}.`,
+            "sys box",
+          );
+          return;
+        }
+        if (v === "dica") {
+          say(hint(), "hl");
+          return;
+        }
+        if (v === "mapa") {
+          say(mapHTML(false), "sys box", true);
+          say(
+            "O lugar destacado é onde você está. Os apagados você ainda não visitou.",
+            "sys",
+          );
+          return;
+        }
+        if (v === "onde") {
+          say(`Você está em: ${r.nm}.`, "sys");
+          exitsLine();
+          return;
+        }
+        if (["pontos", "placar", "score"].includes(v)) {
+          say(
+            `Pontos: ${ST.pts}. Ganha pontos visitando lugares, conversando, pegando coisas e abrindo a porta.`,
+            "sys",
+          );
+          return;
+        }
+        if (v === "conquistas") {
+          const a = Object.keys(ST.ach);
+          say(
+            a.length
+              ? `Conquistas: ${a.join(", ")}.`
+              : "Nenhuma conquista ainda. Tem umas escondidas.",
+            "sys",
+          );
+          return;
+        }
+        if (
+          [
+            "examinar",
+            "x",
+            "ler",
+            "ver",
+            "olhar",
+            "inspecionar",
+            "observar",
+            "checar",
+          ].includes(v)
+        ) {
+          if (/ceu|estrela/.test(rest)) {
+            say(
+              ST.here === "observatorio"
+                ? "Você olha pro céu pelo telescópio. Três constelações acendem."
+                : "Você olha pro céu. É o que o Cristiano faz nos dias difíceis. A cabeça volta pro lugar.",
+            );
+            if (ST.here === "observatorio") openSite("futuro");
+            return;
+          }
+          const key = findIn(r.x, rest) || findIn(r.it, rest);
+          if (!key) {
+            say(
+              `Você não vê ${rest || "isso"} por aqui. Coisas pra examinar: ${Object.keys(r.x).join(", ") || "nada de especial"}.`,
+              "sys",
+            );
+            return;
+          }
+          const val = r.x[key] || r.it[key];
+          if (typeof val === "object") {
+            say(val.t);
+            openSite(val.open);
+          } else say(val);
+          if (!ST.seen[`x_${ST.here}${key}`]) {
+            ST.seen[`x_${ST.here}${key}`] = 1;
+            ST.pts += 1;
+            status();
+          }
+          return;
+        }
+        if (
+          ["pegar", "pega", "levar", "guardar", "coletar", "apanhar"].includes(
+            v,
+          )
+        ) {
+          const its = items(r);
+          if (rest === "tudo") {
+            if (!its.length) {
+              say("Não tem nada pra pegar aqui.", "sys");
+              return;
+            }
+            its.forEach(take);
+            return;
+          }
+          const it = findIn(r.it, rest);
+          if (!it) {
+            say(
+              rest && findIn(r.x, rest)
+                ? "Isso não dá pra levar, mas dá pra EXAMINAR."
+                : `Não tem ${rest || "isso"} pra pegar aqui.`,
+              "sys",
+            );
+            return;
+          }
+          if (ST.got[it]) {
+            say("Você já pegou.", "sys");
+            return;
+          }
+          take(it);
+          return;
+        }
+        if (["falar", "conversar", "perguntar", "chamar"].includes(v)) {
+          const np = Object.keys(r.npc || {});
+          if (!np.length) {
+            say("Não tem ninguém pra conversar aqui.", "sys");
+            return;
+          }
+          const who = rest ? findIn(r.npc, rest) : np[0];
+          if (!who) {
+            say(
+              `Não tem ${rest} aqui. Dá pra falar com: ${np.join(", ")}.`,
+              "sys",
+            );
+            return;
+          }
+          const tk = `${ST.here}_${who}`;
+          const n = ST.talk[tk] || 0;
+          const lines = r.npc[who];
+          say(`${dn(who).toUpperCase()}: ${lines[n % lines.length]}`, "npc");
+          if (!ST.talk[tk]) ST.pts += 5;
+          ST.talk[tk] = n + 1;
+          if (n + 1 < lines.length)
+            say("(Fale de novo pra ouvir mais.)", "sys");
+          let all = 0;
+          let tot = 0;
+          for (const rr in R)
+            for (const nn in R[rr].npc) {
+              tot++;
+              if (ST.talk[`${rr}_${nn}`]) all++;
+            }
+          if (all === tot)
+            ach("conversador", "Conversador: falou com todo mundo");
+          status();
+          return;
+        }
+        if (
+          v === "abrir" ||
+          v === "destrancar" ||
+          (v === "usar" && /fragmento|chave/.test(rest))
+        ) {
+          if (/porta/.test(rest) || v !== "abrir") {
+            if (ST.here !== "portao") {
+              say(
+                "A porta que importa fica no fim do corredor, a leste. Digite IR PARA PORTA.",
+                "sys",
+              );
+              return;
+            }
+            const miss = Object.keys(FR).filter((k) => !ST.inv.includes(k));
+            if (miss.length) {
+              say(
+                `A fechadura rejeita. Faltam ${miss.length}: ${miss
+                  .map((k) => `${FR[k]} (${FRHINT[k]})`)
+                  .join(", ")}.`,
+                "sys",
+              );
+              return;
+            }
+            if (ST.open) {
+              say(
+                "Ela já está aberta. Do outro lado só falta uma pessoa: você.",
+                "sys",
+              );
+              return;
+            }
+            ST.open = true;
+            ST.pts += 30;
+            status();
+            say(
+              "Você encaixa os quatro fragmentos. Inglês, Git, Liderança, Produto. A porta range e abre.",
+            );
+            say(
+              "Do outro lado não tem sala. Tem um time e um problema que ainda não foi resolvido. O próximo nível do Cristiano não é um lugar, é uma equipe.",
+            );
+            say(
+              'Se você é essa equipe: <a href="mailto:cristianocmeirelles@gmail.com">cristianocmeirelles@gmail.com</a>, <a href="https://www.linkedin.com/in/cristiano-c-meirelles/" target="_blank" rel="noopener">LinkedIn</a> e <a href="https://github.com/Cristian0Meirelles" target="_blank" rel="noopener">GitHub</a>.',
+              "hl",
+              true,
+            );
+            ach("zerou", "Próximo nível: abriu a porta");
+            say(
+              `Pontuação: ${ST.pts}. Ainda dá pra explorar o resto da cidade. Tem conquista escondida.`,
+              "sys",
+            );
+            return;
+          }
+          const o = findIn(r.x, rest);
+          if (o && typeof r.x[o] === "object") {
+            say(r.x[o].t);
+            openSite(r.x[o].open);
+            return;
+          }
+          say("Não dá pra abrir isso.", "sys");
+          return;
+        }
+        if (v === "jogar") {
+          if (ST.here === "arcade") {
+            say("Você coloca uma ficha no fliperama.");
+            openSite("jogo");
+          } else
+            say(
+              "Tem um fliperama no Porão, descendo da Praça. IR PARA PORAO.",
+              "sys",
+            );
+          return;
+        }
+        if (v === "usar") {
+          const u = findIn(
+            Object.fromEntries
+              ? Object.fromEntries(ST.inv.map((k) => [k, 1]))
+              : {},
+            rest,
+          );
+          if (!u) {
+            say("Você não tem isso. Veja o INVENTÁRIO.", "sys");
+            return;
+          }
+          say(
+            FR[u]
+              ? `O fragmento ${FR[u]} serve na Porta do Próximo Nível.`
+              : `Você segura ${u} por um tempo. Traz lembrança boa.`,
+          );
+          return;
+        }
+        if (
+          ["contato", "email", "contratar", "linkedin", "github"].includes(v)
+        ) {
+          say(
+            'Cristiano Meirelles: <a href="mailto:cristianocmeirelles@gmail.com">cristianocmeirelles@gmail.com</a>, <a href="https://www.linkedin.com/in/cristiano-c-meirelles/" target="_blank" rel="noopener">linkedin.com/in/cristiano-c-meirelles</a>, <a href="https://github.com/Cristian0Meirelles" target="_blank" rel="noopener">github.com/Cristian0Meirelles</a>.',
+            "hl",
+            true,
+          );
+          return;
+        }
+        if (["sobre", "quem", "curriculo", "cv", "resumo"].includes(v)) {
+          say(
+            "Cristiano Meirelles, engenheiro de software full stack, tech lead e product owner. Passou por CI&T, ESX, Automais e Sigaway. Java, Python, TypeScript, React e AWS. Pós em IA na FIAP. Português e inglês. O Zevi, painel de anúncios com IA, já funciona e está quase pronto pra lançar. Pra ver tudo junto, examine a FICHA na estátua da Praça.",
+            "sys box",
+          );
+          return;
+        }
+        if (v === "cantar") {
+          say(
+            "Você canta mal e sem nenhuma vergonha. Todo mundo em volta finge que não ouviu.",
+          );
+          ach("cantor", "Cantor de chuveiro");
+          return;
+        }
+        if (v === "desenhar") {
+          say(
+            "Você rabisca na margem. Espaço, proporção, o que dá pra tirar. Ficou bom.",
+          );
+          ach("artista", "Artista");
+          return;
+        }
+        if (v === "dancar") {
+          say("Ninguém está olhando. Ou está. Tanto faz.");
+          return;
+        }
+        if (v === "pular") {
+          say(
+            "Você pula. Se quiser pular de verdade, o fliperama do Porão tem um jogo de plataforma.",
+          );
+          return;
+        }
+        if (v === "dormir") {
+          say("Não dá. Ainda tem fragmento pra achar.");
+          return;
+        }
+        if (v === "skate" || (v === "andar" && /skate/.test(rest))) {
+          say("Você cai na primeira manobra. E levanta. Faz parte.");
+          return;
+        }
+        if (v === "git") {
+          say(
+            /push/.test(rest)
+              ? "Tudo salvo no remoto. O Cristiano de 2021 aprovaria."
+              : "git status: working tree clean. Que alívio.",
+          );
+          ach("versionado", "Versionado");
+          return;
+        }
+        if (v === "sudo") {
+          say("Boa tentativa. Aqui ninguém é root, nem o Cristiano.");
+          return;
+        }
+        if (v === "xyzzy") {
+          say("Nada acontece. Mas é bom saber que você é das antigas.", "sys");
+          ach("antigas", "Das antigas");
+          return;
+        }
+        if (v === "obrigado" || v === "valeu") {
+          say("Eu que agradeço por jogar.");
+          return;
+        }
+        if (v === "limpar" || v === "cls" || v === "clear") {
+          out.innerHTML = "";
+          return;
+        }
+        if (v === "reiniciar") {
+          if (rest !== "sim") {
+            say(
+              "Tem certeza? Digite REINICIAR SIM pra apagar o progresso.",
+              "sys",
+            );
+            return;
+          }
+          ST = {
+            here: "praca",
+            inv: [],
+            pts: 0,
+            seen: { praca: 1 },
+            talk: {},
+            got: {},
+            ach: {},
+            open: false,
+          };
+          out.innerHTML = "";
+          intro();
+          return;
+        }
+        say(
+          `Não entendi "${raw}". Aqui você pode: ${Object.keys(r.ex)
+            .map((d) => d.toUpperCase())
+            .join(", ")}${
+            Object.keys(r.npc || {}).length
+              ? `, FALAR COM ${Object.keys(r.npc)[0].toUpperCase()}`
+              : ""
+          }, EXAMINAR algo ou pedir DICA. AJUDA mostra todos os comandos.`,
+          "sys",
+        );
+      }
+      function take(it) {
+        const r = R[ST.here];
+        ST.got[it] = 1;
+        ST.inv.push(it);
+        ST.pts += FR[it] ? 20 : 10;
+        say(`Pegou: ${dn(it)}. ${r.it[it]}`, "hl");
+        if (FR[it])
+          say(
+            `Fragmentos: ${nfr()} de 4.${
+              nfr() === 4
+                ? " Todos! Agora é só ir até a Porta e ABRIR PORTA."
+                : " DICA mostra onde está o próximo."
+            }`,
+            "sys",
+          );
+        if (nfr() === 4) ach("colecionador", "Colecionador: 4 fragmentos");
+        status();
+        sugg();
+      }
+      document.getElementById("form").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const v = inp.value;
+        inp.value = "";
+        run(v);
+      });
+      function intro() {
+        say("A AVENTURA DO CRISTIANO", "room");
+        say(
+          "Uma cidade inteira feita da história do Cristiano Meirelles, engenheiro de software full stack, tech lead e product owner. Cada lugar é um pedaço da vida dele.",
+        );
+        say(
+          "COMO COMEÇAR\n• Toque nas sugestões aqui embaixo, ou digite comandos.\n• Palavras em MAIÚSCULAS dá pra EXAMINAR, PEGAR ou FALAR COM.\n• Ande com NORTE, SUL, LESTE, OESTE, SUBIR e DESCER.\n• Sua missão: juntar 4 fragmentos e abrir a Porta do Próximo Nível.\n• Primeiro passo: FALAR COM GUIA. Travou? DICA.",
+          "sys box",
+        );
+        ST.seen.praca = 1;
+        look();
+        status();
+      }
+      if (ST.pts > 0) {
+        say(
+          "Continuando de onde você parou. Digite REINICIAR pra começar do zero, ou AJUDA pra ver os comandos.",
+          "sys",
+        );
+        look();
+        status();
+      } else intro();
+      if (matchMedia("(pointer:fine)").matches)
+        inp.focus({ preventScroll: true });
+
+      const root = document.documentElement;
+      const th = document.getElementById("theme");
+      function dark() {
+        const t = root.getAttribute("data-theme");
+        return t
+          ? t === "dark"
+          : matchMedia("(prefers-color-scheme: dark)").matches;
+      }
+      function lbl() {
+        th.textContent = dark() ? "Impressora" : "Monitor";
+      }
+      try {
+        const s = localStorage.getItem("cm-txt-theme");
+        if (s) root.setAttribute("data-theme", s);
+      } catch (e) {}
+      lbl();
+      th.onclick = () => {
+        const n = dark() ? "light" : "dark";
+        root.setAttribute("data-theme", n);
+        try {
+          localStorage.setItem("cm-txt-theme", n);
+        } catch (e) {}
+        lbl();
+      };
+    </script>
+    <script type="module" src="/shared/bridge.js"></script>
+  </body>
+</html>

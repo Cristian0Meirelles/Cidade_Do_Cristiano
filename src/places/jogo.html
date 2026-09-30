@@ -1,0 +1,1430 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Cristiano Meirelles, o jogo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Rubik:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #f1f4fb;
+        --card: #ffffff;
+        --text: #1b1d33;
+        --muted: #575b7a;
+        --line: #1b1d33;
+        --accent: #e2476b;
+        --gold: #f5b921;
+        --soft: #e2e6f3;
+        --px: "Silkscreen", "Courier New", monospace;
+        --body: "Rubik", system-ui, sans-serif;
+        color-scheme: light;
+        box-sizing: border-box;
+        padding-top: env(safe-area-inset-top, 0px);
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --bg: #15162a;
+          --card: #1f2140;
+          --text: #eef0ff;
+          --muted: #a7abd0;
+          --line: #0a0b18;
+          --accent: #ff7393;
+          --gold: #ffc93c;
+          --soft: #2a2d52;
+          color-scheme: dark;
+        }
+      }
+      :root[data-theme="dark"] {
+        --bg: #15162a;
+        --card: #1f2140;
+        --text: #eef0ff;
+        --muted: #a7abd0;
+        --line: #0a0b18;
+        --accent: #ff7393;
+        --gold: #ffc93c;
+        --soft: #2a2d52;
+        color-scheme: dark;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: var(--body);
+        font-size: 1.03rem;
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+      a {
+        color: inherit;
+      }
+      button {
+        font: inherit;
+        color: inherit;
+      }
+      .wrap {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: 20px;
+        padding: 30px 0 16px;
+        flex-wrap: wrap;
+      }
+      h1 {
+        font-family: var(--px);
+        font-weight: 700;
+        font-size: clamp(1.7rem, 4.5vw, 2.8rem);
+        line-height: 1.05;
+        margin: 0;
+      }
+      header p {
+        margin: 6px 0 0;
+        color: var(--muted);
+        max-width: 56ch;
+      }
+      .btn {
+        font-family: var(--px);
+        font-size: 0.85rem;
+        background: var(--card);
+        border: 3px solid var(--line);
+        padding: 6px 12px;
+        cursor: pointer;
+        box-shadow: 0 4px 0 var(--line);
+        text-decoration: none;
+        display: inline-block;
+        white-space: nowrap;
+      }
+      .btn:active {
+        transform: translateY(3px);
+        box-shadow: 0 1px 0 var(--line);
+      }
+      .btn.on {
+        background: var(--gold);
+        color: #1b1d33;
+      }
+      .btns {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      .stage {
+        position: relative;
+        border: 4px solid var(--line);
+        box-shadow: 0 8px 0 var(--line);
+        background: #8fd3f4;
+        overflow: hidden;
+        touch-action: none;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      .stage canvas {
+        display: block;
+        width: 100%;
+        height: clamp(250px, 52vw, 540px);
+        image-rendering: pixelated;
+      }
+      .hud {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 10px 12px;
+        font-family: var(--px);
+        font-size: clamp(0.7rem, 1.6vw, 0.95rem);
+        color: #fff;
+        text-shadow: 2px 2px 0 #1b1d33;
+        pointer-events: none;
+      }
+      .hud .r {
+        text-align: right;
+      }
+      .banner {
+        position: absolute;
+        left: 50%;
+        top: 38%;
+        transform: translate(-50%, -50%) scale(0.9);
+        font-family: var(--px);
+        font-weight: 700;
+        font-size: clamp(1rem, 3.4vw, 2rem);
+        color: #fff;
+        text-shadow: 3px 3px 0 #1b1d33;
+        opacity: 0;
+        transition:
+          opacity 0.25s,
+          transform 0.25s;
+        pointer-events: none;
+        text-align: center;
+        white-space: nowrap;
+      }
+      .banner.show {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+      }
+      .start {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        background: rgba(27, 29, 51, 0.45);
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+      .start[hidden] {
+        display: none;
+      }
+      .start b {
+        font-family: var(--px);
+        font-size: clamp(1.1rem, 3.4vw, 1.9rem);
+        display: block;
+        margin-bottom: 10px;
+        text-shadow: 3px 3px 0 #1b1d33;
+      }
+      .start p {
+        margin: 0 0 16px;
+        font-size: 0.98rem;
+      }
+      .start .btns {
+        justify-content: center;
+      }
+      .start .btn {
+        color: #1b1d33;
+        background: #fff;
+      }
+      .start .btn.gold {
+        background: var(--gold);
+      }
+      .pad {
+        display: none;
+        justify-content: space-between;
+        gap: 12px;
+        margin-top: 18px;
+      }
+      .pad div {
+        display: flex;
+        gap: 12px;
+      }
+      .pad button {
+        width: 74px;
+        height: 62px;
+        font-family: var(--px);
+        font-size: 1rem;
+        background: var(--card);
+        border: 3px solid var(--line);
+        box-shadow: 0 4px 0 var(--line);
+        touch-action: none;
+      }
+      .pad button.jump {
+        width: 110px;
+        background: var(--gold);
+        color: #1b1d33;
+      }
+      .pad button.held {
+        transform: translateY(3px);
+        box-shadow: 0 1px 0 var(--line);
+      }
+      @media (pointer: coarse) {
+        .pad {
+          display: flex;
+        }
+      }
+      .keys {
+        color: var(--muted);
+        font-size: 0.92rem;
+        margin: 14px 0 0;
+      }
+      .keys kbd {
+        font-family: var(--px);
+        font-size: 0.8rem;
+        border: 2px solid var(--muted);
+        padding: 0 5px;
+        border-radius: 3px;
+      }
+      @media (pointer: coarse) {
+        .keys {
+          display: none;
+        }
+      }
+
+      .info {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        gap: 30px;
+        margin: 34px 0 0;
+        align-items: start;
+      }
+      .card {
+        background: var(--card);
+        border: 3px solid var(--line);
+        box-shadow: 0 6px 0 var(--line);
+        padding: 20px 22px;
+      }
+      .card .lv {
+        font-family: var(--px);
+        color: var(--accent);
+        font-size: 0.9rem;
+        margin: 0;
+      }
+      .card h2 {
+        font-family: var(--px);
+        font-weight: 700;
+        font-size: 1.6rem;
+        margin: 2px 0 2px;
+        line-height: 1.1;
+      }
+      .card .meta {
+        color: var(--muted);
+        margin: 0 0 12px;
+      }
+      .card dl {
+        margin: 0;
+        display: grid;
+        gap: 10px;
+      }
+      .card dt {
+        font-family: var(--px);
+        font-size: 0.85rem;
+      }
+      .card dd {
+        margin: 0;
+      }
+      .card .secret {
+        border-top: 3px dashed var(--soft);
+        padding-top: 10px;
+      }
+      .card .secret.locked dd {
+        color: var(--muted);
+        font-style: italic;
+      }
+      .side h3 {
+        font-family: var(--px);
+        font-size: 1rem;
+        margin: 0 0 10px;
+      }
+      .jump-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .jump-list button {
+        font-family: var(--px);
+        font-size: 0.78rem;
+        background: var(--soft);
+        border: 0;
+        padding: 5px 8px;
+        cursor: pointer;
+      }
+      .jump-list button.done {
+        background: var(--gold);
+        color: #1b1d33;
+      }
+      .jump-list button[aria-current="true"] {
+        outline: 3px solid var(--accent);
+      }
+      @media (max-width: 860px) {
+        .info {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .textver {
+        margin: 60px 0 0;
+      }
+      .textver summary {
+        font-family: var(--px);
+        font-size: 1.05rem;
+        cursor: pointer;
+      }
+      .textver ol {
+        padding-left: 1.3em;
+        max-width: 760px;
+      }
+      .textver li {
+        margin-bottom: 12px;
+      }
+      .textver b {
+        font-family: var(--px);
+        font-weight: 400;
+      }
+      .contact {
+        margin: 50px 0 0;
+        padding: 26px 0 60px;
+        border-top: 3px solid var(--soft);
+      }
+      .contact h2 {
+        font-family: var(--px);
+        font-size: clamp(1.4rem, 3.6vw, 2rem);
+        margin: 0 0 8px;
+      }
+      .contact p {
+        max-width: 60ch;
+        color: var(--muted);
+        margin: 0 0 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div>
+          <h1>Cristiano: o jogo</h1>
+          <p>
+            Um jogo de plataforma de verdade. Corra pela minha carreira, bata
+            nos blocos com interrogação pra revelar o que eu conquistei em cada
+            lugar e pise nos bugs pelo caminho.
+          </p>
+        </div>
+        <div class="btns">
+          <button class="btn" id="auto" aria-pressed="false">
+            Assistir sozinho</button
+          ><button class="btn" id="theme">Noite</button>
+        </div>
+      </header>
+
+      <div class="stage" id="stage">
+        <canvas
+          id="game"
+          aria-label="Jogo de plataforma. A versão em texto de todas as fases está mais abaixo."
+        ></canvas>
+        <div class="hud" aria-hidden="true">
+          <div id="hudL">Fase 1-1<br />Itaboraí</div>
+          <div class="r" id="hudR">Moedas 0<br />Bugs corrigidos 0</div>
+        </div>
+        <div class="banner" id="banner" aria-live="polite"></div>
+        <div class="start" id="start">
+          <div>
+            <b>Aperte começar</b>
+            <p>
+              Setas ou A e D pra andar, espaço pra pular. No celular, use os
+              botões embaixo.
+            </p>
+            <div class="btns">
+              <button class="btn gold" id="play">Começar</button
+              ><button class="btn" id="watch">Só assistir</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pad" aria-hidden="true">
+        <div><button data-k="L">◀</button><button data-k="R">▶</button></div>
+        <button class="jump" data-k="J">Pular</button>
+      </div>
+      <p class="keys">
+        Controles: <kbd>←</kbd> <kbd>→</kbd> ou <kbd>A</kbd> <kbd>D</kbd> pra
+        andar, <kbd>espaço</kbd> ou <kbd>↑</kbd> pra pular.
+      </p>
+
+      <div class="info">
+        <article class="card" id="card" aria-live="polite"></article>
+        <aside class="side card">
+          <h3>Pular pra uma fase</h3>
+          <div class="jump-list" id="jumpList"></div>
+        </aside>
+      </div>
+
+      <details class="textver">
+        <summary>Ver todas as fases em texto</summary>
+        <ol id="textList"></ol>
+      </details>
+
+      <section class="contact">
+        <h2>A fase 4-5 abre com uma conversa</h2>
+        <p>
+          Se você tem um sistema pra construir, um legado pra modernizar, um
+          agente de IA pra colocar em produção ou um time pra eu ajudar a
+          liderar, me chama.
+        </p>
+        <div class="btns">
+          <a class="btn on" href="mailto:cristianocmeirelles@gmail.com"
+            >Mandar e-mail</a
+          ><a
+            class="btn"
+            href="https://www.linkedin.com/in/cristiano-c-meirelles/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          ><a
+            class="btn"
+            href="https://github.com/Cristian0Meirelles"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          ><a
+            class="btn"
+            href="https://crifalcon.itch.io/zombie-apocalypse-stage-test"
+            target="_blank"
+            rel="noopener"
+            >Meu jogo no itch.io</a
+          >
+        </div>
+      </section>
+    </div>
+
+    <script type="module">
+      const TX = {
+        level: "Fase {id}",
+        complete: "Fase {id} completa",
+        coins: "Moedas",
+        bugs: "Bugs corrigidos",
+        item: "Fase {id}, {nm}.",
+        bossLine: "Chefão: {boss}.",
+      };
+      function fill(t, o) {
+        return t.replace(/\{(\w+)\}/g, (m, k) => o[k]);
+      }
+
+      let pops = [];
+      const L = [
+        {
+          id: "1-1",
+          nm: "Itaboraí",
+          w: 0,
+          meta: "Rio de Janeiro, 2000",
+          boss: "Começar do zero",
+          how: "Nasci em Itaboraí e morei em outros estados antes de sair do país. Mudar de lugar virou costume cedo.",
+          rew: "Facilidade pra recomeçar em qualquer lugar.",
+        },
+        {
+          id: "1-2",
+          nm: "Canadá",
+          w: 0,
+          sp: "snow",
+          meta: "Bridgewater, Nova Scotia. 2018 a 2019",
+          boss: "Viver em inglês aos 17",
+          how: "Ensino médio no Canadá, com skate, trilha e neve. Participei de uma exposição de arte como artista e escrevi minhas primeiras linhas de código.",
+          rew: "Inglês do dia a dia e o olho de quem desenha, que depois virou olho pra interface.",
+        },
+        {
+          id: "2-1",
+          nm: "Walpax / Havas",
+          w: 1,
+          meta: "Aprendiz bilíngue. 2019 a 2020",
+          boss: "Cliente estrangeiro em pleno congresso",
+          how: "Atendi estrangeiros e fiz tradução no congresso IGCS 2019.",
+          rew: "Primeira escola de cliente: entender o que a pessoa quer vem antes de qualquer resposta.",
+        },
+        {
+          id: "2-2",
+          nm: "IFSC Canoinhas",
+          w: 1,
+          meta: "Análise e Desenvolvimento de Sistemas. 2020 a 2022",
+          boss: "Uma cidade nova que ninguém conhecia",
+          how: "Passei na faculdade e fui morar em Santa Catarina.",
+          rew: "A base técnica toda, e média 8,8 no fim.",
+        },
+        {
+          id: "2-3",
+          nm: "ADOSAREC",
+          w: 1,
+          meta: "Projeto financiado por edital. 2021",
+          boss: "Fichas de papel no meio da pandemia",
+          how: "Três meses de pesquisa, reunião e protótipo, validando cada etapa com a secretária da associação de doadores de sangue.",
+          rew: "Mais de 5.000 doadores no sistema, busca 65% mais rápida, e o projeto virou notícia.",
+        },
+        {
+          id: "2-B",
+          nm: "O jogo perdido",
+          w: 1,
+          sp: "lost",
+          meta: "Fase bônus. 2021",
+          boss: "PC queimado, sem backup",
+          how: "Eu estava terminando meu jogo em Unity quando o PC queimou e levou tudo. Sobrou só o teste de fase no itch.io.",
+          rew: "Perdi essa. Mas saí com o item mais importante do jogo inteiro: nunca mais começo nada sem Git.",
+        },
+        {
+          id: "3-1",
+          nm: "CI&T",
+          w: 2,
+          meta: "Desenvolvedor full stack. 2022",
+          boss: "Software em escala global",
+          how: "Time internacional da BEES, da AB InBev, com Java, Spring Boot e Kafka, na expansão pra novos países.",
+          rew: "Menos bugs em produção com testes automatizados e processamento 10% mais rápido.",
+        },
+        {
+          id: "3-2",
+          nm: "ESX",
+          w: 2,
+          meta: "Full stack, PO e Scrum Master. 2023 a 2024",
+          boss: "Legado que não pode parar",
+          how: "Testes estruturados num sistema em produção e um fluxo ágil de ponta a ponta como product owner.",
+          rew: "Estabilidade 20% maior e entregas 30% mais rápidas.",
+        },
+        {
+          id: "3-3",
+          nm: "Automais",
+          w: 2,
+          meta: "Tech lead e product owner. 2024 a 2025",
+          boss: "Time travado e cliente na linha de frente",
+          how: "Liderei o front-end, reorganizei a operação em Scrum e Jira e integrei o OCR do Google pra ler placas numa rede de postos.",
+          rew: "Tempo de resposta do time 66% menor, fluxo de placas 75% mais rápido e usabilidade 30% maior nos apps com biometria.",
+        },
+        {
+          id: "3-4",
+          nm: "Sigaway",
+          w: 2,
+          meta: "Desenvolvedor full stack. 2025 a 2026",
+          boss: "Volume massivo de telemetria de frota",
+          how: "Pipeline na AWS com Kinesis, Glue, Athena e S3, e migração de Java pra Python sem parar a operação.",
+          rew: "Dados chegando rápido e uma arquitetura serverless no lugar do legado.",
+        },
+        {
+          id: "4-1",
+          nm: "Pós em IA",
+          w: 3,
+          meta: "FIAP. 2026",
+          boss: "IA que funciona fora da demo",
+          how: "Estudando LLMs, RAG e agentes, e colocando isso em produto que alguém usa, onde aparecem custo, latência e erro do modelo.",
+          rew: "MCP servers, tool calling, Bedrock e streaming em tempo real no repertório.",
+        },
+        {
+          id: "4-2",
+          nm: "Zevi",
+          w: 3,
+          meta: "Projeto próprio, em desenvolvimento",
+          boss: "Gastar em anúncio sem saber se está lucrando",
+          how: "Um painel que lê as contas de Meta, TikTok, Google Ads e YouTube e cruza com as vendas reais. Fiz produto, arquitetura, design system e OAuth multi-cliente.",
+          rew: "Descobri que o Meta inflava as compras em 33%. A IA devolve diagnóstico e plano de 30 dias.",
+        },
+        {
+          id: "4-3",
+          nm: "515 e E-TCG",
+          w: 3,
+          meta: "Duas lojas",
+          boss: "Loja do zero, e carta avulsa sem ver a condição",
+          how: "A 515 Sanctuary Beauty, projeto de família, na Shopify. O E-TCG, loja de cartas Pokémon TCG com cartas em 3D, zoom de 8x e API em Spring Boot.",
+          rew: "Duas lojas no ar, e foi da 515 que nasceu o Zevi.",
+        },
+        {
+          id: "4-4",
+          nm: "App de treino",
+          w: 3,
+          meta: "React e IA",
+          boss: "Ficha de academia no papel",
+          how: "Lê a ficha por print e tem um chat com tool calling que troca exercício, registra série e ajusta o treino.",
+          rew: "Um app que eu mesmo uso todo dia.",
+        },
+        {
+          id: "4-5",
+          nm: "O próximo desafio",
+          w: 3,
+          sp: "door",
+          meta: "Próxima fase",
+          boss: "Um problema que ainda ninguém resolveu",
+          how: "Já liderei time e já fui product owner. A porta dessa fase precisa de alguém do outro lado: o próximo time.",
+          rew: "Mande um e-mail pra cristianocmeirelles@gmail.com e vamos abrir juntos.",
+        },
+      ];
+      const PAL = [
+        {
+          s1: "#8fd3f4",
+          s2: "#d8f1f7",
+          h1: "#9fd89a",
+          h2: "#6fbf66",
+          gt: "#5fbf4a",
+          gd: "#b0703d",
+          br: "#c8643b",
+        },
+        {
+          s1: "#ffc67a",
+          s2: "#fff0cf",
+          h1: "#f0c27a",
+          h2: "#d89a55",
+          gt: "#8bc34a",
+          gd: "#9a5f33",
+          br: "#c0582f",
+        },
+        {
+          s1: "#ff9fbc",
+          s2: "#ffe0d0",
+          h1: "#c97a98",
+          h2: "#9c5776",
+          gt: "#6fae5a",
+          gd: "#7d4a39",
+          br: "#a44b52",
+        },
+        {
+          s1: "#231f5c",
+          s2: "#5a449a",
+          h1: "#3b3380",
+          h2: "#2b2560",
+          gt: "#4f9a6d",
+          gd: "#4b3a6f",
+          br: "#6a4a9a",
+        },
+      ];
+      const SNOW = {
+        s1: "#bcd7ea",
+        s2: "#eef6fb",
+        h1: "#dbe8f2",
+        h2: "#b8cfe0",
+        gt: "#f7fbff",
+        gd: "#8a6a55",
+        br: "#8f7c9a",
+      };
+      const LOST = {
+        s1: "#2e2224",
+        s2: "#6d3a2a",
+        h1: "#4a3230",
+        h2: "#382624",
+        gt: "#5a5a5a",
+        gd: "#2f2b2b",
+        br: "#5a3a3a",
+      };
+      function pal(i) {
+        const l = L[i];
+        return l.sp === "snow" ? SNOW : l.sp === "lost" ? LOST : PAL[l.w];
+      }
+
+      const T = 16;
+      const ROWS = 14;
+      const SEG = 60;
+      const COLS = L.length * SEG;
+      const map = [];
+      for (let r = 0; r < ROWS; r++) {
+        map.push(new Uint8Array(COLS));
+      }
+      const coins = [];
+      const bugs = [];
+      const signs = [];
+      const flags = [];
+      const qb = {};
+      let door = null;
+      function set(c, r, v) {
+        if (c >= 0 && c < COLS && r >= 0 && r < ROWS) map[r][c] = v;
+      }
+      L.forEach((l, i) => {
+        const c0 = i * SEG;
+        for (let c = c0; c < c0 + SEG; c++) {
+          set(c, 12, 1);
+          set(c, 13, 1);
+        }
+        signs.push({ x: (c0 + 3) * T, i });
+        for (let c = c0 + 7; c <= c0 + 9; c++)
+          coins.push({ x: c * T + 5, y: 10 * T + 4 });
+        if (l.sp === "door") {
+          set(c0 + 14, 8, 3);
+          qb[`${c0 + 14},${8}`] = i;
+          door = { x: (c0 + 24) * T, y: 9 * T, i };
+          for (let r = 0; r < 12; r++) {
+            set(c0 + SEG - 1, r, 5);
+          }
+          return;
+        }
+        for (let c = c0 + 13; c <= c0 + 16; c++) {
+          set(c, 9, 2);
+          coins.push({ x: c * T + 5, y: 8 * T + 4 });
+        }
+        set(c0 + 24, 8, 3);
+        qb[`${c0 + 24},${8}`] = i;
+        for (let c = c0 + 32; c <= c0 + 35; c++) {
+          set(c, 9, 2);
+          coins.push({ x: c * T + 5, y: 8 * T + 4 });
+        }
+        bugs.push({
+          x: (c0 + 40) * T,
+          y: 12 * T - 8,
+          min: (c0 + 38) * T,
+          max: (c0 + 47) * T,
+          d: -1,
+          dead: 0,
+        });
+        if (i % 3 === 1)
+          bugs.push({
+            x: (c0 + 44) * T,
+            y: 12 * T - 8,
+            min: (c0 + 41) * T,
+            max: (c0 + 48) * T,
+            d: 1,
+            dead: 0,
+          });
+        for (let s = 0; s < 4; s++)
+          for (let h = 0; h <= s; h++) set(c0 + 50 + s, 11 - h, 5);
+        flags.push({ x: (c0 + 57) * T, i });
+      });
+      function solid(c, r) {
+        if (c < 0 || c >= COLS) return true;
+        if (r < 0) return false;
+        if (r >= ROWS) return true;
+        return map[r][c] > 0;
+      }
+
+      const SP = {
+        p1: [
+          "...tttttt...",
+          "..thhhhhht..",
+          ".thhhhhhhht.",
+          ".thhsssshht.",
+          "tthsksskshtt",
+          "tthsssssshtt",
+          "...ssrrss...",
+          "....ssss....",
+          "..bbbbbbbb..",
+          ".bbbbggbbbb.",
+          ".sbbbbbbbbs.",
+          "..bbbbbbbb..",
+          "..kkk..kkk..",
+          "..kkk..kkk..",
+        ],
+        p2: [
+          "...tttttt...",
+          "..thhhhhht..",
+          ".thhhhhhhht.",
+          ".thhsssshht.",
+          "tthsksskshtt",
+          "tthsssssshtt",
+          "...ssrrss...",
+          "....ssss....",
+          "..bbbbbbbb..",
+          ".bbbbggbbbb.",
+          ".sbbbbbbbbs.",
+          "..bbbbbbbb..",
+          "..kkkkkkk...",
+          ".kk.....kk..",
+        ],
+        bug: [
+          ".k......k.",
+          "..k....k..",
+          "..rrrrrr..",
+          ".rrwrrwrr.",
+          "rrrkrrkrrr",
+          "rrrrrrrrrr",
+          ".r.r..r.r.",
+        ],
+        flat: [
+          "..........",
+          "..........",
+          "..........",
+          "..........",
+          "..rrrrrr..",
+          "rrrrrrrrrr",
+          ".r.r..r.r.",
+        ],
+      };
+      const CP = {
+        k: "#1b1d33",
+        w: "#fffaf0",
+        s: "#f1b98b",
+        h: "#3b2418",
+        b: "#3d6fd1",
+        t: "#4fd1c1",
+        g: "#ffc94a",
+        r: "#e2476b",
+      };
+
+      const cv = document.getElementById("game");
+      const ctx = cv.getContext("2d");
+      let VW = 320;
+      const VH = ROWS * T;
+      function size() {
+        const r = cv.getBoundingClientRect();
+        VW = Math.max(200, Math.round((VH * r.width) / r.height));
+        cv.width = VW;
+        cv.height = VH;
+        ctx.imageSmoothingEnabled = false;
+      }
+      addEventListener("resize", size);
+      size();
+
+      let autoHold = 0;
+
+      const P = {
+        x: 2 * T,
+        y: 12 * T - 14,
+        w: 10,
+        h: 14,
+        vx: 0,
+        vy: 0,
+        on: false,
+        face: 1,
+        frame: 0,
+      };
+
+      let cam = 0;
+      const keys = { L: 0, R: 0, J: 0 };
+      let jumpLatch = false;
+      let auto = false;
+      let running = false;
+      const score = { coins: 0, bugs: 0 };
+      const done = {};
+      let curLevel = -1;
+      const revealed = {};
+      const stars = [];
+      for (let i = 0; i < 60; i++)
+        stars.push([Math.random() * 2000, Math.random() * 120, Math.random()]);
+
+      function spr(rows, x, y, flip, pal) {
+        for (let yy = 0; yy < rows.length; yy++) {
+          const row = rows[yy];
+          for (let xx = 0; xx < row.length; xx++) {
+            const c = row[flip ? row.length - 1 - xx : xx];
+            if (c !== ".") {
+              ctx.fillStyle = (pal && pal[c]) || CP[c];
+              ctx.fillRect(Math.round(x + xx), Math.round(y + yy), 1, 1);
+            }
+          }
+        }
+      }
+      function banner(t) {
+        const b = document.getElementById("banner");
+        b.textContent = t;
+        b.classList.add("show");
+        clearTimeout(banner.t);
+        banner.t = setTimeout(() => {
+          b.classList.remove("show");
+        }, 1800);
+      }
+
+      function hitBlock(c, r) {
+        const k = `${c},${r}`;
+        if (map[r][c] !== 3) return;
+        map[r][c] = 4;
+        const i = qb[k];
+        revealed[i] = 1;
+        score.coins += 5;
+        pops.push({ x: c * T + 4, y: r * T - 4, t: 0 });
+        if (L[i].sp === "door") banner("Chame o Cristiano");
+        else banner("Recompensa revelada");
+        showCard(i);
+        hud();
+        markList();
+      }
+      function step() {
+        const sp = auto ? 1.45 : 1.8;
+        let ax = (keys.R ? 1 : 0) - (keys.L ? 1 : 0);
+        if (auto) {
+          ax = 1;
+          const fc = Math.floor((P.x + P.w + 4) / T);
+          const fr = Math.floor((P.y + P.h - 1) / T);
+          let needJump = solid(fc, fr);
+          bugs.forEach((b) => {
+            if (!b.dead && b.x > P.x && b.x - P.x < 30) needJump = true;
+          });
+          const cc = Math.floor((P.x + P.w / 2) / T);
+          if (map[8][cc] === 3) needJump = true;
+          if (door && P.x > door.x - 40) {
+            ax = 0;
+          }
+          if (needJump && P.on) autoHold = 16;
+          keys.J = autoHold > 0 ? 1 : 0;
+          if (autoHold > 0) autoHold--;
+        }
+        if (ax) {
+          P.vx += ax * 0.28;
+          P.face = ax;
+        } else P.vx *= 0.78;
+        if (P.vx > sp) P.vx = sp;
+        if (P.vx < -sp) P.vx = -sp;
+        if (Math.abs(P.vx) < 0.05) P.vx = 0;
+        if (keys.J && P.on && !jumpLatch) {
+          P.vy = -5.2;
+          P.on = false;
+          jumpLatch = true;
+        }
+        if (!keys.J) {
+          jumpLatch = false;
+          if (P.vy < -2.4) P.vy = -2.4;
+        }
+        P.vy += 0.24;
+        if (P.vy > 5) P.vy = 5;
+        let c;
+        let r;
+        // eixo x
+        P.x += P.vx;
+        const top = Math.floor(P.y / T);
+        const bot = Math.floor((P.y + P.h - 1) / T);
+        if (P.vx > 0) {
+          c = Math.floor((P.x + P.w - 1) / T);
+          for (r = top; r <= bot; r++)
+            if (solid(c, r)) {
+              P.x = c * T - P.w;
+              P.vx = 0;
+              break;
+            }
+        } else if (P.vx < 0) {
+          c = Math.floor(P.x / T);
+          for (r = top; r <= bot; r++)
+            if (solid(c, r)) {
+              P.x = (c + 1) * T;
+              P.vx = 0;
+              break;
+            }
+        }
+        // eixo y
+        P.y += P.vy;
+        P.on = false;
+        const lc = Math.floor(P.x / T);
+        const rc = Math.floor((P.x + P.w - 1) / T);
+        if (P.vy > 0) {
+          r = Math.floor((P.y + P.h - 1) / T);
+          for (c = lc; c <= rc; c++)
+            if (solid(c, r)) {
+              P.y = r * T - P.h;
+              P.vy = 0;
+              P.on = true;
+              break;
+            }
+        } else if (P.vy < 0) {
+          r = Math.floor(P.y / T);
+          for (c = lc; c <= rc; c++)
+            if (solid(c, r)) {
+              P.y = (r + 1) * T;
+              P.vy = 0;
+              hitBlock(c, r);
+              break;
+            }
+        }
+        if (Math.abs(P.vx) > 0.2 && P.on) P.frame += 0.18;
+        // moedas
+        coins.forEach((k) => {
+          if (
+            !k.got &&
+            P.x < k.x + 6 &&
+            P.x + P.w > k.x &&
+            P.y < k.y + 6 &&
+            P.y + P.h > k.y
+          ) {
+            k.got = 1;
+            score.coins++;
+            hud();
+          }
+        });
+        // bugs
+        bugs.forEach((b) => {
+          if (b.dead) {
+            b.dead++;
+            return;
+          }
+          b.x += b.d * 0.45;
+          if (b.x < b.min || b.x > b.max) b.d *= -1;
+          if (
+            P.x < b.x + 10 &&
+            P.x + P.w > b.x &&
+            P.y < b.y + 7 &&
+            P.y + P.h > b.y + 1
+          ) {
+            if (P.vy > 0 && P.y + P.h - b.y < 8) {
+              b.dead = 1;
+              P.vy = -3.6;
+              score.bugs++;
+              hud();
+              banner("Bug corrigido");
+            } else {
+              P.vx = (P.x < b.x ? -1 : 1) * 2.6;
+              P.vy = -2.2;
+            }
+          }
+        });
+        // fase atual
+        const li = Math.max(
+          0,
+          Math.min(L.length - 1, Math.floor((P.x + P.w / 2) / (SEG * T))),
+        );
+        if (li !== curLevel) {
+          curLevel = li;
+          hud();
+          showCard(li);
+          markList();
+        }
+        flags.forEach((f) => {
+          if (!done[f.i] && P.x > f.x) {
+            done[f.i] = 1;
+            banner(fill(TX.complete, { id: L[f.i].id }));
+            markList();
+          }
+        });
+        if (door && P.x + P.w > door.x - 6 && !door.hit) {
+          door.hit = 1;
+          banner("A porta precisa de alguém do outro lado");
+          showCard(door.i);
+        }
+        cam = Math.max(0, Math.min(COLS * T - VW, P.x - VW * 0.4));
+      }
+      function hud() {
+        const l = L[curLevel < 0 ? 0 : curLevel];
+        document.getElementById("hudL").innerHTML =
+          `${fill(TX.level, { id: l.id })}<br>${l.nm.replace("&", "&amp;")}`;
+        document.getElementById("hudR").innerHTML =
+          `${TX.coins} ${score.coins}<br>${TX.bugs} ${score.bugs}`;
+      }
+
+      function draw() {
+        const li = curLevel < 0 ? 0 : curLevel;
+        const p = pal(li);
+        const g = ctx.createLinearGradient(0, 0, 0, VH);
+        g.addColorStop(0, p.s1);
+        g.addColorStop(1, p.s2);
+        ctx.fillStyle = g;
+        ctx.fillRect(0, 0, VW, VH);
+        if (L[li].w === 3 || L[li].sp === "lost") {
+          ctx.fillStyle = L[li].sp === "lost" ? "#ff9a5a" : "#fff4d6";
+          stars.forEach((s) => {
+            const x = (((s[0] - cam * 0.1) % VW) + VW) % VW;
+            if (Math.sin(Date.now() / 600 + s[2] * 9) > -0.3)
+              ctx.fillRect(Math.round(x), Math.round(s[1]), 1, 1);
+          });
+        }
+        // morros
+        ctx.fillStyle = p.h1;
+        for (let x = 0; x < VW; x++) {
+          const h = Math.round(
+            120 +
+              Math.sin((x + cam * 0.2) * 0.02) * 14 +
+              Math.sin((x + cam * 0.2) * 0.007) * 18,
+          );
+          ctx.fillRect(x, h, 1, VH - h);
+        }
+        if (L[li].w === 2) {
+          ctx.fillStyle = p.h2;
+          for (let b = 0; b < 40; b++) {
+            const bx =
+              Math.round(
+                (((b * 37 - cam * 0.35) % (VW + 60)) + VW + 60) % (VW + 60),
+              ) - 30;
+
+            const bh = 30 + ((b * 53) % 50);
+            ctx.fillRect(bx, VH - 40 - bh, 24, bh);
+          }
+        } else {
+          ctx.fillStyle = p.h2;
+          for (let x = 0; x < VW; x++) {
+            const h = Math.round(
+              150 + Math.sin((x + cam * 0.4) * 0.035 + 1) * 10,
+            );
+            ctx.fillRect(x, h, 1, VH - h);
+          }
+        }
+        if (L[li].sp === "snow") {
+          ctx.fillStyle = "#fff";
+          for (let s = 0; s < 50; s++) {
+            const fx = (s * 71 + Date.now() / 40) % VW;
+            const fy = (s * 37 + Date.now() / 25) % VH;
+            ctx.fillRect(Math.round(fx), Math.round(fy), 1, 1);
+          }
+        }
+
+        // tiles
+        const c0 = Math.floor(cam / T);
+
+        const c1 = c0 + Math.ceil(VW / T) + 1;
+        for (let r = 0; r < ROWS; r++)
+          for (let c = c0; c <= c1 && c < COLS; c++) {
+            const v = map[r][c];
+            if (!v) continue;
+            const tx = Math.round(c * T - cam);
+            const ty = r * T;
+            const tp = pal(Math.min(L.length - 1, Math.floor(c / SEG)));
+            if (v === 1) {
+              ctx.fillStyle = tp.gd;
+              ctx.fillRect(tx, ty, T, T);
+              if (r === 12) {
+                ctx.fillStyle = tp.gt;
+                ctx.fillRect(tx, ty, T, 4);
+                ctx.fillRect(tx + 3, ty + 4, 2, 2);
+                ctx.fillRect(tx + 11, ty + 4, 2, 1);
+              } else {
+                ctx.fillStyle = "rgba(0,0,0,.12)";
+                ctx.fillRect(tx + 4, ty + 5, 2, 2);
+                ctx.fillRect(tx + 11, ty + 10, 2, 2);
+              }
+            } else if (v === 2) {
+              ctx.fillStyle = tp.br;
+              ctx.fillRect(tx, ty, T, T);
+              ctx.fillStyle = "rgba(0,0,0,.25)";
+              ctx.fillRect(tx, ty + 7, T, 1);
+              ctx.fillRect(tx, ty + 15, T, 1);
+              ctx.fillRect(tx + 7, ty, 1, 7);
+              ctx.fillRect(tx + 3, ty + 8, 1, 7);
+              ctx.fillRect(tx + 12, ty + 8, 1, 7);
+            } else if (v === 3) {
+              ctx.fillStyle = "#1b1d33";
+              ctx.fillRect(tx, ty, T, T);
+              ctx.fillStyle = "#ffc94a";
+              ctx.fillRect(tx + 1, ty + 1, T - 2, T - 2);
+              ctx.fillStyle = "#b87a00";
+              const bob = Math.sin(Date.now() / 250) > 0 ? 0 : 1;
+              [
+                [6, 4],
+                [7, 3],
+                [8, 3],
+                [9, 4],
+                [9, 5],
+                [8, 6],
+                [7, 7],
+                [7, 8],
+                [7, 11],
+              ].forEach((q) => {
+                ctx.fillRect(tx + q[0], ty + q[1] + bob, 1, 1);
+              });
+            } else if (v === 4) {
+              ctx.fillStyle = "#1b1d33";
+              ctx.fillRect(tx, ty, T, T);
+              ctx.fillStyle = "#9a6a45";
+              ctx.fillRect(tx + 1, ty + 1, T - 2, T - 2);
+            } else if (v === 5) {
+              ctx.fillStyle = "#1b1d33";
+              ctx.fillRect(tx, ty, T, T);
+              ctx.fillStyle = "#9aa3b8";
+              ctx.fillRect(tx + 1, ty + 1, T - 2, T - 2);
+              ctx.fillStyle = "#c7cede";
+              ctx.fillRect(tx + 1, ty + 1, T - 2, 2);
+            }
+          }
+        // placas
+        signs.forEach((s) => {
+          const sx = Math.round(s.x - cam);
+          if (sx < -80 || sx > VW + 20) return;
+          ctx.fillStyle = "#6b4a2b";
+          ctx.fillRect(sx + 7, 12 * T - 20, 3, 20);
+          ctx.fillStyle = "#1b1d33";
+          ctx.fillRect(sx - 8, 12 * T - 40, 34, 20);
+          ctx.fillStyle = "#f3e2bf";
+          ctx.fillRect(sx - 7, 12 * T - 39, 32, 18);
+          ctx.fillStyle = "#1b1d33";
+          ctx.font = "8px monospace";
+          ctx.textBaseline = "top";
+          ctx.fillText(L[s.i].id, sx - 3, 12 * T - 36);
+        });
+        // bandeiras
+        flags.forEach((f) => {
+          const fx = Math.round(f.x - cam);
+          if (fx < -30 || fx > VW + 30) return;
+          ctx.fillStyle = "#1b1d33";
+          ctx.fillRect(fx, 12 * T - 64, 2, 64);
+          ctx.fillStyle = done[f.i] ? "#ffc94a" : "#e2476b";
+          ctx.fillRect(fx + 2, 12 * T - 62, 14, 10);
+          ctx.fillRect(fx + 2, 12 * T - 52, 8, 3);
+        });
+        // porta
+        if (door) {
+          const dx = Math.round(door.x - cam);
+          ctx.fillStyle = "#1b1d33";
+          ctx.fillRect(dx - 2, door.y - 2, 28, 50);
+          ctx.fillStyle = "#7a4a2a";
+          ctx.fillRect(dx, door.y, 24, 48);
+          ctx.fillStyle = "#ffc94a";
+          ctx.fillRect(dx + 17, door.y + 24, 3, 3);
+          ctx.fillStyle = "#f3e2bf";
+          ctx.fillRect(dx + 4, door.y + 6, 16, 8);
+        }
+        // moedas
+        const tw = Math.floor(Date.now() / 150) % 4;
+        coins.forEach((k) => {
+          if (k.got) return;
+          const kx = Math.round(k.x - cam);
+          if (kx < -8 || kx > VW) return;
+          const w = tw === 1 || tw === 3 ? 4 : tw === 2 ? 2 : 6;
+          ctx.fillStyle = "#1b1d33";
+          ctx.fillRect(kx + 3 - w / 2 - 1, k.y - 1, w + 2, 8);
+          ctx.fillStyle = "#ffc94a";
+          ctx.fillRect(kx + 3 - w / 2, k.y, w, 6);
+        });
+        pops = pops.filter((q) => {
+          q.t++;
+          const qx = Math.round(q.x - cam);
+          ctx.fillStyle = "#ffc94a";
+          ctx.fillRect(qx, q.y - q.t, 6, 6);
+          return q.t < 24;
+        });
+        // bugs
+        bugs.forEach((b) => {
+          if (b.dead > 40) return;
+          const bx = Math.round(b.x - cam);
+          if (bx < -12 || bx > VW + 12) return;
+          spr(b.dead ? SP.flat : SP.bug, bx, b.y, b.d > 0);
+        });
+        // jogador
+        const fr = !P.on || Math.floor(P.frame) % 2 ? SP.p2 : SP.p1;
+        spr(
+          P.on && Math.abs(P.vx) < 0.2 ? SP.p1 : fr,
+          P.x - 1 - cam,
+          P.y,
+          P.face < 0,
+        );
+      }
+      function loop() {
+        if (running) {
+          step();
+        }
+        draw();
+        requestAnimationFrame(loop);
+      }
+
+      /* cartão da fase */
+      function esc(s) {
+        return s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+      }
+      function showCard(i) {
+        const l = L[i];
+        document.getElementById("card").innerHTML =
+          `<p class="lv">${fill(TX.level, { id: l.id })}</p><h2>${esc(l.nm)}</h2><p class="meta">${esc(l.meta)}</p><dl><div><dt>Chefão</dt><dd>${esc(l.boss)}</dd></div><div><dt>${l.sp === "door" ? "Como entrar" : "Como eu passei"}</dt><dd>${esc(l.how)}</dd></div><div class="secret${revealed[i] ? "" : " locked"}"><dt>${l.sp === "lost" ? "O que eu levei mesmo assim" : "Recompensa"}</dt><dd>${
+            revealed[i]
+              ? esc(l.rew)
+              : "Bata no bloco com interrogação pra revelar."
+          }</dd></div></dl>${
+            l.sp === "lost"
+              ? '<p style="margin:14px 0 0"><a class="btn" href="https://crifalcon.itch.io/zombie-apocalypse-stage-test" target="_blank" rel="noopener">Jogar o que sobrou</a></p>'
+              : ""
+          }${
+            l.sp === "door"
+              ? '<p style="margin:14px 0 0"><a class="btn on" href="mailto:cristianocmeirelles@gmail.com">Abrir essa fase</a></p>'
+              : ""
+          }`;
+      }
+      const jl = document.getElementById("jumpList");
+      jl.innerHTML = L.map(
+        (l, i) => `<button data-i="${i}">${l.id}</button>`,
+      ).join("");
+      function markList() {
+        [].forEach.call(jl.children, (b, i) => {
+          b.classList.toggle("done", !!done[i]);
+          b.setAttribute("aria-current", i === curLevel);
+        });
+      }
+      [].forEach.call(jl.children, (b) => {
+        b.onclick = () => {
+          const i = +b.dataset.i;
+          P.x = (i * SEG + 1) * T;
+          P.y = 12 * T - P.h;
+          P.vx = P.vy = 0;
+          start(auto);
+          document
+            .getElementById("stage")
+            .scrollIntoView({ behavior: "smooth", block: "center" });
+        };
+      });
+      document.getElementById("textList").innerHTML = L.map(
+        (l) =>
+          `<li><b>${fill(TX.item, { id: l.id, nm: esc(l.nm) })}</b> ${esc(l.meta)}. ${fill(TX.bossLine, { boss: esc(l.boss) })} ${esc(l.how)} ${esc(l.rew)}</li>`,
+      ).join("");
+
+      /* controles */
+      function start(a) {
+        running = true;
+        setAuto(!!a);
+        document.getElementById("start").hidden = true;
+      }
+      function setAuto(a) {
+        auto = a;
+        const b = document.getElementById("auto");
+        b.setAttribute("aria-pressed", a);
+        b.classList.toggle("on", a);
+        b.textContent = a ? "Parar de assistir" : "Assistir sozinho";
+        if (!a) keys.J = 0;
+      }
+      document.getElementById("play").onclick = () => {
+        start(false);
+      };
+      document.getElementById("watch").onclick = () => {
+        start(true);
+      };
+      document.getElementById("auto").onclick = () => {
+        start(!auto);
+      };
+      let inView = true;
+      new IntersectionObserver((e) => {
+        inView = e[0].isIntersecting;
+      }).observe(document.getElementById("stage"));
+      const KM = {
+        ArrowLeft: "L",
+        a: "L",
+        A: "L",
+        ArrowRight: "R",
+        d: "D",
+        D: "R",
+        " ": "J",
+        ArrowUp: "J",
+        w: "J",
+        W: "J",
+      };
+      KM.d = "R";
+      addEventListener("keydown", (e) => {
+        const k = KM[e.key];
+        if (!k || !inView) return;
+        const t = e.target;
+        if (
+          t.tagName === "A" ||
+          (t.tagName === "BUTTON" && e.key === " ") ||
+          t.tagName === "SUMMARY"
+        )
+          return;
+        e.preventDefault();
+        if (!running) start(false);
+        if (auto) setAuto(false);
+        keys[k] = 1;
+      });
+      addEventListener("keyup", (e) => {
+        const k = KM[e.key];
+        if (k) keys[k] = 0;
+      });
+      [].forEach.call(document.querySelectorAll(".pad button"), (b) => {
+        const k = b.dataset.k;
+        b.addEventListener("pointerdown", (e) => {
+          e.preventDefault();
+          if (!running) start(false);
+          if (auto) setAuto(false);
+          keys[k] = 1;
+          b.classList.add("held");
+        });
+        ["pointerup", "pointerleave", "pointercancel"].forEach((t) => {
+          b.addEventListener(t, () => {
+            keys[k] = 0;
+            b.classList.remove("held");
+          });
+        });
+      });
+      curLevel = 0;
+      hud();
+      showCard(0);
+      markList();
+      loop();
+
+      const root = document.documentElement;
+      const th = document.getElementById("theme");
+      function dark() {
+        const t = root.getAttribute("data-theme");
+        return t
+          ? t === "dark"
+          : matchMedia("(prefers-color-scheme: dark)").matches;
+      }
+      function lbl() {
+        th.textContent = dark() ? "Dia" : "Noite";
+      }
+      try {
+        const sv = localStorage.getItem("cm-plat-theme");
+        if (sv) root.setAttribute("data-theme", sv);
+      } catch (e) {}
+      lbl();
+      th.onclick = () => {
+        const n = dark() ? "light" : "dark";
+        root.setAttribute("data-theme", n);
+        try {
+          localStorage.setItem("cm-plat-theme", n);
+        } catch (e) {}
+        lbl();
+      };
+    </script>
+    <script type="module" src="/shared/bridge.js"></script>
+  </body>
+</html>

@@ -1,0 +1,626 @@
+[
+  {
+    "pt": "Foto do Cristiano sorrindo, de óculos",
+    "en": "Photo of Cristiano smiling, wearing glasses",
+    "es": "Foto de Cristiano sonriendo, con gafas",
+    "fr": "Photo de Cristiano souriant, avec des lunettes",
+    "de": "Foto von Cristiano, lächelnd, mit Brille",
+    "ja": "眼鏡をかけて笑っているクリスティアーノの写真"
+  },
+  {
+    "pt": "Desenho a grafite de uma garrafa com rosca",
+    "en": "Graphite drawing of a bottle with a screw cap",
+    "es": "Dibujo a grafito de una botella con rosca",
+    "fr": "Dessin au graphite d’une bouteille à vis",
+    "de": "Graphitzeichnung einer Flasche mit Schraubverschluss",
+    "ja": "ねじ口のボトルの鉛筆画"
+  },
+  {
+    "pt": "Desenho a grafite com formas mecânicas",
+    "en": "Graphite drawing with mechanical shapes",
+    "es": "Dibujo a grafito con formas mecánicas",
+    "fr": "Dessin au graphite aux formes mécaniques",
+    "de": "Graphitzeichnung mit mechanischen Formen",
+    "ja": "機械的な形の鉛筆画"
+  },
+  {
+    "pt": "Relevo em folha de metal de uma catedral",
+    "en": "Relief on a metal sheet of a cathedral",
+    "es": "Relieve en lámina de metal de una catedral",
+    "fr": "Relief sur feuille de métal représentant une cathédrale",
+    "de": "Relief einer Kathedrale auf Metallfolie",
+    "ja": "金属板に打ち出した大聖堂のレリーフ"
+  },
+  {
+    "pt": "Pintura em aquarela e nanquim de uma catedral",
+    "en": "Watercolor and ink painting of a cathedral",
+    "es": "Pintura en acuarela y tinta de una catedral",
+    "fr": "Peinture à l’aquarelle et à l’encre d’une cathédrale",
+    "de": "Aquarell- und Tuschemalerei einer Kathedrale",
+    "ja": "水彩とインクで描いた大聖堂"
+  },
+  {
+    "pt": "Esboço à mão do painel do Zevi",
+    "en": "Hand sketch of the Zevi dashboard",
+    "es": "Boceto a mano del panel de Zevi",
+    "fr": "Croquis à la main du tableau de bord de Zevi",
+    "de": "Handskizze des Zevi-Dashboards",
+    "ja": "Zeviのダッシュボードの手描きスケッチ"
+  },
+  {
+    "pt": "Tela de gráficos do Zevi",
+    "en": "Zevi charts screen",
+    "es": "Pantalla de gráficos de Zevi",
+    "fr": "Écran des graphiques de Zevi",
+    "de": "Diagramm-Screen von Zevi",
+    "ja": "Zeviのグラフ画面"
+  },
+  {
+    "pt": "Cristiano entre árvores retorcidas na costa da Nova Scotia",
+    "en": "Cristiano among twisted trees on the coast of Nova Scotia",
+    "es": "Cristiano entre árboles retorcidos en la costa de Nueva Escocia",
+    "fr": "Cristiano parmi des arbres tordus sur la côte de la Nouvelle-Écosse",
+    "de": "Cristiano zwischen verdrehten Bäumen an der Küste von Nova Scotia",
+    "ja": "ノバスコシアの海岸、ねじれた木々のあいだに立つクリスティアーノ"
+  },
+  {
+    "pt": "Mar azul com uma faixa de terra ao fundo",
+    "en": "Blue sea with a strip of land in the background",
+    "es": "Mar azul con una franja de tierra al fondo",
+    "fr": "Mer bleue avec une bande de terre au loin",
+    "de": "Blaues Meer mit einem Landstreifen im Hintergrund",
+    "ja": "遠くに陸地の見える青い海"
+  },
+  {
+    "pt": "Pessoa de moletom vermelho numa trilha entre árvores",
+    "en": "Person in a red hoodie on a trail among trees",
+    "es": "Persona con buzo rojo en un sendero entre árboles",
+    "fr": "Personne en sweat rouge sur un sentier entre les arbres",
+    "de": "Person im roten Hoodie auf einem Waldweg",
+    "ja": "木々のあいだの小道を歩く赤いパーカーの人"
+  },
+  {
+    "pt": "Área de desenho livre",
+    "en": "Free drawing area",
+    "es": "Área de dibujo libre",
+    "fr": "Zone de dessin libre",
+    "de": "Freie Zeichenfläche",
+    "ja": "自由に描けるエリア"
+  },
+  {
+    "pt": "Ferramentas de desenho",
+    "en": "Drawing tools",
+    "es": "Herramientas de dibujo",
+    "fr": "Outils de dessin",
+    "de": "Zeichenwerkzeuge",
+    "ja": "描画ツール"
+  },
+  {
+    "pt": "luz",
+    "en": "light",
+    "es": "luz",
+    "fr": "lumière",
+    "de": "Licht",
+    "ja": "あかり"
+  },
+  {
+    "pt": "Desenho desde criança. <b>É aqui que ficam os desenhos, os rabiscos e as ideias antes de virarem código.</b>",
+    "en": "I’ve been drawing since I was a kid. <b>This is where the drawings, the scribbles and the ideas live before they become code.</b>",
+    "es": "Dibujo desde niño. <b>Aquí quedan los dibujos, los garabatos y las ideas antes de convertirse en código.</b>",
+    "fr": "Je dessine depuis l’enfance. <b>C’est ici que vivent les dessins, les gribouillis et les idées avant de devenir du code.</b>",
+    "de": "Ich zeichne, seit ich ein Kind bin. <b>Hier leben die Zeichnungen, Kritzeleien und Ideen, bevor sie zu Code werden.</b>",
+    "ja": "子どものころから絵を描いています。<b>ここは、絵や落書きやアイデアがコードになる前にしまってある場所です。</b>"
+  },
+  {
+    "pt": "eu, em algum passeio",
+    "en": "me, on some trip",
+    "es": "yo, en algún paseo",
+    "fr": "moi, lors d’une balade",
+    "de": "ich, auf irgendeinem Ausflug",
+    "ja": "どこかに出かけたときの自分"
+  },
+  {
+    "pt": "Desenho desde criança",
+    "en": "Drawing since I was a kid",
+    "es": "Dibujo desde niño",
+    "fr": "Je dessine depuis l’enfance",
+    "de": "Zeichnen seit der Kindheit",
+    "ja": "子どものころから描いている"
+  },
+  {
+    "pt": "No Canadá participei de uma exposição de arte como artista. Esses são alguns dos trabalhos daquela época. Toque num deles pra ver maior.",
+    "en": "In Canada I took part in an art exhibition as an artist. These are some of the pieces from that time. Tap one to see it bigger.",
+    "es": "En Canadá participé en una exposición de arte como artista. Estos son algunos de los trabajos de esa época. Toca uno para verlo más grande.",
+    "fr": "Au Canada, j’ai participé à une exposition d’art en tant qu’artiste. Voici quelques œuvres de cette époque. Touchez-en une pour l’agrandir.",
+    "de": "In Kanada habe ich als Künstler an einer Kunstausstellung teilgenommen. Das sind einige Arbeiten aus dieser Zeit. Tippe auf eine, um sie größer zu sehen.",
+    "ja": "カナダではアーティストとして美術展に参加しました。これはそのころの作品の一部です。タップすると大きく見られます。"
+  },
+  {
+    "pt": "grafite",
+    "en": "graphite",
+    "es": "grafito",
+    "fr": "graphite",
+    "de": "Graphit",
+    "ja": "鉛筆"
+  },
+  {
+    "pt": "grafite, de novo",
+    "en": "graphite, again",
+    "es": "grafito, otra vez",
+    "fr": "graphite, encore",
+    "de": "Graphit, schon wieder",
+    "ja": "また鉛筆"
+  },
+  {
+    "pt": "relevo em metal",
+    "en": "metal relief",
+    "es": "relieve en metal",
+    "fr": "relief en métal",
+    "de": "Metallrelief",
+    "ja": "金属レリーフ"
+  },
+  {
+    "pt": "aquarela e nanquim",
+    "en": "watercolor and ink",
+    "es": "acuarela y tinta",
+    "fr": "aquarelle et encre",
+    "de": "Aquarell und Tusche",
+    "ja": "水彩とインク"
+  },
+  {
+    "pt": "O que o desenho me ensinou",
+    "en": "What drawing taught me",
+    "es": "Lo que el dibujo me enseñó",
+    "fr": "Ce que le dessin m’a appris",
+    "de": "Was mir das Zeichnen beigebracht hat",
+    "ja": "絵が教えてくれたこと"
+  },
+  {
+    "pt": "Acho que desenhar me deu o olho pra interface: <mark>espaço, proporção e o que dá pra tirar sem perder o sentido.</mark>",
+    "en": "I think drawing gave me an eye for interfaces: <mark>space, proportion and what you can take away without losing the meaning.</mark>",
+    "es": "Creo que dibujar me dio el ojo para las interfaces: <mark>espacio, proporción y lo que se puede quitar sin perder el sentido.</mark>",
+    "fr": "Je crois que le dessin m’a donné l’œil pour les interfaces : <mark>l’espace, la proportion et ce qu’on peut enlever sans perdre le sens.</mark>",
+    "de": "Ich glaube, das Zeichnen hat mir das Auge für Interfaces gegeben: <mark>Raum, Proportion und was man weglassen kann, ohne den Sinn zu verlieren.</mark>",
+    "ja": "絵を描くことで、インターフェースを見る目が育ったと思います。<mark>余白、比率、そして意味を失わずに削れるもの。</mark>"
+  },
+  {
+    "pt": "<b>Cair</b><span>O skate me ensinou que cair faz parte de aprender qualquer coisa. Desenho também.</span>",
+    "en": "<b>Falling</b><span>Skateboarding taught me that falling is part of learning anything. Drawing too.</span>",
+    "es": "<b>Caer</b><span>El skate me enseñó que caer es parte de aprender cualquier cosa. Dibujar también.</span>",
+    "fr": "<b>Tomber</b><span>Le skate m’a appris que tomber fait partie de tout apprentissage. Le dessin aussi.</span>",
+    "de": "<b>Fallen</b><span>Skaten hat mir beigebracht, dass Hinfallen zu jedem Lernen gehört. Beim Zeichnen auch.</span>",
+    "ja": "<b>転ぶ</b><span>スケートボードは、転ぶのも学びのうちだと教えてくれました。絵も同じです。</span>"
+  },
+  {
+    "pt": "Do rabisco à tela",
+    "en": "From scribble to screen",
+    "es": "Del garabato a la pantalla",
+    "fr": "Du gribouillis à l’écran",
+    "de": "Von der Skizze zum Screen",
+    "ja": "落書きから画面へ"
+  },
+  {
+    "pt": "Todo projeto meu começa num rabisco. O Zevi começou assim, e hoje é isso aqui.",
+    "en": "Every project of mine starts with a scribble. Zevi started like this, and today it looks like this.",
+    "es": "Todo proyecto mío empieza con un garabato. Zevi empezó así, y hoy es esto.",
+    "fr": "Chacun de mes projets commence par un gribouillis. Zevi a commencé comme ça, et aujourd’hui, voilà ce que c’est.",
+    "de": "Jedes meiner Projekte beginnt mit einer Kritzelei. Zevi hat so angefangen, und heute sieht es so aus.",
+    "ja": "どのプロジェクトも落書きから始まります。Zeviもこうして始まり、いまはこうなりました。"
+  },
+  {
+    "pt": "o rabisco",
+    "en": "the scribble",
+    "es": "el garabato",
+    "fr": "le gribouillis",
+    "de": "die Skizze",
+    "ja": "落書き"
+  },
+  {
+    "pt": "a tela de verdade, quase pronta pra lançar",
+    "en": "the real screen, almost ready to launch",
+    "es": "la pantalla real, casi lista para lanzar",
+    "fr": "le vrai écran, presque prêt pour le lancement",
+    "de": "der echte Screen, fast bereit für den Launch",
+    "ja": "本物の画面。ローンチ間近"
+  },
+  {
+    "pt": "Os detalhes de cada projeto estão na Oficina, ali na cidade.",
+    "en": "The details of each project are in the Workshop, right there in the city.",
+    "es": "Los detalles de cada proyecto están en el Taller, ahí en la ciudad.",
+    "fr": "Les détails de chaque projet sont à l’Atelier, là, dans la ville.",
+    "de": "Die Details zu jedem Projekt findest du in der Werkstatt, gleich dort in der Stadt.",
+    "ja": "各プロジェクトの詳細は、街の工房にあります。"
+  },
+  {
+    "pt": "O que eu via no Canadá",
+    "en": "What I saw in Canada",
+    "es": "Lo que veía en Canadá",
+    "fr": "Ce que je voyais au Canada",
+    "de": "Was ich in Kanada gesehen habe",
+    "ja": "カナダで見ていたもの"
+  },
+  {
+    "pt": "Fotos da mesma época dos desenhos, na Nova Scotia.",
+    "en": "Photos from the same time as the drawings, in Nova Scotia.",
+    "es": "Fotos de la misma época de los dibujos, en Nueva Escocia.",
+    "fr": "Des photos de la même époque que les dessins, en Nouvelle-Écosse.",
+    "de": "Fotos aus derselben Zeit wie die Zeichnungen, in Nova Scotia.",
+    "ja": "絵と同じころ、ノバスコシアで撮った写真。"
+  },
+  {
+    "pt": "na costa",
+    "en": "on the coast",
+    "es": "en la costa",
+    "fr": "sur la côte",
+    "de": "an der Küste",
+    "ja": "海岸で"
+  },
+  {
+    "pt": "o mar gelado",
+    "en": "the freezing sea",
+    "es": "el mar helado",
+    "fr": "la mer glacée",
+    "de": "das eiskalte Meer",
+    "ja": "凍える海"
+  },
+  {
+    "pt": "uma trilha",
+    "en": "a trail",
+    "es": "un sendero",
+    "fr": "un sentier",
+    "de": "ein Wanderweg",
+    "ja": "小道"
+  },
+  {
+    "pt": "Fora do código",
+    "en": "Outside of code",
+    "es": "Fuera del código",
+    "fr": "En dehors du code",
+    "de": "Abseits vom Code",
+    "ja": "コードの外で"
+  },
+  {
+    "pt": "A lista de sempre, escrita à mão.",
+    "en": "The usual list, handwritten.",
+    "es": "La lista de siempre, escrita a mano.",
+    "fr": "La liste habituelle, écrite à la main.",
+    "de": "Die übliche Liste, von Hand geschrieben.",
+    "ja": "いつものリスト、手書きで。"
+  },
+  {
+    "pt": "Deixa um rabisco",
+    "en": "Leave a doodle",
+    "es": "Deja un garabato",
+    "fr": "Laisse un gribouillis",
+    "de": "Hinterlass eine Kritzelei",
+    "ja": "落書きを残してね"
+  },
+  {
+    "pt": "A última página é sua. Desenha qualquer coisa aí, salva pra você e, se quiser, me manda.",
+    "en": "The last page is yours. Draw anything, save it for yourself and, if you want, send it to me.",
+    "es": "La última página es tuya. Dibuja lo que quieras, guárdalo para ti y, si quieres, mándamelo.",
+    "fr": "La dernière page est à toi. Dessine ce que tu veux, garde-le pour toi et, si tu veux, envoie-le-moi.",
+    "de": "Die letzte Seite gehört dir. Zeichne irgendwas, speichere es für dich und schick es mir, wenn du magst.",
+    "ja": "最後のページはあなたのもの。なんでも描いて、自分用に保存して、よかったら送ってください。"
+  },
+  {
+    "pt": "<span class=\"sw\" style=\"background:var(--ink)\"></span>grafite",
+    "en": "<span class=\"sw\" style=\"background:var(--ink)\"></span>graphite",
+    "es": "<span class=\"sw\" style=\"background:var(--ink)\"></span>grafito",
+    "fr": "<span class=\"sw\" style=\"background:var(--ink)\"></span>graphite",
+    "de": "<span class=\"sw\" style=\"background:var(--ink)\"></span>Graphit",
+    "ja": "<span class=\"sw\" style=\"background:var(--ink)\"></span>鉛筆"
+  },
+  {
+    "pt": "<span class=\"sw\" style=\"background:var(--blue)\"></span>caneta azul",
+    "en": "<span class=\"sw\" style=\"background:var(--blue)\"></span>blue pen",
+    "es": "<span class=\"sw\" style=\"background:var(--blue)\"></span>bolígrafo azul",
+    "fr": "<span class=\"sw\" style=\"background:var(--blue)\"></span>stylo bleu",
+    "de": "<span class=\"sw\" style=\"background:var(--blue)\"></span>blauer Stift",
+    "ja": "<span class=\"sw\" style=\"background:var(--blue)\"></span>青ペン"
+  },
+  {
+    "pt": "<span class=\"sw\" style=\"background:var(--red)\"></span>caneta vermelha",
+    "en": "<span class=\"sw\" style=\"background:var(--red)\"></span>red pen",
+    "es": "<span class=\"sw\" style=\"background:var(--red)\"></span>bolígrafo rojo",
+    "fr": "<span class=\"sw\" style=\"background:var(--red)\"></span>stylo rouge",
+    "de": "<span class=\"sw\" style=\"background:var(--red)\"></span>roter Stift",
+    "ja": "<span class=\"sw\" style=\"background:var(--red)\"></span>赤ペン"
+  },
+  {
+    "pt": "apagar tudo",
+    "en": "erase everything",
+    "es": "borrar todo",
+    "fr": "tout effacer",
+    "de": "alles löschen",
+    "ja": "ぜんぶ消す"
+  },
+  {
+    "pt": "aumentar a folha",
+    "en": "make the page bigger",
+    "es": "agrandar la hoja",
+    "fr": "agrandir la feuille",
+    "de": "Blatt vergrößern",
+    "ja": "紙を大きくする"
+  },
+  {
+    "pt": "salvar meu desenho",
+    "en": "save my drawing",
+    "es": "guardar mi dibujo",
+    "fr": "enregistrer mon dessin",
+    "de": "Zeichnung speichern",
+    "ja": "絵を保存する"
+  },
+  {
+    "pt": "mandar pro Cristiano",
+    "en": "send it to Cristiano",
+    "es": "mandárselo a Cristiano",
+    "fr": "l’envoyer à Cristiano",
+    "de": "an Cristiano schicken",
+    "ja": "クリスティアーノに送る"
+  },
+  {
+    "pt": "abrir o e-mail",
+    "en": "open email",
+    "es": "abrir el email",
+    "fr": "ouvrir l’e-mail",
+    "de": "E-Mail öffnen",
+    "ja": "メールを開く"
+  },
+  {
+    "pt": "mandar e-mail",
+    "en": "send an email",
+    "es": "mandar un email",
+    "fr": "envoyer un e-mail",
+    "de": "E-Mail schreiben",
+    "ja": "メールを送る"
+  },
+  {
+    "pt": "fechar",
+    "en": "close",
+    "es": "cerrar",
+    "fr": "fermer",
+    "de": "schließen",
+    "ja": "閉じる"
+  },
+  {
+    "pt": "O caderno do Cristiano",
+    "en": "Cristiano’s notebook",
+    "es": "El cuaderno de Cristiano",
+    "fr": "Le carnet de Cristiano",
+    "de": "Cristianos Skizzenbuch",
+    "ja": "クリスティアーノのノート"
+  },
+  {
+    "pt": "Caderno do",
+    "en": "Notebook of",
+    "es": "Cuaderno de",
+    "fr": "Carnet de",
+    "de": "Skizzenbuch von",
+    "ja": "スケッチブック"
+  },
+  {
+    "pt": "Se achar, devolver pra",
+    "en": "If found, please return to",
+    "es": "Si lo encuentras, devolver a",
+    "fr": "Si trouvé, merci de rendre à",
+    "de": "Falls gefunden, bitte zurück an",
+    "ja": "拾った方はこちらへ"
+  },
+  {
+    "pt": "abre aqui",
+    "en": "open here",
+    "es": "abre aquí",
+    "fr": "ouvre ici",
+    "de": "hier aufschlagen",
+    "ja": "ここから開く"
+  },
+  {
+    "pt": "Espaço",
+    "en": "Space",
+    "es": "Espacio",
+    "fr": "Espace",
+    "de": "Raum",
+    "ja": "余白"
+  },
+  {
+    "pt": "Deixar a tela respirar. Nem tudo precisa estar na frente ao mesmo tempo.",
+    "en": "Letting the screen breathe. Not everything needs to be up front at the same time.",
+    "es": "Dejar respirar la pantalla. No todo tiene que estar al frente al mismo tiempo.",
+    "fr": "Laisser l’écran respirer. Tout n’a pas besoin d’être au premier plan en même temps.",
+    "de": "Den Screen atmen lassen. Nicht alles muss gleichzeitig im Vordergrund stehen.",
+    "ja": "画面に呼吸させる。すべてを同時に前に出す必要はありません。"
+  },
+  {
+    "pt": "Proporção",
+    "en": "Proportion",
+    "es": "Proporción",
+    "fr": "Proportion",
+    "de": "Proportion",
+    "ja": "比率"
+  },
+  {
+    "pt": "O que importa aparece maior. O número que decide fica em destaque.",
+    "en": "What matters shows up bigger. The number that drives the decision stands out.",
+    "es": "Lo que importa aparece más grande. El número que decide queda destacado.",
+    "fr": "Ce qui compte apparaît en plus grand. Le chiffre qui décide est mis en avant.",
+    "de": "Was wichtig ist, wird größer. Die Zahl, die entscheidet, sticht heraus.",
+    "ja": "大事なものは大きく。判断を決める数字を目立たせる。"
+  },
+  {
+    "pt": "Tirar",
+    "en": "Taking away",
+    "es": "Quitar",
+    "fr": "Enlever",
+    "de": "Weglassen",
+    "ja": "削る"
+  },
+  {
+    "pt": "O melhor rabisco é o que ficou com menos linha. Em tela, é igual.",
+    "en": "The best sketch is the one with the fewest lines. On screen, it’s the same.",
+    "es": "El mejor garabato es el que quedó con menos líneas. En pantalla, igual.",
+    "fr": "Le meilleur croquis est celui qui a le moins de traits. À l’écran, c’est pareil.",
+    "de": "Die beste Skizze ist die mit den wenigsten Linien. Auf dem Screen ist es genauso.",
+    "ja": "いちばんいいスケッチは線がいちばん少ないもの。画面でも同じです。"
+  },
+  {
+    "pt": "jogar com os amigos",
+    "en": "play games with friends",
+    "es": "jugar con amigos",
+    "fr": "jouer avec les amis",
+    "de": "mit Freunden zocken",
+    "ja": "友だちとゲーム"
+  },
+  {
+    "pt": "Foi por causa dos jogos que eu entrei na programação.",
+    "en": "Games are the reason I got into programming.",
+    "es": "Por los videojuegos entré en la programación.",
+    "fr": "C’est grâce aux jeux vidéo que je suis entré dans la programmation.",
+    "de": "Wegen Spielen bin ich zum Programmieren gekommen.",
+    "ja": "プログラミングを始めたのはゲームがきっかけです。"
+  },
+  {
+    "pt": "ouvir música o dia inteiro",
+    "en": "listen to music all day",
+    "es": "escuchar música todo el día",
+    "fr": "écouter de la musique toute la journée",
+    "de": "den ganzen Tag Musik hören",
+    "ja": "一日中音楽を聴く"
+  },
+  {
+    "pt": "cantar mal, sem vergonha nenhuma",
+    "en": "sing badly, with zero shame",
+    "es": "cantar mal, sin nada de vergüenza",
+    "fr": "chanter faux, sans aucune honte",
+    "de": "schlecht singen, völlig schamlos",
+    "ja": "下手でも堂々と歌う"
+  },
+  {
+    "pt": "andar de skate",
+    "en": "skateboard",
+    "es": "andar en skate",
+    "fr": "faire du skate",
+    "de": "skaten",
+    "ja": "スケートボード"
+  },
+  {
+    "pt": "olhar pro céu nos dias difíceis",
+    "en": "look at the sky on hard days",
+    "es": "mirar el cielo en los días difíciles",
+    "fr": "regarder le ciel les jours difficiles",
+    "de": "an schweren Tagen in den Himmel schauen",
+    "ja": "つらい日は空を見上げる"
+  },
+  {
+    "pt": "É como eu desligo e volto com a cabeça no lugar.",
+    "en": "It’s how I switch off and come back with my head in place.",
+    "es": "Es como me desconecto y vuelvo con la cabeza en su lugar.",
+    "fr": "C’est comme ça que je décroche et que je reviens la tête à sa place.",
+    "de": "So schalte ich ab und komme mit klarem Kopf zurück.",
+    "ja": "それで気持ちを切り替えて、頭を落ち着かせて戻ってきます。"
+  },
+  {
+    "pt": "aprender a tocar um instrumento",
+    "en": "learn to play an instrument",
+    "es": "aprender a tocar un instrumento",
+    "fr": "apprendre à jouer d’un instrument",
+    "de": "ein Instrument lernen",
+    "ja": "楽器を覚える"
+  },
+  {
+    "pt": "Ainda não. Tá na lista.",
+    "en": "Not yet. It’s on the list.",
+    "es": "Todavía no. Está en la lista.",
+    "fr": "Pas encore. C’est sur la liste.",
+    "de": "Noch nicht. Steht auf der Liste.",
+    "ja": "まだです。リストに入っています。"
+  },
+  {
+    "pt": "voltar a desenhar toda semana",
+    "en": "get back to drawing every week",
+    "es": "volver a dibujar todas las semanas",
+    "fr": "me remettre à dessiner chaque semaine",
+    "de": "wieder jede Woche zeichnen",
+    "ja": "また毎週描く"
+  },
+  {
+    "pt": "desenha aqui",
+    "en": "draw here",
+    "es": "dibuja aquí",
+    "fr": "dessine ici",
+    "de": "hier zeichnen",
+    "ja": "ここに描いてね"
+  },
+  {
+    "pt": "fim do caderno. vira a página quando quiser.",
+    "en": "end of the notebook. turn the page whenever you want.",
+    "es": "fin del cuaderno. da vuelta la página cuando quieras.",
+    "fr": "fin du carnet. tourne la page quand tu veux.",
+    "de": "Ende des Skizzenbuchs. Blättere um, wann du willst.",
+    "ja": "ノートはここまで。好きなときにページをめくってね。"
+  },
+  {
+    "pt": "App de treino",
+    "en": "Workout app",
+    "es": "App de entrenamiento",
+    "fr": "Appli de muscu",
+    "de": "Trainings-App",
+    "ja": "トレーニングアプリ"
+  },
+  {
+    "pt": "voltar ao tamanho normal",
+    "en": "back to normal size",
+    "es": "volver al tamaño normal",
+    "fr": "revenir à la taille normale",
+    "de": "zurück zur normalen Größe",
+    "ja": "元の大きさに戻す"
+  },
+  {
+    "pt": "Desenha alguma coisa primeiro.",
+    "en": "Draw something first.",
+    "es": "Dibuja algo primero.",
+    "fr": "Dessine quelque chose d’abord.",
+    "de": "Zeichne zuerst etwas.",
+    "ja": "まず何か描いてね。"
+  },
+  {
+    "pt": "Salvo no seu aparelho. Se quiser me mandar, é só anexar no e-mail.",
+    "en": "Saved on your device. If you want to send it to me, just attach it to the email.",
+    "es": "Guardado en tu dispositivo. Si quieres mandármelo, solo adjúntalo al email.",
+    "fr": "Enregistré sur ton appareil. Si tu veux me l’envoyer, il suffit de le joindre à l’e-mail.",
+    "de": "Auf deinem Gerät gespeichert. Wenn du es mir schicken willst, häng es einfach an die E-Mail an.",
+    "ja": "端末に保存しました。送ってくれるなら、メールに添付するだけです。"
+  },
+  {
+    "pt": "Um rabisco pro seu caderno",
+    "en": "A doodle for your notebook",
+    "es": "Un garabato para tu cuaderno",
+    "fr": "Un gribouillis pour ton carnet",
+    "de": "Eine Kritzelei für dein Skizzenbuch",
+    "ja": "あなたのノートへの落書き"
+  },
+  {
+    "pt": "Oi Cristiano! Fiz um desenho no seu caderno. O arquivo está em anexo.",
+    "en": "Hi Cristiano! I made a drawing in your notebook. The file is attached.",
+    "es": "¡Hola, Cristiano! Hice un dibujo en tu cuaderno. El archivo va adjunto.",
+    "fr": "Salut Cristiano ! J’ai fait un dessin dans ton carnet. Le fichier est en pièce jointe.",
+    "de": "Hallo Cristiano! Ich habe etwas in dein Skizzenbuch gezeichnet. Die Datei ist im Anhang.",
+    "ja": "クリスティアーノさん、こんにちは！ノートに絵を描きました。ファイルを添付します。"
+  },
+  {
+    "pt": "acender a luz",
+    "en": "lights on",
+    "es": "prender la luz",
+    "fr": "allumer la lumière",
+    "de": "Licht an",
+    "ja": "あかりをつける"
+  },
+  {
+    "pt": "apagar a luz",
+    "en": "lights off",
+    "es": "apagar la luz",
+    "fr": "éteindre la lumière",
+    "de": "Licht aus",
+    "ja": "あかりを消す"
+  }
+]

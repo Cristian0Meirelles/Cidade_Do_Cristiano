@@ -1,0 +1,1038 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Pra onde o Cristiano está indo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,500;1,300;1,500&family=Jost:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg-1: #e7ecf6;
+        --bg-2: #f3eef3;
+        --text: #1a2340;
+        --muted: #55607e;
+        --star: #1f2a55;
+        --line: #3d63c9;
+        --gold: #9b6a00;
+        --glow: #f2c14e;
+        --panel: #ffffffd9;
+        --rule: #c9d1e3;
+        --serif: "Spectral", Georgia, serif;
+        --sans: "Jost", system-ui, sans-serif;
+        color-scheme: light;
+        box-sizing: border-box;
+        padding-top: env(safe-area-inset-top, 0px);
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --bg-1: #0f1832;
+          --bg-2: #221843;
+          --text: #e9ecf6;
+          --muted: #a1aac8;
+          --star: #fff4d6;
+          --line: #8ec5ff;
+          --gold: #f7d774;
+          --glow: #f7d774;
+          --panel: #141d3dd9;
+          --rule: #2d3960;
+          color-scheme: dark;
+        }
+      }
+      :root[data-theme="dark"] {
+        --bg-1: #0f1832;
+        --bg-2: #221843;
+        --text: #e9ecf6;
+        --muted: #a1aac8;
+        --star: #fff4d6;
+        --line: #8ec5ff;
+        --gold: #f7d774;
+        --glow: #f7d774;
+        --panel: #141d3dd9;
+        --rule: #2d3960;
+        color-scheme: dark;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        min-height: 100svh;
+        background: linear-gradient(170deg, var(--bg-1) 0%, var(--bg-2) 100%)
+          fixed;
+        color: var(--text);
+        font-family: var(--sans);
+        font-size: 1.05rem;
+        line-height: 1.65;
+        overflow-x: hidden;
+      }
+      a {
+        color: inherit;
+      }
+      button {
+        font: inherit;
+        color: inherit;
+      }
+      .wrap {
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+      .theme {
+        position: fixed;
+        top: calc(env(safe-area-inset-top, 0px) + 14px);
+        right: 16px;
+        z-index: 10;
+        background: var(--panel);
+        border: 1px solid var(--rule);
+        border-radius: 30px;
+        padding: 6px 14px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        backdrop-filter: blur(6px);
+      }
+
+      header.intro {
+        padding: 70px 0 10px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 30px;
+        align-items: end;
+      }
+      .intro h1 {
+        font-family: var(--serif);
+        font-weight: 300;
+        font-size: clamp(2.6rem, 7vw, 5rem);
+        line-height: 1;
+        margin: 0;
+        letter-spacing: -0.01em;
+      }
+      .intro h1 i {
+        font-weight: 300;
+      }
+      .kick {
+        font-family: var(--serif);
+        font-style: italic;
+        color: var(--gold);
+        margin: 0 0 6px;
+        font-size: 1.15rem;
+      }
+      .intro p {
+        max-width: 52ch;
+        margin: 14px 0 0;
+        color: var(--muted);
+        font-size: 1.12rem;
+      }
+      .coords {
+        font-size: 0.9rem;
+        color: var(--muted);
+        text-align: right;
+        line-height: 1.5;
+      }
+      @media (max-width: 760px) {
+        header.intro {
+          grid-template-columns: 1fr;
+        }
+        .coords {
+          text-align: left;
+        }
+      }
+
+      .chart-area {
+        display: grid;
+        grid-template-columns: 1fr 340px;
+        gap: 26px;
+        align-items: start;
+        margin-top: 26px;
+      }
+      .chart {
+        position: relative;
+        border: 1px solid var(--rule);
+        border-radius: 50%/8%;
+        overflow: hidden;
+      }
+      .chart svg {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .bgstar {
+        fill: var(--star);
+      }
+      .tw {
+        animation: tw 3.4s ease-in-out infinite;
+      }
+      @keyframes tw {
+        50% {
+          opacity: 0.25;
+        }
+      }
+      .grid-l {
+        stroke: var(--rule);
+        stroke-width: 1;
+        fill: none;
+      }
+      .cline {
+        stroke: var(--line);
+        stroke-width: 1.4;
+        fill: none;
+        opacity: 0.45;
+        stroke-dasharray: 1;
+        stroke-dashoffset: 1;
+        transition:
+          stroke-dashoffset 2.2s ease,
+          opacity 0.3s;
+      }
+      .drawn .cline {
+        stroke-dashoffset: 0;
+      }
+      .cline.hot {
+        opacity: 1;
+        stroke-width: 2;
+      }
+      .cname {
+        font-family: var(--serif);
+        font-style: italic;
+        font-size: 22px;
+        fill: var(--muted);
+      }
+      .cname.hot {
+        fill: var(--gold);
+      }
+      .star {
+        cursor: pointer;
+      }
+      .star .hit {
+        fill: transparent;
+      }
+      .star .core {
+        fill: var(--star);
+      }
+      .star .halo {
+        fill: var(--glow);
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      .star:hover .halo,
+      .star:focus .halo {
+        opacity: 0.25;
+      }
+      .star.sel .halo {
+        opacity: 0.4;
+      }
+      .star .ring {
+        fill: none;
+        stroke: var(--gold);
+        stroke-width: 1.5;
+        opacity: 0;
+      }
+      .star.sel .ring {
+        opacity: 1;
+      }
+      .star text {
+        font-size: 15px;
+        fill: var(--text);
+        opacity: 0.85;
+        pointer-events: none;
+        font-family: var(--sans);
+      }
+      .star:focus {
+        outline: none;
+      }
+      .star:focus-visible .ring {
+        opacity: 1;
+        stroke-dasharray: 4 3;
+      }
+      .shoot {
+        stroke: var(--star);
+        stroke-width: 2;
+        stroke-linecap: round;
+        opacity: 0;
+      }
+      .shoot.go {
+        animation: shoot 1.1s ease-out forwards;
+      }
+      @keyframes shoot {
+        0% {
+          opacity: 0;
+          stroke-dashoffset: 0;
+        }
+        15% {
+          opacity: 0.9;
+        }
+        100% {
+          opacity: 0;
+          transform: translate(-260px, 140px);
+        }
+      }
+
+      .panel {
+        background: var(--panel);
+        border: 1px solid var(--rule);
+        border-radius: 14px;
+        padding: 22px 22px 18px;
+        position: sticky;
+        top: calc(env(safe-area-inset-top, 0px) + 20px);
+        backdrop-filter: blur(8px);
+      }
+      .panel .kind {
+        font-family: var(--serif);
+        font-style: italic;
+        color: var(--gold);
+        margin: 0;
+      }
+      .panel h2 {
+        font-family: var(--serif);
+        font-weight: 500;
+        font-size: 1.9rem;
+        line-height: 1.1;
+        margin: 2px 0 4px;
+      }
+      .panel .meta {
+        color: var(--muted);
+        font-size: 0.93rem;
+        margin: 0 0 12px;
+      }
+      .panel p.txt {
+        margin: 0 0 14px;
+      }
+      .panel img {
+        width: 100%;
+        border-radius: 8px;
+        margin: 0 0 12px;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+      }
+      .panel .nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        border-top: 1px solid var(--rule);
+        padding-top: 12px;
+      }
+      .panel .nav button {
+        background: none;
+        border: 0;
+        cursor: pointer;
+        color: var(--muted);
+        padding: 4px 0;
+      }
+      .panel .nav button:hover {
+        color: var(--text);
+      }
+      @media (max-width: 980px) {
+        .chart-area {
+          grid-template-columns: 1fr;
+        }
+        .panel {
+          position: static;
+        }
+        .chart {
+          border-radius: 14px;
+        }
+      }
+
+      .pick {
+        display: none;
+        margin-top: 16px;
+      }
+      .pick h3 {
+        font-family: var(--serif);
+        font-style: italic;
+        font-weight: 300;
+        font-size: 1.1rem;
+        margin: 12px 0 6px;
+        color: var(--muted);
+      }
+      .pick div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .pick button {
+        border: 1px solid var(--rule);
+        background: var(--panel);
+        border-radius: 30px;
+        padding: 4px 12px;
+        cursor: pointer;
+        font-size: 0.92rem;
+      }
+      .pick button[aria-current="true"] {
+        border-color: var(--gold);
+        color: var(--gold);
+      }
+      @media (max-width: 980px) {
+        .pick {
+          display: block;
+        }
+      }
+      @media (max-width: 640px) {
+        .star text {
+          display: none;
+        }
+        .cname {
+          font-size: 44px;
+        }
+        .chart {
+          border-radius: 12px;
+        }
+        .panel h2 {
+          font-size: 1.6rem;
+        }
+      }
+
+      .notes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        padding: 90px 0 40px;
+        border-bottom: 1px solid var(--rule);
+      }
+      .notes h2 {
+        grid-column: 1/-1;
+        font-family: var(--serif);
+        font-weight: 300;
+        font-size: clamp(2rem, 5vw, 3rem);
+        margin: 0 0 -10px;
+      }
+      .notes h3 {
+        font-family: var(--serif);
+        font-weight: 500;
+        font-size: 1.3rem;
+        margin: 0 0 6px;
+      }
+      .notes p {
+        margin: 0;
+        color: var(--muted);
+      }
+      @media (max-width: 860px) {
+        .notes {
+          grid-template-columns: 1fr;
+          gap: 26px;
+        }
+      }
+
+      .signal {
+        padding: 80px 0 90px;
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        gap: 40px;
+        align-items: end;
+      }
+      .signal h2 {
+        font-family: var(--serif);
+        font-weight: 300;
+        font-size: clamp(2.2rem, 6vw, 3.8rem);
+        line-height: 1.05;
+        margin: 0;
+      }
+      .signal p {
+        color: var(--muted);
+        margin: 0 0 20px;
+        max-width: 48ch;
+      }
+      .signal .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .signal a {
+        text-decoration: none;
+        border: 1px solid var(--rule);
+        border-radius: 30px;
+        padding: 8px 18px;
+        background: var(--panel);
+      }
+      .signal a.main {
+        background: var(--text);
+        color: var(--bg-1);
+        border-color: var(--text);
+      }
+      @media (max-width: 860px) {
+        .signal {
+          grid-template-columns: 1fr;
+        }
+      }
+      footer {
+        padding: 0 0 40px;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        .tw,
+        .shoot {
+          animation: none !important;
+        }
+        .cline {
+          transition: none;
+          stroke-dashoffset: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme" id="theme">Anoitecer</button>
+    <div class="wrap">
+      <header class="intro">
+        <div>
+          <p class="kick">Observatório</p>
+          <h1>Pra onde<br /><i>eu estou indo</i></h1>
+          <p>
+            Olhar pro céu é o que eu faço nos dias difíceis. Aqui é o contrário:
+            é onde eu olho pra frente. Cada estrela é um objetivo, e elas formam
+            quatro constelações.
+          </p>
+        </div>
+        <div class="coords">
+          Visto do Rio de Janeiro<br />22° 54′ S, 43° 10′ O
+        </div>
+      </header>
+
+      <div class="chart-area">
+        <div>
+          <div class="chart" id="chart">
+            <svg
+              id="sky"
+              viewBox="0 0 1000 640"
+              role="group"
+              aria-label="Mapa de constelações. Cada estrela é um objetivo do Cristiano."
+            ></svg>
+          </div>
+          <div class="pick" id="pick"></div>
+        </div>
+        <aside class="panel" id="panel" aria-live="polite"></aside>
+      </div>
+
+      <section class="notes">
+        <h2>Notas do observador</h2>
+        <div>
+          <h3>IA que entra em produção</h3>
+          <p>
+            Não me interessa fazer chatbot. O que me pega é agente que executa:
+            conecta em sistema de verdade, chama a ferramenta certa e devolve
+            algo em que dá pra confiar. É em produto que aparecem custo,
+            latência e erro do modelo, coisas que demo nenhuma mostra.
+          </p>
+        </div>
+        <div>
+          <h3>Voltar a liderar</h3>
+          <p>
+            Já liderei o time de front-end na Automais e já fui product owner e
+            Scrum Master na ESX. Quero voltar a liderar, agora com escopo maior:
+            um time de produto do começo ao fim, sem microgerenciar. Organizar,
+            destravar e garantir que o que sai é o que o cliente precisava.
+          </p>
+        </div>
+      </section>
+
+      <section class="signal">
+        <h2>Vamos conversar?</h2>
+        <div>
+          <p>
+            Se o desafio for liderar o time que faz isso, melhor ainda. É o
+            caminho que eu quero seguir.
+          </p>
+          <div class="links">
+            <a class="main" href="mailto:cristianocmeirelles@gmail.com"
+              >cristianocmeirelles@gmail.com</a
+            >
+            <a
+              href="https://www.linkedin.com/in/cristiano-c-meirelles/"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+            <a
+              href="https://github.com/Cristian0Meirelles"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </section>
+      <footer>As estrelas de fundo mudam de lugar a cada visita.</footer>
+    </div>
+
+    <script type="module">
+      const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const NS = "http://www.w3.org/2000/svg";
+      const sky = document.getElementById("sky");
+      const C = [
+        {
+          id: "ia",
+          nome: "IA em produção",
+          label: [50, 48],
+          kind: "IA em produção",
+          stars: [
+            {
+              x: 95,
+              y: 125,
+              m: 4,
+              n: "Agentes e ferramentas",
+              meta: "O que eu mais estudo hoje",
+              t: "MCP servers e tool calling: dar ao modelo acesso controlado a sistema, dado e ação.",
+            },
+            {
+              x: 275,
+              y: 100,
+              m: 3,
+              n: "Modelo no produto",
+              meta: "Aplicação real, não demo",
+              t: "Amazon Bedrock e LLM dentro de aplicação real, com resposta em streaming por WebSocket.",
+            },
+            {
+              x: 340,
+              y: 215,
+              m: 3,
+              n: "Visão computacional",
+              meta: "Rodando em cliente real",
+              t: "Leitura automática de placas de veículos integrada a back-end e banco, rodando em cliente real.",
+            },
+            {
+              x: 150,
+              y: 250,
+              m: 5,
+              n: "Produto com IA",
+              meta: "No Zevi",
+              t: "No Zevi, o modelo lê os números da conta e devolve diagnóstico e plano de ação, com cota, custo e limite controlados.",
+              img: "/assets/img/zevi_graficos.jpg",
+            },
+          ],
+          lines: [
+            [0, 1],
+            [1, 2],
+            [2, 3],
+            [3, 0],
+            [0, 2],
+          ],
+        },
+        {
+          id: "lid",
+          nome: "Voltar a liderar",
+          label: [640, 48],
+          kind: "Voltar a liderar",
+          stars: [
+            {
+              x: 640,
+              y: 150,
+              m: 4,
+              lab: "b",
+              n: "Já liderei",
+              meta: "Automais, 2024",
+              t: "Liderei o time de front-end em React e TypeScript: arquitetura das telas, divisão dos épicos e acompanhamento de quem estava travado.",
+            },
+            {
+              x: 760,
+              y: 105,
+              m: 3,
+              n: "Dos dois lados da mesa",
+              meta: "ESX e Automais",
+              t: "Já fui product owner e Scrum Master. Sei escolher o que não fazer.",
+            },
+            {
+              x: 900,
+              y: 165,
+              m: 3,
+              lab: "l",
+              n: "Sem microgerenciar",
+              meta: "Em desenvolvimento",
+              t: "Confiar no time e cuidar do caminho.",
+            },
+            {
+              x: 820,
+              y: 260,
+              m: 5,
+              lab: "l",
+              n: "O próximo time",
+              meta: "Próxima fase",
+              t: "Um time de produto do começo ao fim: organizar, destravar e garantir que o que sai é o que o cliente precisava.",
+            },
+          ],
+          lines: [
+            [0, 1],
+            [1, 2],
+            [2, 3],
+            [3, 0],
+          ],
+        },
+        {
+          id: "proc",
+          nome: "O que eu procuro",
+          label: [50, 612],
+          kind: "O que eu procuro",
+          stars: [
+            {
+              x: 110,
+              y: 420,
+              m: 3,
+              n: "O problema",
+              t: "Um sistema pra construir, um legado pra modernizar ou um agente de IA pra colocar de pé em produção.",
+            },
+            {
+              x: 250,
+              y: 365,
+              m: 3,
+              n: "O time",
+              t: "Gente que mostra cedo, conversa com o cliente e gosta de perguntar o porquê antes do como.",
+            },
+            {
+              x: 370,
+              y: 450,
+              m: 4,
+              n: "O papel",
+              t: "Engenharia full stack com espaço pra produto e pra crescer até a liderança.",
+            },
+            {
+              x: 215,
+              y: 530,
+              m: 3,
+              n: "O jeito",
+              t: "Remoto, no Brasil ou fora. Português e inglês no dia a dia.",
+            },
+          ],
+          lines: [
+            [0, 1],
+            [1, 2],
+            [2, 3],
+            [3, 0],
+          ],
+        },
+        {
+          id: "up",
+          nome: "Próximas atualizações",
+          label: [560, 612],
+          kind: "Próximas atualizações",
+          stars: [
+            {
+              x: 560,
+              y: 470,
+              m: 4,
+              n: "Pós em IA",
+              meta: "FIAP, em andamento",
+              t: "Em andamento: LLMs, RAG e agentes.",
+            },
+            {
+              x: 640,
+              y: 385,
+              m: 3,
+              n: "Arquitetura antes",
+              meta: "No trabalho",
+              t: "Enxergar a arquitetura antes de começar. Menos refazer, mais acertar de primeira.",
+            },
+            {
+              x: 740,
+              y: 445,
+              m: 3,
+              n: "Desenhar melhor",
+              meta: "Fora do trabalho",
+              t: "Voltar a desenhar com frequência.",
+            },
+            {
+              x: 830,
+              y: 360,
+              m: 3,
+              lab: "l",
+              n: "Um instrumento",
+              meta: "Fora do trabalho",
+              t: "Porque cantar mal já está dominado.",
+            },
+            {
+              x: 915,
+              y: 470,
+              m: 2,
+              lab: "l",
+              n: "Me conhecer",
+              meta: "Sem data prevista",
+              t: "Me conhecer um pouco mais a cada ano. Sem data prevista, e tudo bem.",
+            },
+          ],
+          lines: [
+            [0, 1],
+            [1, 2],
+            [2, 3],
+            [3, 4],
+          ],
+        },
+      ];
+      const ALL = [];
+      C.forEach((c, ci) => {
+        c.stars.forEach((s, si) => {
+          s.c = ci;
+          s.i = si;
+          ALL.push(s);
+        });
+      });
+
+      function el(t, a, p) {
+        const e = document.createElementNS(NS, t);
+        for (const k in a) e.setAttribute(k, a[k]);
+        if (p) p.appendChild(e);
+        return e;
+      }
+      /* fundo */
+      const g = el("g", { "aria-hidden": "true" }, sky);
+      for (let r = 120; r < 1400; r += 140)
+        el(
+          "circle",
+          { cx: 500, cy: 1500, r: r + 900, class: "grid-l", opacity: 0.5 },
+          g,
+        );
+      for (let a = -60; a <= 60; a += 15) {
+        const rad = (a * Math.PI) / 180;
+        el(
+          "line",
+          {
+            x1: 500,
+            y1: 1500,
+            x2: 500 + Math.sin(rad) * 2600,
+            y2: 1500 - Math.cos(rad) * 2600,
+            class: "grid-l",
+            opacity: 0.35,
+          },
+          g,
+        );
+      }
+      for (let i = 0; i < 300; i++) {
+        const s = el(
+          "circle",
+          {
+            cx: Math.random() * 1000,
+            cy: Math.random() * 640,
+            r: (Math.random() * 0.9 + 0.3).toFixed(2),
+            class: `bgstar${Math.random() < 0.18 ? " tw" : ""}`,
+            opacity: (Math.random() * 0.5 + 0.2).toFixed(2),
+          },
+          g,
+        );
+        if (s.classList.contains("tw"))
+          s.style.animationDelay = `${(Math.random() * 3).toFixed(2)}s`;
+      }
+      const shoot = el(
+        "line",
+        { x1: 900, y1: 40, x2: 960, y2: 10, class: "shoot" },
+        sky,
+      );
+
+      /* constelações */
+      const lineEls = [];
+
+      const nameEls = [];
+      const starEls = [];
+      C.forEach((c, ci) => {
+        const lg = el("g", { "aria-hidden": "true" }, sky);
+        lineEls[ci] = [];
+        c.lines.forEach((l) => {
+          const A = c.stars[l[0]];
+          const B = c.stars[l[1]];
+          lineEls[ci].push(
+            el(
+              "line",
+              {
+                x1: A.x,
+                y1: A.y,
+                x2: B.x,
+                y2: B.y,
+                class: "cline",
+                pathLength: 1,
+              },
+              lg,
+            ),
+          );
+        });
+        const t = el(
+          "text",
+          {
+            x: c.label[0],
+            y: c.label[1],
+            class: "cname",
+            "aria-hidden": "true",
+          },
+          sky,
+        );
+        t.textContent = c.nome;
+        nameEls[ci] = t;
+      });
+      ALL.forEach((s, k) => {
+        const r = 2 + s.m * 1.1;
+
+        const gg = el(
+          "g",
+          {
+            class: "star",
+            tabindex: 0,
+            role: "button",
+            "aria-label": `${s.n}. ${s.meta}`,
+          },
+          sky,
+        );
+
+        el("circle", { cx: s.x, cy: s.y, r: 26, class: "hit" }, gg);
+        el("circle", { cx: s.x, cy: s.y, r: r * 3.2, class: "halo" }, gg);
+        el("circle", { cx: s.x, cy: s.y, r: r + 7, class: "ring" }, gg);
+        el("circle", { cx: s.x, cy: s.y, r, class: "core" }, gg);
+        const above = s.y > 560;
+        const tx = el(
+          "text",
+          { x: s.x + r + 8, y: s.y + (above ? -10 : 5) },
+          gg,
+        );
+        tx.textContent = s.n;
+        if (s.lab === "ul") {
+          tx.setAttribute("text-anchor", "end");
+          tx.setAttribute("x", s.x - r - 6);
+          tx.setAttribute("y", s.y - 12);
+        } else if (s.lab === "l") {
+          tx.setAttribute("text-anchor", "end");
+          tx.setAttribute("x", s.x - r - 8);
+        } else if (s.lab === "b") {
+          tx.setAttribute("text-anchor", "middle");
+          tx.setAttribute("x", s.x);
+          tx.setAttribute("y", s.y + r + 22);
+        } else if (s.x > 900) {
+          tx.setAttribute("text-anchor", "end");
+          tx.setAttribute("x", s.x - r - 8);
+          tx.setAttribute("y", s.y + 22);
+        }
+        gg.addEventListener("click", () => {
+          select(k);
+        });
+        gg.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            select(k);
+          } else if (e.key === "ArrowRight") {
+            e.preventDefault();
+            select((k + 1) % ALL.length, true);
+          } else if (e.key === "ArrowLeft") {
+            e.preventDefault();
+            select((k - 1 + ALL.length) % ALL.length, true);
+          }
+        });
+        starEls.push(gg);
+      });
+      /* escolha rápida no celular */
+      document.getElementById("pick").innerHTML = C.map(
+        (c, ci) =>
+          `<h3>${c.nome}</h3><div>${c.stars
+            .map((s) => `<button data-k="${ALL.indexOf(s)}">${s.n}</button>`)
+            .join("")}</div>`,
+      ).join("");
+      const pickBtns = [].slice.call(document.querySelectorAll("#pick button"));
+      pickBtns.forEach((b) => {
+        b.addEventListener("click", () => {
+          select(+b.dataset.k);
+        });
+      });
+
+      const panel = document.getElementById("panel");
+      let cur = -1;
+      function esc(s) {
+        return s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+      }
+      function select(k, focus) {
+        cur = k;
+        const s = ALL[k];
+        const c = C[s.c];
+        starEls.forEach((e, j) => {
+          e.classList.toggle("sel", j === k);
+        });
+        lineEls.forEach((ls, ci) => {
+          ls.forEach((l) => {
+            l.classList.toggle("hot", ci === s.c);
+          });
+        });
+        nameEls.forEach((n, ci) => {
+          n.classList.toggle("hot", ci === s.c);
+        });
+        pickBtns.forEach((b) => {
+          b.setAttribute("aria-current", +b.dataset.k === k);
+        });
+        panel.innerHTML = `<p class="kind">${c.kind}</p><h2>${esc(s.n)}</h2>${s.meta ? `<p class="meta">${esc(s.meta)}</p>` : ""}${s.img ? `<img src="${s.img}" alt="">` : ""}<p class="txt">${esc(s.t)}</p>${
+          s.link
+            ? `<p><a href="${s.link[1]}" target="_blank" rel="noopener">${s.link[0]}</a></p>`
+            : ""
+        }<div class="nav"><button id="pv">Estrela anterior</button><button id="nx">Próxima estrela</button></div>`;
+        document.getElementById("pv").onclick = () => {
+          select((cur - 1 + ALL.length) % ALL.length);
+        };
+        document.getElementById("nx").onclick = () => {
+          select((cur + 1) % ALL.length);
+        };
+        if (focus) starEls[k].focus();
+      }
+      select(3);
+
+      /* linhas se desenham quando o mapa aparece */
+      const chart = document.getElementById("chart");
+      if (reduce) chart.classList.add("drawn");
+      else
+        new IntersectionObserver(
+          (es, o) => {
+            if (es[0].isIntersecting) {
+              chart.classList.add("drawn");
+              o.disconnect();
+            }
+          },
+          { threshold: 0.25 },
+        ).observe(chart);
+      /* estrela cadente de vez em quando */
+      if (!reduce)
+        setInterval(() => {
+          const x = 500 + Math.random() * 450;
+          const y = 20 + Math.random() * 120;
+          shoot.setAttribute("x1", x);
+          shoot.setAttribute("y1", y);
+          shoot.setAttribute("x2", x + 60);
+          shoot.setAttribute("y2", y - 30);
+          shoot.classList.remove("go");
+          void shoot.getBoundingClientRect();
+          shoot.classList.add("go");
+        }, 7000);
+
+      /* tema */
+      const root = document.documentElement;
+
+      const th = document.getElementById("theme");
+      function dark() {
+        const t = root.getAttribute("data-theme");
+        return t
+          ? t === "dark"
+          : matchMedia("(prefers-color-scheme: dark)").matches;
+      }
+      function lbl() {
+        th.textContent = dark() ? "Amanhecer" : "Anoitecer";
+      }
+      try {
+        const sv = localStorage.getItem("cm-futuro-theme");
+        if (sv) root.setAttribute("data-theme", sv);
+      } catch (e) {}
+      lbl();
+      th.addEventListener("click", () => {
+        const n = dark() ? "light" : "dark";
+        root.setAttribute("data-theme", n);
+        try {
+          localStorage.setItem("cm-futuro-theme", n);
+        } catch (e) {}
+        lbl();
+      });
+    </script>
+    <script type="module" src="/shared/bridge.js"></script>
+  </body>
+</html>

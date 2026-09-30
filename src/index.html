@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>A cidade do Cristiano</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Rubik:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/hub.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div>
+          <h1 data-t="title">A cidade do Cristiano</h1>
+          <p data-t="intro">
+            Tudo sobre mim num lugar só. Cada prédio guarda um assunto
+            diferente: trabalhos, projetos, história, lugares, formação,
+            desenhos e o futuro. Escolha um e entre.
+          </p>
+        </div>
+        <div class="hud">
+          <span class="count" id="count">0 de 10 lugares</span
+          ><label class="langpick"
+            ><span class="sr-only" data-t="lang">Idioma</span
+            ><select id="langSel" class="btn"></select></label
+          ><button class="btn" id="mailBtn" data-t="mail">Correio</button
+          ><button class="btn" id="theme">Noite</button>
+        </div>
+      </header>
+
+      <div class="town" id="town">
+        <div class="sky" id="sky" aria-hidden="true">
+          <span class="orb"></span>
+        </div>
+        <div class="grid" id="grid"></div>
+        <div class="walker" id="walker" aria-hidden="true"></div>
+      </div>
+      <div class="tip" id="tip" aria-live="polite">
+        <div class="grow">
+          <b id="tipName"></b>
+          <p id="tipText"></p>
+        </div>
+        <button class="btn gold" id="enter" data-t="enter">Entrar</button>
+      </div>
+      <p class="hint" data-t="hint">
+        Setas pra escolher um prédio e Enter pra entrar. Dentro de cada lugar, o
+        botão Voltar pra cidade fica no topo.
+      </p>
+
+      <div class="cols">
+        <section class="card">
+          <h2 data-t="s30">Em 30 segundos</h2>
+          <div class="me">
+            <img
+              src="/assets/img/foto.jpg"
+              alt="Foto do Cristiano"
+              data-ta="photo"
+            />
+            <div>
+              <p data-t="me1">
+                Sou o Cristiano Meirelles, engenheiro de software full stack,
+                tech lead e product owner. Gosto de ficar entre o time e o
+                cliente: entender o problema certo, organizar o caminho e
+                construir de ponta a ponta.
+              </p>
+              <p data-t="me2">
+                Nasci em Itaboraí, fiz o ensino médio no Canadá e estudei em
+                Canoinhas. Desenho desde criança, entrei na programação por
+                causa dos jogos e hoje estou na pós de IA da FIAP.
+              </p>
+            </div>
+          </div>
+          <dl class="facts">
+            <dt data-t="f1">Experiência</dt>
+            <dd data-t="f1d">
+              CI&amp;T (BEES, AB InBev), ESX, Automais e Sigaway
+            </dd>
+            <dt data-t="f2">Stack</dt>
+            <dd data-t="f2d">
+              Java e Spring Boot, Python, TypeScript, React, Next.js, Node.js,
+              AWS, PostgreSQL
+            </dd>
+            <dt data-t="f3">IA</dt>
+            <dd data-t="f3d">
+              Claude API, OpenAI, Bedrock, MCP servers, tool calling, RAG
+            </dd>
+            <dt data-t="f4">Produto</dt>
+            <dd data-t="f4d">
+              Product owner, Scrum Master, liderança de front-end
+            </dd>
+            <dt data-t="f5">Resultados</dt>
+            <dd data-t="f5d">
+              Fluxo 75% mais rápido, time 66% mais ágil, legado 20% mais estável
+            </dd>
+            <dt data-t="f6">Idiomas</dt>
+            <dd data-t="f6d">Português e inglês</dd>
+          </dl>
+          <div class="contact">
+            <a
+              class="btn gold"
+              href="mailto:cristianocmeirelles@gmail.com"
+              data-t="email"
+              >Mandar e-mail</a
+            >
+            <a
+              class="btn"
+              href="https://www.linkedin.com/in/cristiano-c-meirelles/"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+            <a
+              class="btn"
+              href="https://github.com/Cristian0Meirelles"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+          </div>
+        </section>
+        <section class="card">
+          <h2 data-t="guide">Guia da cidade</h2>
+          <ul class="places" id="places"></ul>
+        </section>
+      </div>
+      <footer data-t="footer">
+        Feita no Rio de Janeiro. Dez prédios, uma pessoa.
+      </footer>
+    </div>
+
+    <div
+      class="place"
+      id="place"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="pName"
+    >
+      <div class="pbar">
+        <button class="btn gold" id="back" data-t="back">
+          Voltar pra cidade
+        </button>
+        <div class="nm" id="pName"></div>
+        <button class="btn hide-sm" id="prev" data-t="prev">
+          Lugar anterior
+        </button>
+        <button class="btn" id="next" data-t="next">Próximo lugar</button>
+      </div>
+      <div class="frames" id="frames">
+        <div class="loading" id="loading" data-t="loading">Carregando...</div>
+      </div>
+    </div>
+
+    <dialog id="mail">
+      <div class="card">
+        <h2 data-t="mail">Correio</h2>
+        <div class="me">
+          <img src="/assets/img/foto.jpg" alt="" />
+          <div>
+            <p data-t="mp1">
+              Se você tem um sistema pra construir, um legado pra modernizar, um
+              agente de IA pra colocar em produção ou um time pra eu ajudar a
+              liderar, é exatamente o tipo de carta que eu gosto de receber.
+            </p>
+            <p data-t="mp2">E se quiser só dizer oi, também vale.</p>
+          </div>
+        </div>
+        <div class="contact">
+          <a class="btn gold" href="mailto:cristianocmeirelles@gmail.com"
+            >cristianocmeirelles@gmail.com</a
+          >
+          <a
+            class="btn"
+            href="https://www.linkedin.com/in/cristiano-c-meirelles/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+          <a
+            class="btn"
+            href="https://github.com/Cristian0Meirelles"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+          <a
+            class="btn"
+            href="https://crifalcon.itch.io/zombie-apocalypse-stage-test"
+            target="_blank"
+            rel="noopener"
+            >itch.io</a
+          >
+        </div>
+        <p style="margin: 18px 0 0">
+          <button class="btn" id="mailClose" data-t="back">
+            Voltar pra cidade
+          </button>
+        </p>
+      </div>
+    </dialog>
+    <script type="module" src="/js/hub.js"></script>
+  </body>
+</html>

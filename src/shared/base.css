@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+:root {
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+button {
+  font: inherit;
+  color: inherit;
+}
+a {
+  color: inherit;
+}
+:focus-visible {
+  outline: 3px solid var(--focus, #f5b921);
+  outline-offset: 3px;
+}
+.theme-btn {
+  position: fixed;
+  top: calc(env(safe-area-inset-top, 0px) + 12px);
+  right: 12px;
+  z-index: 40;
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 5px 12px;
+  border-radius: 30px;
+  border: 1px solid currentColor;
+  background: var(--tb-bg, rgba(255, 255, 255, 0.85));
+  color: var(--tb-ink, #222);
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001s !important;
+    animation-iteration-count: 1 !important;
+    transition: none !important;
+  }
+}

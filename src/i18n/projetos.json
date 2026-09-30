@@ -1,0 +1,938 @@
+[
+  {
+    "pt": "Filtrar projetos",
+    "en": "Filter projects",
+    "es": "Filtrar proyectos",
+    "fr": "Filtrer les projets",
+    "de": "Projekte filtern",
+    "ja": "プロジェクトを絞り込む"
+  },
+  {
+    "pt": "Tema",
+    "en": "Theme",
+    "es": "Tema",
+    "fr": "Thème",
+    "de": "Design",
+    "ja": "テーマ"
+  },
+  {
+    "pt": "Oficina de projetos",
+    "en": "Project workshop",
+    "es": "Taller de proyectos",
+    "fr": "Atelier de projets",
+    "de": "Projektwerkstatt",
+    "ja": "プロジェクト工房"
+  },
+  {
+    "pt": "Tudo que eu construí por conta própria, na faculdade ou por paixão. Cada projeto com o problema, o que eu fiz e as ferramentas.",
+    "en": "Everything I’ve built on my own, in college or out of passion. Each project with the problem, what I did and the tools.",
+    "es": "Todo lo que construí por mi cuenta, en la universidad o por pasión. Cada proyecto con el problema, lo que hice y las herramientas.",
+    "fr": "Tout ce que j’ai construit par moi-même, à la fac ou par passion. Chaque projet avec le problème, ce que j’ai fait et les outils.",
+    "de": "Alles, was ich selbst, im Studium oder aus Leidenschaft gebaut habe. Jedes Projekt mit Problem, meinem Beitrag und den Tools.",
+    "ja": "個人で、大学で、あるいは好きでつくってきたもの。プロジェクトごとに課題、やったこと、ツールをまとめています。"
+  },
+  {
+    "pt": "Todos",
+    "en": "All",
+    "es": "Todos",
+    "fr": "Tous",
+    "de": "Alle",
+    "ja": "すべて"
+  },
+  {
+    "pt": "Produtos",
+    "en": "Products",
+    "es": "Productos",
+    "fr": "Produits",
+    "de": "Produkte",
+    "ja": "プロダクト"
+  },
+  {
+    "pt": "Com IA",
+    "en": "With AI",
+    "es": "Con IA",
+    "fr": "Avec IA",
+    "de": "Mit KI",
+    "ja": "AI関連"
+  },
+  {
+    "pt": "Faculdade",
+    "en": "College",
+    "es": "Universidad",
+    "fr": "Fac",
+    "de": "Studium",
+    "ja": "大学"
+  },
+  {
+    "pt": "Jogos",
+    "en": "Games",
+    "es": "Juegos",
+    "fr": "Jeux",
+    "de": "Spiele",
+    "ja": "ゲーム"
+  },
+  {
+    "pt": "Fechar",
+    "en": "Close",
+    "es": "Cerrar",
+    "fr": "Fermer",
+    "de": "Schließen",
+    "ja": "閉じる"
+  },
+  {
+    "pt": "Problema",
+    "en": "Problem",
+    "es": "Problema",
+    "fr": "Problème",
+    "de": "Problem",
+    "ja": "課題"
+  },
+  {
+    "pt": "O que eu fiz",
+    "en": "What I did",
+    "es": "Qué hice",
+    "fr": "Ce que j’ai fait",
+    "de": "Was ich gemacht habe",
+    "ja": "やったこと"
+  },
+  {
+    "pt": "Detalhes",
+    "en": "Details",
+    "es": "Detalles",
+    "fr": "Détails",
+    "de": "Details",
+    "ja": "詳細"
+  },
+  {
+    "pt": "Ferramentas",
+    "en": "Tools",
+    "es": "Herramientas",
+    "fr": "Outils",
+    "de": "Werkzeuge",
+    "ja": "ツール"
+  },
+  {
+    "pt": "Minha parte",
+    "en": "My part",
+    "es": "Mi parte",
+    "fr": "Ma part",
+    "de": "Mein Anteil",
+    "ja": "担当"
+  },
+  {
+    "pt": "Status",
+    "en": "Status",
+    "es": "Estado",
+    "fr": "Statut",
+    "de": "Status",
+    "ja": "状況"
+  },
+  {
+    "pt": "Telas reais",
+    "en": "Real screens",
+    "es": "Pantallas reales",
+    "fr": "Écrans réels",
+    "de": "Echte Screens",
+    "ja": "実際の画面"
+  },
+  {
+    "pt": "Projetos do Cristiano",
+    "en": "Cristiano’s projects",
+    "es": "Proyectos de Cristiano",
+    "fr": "Les projets de Cristiano",
+    "de": "Cristianos Projekte",
+    "ja": "クリスティアーノのプロジェクト"
+  },
+  {
+    "pt": "Projeto",
+    "en": "Project",
+    "es": "Proyecto",
+    "fr": "Projet",
+    "de": "Projekt",
+    "ja": "名称"
+  },
+  {
+    "pt": "Ano",
+    "en": "Year",
+    "es": "Año",
+    "fr": "Année",
+    "de": "Jahr",
+    "ja": "年"
+  },
+  {
+    "pt": "Folha",
+    "en": "Sheet",
+    "es": "Hoja",
+    "fr": "Planche",
+    "de": "Blatt",
+    "ja": "図面"
+  },
+  {
+    "pt": "Plataforma de análise de anúncios com IA",
+    "en": "AI-powered ad analytics platform",
+    "es": "Plataforma de análisis de anuncios con IA",
+    "fr": "Plateforme d’analyse publicitaire avec IA",
+    "de": "KI-gestützte Plattform für Werbeanalysen",
+    "ja": "AIによる広告分析プラットフォーム"
+  },
+  {
+    "pt": "Em desenvolvimento",
+    "en": "In development",
+    "es": "En desarrollo",
+    "fr": "En développement",
+    "de": "In Entwicklung",
+    "ja": "開発中"
+  },
+  {
+    "pt": "Quem tem loja online gasta em anúncio sem saber direito se está lucrando. Os números do Meta, do Google e do TikTok não batem com as vendas reais.",
+    "en": "People with online stores spend on ads without really knowing if they’re making a profit. The numbers from Meta, Google and TikTok don’t match real sales.",
+    "es": "Quien tiene una tienda online gasta en anuncios sin saber bien si está ganando dinero. Los números de Meta, Google y TikTok no coinciden con las ventas reales.",
+    "fr": "Ceux qui ont une boutique en ligne dépensent en publicité sans vraiment savoir s’ils sont rentables. Les chiffres de Meta, Google et TikTok ne collent pas aux ventes réelles.",
+    "de": "Wer einen Onlineshop hat, gibt Geld für Werbung aus, ohne genau zu wissen, ob es sich lohnt. Die Zahlen von Meta, Google und TikTok passen nicht zu den echten Verkäufen.",
+    "ja": "ネットショップの運営者は、利益が出ているのかよくわからないまま広告費を使っています。Meta、Google、TikTokの数字は実際の売上と一致しません。"
+  },
+  {
+    "pt": "Um painel que lê as contas de anúncio, cruza com os pedidos reais da loja e diz onde a verba está vazando e o que fazer. Nasceu da 515, a loja da minha família.",
+    "en": "A dashboard that reads the ad accounts, cross-checks them with the store’s real orders and tells you where the budget is leaking and what to do. It was born from 515, my family’s store.",
+    "es": "Un panel que lee las cuentas de anuncios, las cruza con los pedidos reales de la tienda y dice dónde se está escapando el presupuesto y qué hacer. Nació de 515, la tienda de mi familia.",
+    "fr": "Un tableau de bord qui lit les comptes publicitaires, les croise avec les vraies commandes de la boutique et indique où le budget fuit et quoi faire. Il est né de 515, la boutique de ma famille.",
+    "de": "Ein Dashboard, das die Werbekonten ausliest, mit den echten Bestellungen des Shops abgleicht und zeigt, wo das Budget versickert und was zu tun ist. Entstanden aus 515, dem Shop meiner Familie.",
+    "ja": "広告アカウントを読み込み、ストアの実際の注文と照らし合わせて、どこで予算が漏れているか、何をすべきかを示すダッシュボードです。家族のストア「515」から生まれました。"
+  },
+  {
+    "pt": "Quatro plataformas no mesmo formato: Meta, TikTok, Google Ads e YouTube.",
+    "en": "Four platforms in the same format: Meta, TikTok, Google Ads and YouTube.",
+    "es": "Cuatro plataformas en el mismo formato: Meta, TikTok, Google Ads y YouTube.",
+    "fr": "Quatre plateformes au même format : Meta, TikTok, Google Ads et YouTube.",
+    "de": "Vier Plattformen im selben Format: Meta, TikTok, Google Ads und YouTube.",
+    "ja": "Meta、TikTok、Google Ads、YouTubeの4つを同じ形式で表示。"
+  },
+  {
+    "pt": "Auditoria contra a Shopify: descobri que o Meta estava inflando as compras em 33%.",
+    "en": "An audit against Shopify: I found out Meta was inflating purchases by 33%.",
+    "es": "Auditoría contra Shopify: descubrí que Meta estaba inflando las compras en un 33%.",
+    "fr": "Un audit face à Shopify : j’ai découvert que Meta gonflait les achats de 33 %.",
+    "de": "Abgleich mit Shopify: Ich habe herausgefunden, dass Meta die Käufe um 33 % zu hoch angab.",
+    "ja": "Shopifyと照合した結果、Metaが購入数を33%多く報告していることがわかりました。"
+  },
+  {
+    "pt": "Análise com IA que devolve diagnóstico e plano de 30 dias em linguagem de dono de loja, com cota e custo controlados.",
+    "en": "AI analysis that returns a diagnosis and a 30-day plan in store-owner language, with controlled quota and cost.",
+    "es": "Análisis con IA que devuelve diagnóstico y plan de 30 días en lenguaje de dueño de tienda, con cuota y costo controlados.",
+    "fr": "Une analyse par IA qui renvoie un diagnostic et un plan sur 30 jours dans le langage d’un commerçant, avec quota et coût maîtrisés.",
+    "de": "KI-Analyse mit Diagnose und 30-Tage-Plan in der Sprache von Shopbetreibern, mit kontrolliertem Kontingent und Kosten.",
+    "ja": "AIがストアオーナーにわかる言葉で診断と30日間の計画を返します。利用回数とコストは制御しています。"
+  },
+  {
+    "pt": "Alertas diários por e-mail e WhatsApp: anúncio queimando verba, fadiga, carrinho fantasma e vencedores pra escalar.",
+    "en": "Daily alerts by email and WhatsApp: ads burning budget, fatigue, ghost carts and winners worth scaling.",
+    "es": "Alertas diarias por email y WhatsApp: anuncios quemando presupuesto, fatiga, carritos fantasma y ganadores para escalar.",
+    "fr": "Des alertes quotidiennes par e-mail et WhatsApp : pubs qui brûlent le budget, fatigue, paniers fantômes et gagnants à faire monter.",
+    "de": "Tägliche Warnungen per E-Mail und WhatsApp: Anzeigen, die Budget verbrennen, Ermüdung, Geisterwarenkörbe und Gewinner zum Skalieren.",
+    "ja": "メールとWhatsAppで毎日アラート。予算を浪費している広告、クリエイティブ疲れ、幽霊カート、伸ばすべき勝ち広告。"
+  },
+  {
+    "pt": "Pausar e ativar anúncios pelo painel, com um agendador de horários que roda no GitHub Actions e se desliga antes de estourar a franquia.",
+    "en": "Pause and activate ads from the dashboard, with a scheduler that runs on GitHub Actions and turns itself off before exceeding the free quota.",
+    "es": "Pausar y activar anuncios desde el panel, con un programador de horarios que corre en GitHub Actions y se apaga solo antes de pasarse de la cuota gratuita.",
+    "fr": "Mettre en pause et activer les pubs depuis le tableau de bord, avec un planificateur qui tourne sur GitHub Actions et s’arrête tout seul avant de dépasser le quota gratuit.",
+    "de": "Anzeigen im Dashboard pausieren und aktivieren, mit einem Zeitplaner auf GitHub Actions, der sich abschaltet, bevor das Gratiskontingent überschritten wird.",
+    "ja": "ダッシュボードから広告を停止・再開。GitHub Actionsで動くスケジューラーは、無料枠を超える前に自動で止まります。"
+  },
+  {
+    "pt": "Mapa de calor de dia e hora, funil completo do anúncio ao pedido pago e integração com o Microsoft Clarity.",
+    "en": "Day-and-hour heat map, a full funnel from the ad to the paid order, and integration with Microsoft Clarity.",
+    "es": "Mapa de calor por día y hora, embudo completo del anuncio al pedido pagado e integración con Microsoft Clarity.",
+    "fr": "Carte de chaleur par jour et heure, entonnoir complet de la pub à la commande payée et intégration avec Microsoft Clarity.",
+    "de": "Heatmap nach Tag und Uhrzeit, vollständiger Funnel von der Anzeige bis zur bezahlten Bestellung und Integration mit Microsoft Clarity.",
+    "ja": "曜日×時間のヒートマップ、広告から支払い済み注文までのファネル、Microsoft Clarityとの連携。"
+  },
+  {
+    "pt": "OAuth multi-cliente com token cifrado, sessão assinada, limite de tentativas de login e tema claro e escuro com contraste verificado.",
+    "en": "Multi-client OAuth with encrypted tokens, signed sessions, login attempt limits and light and dark themes with verified contrast.",
+    "es": "OAuth multicliente con token cifrado, sesión firmada, límite de intentos de login y tema claro y oscuro con contraste verificado.",
+    "fr": "OAuth multi-client avec jetons chiffrés, sessions signées, limite de tentatives de connexion et thèmes clair et sombre au contraste vérifié.",
+    "de": "Multi-Client-OAuth mit verschlüsselten Tokens, signierten Sessions, Begrenzung der Login-Versuche und hellem und dunklem Design mit geprüftem Kontrast.",
+    "ja": "暗号化トークンによるマルチクライアントOAuth、署名付きセッション、ログイン試行制限、コントラストを確認したライト/ダークテーマ。"
+  },
+  {
+    "pt": "APIs do Meta, Google Ads e TikTok",
+    "en": "Meta, Google Ads and TikTok APIs",
+    "es": "APIs de Meta, Google Ads y TikTok",
+    "fr": "API Meta, Google Ads et TikTok",
+    "de": "APIs von Meta, Google Ads und TikTok",
+    "ja": "Meta、Google Ads、TikTokのAPI"
+  },
+  {
+    "pt": "Tudo: produto, arquitetura, design system e código",
+    "en": "Everything: product, architecture, design system and code",
+    "es": "Todo: producto, arquitectura, design system y código",
+    "fr": "Tout : produit, architecture, design system et code",
+    "de": "Alles: Produkt, Architektur, Designsystem und Code",
+    "ja": "すべて：プロダクト、アーキテクチャ、デザインシステム、コード"
+  },
+  {
+    "pt": "Já funciona e dá pra usar no dia a dia. Faltam alguns detalhes antes do lançamento.",
+    "en": "It already works and can be used day to day. A few details are left before the launch.",
+    "es": "Ya funciona y se puede usar en el día a día. Faltan algunos detalles antes del lanzamiento.",
+    "fr": "Il fonctionne déjà et s’utilise au quotidien. Il reste quelques détails avant le lancement.",
+    "de": "Es funktioniert bereits und ist im Alltag nutzbar. Vor dem Launch fehlen noch ein paar Details.",
+    "ja": "すでに動いていて、日常的に使えます。ローンチ前に仕上げが少し残っています。"
+  },
+  {
+    "pt": "Aba de alertas: o que precisa de decisão hoje, do mais grave pro menos grave, com botão pra pausar o anúncio ali mesmo.",
+    "en": "Alerts tab: what needs a decision today, from most to least serious, with a button to pause the ad right there.",
+    "es": "Pestaña de alertas: lo que necesita una decisión hoy, del más grave al menos grave, con un botón para pausar el anuncio ahí mismo.",
+    "fr": "Onglet alertes : ce qui demande une décision aujourd’hui, du plus grave au moins grave, avec un bouton pour mettre la pub en pause sur place.",
+    "de": "Tab Warnungen: was heute eine Entscheidung braucht, vom Dringendsten zum am wenigsten Dringenden, mit einem Button, um die Anzeige direkt zu pausieren.",
+    "ja": "アラート画面：今日判断が必要なものを深刻な順に表示。その場で広告を停止するボタン付き。"
+  },
+  {
+    "pt": "Aba de gráficos: evolução diária de gasto e receita, com combinações prontas de indicadores e filtro por campanha, conjunto e anúncio.",
+    "en": "Charts tab: daily evolution of spend and revenue, with ready-made indicator combinations and filters by campaign, ad set and ad.",
+    "es": "Pestaña de gráficos: evolución diaria de gasto e ingresos, con combinaciones listas de indicadores y filtro por campaña, conjunto y anuncio.",
+    "fr": "Onglet graphiques : évolution quotidienne des dépenses et du chiffre d’affaires, avec des combinaisons d’indicateurs prêtes et des filtres par campagne, ensemble et pub.",
+    "de": "Tab Diagramme: tägliche Entwicklung von Ausgaben und Umsatz, mit fertigen Kennzahl-Kombinationen und Filtern nach Kampagne, Anzeigengruppe und Anzeige.",
+    "ja": "グラフ画面：広告費と売上の日次推移。指標の組み合わせプリセットと、キャンペーン・広告セット・広告ごとのフィルター付き。"
+  },
+  {
+    "pt": "Loja de cosméticos de banho",
+    "en": "Bath cosmetics store",
+    "es": "Tienda de cosméticos de baño",
+    "fr": "Boutique de cosmétiques pour le bain",
+    "de": "Shop für Badekosmetik",
+    "ja": "バス用コスメのストア"
+  },
+  {
+    "pt": "No ar",
+    "en": "Live",
+    "es": "En línea",
+    "fr": "En ligne",
+    "de": "Online",
+    "ja": "公開中"
+  },
+  {
+    "pt": "Um projeto de família, de inspiração cristã, que nasceu depois que minha avó faleceu lendo um devocional. O nome carrega isso.",
+    "en": "A family project with a Christian inspiration, born after my grandmother passed away while reading a devotional. The name carries that.",
+    "es": "Un proyecto familiar, de inspiración cristiana, que nació después de que mi abuela falleciera leyendo un devocional. El nombre lleva eso.",
+    "fr": "Un projet familial d’inspiration chrétienne, né après que ma grand-mère est décédée en lisant un livre de dévotion. Le nom porte cette histoire.",
+    "de": "Ein Familienprojekt mit christlicher Inspiration, entstanden, nachdem meine Großmutter beim Lesen einer Andacht gestorben war. Der Name trägt das in sich.",
+    "ja": "キリスト教にインスピレーションを受けた家族のプロジェクトです。祖母がデボーション（信仰の書）を読みながら亡くなったあとに生まれ、名前にその想いが込められています。"
+  },
+  {
+    "pt": "Estruturei a loja inteira na Shopify, do template à operação.",
+    "en": "I structured the whole store on Shopify, from the template to operations.",
+    "es": "Estructuré toda la tienda en Shopify, de la plantilla a la operación.",
+    "fr": "J’ai structuré toute la boutique sur Shopify, du template au fonctionnement.",
+    "de": "Ich habe den ganzen Shop auf Shopify aufgebaut, vom Template bis zum Betrieb.",
+    "ja": "テンプレートから運用まで、Shopifyでストア全体を構築しました。"
+  },
+  {
+    "pt": "Template da loja configurado e ajustado.",
+    "en": "Store template set up and adjusted.",
+    "es": "Plantilla de la tienda configurada y ajustada.",
+    "fr": "Template de la boutique configuré et ajusté.",
+    "de": "Shop-Template eingerichtet und angepasst.",
+    "ja": "ストアのテンプレートを設定・調整。"
+  },
+  {
+    "pt": "Webhooks de checkout e rastreio de pedido.",
+    "en": "Checkout webhooks and order tracking.",
+    "es": "Webhooks de checkout y seguimiento de pedidos.",
+    "fr": "Webhooks de paiement et suivi des commandes.",
+    "de": "Checkout-Webhooks und Sendungsverfolgung.",
+    "ja": "チェックアウトのWebhookと注文追跡。"
+  },
+  {
+    "pt": "Segmentação de clientes.",
+    "en": "Customer segmentation.",
+    "es": "Segmentación de clientes.",
+    "fr": "Segmentation des clients.",
+    "de": "Kundensegmentierung.",
+    "ja": "顧客セグメンテーション。"
+  },
+  {
+    "pt": "Foi daqui que nasceu o Zevi: a gente anunciava sem saber se estava lucrando.",
+    "en": "This is where Zevi came from: we were advertising without knowing if we were making a profit.",
+    "es": "De aquí nació Zevi: anunciábamos sin saber si estábamos ganando.",
+    "fr": "C’est de là qu’est né Zevi : on faisait de la pub sans savoir si on était rentables.",
+    "de": "Hier ist Zevi entstanden: Wir haben geworben, ohne zu wissen, ob es sich lohnt.",
+    "ja": "Zeviはここから生まれました。利益が出ているかわからないまま広告を出していたからです。"
+  },
+  {
+    "pt": "Estrutura da loja e operação digital",
+    "en": "Store structure and digital operations",
+    "es": "Estructura de la tienda y operación digital",
+    "fr": "Structure de la boutique et opérations numériques",
+    "de": "Shop-Aufbau und digitaler Betrieb",
+    "ja": "ストア構築とデジタル運用"
+  },
+  {
+    "pt": "E-commerce de cartas Pokémon TCG",
+    "en": "Pokémon TCG card e-commerce",
+    "es": "E-commerce de cartas Pokémon TCG",
+    "fr": "E-commerce de cartes Pokémon TCG",
+    "de": "E-Commerce für Pokémon-TCG-Karten",
+    "ja": "ポケモンカードのECサイト"
+  },
+  {
+    "pt": "Site, app e API",
+    "en": "Site, app and API",
+    "es": "Sitio, app y API",
+    "fr": "Site, appli et API",
+    "de": "Website, App und API",
+    "ja": "サイト、アプリ、API"
+  },
+  {
+    "pt": "Quem compra carta avulsa precisa ver a condição de cada canto antes de pagar, e foto parada não mostra isso.",
+    "en": "People who buy single cards need to see the condition of every corner before paying, and a still photo doesn’t show that.",
+    "es": "Quien compra cartas sueltas necesita ver el estado de cada esquina antes de pagar, y una foto fija no lo muestra.",
+    "fr": "Ceux qui achètent des cartes à l’unité doivent voir l’état de chaque coin avant de payer, et une photo fixe ne le montre pas.",
+    "de": "Wer Einzelkarten kauft, muss den Zustand jeder Ecke sehen, bevor er bezahlt, und ein statisches Foto zeigt das nicht.",
+    "ja": "シングルカードを買う人は、支払う前に四隅の状態まで見たいもの。止まった写真ではそれがわかりません。"
+  },
+  {
+    "pt": "Uma loja completa com vitrine holográfica em 3D e zoom de inspeção, mais API, banco e app.",
+    "en": "A complete store with a 3D holographic showcase and an inspection zoom, plus API, database and app.",
+    "es": "Una tienda completa con vitrina holográfica en 3D y zoom de inspección, además de API, base de datos y app.",
+    "fr": "Une boutique complète avec une vitrine holographique en 3D et un zoom d’inspection, plus API, base de données et appli.",
+    "de": "Ein kompletter Shop mit holografischem 3D-Schaufenster und Prüf-Zoom, dazu API, Datenbank und App.",
+    "ja": "3Dのホログラフィック展示と検品ズームを備えた、API・DB・アプリまでそろったストア。"
+  },
+  {
+    "pt": "Carta 3D holográfica e efeito de inclinação, que funciona também com as fotos reais enviadas pelo admin.",
+    "en": "3D holographic card with a tilt effect that also works with real photos uploaded by the admin.",
+    "es": "Carta holográfica 3D con efecto de inclinación, que también funciona con las fotos reales subidas por el admin.",
+    "fr": "Carte holographique en 3D avec effet d’inclinaison, qui marche aussi avec les vraies photos envoyées par l’admin.",
+    "de": "Holografische 3D-Karte mit Neigeeffekt, der auch mit echten, vom Admin hochgeladenen Fotos funktioniert.",
+    "ja": "管理者がアップした実物の写真にも効く、傾きエフェクト付きの3Dホログラフィックカード。"
+  },
+  {
+    "pt": "Zoom de inspeção de até 8x, com arrastar pros cantos e pinça no celular.",
+    "en": "Inspection zoom up to 8x, with dragging to the corners and pinch on mobile.",
+    "es": "Zoom de inspección de hasta 8x, arrastrando a las esquinas y con pinza en el móvil.",
+    "fr": "Zoom d’inspection jusqu’à 8x, avec glisser vers les coins et pincer sur mobile.",
+    "de": "Prüf-Zoom bis 8x, mit Ziehen in die Ecken und Pinch auf dem Handy.",
+    "ja": "最大8倍の検品ズーム。四隅へのドラッグとスマホのピンチ操作に対応。"
+  },
+  {
+    "pt": "API em Java 21 com Spring Boot e JWT. Rotas de admin protegidas no servidor e preço sempre calculado a partir do banco.",
+    "en": "API in Java 21 with Spring Boot and JWT. Admin routes protected on the server and prices always calculated from the database.",
+    "es": "API en Java 21 con Spring Boot y JWT. Rutas de admin protegidas en el servidor y precio siempre calculado desde la base de datos.",
+    "fr": "API en Java 21 avec Spring Boot et JWT. Routes d’admin protégées côté serveur et prix toujours calculés à partir de la base.",
+    "de": "API in Java 21 mit Spring Boot und JWT. Admin-Routen serverseitig geschützt und Preise immer aus der Datenbank berechnet.",
+    "ja": "Java 21、Spring Boot、JWTによるAPI。管理ルートはサーバー側で保護し、価格は常にデータベースから計算します。"
+  },
+  {
+    "pt": "PostgreSQL com variações de idioma e condição em JSONB, migrações com Flyway e fotos no S3.",
+    "en": "PostgreSQL with language and condition variants in JSONB, migrations with Flyway and photos on S3.",
+    "es": "PostgreSQL con variantes de idioma y estado en JSONB, migraciones con Flyway y fotos en S3.",
+    "fr": "PostgreSQL avec variantes de langue et d’état en JSONB, migrations avec Flyway et photos sur S3.",
+    "de": "PostgreSQL mit Sprach- und Zustandsvarianten in JSONB, Migrationen mit Flyway und Fotos auf S3.",
+    "ja": "言語と状態のバリエーションはPostgreSQLのJSONBで、マイグレーションはFlyway、写真はS3。"
+  },
+  {
+    "pt": "App iOS e Android com Capacitor, reaproveitando o mesmo site.",
+    "en": "iOS and Android app with Capacitor, reusing the same site.",
+    "es": "App para iOS y Android con Capacitor, reutilizando el mismo sitio.",
+    "fr": "Appli iOS et Android avec Capacitor, en réutilisant le même site.",
+    "de": "iOS- und Android-App mit Capacitor, auf Basis derselben Website.",
+    "ja": "同じサイトを再利用し、CapacitorでiOS・Androidアプリ化。"
+  },
+  {
+    "pt": "Painel admin com produtos, estoque, pedidos, rastreio, banners e troca de logo.",
+    "en": "Admin panel with products, stock, orders, tracking, banners and logo swap.",
+    "es": "Panel de admin con productos, stock, pedidos, seguimiento, banners y cambio de logo.",
+    "fr": "Panneau d’admin avec produits, stock, commandes, suivi, bannières et changement de logo.",
+    "de": "Admin-Panel mit Produkten, Lager, Bestellungen, Tracking, Bannern und Logo-Wechsel.",
+    "ja": "商品、在庫、注文、追跡、バナー、ロゴ変更を扱う管理画面。"
+  },
+  {
+    "pt": "Front, back, banco e app",
+    "en": "Front, back, database and app",
+    "es": "Front, back, base de datos y app",
+    "fr": "Front, back, base de données et appli",
+    "de": "Frontend, Backend, Datenbank und App",
+    "ja": "フロント、バック、DB、アプリ"
+  },
+  {
+    "pt": "App de treino",
+    "en": "Workout app",
+    "es": "App de entrenamiento",
+    "fr": "Appli de musculation",
+    "de": "Trainings-App",
+    "ja": "トレーニングアプリ"
+  },
+  {
+    "pt": "Ficha de academia com IA",
+    "en": "A gym plan with AI",
+    "es": "Rutina de gimnasio con IA",
+    "fr": "Programme de salle avec IA",
+    "de": "Trainingsplan mit KI",
+    "ja": "AI付きのジムメニュー"
+  },
+  {
+    "pt": "Em uso",
+    "en": "In use",
+    "es": "En uso",
+    "fr": "En usage",
+    "de": "Im Einsatz",
+    "ja": "使用中"
+  },
+  {
+    "pt": "Ficha de academia no papel, cronômetro no celular, histórico em lugar nenhum.",
+    "en": "Gym plan on paper, timer on the phone, history nowhere.",
+    "es": "Rutina de gimnasio en papel, cronómetro en el móvil, historial en ningún lado.",
+    "fr": "Programme sur papier, chrono sur le téléphone, historique nulle part.",
+    "de": "Trainingsplan auf Papier, Timer auf dem Handy, Verlauf nirgendwo.",
+    "ja": "メニューは紙、タイマーはスマホ、記録はどこにもない。"
+  },
+  {
+    "pt": "Um app que marca série por série e tem um chat com IA que executa de verdade.",
+    "en": "An app that logs set by set and has an AI chat that actually takes action.",
+    "es": "Una app que marca serie por serie y tiene un chat con IA que ejecuta de verdad.",
+    "fr": "Une appli qui note série par série et qui a un chat IA qui agit vraiment.",
+    "de": "Eine App, die Satz für Satz protokolliert und einen KI-Chat hat, der wirklich handelt.",
+    "ja": "セットごとに記録でき、実際に操作してくれるAIチャットを備えたアプリ。"
+  },
+  {
+    "pt": "Você manda o print da ficha e ele lê os exercícios sozinho.",
+    "en": "You send a screenshot of your plan and it reads the exercises on its own.",
+    "es": "Mandas una captura de la rutina y lee los ejercicios solo.",
+    "fr": "Vous envoyez une capture du programme et elle lit les exercices toute seule.",
+    "de": "Du schickst einen Screenshot deines Plans und sie liest die Übungen selbst aus.",
+    "ja": "メニューのスクリーンショットを送ると、種目を自動で読み取ります。"
+  },
+  {
+    "pt": "Cronômetro de descanso automático e histórico.",
+    "en": "Automatic rest timer and history.",
+    "es": "Cronómetro de descanso automático e historial.",
+    "fr": "Chrono de repos automatique et historique.",
+    "de": "Automatischer Pausentimer und Verlauf.",
+    "ja": "自動の休憩タイマーと履歴。"
+  },
+  {
+    "pt": "Chat com tool calling que troca o exercício quando a máquina está ocupada, registra o que já foi feito e ajusta a série.",
+    "en": "A chat with tool calling that swaps the exercise when the machine is taken, logs what’s done and adjusts the set.",
+    "es": "Chat con tool calling que cambia el ejercicio cuando la máquina está ocupada, registra lo hecho y ajusta la serie.",
+    "fr": "Un chat avec tool calling qui change l’exercice quand la machine est prise, note ce qui est fait et ajuste la série.",
+    "de": "Ein Chat mit Tool Calling, der die Übung tauscht, wenn das Gerät belegt ist, Erledigtes protokolliert und den Satz anpasst.",
+    "ja": "マシンが埋まっていれば種目を入れ替え、終わったものを記録し、セットを調整するツール呼び出し付きチャット。"
+  },
+  {
+    "pt": "Prever a recorrência de câncer de tireoide",
+    "en": "Predicting thyroid cancer recurrence",
+    "es": "Predecir la recurrencia del cáncer de tiroides",
+    "fr": "Prédire la récidive du cancer de la thyroïde",
+    "de": "Rückfall von Schilddrüsenkrebs vorhersagen",
+    "ja": "甲状腺がんの再発予測"
+  },
+  {
+    "pt": "Pós em IA",
+    "en": "AI postgraduate program",
+    "es": "Posgrado en IA",
+    "fr": "Master spécialisé en IA",
+    "de": "Aufbaustudium KI",
+    "ja": "AI大学院課程"
+  },
+  {
+    "pt": "Prever se o câncer de tireoide volta depois do tratamento, com 383 pacientes acompanhados por pelo menos 10 anos. Aqui deixar passar uma recorrência é o pior erro.",
+    "en": "Predicting whether thyroid cancer comes back after treatment, with 383 patients followed for at least 10 years. Here, missing a recurrence is the worst mistake.",
+    "es": "Predecir si el cáncer de tiroides vuelve después del tratamiento, con 383 pacientes seguidos durante al menos 10 años. Aquí, dejar pasar una recurrencia es el peor error.",
+    "fr": "Prédire si le cancer de la thyroïde revient après le traitement, avec 383 patients suivis pendant au moins 10 ans. Ici, rater une récidive est la pire erreur.",
+    "de": "Vorhersagen, ob Schilddrüsenkrebs nach der Behandlung zurückkommt, mit 383 Patienten, die mindestens 10 Jahre begleitet wurden. Hier ist ein übersehener Rückfall der schlimmste Fehler.",
+    "ja": "治療後に甲状腺がんが再発するかを予測。10年以上追跡した383人の患者データを使います。ここでは再発を見逃すことが最悪の誤りです。"
+  },
+  {
+    "pt": "Comparei cinco modelos priorizando recall e F1 em vez de acurácia, e expliquei o escolhido.",
+    "en": "I compared five models prioritizing recall and F1 over accuracy, and explained the one I chose.",
+    "es": "Comparé cinco modelos priorizando recall y F1 en lugar de accuracy, y expliqué el elegido.",
+    "fr": "J’ai comparé cinq modèles en privilégiant le rappel et le F1 plutôt que la précision globale, et j’ai expliqué celui retenu.",
+    "de": "Ich habe fünf Modelle verglichen, Recall und F1 vor Accuracy priorisiert und das gewählte Modell erklärt.",
+    "ja": "正解率より再現率とF1を重視して5つのモデルを比較し、選んだモデルを説明しました。"
+  },
+  {
+    "pt": "Cada variável codificada pela natureza dela: binária, ordinal ou nominal.",
+    "en": "Each variable encoded according to its nature: binary, ordinal or nominal.",
+    "es": "Cada variable codificada según su naturaleza: binaria, ordinal o nominal.",
+    "fr": "Chaque variable encodée selon sa nature : binaire, ordinale ou nominale.",
+    "de": "Jede Variable nach ihrer Art kodiert: binär, ordinal oder nominal.",
+    "ja": "各変数を性質に合わせてエンコード：二値、順序、名義。"
+  },
+  {
+    "pt": "Treino, validação e teste com estratificação, e o scaler dentro de um Pipeline pra não vazar dado.",
+    "en": "Train, validation and test with stratification, and the scaler inside a Pipeline to avoid data leakage.",
+    "es": "Entrenamiento, validación y prueba con estratificación, y el scaler dentro de un Pipeline para no filtrar datos.",
+    "fr": "Entraînement, validation et test avec stratification, et le scaler dans un Pipeline pour éviter les fuites de données.",
+    "de": "Training, Validierung und Test mit Stratifizierung, der Scaler im Pipeline, um Datenlecks zu vermeiden.",
+    "ja": "層化した学習・検証・テスト分割と、データリークを防ぐためPipeline内に入れたスケーラー。"
+  },
+  {
+    "pt": "KNN, regressão logística, árvore, Random Forest e SVM comparados.",
+    "en": "KNN, logistic regression, decision tree, Random Forest and SVM compared.",
+    "es": "KNN, regresión logística, árbol, Random Forest y SVM comparados.",
+    "fr": "KNN, régression logistique, arbre, Random Forest et SVM comparés.",
+    "de": "KNN, logistische Regression, Entscheidungsbaum, Random Forest und SVM im Vergleich.",
+    "ja": "KNN、ロジスティック回帰、決定木、ランダムフォレスト、SVMを比較。"
+  },
+  {
+    "pt": "Random Forest escolhido e explicado com feature importance e SHAP.",
+    "en": "Random Forest chosen and explained with feature importance and SHAP.",
+    "es": "Random Forest elegido y explicado con feature importance y SHAP.",
+    "fr": "Random Forest retenu et expliqué avec l’importance des variables et SHAP.",
+    "de": "Random Forest gewählt und mit Feature Importance und SHAP erklärt.",
+    "ja": "ランダムフォレストを選び、特徴量重要度とSHAPで説明。"
+  },
+  {
+    "pt": "Extra: uma CNN com MobileNetV2 e transfer learning pra classificar ultrassom de tireoide.",
+    "en": "Extra: a CNN with MobileNetV2 and transfer learning to classify thyroid ultrasound images.",
+    "es": "Extra: una CNN con MobileNetV2 y transfer learning para clasificar ecografías de tiroides.",
+    "fr": "Bonus : un CNN avec MobileNetV2 et transfer learning pour classer des échographies de la thyroïde.",
+    "de": "Extra: ein CNN mit MobileNetV2 und Transfer Learning zur Klassifikation von Schilddrüsen-Ultraschallbildern.",
+    "ja": "おまけ：MobileNetV2と転移学習を使ったCNNで甲状腺エコー画像を分類。"
+  },
+  {
+    "pt": "Análise, modelagem e conclusões",
+    "en": "Analysis, modeling and conclusions",
+    "es": "Análisis, modelado y conclusiones",
+    "fr": "Analyse, modélisation et conclusions",
+    "de": "Analyse, Modellierung und Schlussfolgerungen",
+    "ja": "分析、モデリング、結論"
+  },
+  {
+    "pt": "Sistema de doadores de sangue",
+    "en": "Blood donor system",
+    "es": "Sistema de donantes de sangre",
+    "fr": "Système de donneurs de sang",
+    "de": "System für Blutspender",
+    "ja": "献血者管理システム"
+  },
+  {
+    "pt": "A associação de doadores de sangue de Canoinhas fazia tudo em fichas de papel, no meio da pandemia.",
+    "en": "The blood donor association in Canoinhas did everything on paper forms, in the middle of the pandemic.",
+    "es": "La asociación de donantes de sangre de Canoinhas hacía todo en fichas de papel, en plena pandemia.",
+    "fr": "L’association des donneurs de sang de Canoinhas faisait tout sur des fiches papier, en pleine pandémie.",
+    "de": "Der Blutspendeverein in Canoinhas machte alles auf Papierbögen, mitten in der Pandemie.",
+    "ja": "カノイーニャスの献血者協会は、パンデミックのさなかにすべてを紙で管理していました。"
+  },
+  {
+    "pt": "O front-end de um sistema web de cadastro, construído junto com quem ia usar.",
+    "en": "The front-end of a web registration system, built together with the people who would use it.",
+    "es": "El front-end de un sistema web de registro, construido junto con quienes lo iban a usar.",
+    "fr": "Le front-end d’un système web d’inscription, construit avec ceux qui allaient l’utiliser.",
+    "de": "Das Frontend eines webbasierten Registrierungssystems, gemeinsam mit den späteren Nutzern gebaut.",
+    "ja": "使う人たちと一緒につくった、Web登録システムのフロントエンド。"
+  },
+  {
+    "pt": "Três meses de pesquisa, reunião e protótipo com a secretária da associação.",
+    "en": "Three months of research, meetings and prototypes with the association’s secretary.",
+    "es": "Tres meses de investigación, reuniones y prototipos con la secretaria de la asociación.",
+    "fr": "Trois mois de recherche, de réunions et de prototypes avec la secrétaire de l’association.",
+    "de": "Drei Monate Recherche, Meetings und Prototypen mit der Sekretärin des Vereins.",
+    "ja": "協会の事務担当の方と3か月の調査、打ち合わせ、プロトタイプ。"
+  },
+  {
+    "pt": "Mais de 5.000 doadores no sistema.",
+    "en": "More than 5,000 donors in the system.",
+    "es": "Más de 5.000 donantes en el sistema.",
+    "fr": "Plus de 5 000 donneurs dans le système.",
+    "de": "Über 5.000 Spender im System.",
+    "ja": "5,000人以上の献血者を登録。"
+  },
+  {
+    "pt": "Busca 65% mais rápida.",
+    "en": "Search 65% faster.",
+    "es": "Búsqueda un 65% más rápida.",
+    "fr": "Recherche 65 % plus rapide.",
+    "de": "Suche 65 % schneller.",
+    "ja": "検索が65%高速化。"
+  },
+  {
+    "pt": "Financiado por edital do IFSC, virou notícia.",
+    "en": "Funded by an IFSC grant, it made the news.",
+    "es": "Financiado por una convocatoria del IFSC, salió en las noticias.",
+    "fr": "Financé par un appel à projets de l’IFSC, il est passé dans la presse.",
+    "de": "Durch eine IFSC-Förderung finanziert, kam es in die Presse.",
+    "ja": "IFSCの公募で資金を得て、ニュースにもなりました。"
+  },
+  {
+    "pt": "Front-end e conversa com a associação",
+    "en": "Front-end and talking with the association",
+    "es": "Front-end y conversación con la asociación",
+    "fr": "Front-end et échanges avec l’association",
+    "de": "Frontend und Abstimmung mit dem Verein",
+    "ja": "フロントエンドと協会とのやり取り"
+  },
+  {
+    "pt": "Loja virtual em Django",
+    "en": "Online store in Django",
+    "es": "Tienda online en Django",
+    "fr": "Boutique en ligne avec Django",
+    "de": "Onlineshop mit Django",
+    "ja": "Djangoのオンラインストア"
+  },
+  {
+    "pt": "Projeto de faculdade",
+    "en": "College project",
+    "es": "Proyecto universitario",
+    "fr": "Projet de fac",
+    "de": "Studienprojekt",
+    "ja": "大学の課題"
+  },
+  {
+    "pt": "Um exercício de faculdade que eu quis levar a sério.",
+    "en": "A college assignment that I chose to take seriously.",
+    "es": "Un ejercicio de la universidad que quise tomarme en serio.",
+    "fr": "Un exercice de fac que j’ai voulu prendre au sérieux.",
+    "de": "Eine Studienaufgabe, die ich ernst nehmen wollte.",
+    "ja": "真剣に取り組むと決めた大学の課題。"
+  },
+  {
+    "pt": "Uma loja em Django com layout por herança de templates, cadastro e listagem de registros.",
+    "en": "A Django store with layout via template inheritance, plus record registration and listing.",
+    "es": "Una tienda en Django con layout por herencia de plantillas, registro y listado de registros.",
+    "fr": "Une boutique Django avec mise en page par héritage de templates, saisie et liste des enregistrements.",
+    "de": "Ein Django-Shop mit Layout über Template-Vererbung, Erfassung und Auflistung von Datensätzen.",
+    "ja": "テンプレート継承によるレイアウト、登録と一覧表示を備えたDjangoのストア。"
+  },
+  {
+    "pt": "Banco modelado no MySQL Workbench: administrador, clientes, itens e pagamentos.",
+    "en": "Database modeled in MySQL Workbench: admins, customers, items and payments.",
+    "es": "Base de datos modelada en MySQL Workbench: administradores, clientes, ítems y pagos.",
+    "fr": "Base de données modélisée dans MySQL Workbench : administrateurs, clients, articles et paiements.",
+    "de": "Datenbank in MySQL Workbench modelliert: Admins, Kunden, Artikel und Zahlungen.",
+    "ja": "MySQL Workbenchで設計したDB：管理者、顧客、商品、支払い。"
+  },
+  {
+    "pt": "Templates do Django com layout base herdado.",
+    "en": "Django templates with an inherited base layout.",
+    "es": "Plantillas de Django con layout base heredado.",
+    "fr": "Templates Django avec une mise en page de base héritée.",
+    "de": "Django-Templates mit vererbtem Basislayout.",
+    "ja": "ベースレイアウトを継承したDjangoテンプレート。"
+  },
+  {
+    "pt": "Usei a estrutura da ADOSAREC como ponto de partida.",
+    "en": "I used the ADOSAREC structure as a starting point.",
+    "es": "Usé la estructura de ADOSAREC como punto de partida.",
+    "fr": "J’ai utilisé la structure d’ADOSAREC comme point de départ.",
+    "de": "Ich habe die Struktur von ADOSAREC als Ausgangspunkt genutzt.",
+    "ja": "ADOSARECの構成を出発点にしました。"
+  },
+  {
+    "pt": "Ver no GitHub",
+    "en": "See on GitHub",
+    "es": "Ver en GitHub",
+    "fr": "Voir sur GitHub",
+    "de": "Auf GitHub ansehen",
+    "ja": "GitHubで見る"
+  },
+  {
+    "pt": "Organizador de tarefas",
+    "en": "Task organizer",
+    "es": "Organizador de tareas",
+    "fr": "Organiseur de tâches",
+    "de": "Aufgabenplaner",
+    "ja": "タスク管理"
+  },
+  {
+    "pt": "Tarefa esquecida é tarefa que não acontece, sozinho ou em time.",
+    "en": "A forgotten task is a task that doesn’t happen, alone or in a team.",
+    "es": "Tarea olvidada es tarea que no sucede, solo o en equipo.",
+    "fr": "Une tâche oubliée est une tâche qui n’arrive pas, seul ou en équipe.",
+    "de": "Eine vergessene Aufgabe passiert nicht, allein oder im Team.",
+    "ja": "忘れられたタスクは実行されません。一人でも、チームでも。"
+  },
+  {
+    "pt": "Uma aplicação web pra pessoas e times organizarem, acompanharem e fecharem tarefas, com uma interface direta.",
+    "en": "A web app for people and teams to organize, track and close tasks, with a straightforward interface.",
+    "es": "Una aplicación web para que personas y equipos organicen, sigan y cierren tareas, con una interfaz directa.",
+    "fr": "Une application web pour que personnes et équipes organisent, suivent et terminent leurs tâches, avec une interface directe.",
+    "de": "Eine Web-App, mit der Einzelne und Teams Aufgaben organisieren, verfolgen und abschließen, mit einer direkten Oberfläche.",
+    "ja": "個人やチームがタスクを整理し、追跡し、完了させるための、わかりやすいWebアプリ。"
+  },
+  {
+    "pt": "Criar, acompanhar e concluir tarefas.",
+    "en": "Create, track and complete tasks.",
+    "es": "Crear, seguir y completar tareas.",
+    "fr": "Créer, suivre et terminer des tâches.",
+    "de": "Aufgaben erstellen, verfolgen und abschließen.",
+    "ja": "タスクの作成、追跡、完了。"
+  },
+  {
+    "pt": "Pensado pra uso individual e em equipe.",
+    "en": "Designed for individual and team use.",
+    "es": "Pensado para uso individual y en equipo.",
+    "fr": "Pensé pour un usage individuel et en équipe.",
+    "de": "Für Einzel- und Teamnutzung gedacht.",
+    "ja": "個人でもチームでも使える設計。"
+  },
+  {
+    "pt": "Infra própria",
+    "en": "My own infrastructure",
+    "es": "Infraestructura propia",
+    "fr": "Mon infrastructure",
+    "de": "Eigene Infrastruktur",
+    "ja": "自前のインフラ"
+  },
+  {
+    "pt": "E-mail, DNS e hospedagem",
+    "en": "Email, DNS and hosting",
+    "es": "Email, DNS y hosting",
+    "fr": "E-mail, DNS et hébergement",
+    "de": "E-Mail, DNS und Hosting",
+    "ja": "メール、DNS、ホスティング"
+  },
+  {
+    "pt": "A parte chata que ninguém quer fazer, e que derruba tudo quando dá errado.",
+    "en": "The boring part nobody wants to do, and that brings everything down when it goes wrong.",
+    "es": "La parte aburrida que nadie quiere hacer, y que tira todo abajo cuando sale mal.",
+    "fr": "La partie ennuyeuse que personne ne veut faire, et qui fait tout tomber quand elle déraille.",
+    "de": "Der langweilige Teil, den niemand machen will und der alles lahmlegt, wenn er schiefgeht.",
+    "ja": "誰もやりたがらない地味な部分。でも失敗するとすべてが止まります。"
+  },
+  {
+    "pt": "Configurei na mão toda a infraestrutura dos meus projetos.",
+    "en": "I set up all the infrastructure for my projects by hand.",
+    "es": "Configuré a mano toda la infraestructura de mis proyectos.",
+    "fr": "J’ai configuré à la main toute l’infrastructure de mes projets.",
+    "de": "Ich habe die gesamte Infrastruktur meiner Projekte von Hand eingerichtet.",
+    "ja": "自分のプロジェクトのインフラをすべて手作業で構築しました。"
+  },
+  {
+    "pt": "DNS, SPF, DKIM e MX.",
+    "en": "DNS, SPF, DKIM and MX.",
+    "es": "DNS, SPF, DKIM y MX.",
+    "fr": "DNS, SPF, DKIM et MX.",
+    "de": "DNS, SPF, DKIM und MX.",
+    "ja": "DNS、SPF、DKIM、MX。"
+  },
+  {
+    "pt": "Servidor de e-mail corporativo.",
+    "en": "Business email server.",
+    "es": "Servidor de email corporativo.",
+    "fr": "Serveur d’e-mail professionnel.",
+    "de": "Geschäftlicher E-Mail-Server.",
+    "ja": "業務用メールサーバー。"
+  },
+  {
+    "pt": "Hospedagem segura.",
+    "en": "Secure hosting.",
+    "es": "Hosting seguro.",
+    "fr": "Hébergement sécurisé.",
+    "de": "Sicheres Hosting.",
+    "ja": "安全なホスティング。"
+  },
+  {
+    "pt": "Aprendi quebrando o meu próprio.",
+    "en": "I learned by breaking my own.",
+    "es": "Aprendí rompiendo el mío.",
+    "fr": "J’ai appris en cassant la mienne.",
+    "de": "Ich habe gelernt, indem ich meine eigene kaputt gemacht habe.",
+    "ja": "自分の環境を壊しながら覚えました。"
+  },
+  {
+    "pt": "Meu jogo em Unity",
+    "en": "My Unity game",
+    "es": "Mi juego en Unity",
+    "fr": "Mon jeu sous Unity",
+    "de": "Mein Unity-Spiel",
+    "ja": "Unityでつくった自作ゲーム"
+  },
+  {
+    "pt": "Parcialmente perdido",
+    "en": "Partially lost",
+    "es": "Parcialmente perdido",
+    "fr": "Partiellement perdu",
+    "de": "Teilweise verloren",
+    "ja": "一部消失"
+  },
+  {
+    "pt": "Foi por causa de jogos que eu comecei a programar, e esse era o meu.",
+    "en": "Games are why I started programming, and this one was mine.",
+    "es": "Por los videojuegos empecé a programar, y este era el mío.",
+    "fr": "C’est à cause des jeux vidéo que j’ai commencé à programmer, et celui-ci était le mien.",
+    "de": "Wegen Spielen habe ich angefangen zu programmieren, und das hier war meins.",
+    "ja": "プログラミングを始めたのはゲームがきっかけ。これは自分のゲームでした。"
+  },
+  {
+    "pt": "Um jogo de zumbi em Unity. O que está no itch.io é o primeiro teste de fase.",
+    "en": "A zombie game in Unity. What’s on itch.io is the first level test.",
+    "es": "Un juego de zombis en Unity. Lo que está en itch.io es la primera prueba de nivel.",
+    "fr": "Un jeu de zombies sous Unity. Ce qui est sur itch.io, c’est le premier test de niveau.",
+    "de": "Ein Zombiespiel in Unity. Was auf itch.io liegt, ist der erste Level-Test.",
+    "ja": "Unityのゾンビゲーム。itch.ioにあるのは最初のステージのテスト版です。"
+  },
+  {
+    "pt": "A versão final eu perdi inteira quando o PC queimou, sem backup e sem repositório.",
+    "en": "I lost the entire final version when my PC burned out, with no backup and no repository.",
+    "es": "Perdí la versión final entera cuando se quemó la PC, sin backup ni repositorio.",
+    "fr": "J’ai perdu toute la version finale quand mon PC a grillé, sans sauvegarde ni dépôt.",
+    "de": "Die fertige Version habe ich komplett verloren, als mein PC durchbrannte, ohne Backup und ohne Repository.",
+    "ja": "PCが壊れて、完成版をまるごと失いました。バックアップもリポジトリもありませんでした。"
+  },
+  {
+    "pt": "A lição ficou: hoje tudo que eu começo vai pro Git no primeiro dia.",
+    "en": "The lesson stuck: today everything I start goes into Git on day one.",
+    "es": "La lección quedó: hoy todo lo que empiezo va a Git el primer día.",
+    "fr": "La leçon est restée : aujourd’hui, tout ce que je commence va dans Git dès le premier jour.",
+    "de": "Die Lektion ist geblieben: Heute kommt alles, was ich anfange, am ersten Tag in Git.",
+    "ja": "教訓は残りました。いまは何を始めても初日にGitに入れます。"
+  },
+  {
+    "pt": "Jogar a versão de teste",
+    "en": "Play the test version",
+    "es": "Jugar la versión de prueba",
+    "fr": "Jouer à la version de test",
+    "de": "Testversion spielen",
+    "ja": "テスト版をプレイ"
+  },
+  {
+    "pt": "Entregue",
+    "en": "Delivered",
+    "es": "Entregado",
+    "fr": "Livré",
+    "de": "Ausgeliefert",
+    "ja": "納品済み"
+  },
+  {
+    "pt": "Rodando",
+    "en": "Running",
+    "es": "Funcionando",
+    "fr": "En service",
+    "de": "In Betrieb",
+    "ja": "稼働中"
+  },
+  {
+    "pt": "Tudo",
+    "en": "Everything",
+    "es": "Todo",
+    "fr": "Tout",
+    "de": "Alles",
+    "ja": "すべて"
+  },
+  {
+    "pt": "Papel",
+    "en": "Paper",
+    "es": "Papel",
+    "fr": "Papier",
+    "de": "Papier",
+    "ja": "紙"
+  },
+  {
+    "pt": "Planta",
+    "en": "Blueprint",
+    "es": "Plano",
+    "fr": "Plan",
+    "de": "Bauplan",
+    "ja": "青図"
+  },
+  {
+    "pt": "{n} de {total}",
+    "en": "{n} of {total}",
+    "es": "{n} de {total}",
+    "fr": "{n} sur {total}",
+    "de": "{n} von {total}",
+    "ja": "{n} / {total}"
+  }
+]

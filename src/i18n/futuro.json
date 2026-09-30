@@ -1,0 +1,538 @@
+[
+  {
+    "pt": "Mapa de constelações. Cada estrela é um objetivo do Cristiano.",
+    "en": "Constellation map. Each star is one of Cristiano’s goals.",
+    "es": "Mapa de constelaciones. Cada estrella es un objetivo de Cristiano.",
+    "fr": "Carte des constellations. Chaque étoile est un objectif de Cristiano.",
+    "de": "Sternbildkarte. Jeder Stern ist eines von Cristianos Zielen.",
+    "ja": "星座の地図。星のひとつひとつがクリスティアーノの目標です。"
+  },
+  {
+    "pt": "Anoitecer",
+    "en": "Dusk",
+    "es": "Anochecer",
+    "fr": "Crépuscule",
+    "de": "Abend",
+    "ja": "夕暮れ"
+  },
+  {
+    "pt": "Observatório",
+    "en": "Observatory",
+    "es": "Observatorio",
+    "fr": "Observatoire",
+    "de": "Sternwarte",
+    "ja": "天文台"
+  },
+  {
+    "pt": "Pra onde<br><i>eu estou indo</i>",
+    "en": "Where<br><i>I’m heading</i>",
+    "es": "Hacia dónde<br><i>voy</i>",
+    "fr": "Où<br><i>je vais</i>",
+    "de": "Wohin<br><i>ich gehe</i>",
+    "ja": "これから<br><i>向かう場所</i>"
+  },
+  {
+    "pt": "Olhar pro céu é o que eu faço nos dias difíceis. Aqui é o contrário: é onde eu olho pra frente. Cada estrela é um objetivo, e elas formam quatro constelações.",
+    "en": "Looking at the sky is what I do on hard days. Here it’s the opposite: it’s where I look ahead. Each star is a goal, and together they form four constellations.",
+    "es": "Mirar el cielo es lo que hago en los días difíciles. Aquí es al revés: es donde miro hacia adelante. Cada estrella es un objetivo, y juntas forman cuatro constelaciones.",
+    "fr": "Regarder le ciel, c’est ce que je fais les jours difficiles. Ici, c’est l’inverse : c’est là que je regarde devant. Chaque étoile est un objectif, et ensemble elles forment quatre constellations.",
+    "de": "In den Himmel schauen ist das, was ich an schweren Tagen mache. Hier ist es umgekehrt: Hier schaue ich nach vorn. Jeder Stern ist ein Ziel, und zusammen bilden sie vier Sternbilder.",
+    "ja": "つらい日には空を見上げます。ここはその反対で、前を見る場所です。星のひとつひとつが目標で、4つの星座をつくっています。"
+  },
+  {
+    "pt": "Notas do observador",
+    "en": "Observer’s notes",
+    "es": "Notas del observador",
+    "fr": "Notes de l’observateur",
+    "de": "Notizen des Beobachters",
+    "ja": "観測者のメモ"
+  },
+  {
+    "pt": "IA que entra em produção",
+    "en": "AI that goes to production",
+    "es": "IA que llega a producción",
+    "fr": "De l’IA qui va en production",
+    "de": "KI, die in Produktion geht",
+    "ja": "本番で動くAI"
+  },
+  {
+    "pt": "Não me interessa fazer chatbot. O que me pega é agente que executa: conecta em sistema de verdade, chama a ferramenta certa e devolve algo em que dá pra confiar. É em produto que aparecem custo, latência e erro do modelo, coisas que demo nenhuma mostra.",
+    "en": "I’m not interested in building chatbots. What gets me is agents that act: they connect to real systems, call the right tool and return something you can trust. It’s in real products that cost, latency and model errors show up, things no demo ever shows.",
+    "es": "No me interesa hacer chatbots. Lo que me atrapa son los agentes que ejecutan: se conectan a sistemas reales, llaman a la herramienta correcta y devuelven algo en lo que se puede confiar. Es en el producto donde aparecen costo, latencia y errores del modelo, cosas que ninguna demo muestra.",
+    "fr": "Faire des chatbots ne m’intéresse pas. Ce qui me passionne, ce sont les agents qui agissent : ils se connectent à de vrais systèmes, appellent le bon outil et renvoient quelque chose de fiable. C’est dans un vrai produit qu’apparaissent le coût, la latence et les erreurs du modèle, ce qu’aucune démo ne montre.",
+    "de": "Chatbots interessieren mich nicht. Mich reizen Agenten, die handeln: Sie verbinden sich mit echten Systemen, rufen das richtige Tool auf und liefern etwas, dem man vertrauen kann. Erst im Produkt zeigen sich Kosten, Latenz und Modellfehler, Dinge, die keine Demo zeigt.",
+    "ja": "チャットボットをつくることには興味がありません。惹かれるのは実際に動くエージェントです。本物のシステムにつながり、正しいツールを呼び、信頼できるものを返す。コスト、レイテンシ、モデルの誤りは、デモでは見えず、プロダクトの中で初めて現れます。"
+  },
+  {
+    "pt": "Voltar a liderar",
+    "en": "Leading again",
+    "es": "Volver a liderar",
+    "fr": "Diriger à nouveau",
+    "de": "Wieder führen",
+    "ja": "もう一度率いる"
+  },
+  {
+    "pt": "Já liderei o time de front-end na Automais e já fui product owner e Scrum Master na ESX. Quero voltar a liderar, agora com escopo maior: um time de produto do começo ao fim, sem microgerenciar. Organizar, destravar e garantir que o que sai é o que o cliente precisava.",
+    "en": "I’ve led the front-end team at Automais and been a product owner and Scrum Master at ESX. I want to lead again, now with a bigger scope: a product team from start to finish, without micromanaging. Organizing, unblocking and making sure what ships is what the client needed.",
+    "es": "Ya lideré el equipo de front-end en Automais y fui product owner y Scrum Master en ESX. Quiero volver a liderar, ahora con más alcance: un equipo de producto de principio a fin, sin microgestionar. Organizar, destrabar y garantizar que lo que sale es lo que el cliente necesitaba.",
+    "fr": "J’ai déjà dirigé l’équipe front-end chez Automais et j’ai été product owner et Scrum Master chez ESX. Je veux diriger à nouveau, avec un périmètre plus large : une équipe produit du début à la fin, sans microgérer. Organiser, débloquer et garantir que ce qui sort est ce dont le client avait besoin.",
+    "de": "Ich habe bei Automais das Frontend-Team geleitet und war bei ESX Product Owner und Scrum Master. Ich will wieder führen, jetzt mit größerem Rahmen: ein Produktteam von Anfang bis Ende, ohne Mikromanagement. Organisieren, Blockaden lösen und sicherstellen, dass das Ergebnis das ist, was der Kunde gebraucht hat.",
+    "ja": "Automaisではフロントエンドチームを率い、ESXではプロダクトオーナーとスクラムマスターを務めました。今度はもっと大きな範囲で、もう一度率いたいと思っています。プロダクトチームを最初から最後まで、マイクロマネジメントせずに。整理し、障害を取り除き、出てくるものが顧客に必要なものであることを確かめる。"
+  },
+  {
+    "pt": "Vamos conversar?",
+    "en": "Shall we talk?",
+    "es": "¿Hablamos?",
+    "fr": "On en parle ?",
+    "de": "Sollen wir reden?",
+    "ja": "話しませんか？"
+  },
+  {
+    "pt": "Se o desafio for liderar o time que faz isso, melhor ainda. É o caminho que eu quero seguir.",
+    "en": "If the challenge is leading the team that builds it, even better. That’s the path I want to follow.",
+    "es": "Si el desafío es liderar el equipo que lo hace, mejor todavía. Es el camino que quiero seguir.",
+    "fr": "Si le défi, c’est de diriger l’équipe qui le construit, encore mieux. C’est le chemin que je veux suivre.",
+    "de": "Wenn die Herausforderung darin besteht, das Team dahinter zu führen, umso besser. Das ist der Weg, den ich gehen will.",
+    "ja": "それをつくるチームを率いることが課題なら、なおうれしいです。それが進みたい道です。"
+  },
+  {
+    "pt": "Estrela anterior",
+    "en": "Previous star",
+    "es": "Estrella anterior",
+    "fr": "Étoile précédente",
+    "de": "Vorheriger Stern",
+    "ja": "前の星"
+  },
+  {
+    "pt": "Próxima estrela",
+    "en": "Next star",
+    "es": "Próxima estrella",
+    "fr": "Étoile suivante",
+    "de": "Nächster Stern",
+    "ja": "次の星"
+  },
+  {
+    "pt": "Pra onde o Cristiano está indo",
+    "en": "Where Cristiano is heading",
+    "es": "Hacia dónde va Cristiano",
+    "fr": "Où va Cristiano",
+    "de": "Wohin Cristiano geht",
+    "ja": "クリスティアーノが向かう場所"
+  },
+  {
+    "pt": "Visto do Rio de Janeiro",
+    "en": "Seen from Rio de Janeiro",
+    "es": "Visto desde Río de Janeiro",
+    "fr": "Vu depuis Rio de Janeiro",
+    "de": "Gesehen von Rio de Janeiro",
+    "ja": "リオデジャネイロから観測"
+  },
+  {
+    "pt": "As estrelas de fundo mudam de lugar a cada visita.",
+    "en": "The background stars move to a new place on every visit.",
+    "es": "Las estrellas del fondo cambian de lugar en cada visita.",
+    "fr": "Les étoiles du fond changent de place à chaque visite.",
+    "de": "Die Hintergrundsterne wechseln bei jedem Besuch ihren Platz.",
+    "ja": "背景の星は、訪れるたびに位置が変わります。"
+  },
+  {
+    "pt": "IA em produção",
+    "en": "AI in production",
+    "es": "IA en producción",
+    "fr": "L’IA en production",
+    "de": "KI in Produktion",
+    "ja": "本番のAI"
+  },
+  {
+    "pt": "Agentes e ferramentas",
+    "en": "Agents and tools",
+    "es": "Agentes y herramientas",
+    "fr": "Agents et outils",
+    "de": "Agenten und Tools",
+    "ja": "エージェントとツール"
+  },
+  {
+    "pt": "O que eu mais estudo hoje",
+    "en": "What I study most right now",
+    "es": "Lo que más estudio hoy",
+    "fr": "Ce que j’étudie le plus en ce moment",
+    "de": "Was ich gerade am meisten lerne",
+    "ja": "いちばん学んでいること"
+  },
+  {
+    "pt": "MCP servers e tool calling: dar ao modelo acesso controlado a sistema, dado e ação.",
+    "en": "MCP servers and tool calling: giving the model controlled access to systems, data and actions.",
+    "es": "MCP servers y tool calling: dar al modelo acceso controlado a sistemas, datos y acciones.",
+    "fr": "Serveurs MCP et tool calling : donner au modèle un accès contrôlé aux systèmes, aux données et aux actions.",
+    "de": "MCP-Server und Tool Calling: dem Modell kontrollierten Zugriff auf Systeme, Daten und Aktionen geben.",
+    "ja": "MCPサーバーとツール呼び出し。モデルにシステム、データ、操作への制御されたアクセスを与えます。"
+  },
+  {
+    "pt": "Modelo no produto",
+    "en": "Model in the product",
+    "es": "Modelo en el producto",
+    "fr": "Le modèle dans le produit",
+    "de": "Modell im Produkt",
+    "ja": "プロダクトの中のモデル"
+  },
+  {
+    "pt": "Aplicação real, não demo",
+    "en": "A real application, not a demo",
+    "es": "Aplicación real, no demo",
+    "fr": "Une vraie application, pas une démo",
+    "de": "Echte Anwendung, keine Demo",
+    "ja": "デモではなく実際のアプリ"
+  },
+  {
+    "pt": "Amazon Bedrock e LLM dentro de aplicação real, com resposta em streaming por WebSocket.",
+    "en": "Amazon Bedrock and LLMs inside a real application, with responses streamed over WebSocket.",
+    "es": "Amazon Bedrock y LLM dentro de una aplicación real, con respuesta en streaming por WebSocket.",
+    "fr": "Amazon Bedrock et des LLM dans une vraie application, avec des réponses en streaming via WebSocket.",
+    "de": "Amazon Bedrock und LLMs in einer echten Anwendung, mit Antworten per WebSocket-Streaming.",
+    "ja": "実際のアプリの中でAmazon BedrockとLLMを使い、WebSocketで応答をストリーミング。"
+  },
+  {
+    "pt": "Visão computacional",
+    "en": "Computer vision",
+    "es": "Visión computacional",
+    "fr": "Vision par ordinateur",
+    "de": "Computer Vision",
+    "ja": "コンピュータビジョン"
+  },
+  {
+    "pt": "Rodando em cliente real",
+    "en": "Running for a real client",
+    "es": "Funcionando para un cliente real",
+    "fr": "En service chez un vrai client",
+    "de": "Im Einsatz bei einem echten Kunden",
+    "ja": "実際の顧客で稼働"
+  },
+  {
+    "pt": "Leitura automática de placas de veículos integrada a back-end e banco, rodando em cliente real.",
+    "en": "Automatic license plate reading integrated with back-end and database, running for a real client.",
+    "es": "Lectura automática de matrículas integrada con back-end y base de datos, funcionando para un cliente real.",
+    "fr": "Lecture automatique de plaques d’immatriculation intégrée au back-end et à la base de données, en service chez un vrai client.",
+    "de": "Automatische Kennzeichenerkennung mit Backend- und Datenbankanbindung, im Einsatz bei einem echten Kunden.",
+    "ja": "バックエンドとデータベースに統合したナンバープレート自動読み取り。実際の顧客で稼働。"
+  },
+  {
+    "pt": "Produto com IA",
+    "en": "Product with AI",
+    "es": "Producto con IA",
+    "fr": "Produit avec IA",
+    "de": "Produkt mit KI",
+    "ja": "AIを組み込んだプロダクト"
+  },
+  {
+    "pt": "No Zevi",
+    "en": "In Zevi",
+    "es": "En Zevi",
+    "fr": "Dans Zevi",
+    "de": "In Zevi",
+    "ja": "Zeviで"
+  },
+  {
+    "pt": "No Zevi, o modelo lê os números da conta e devolve diagnóstico e plano de ação, com cota, custo e limite controlados.",
+    "en": "In Zevi, the model reads the account’s numbers and returns a diagnosis and an action plan, with controlled quota, cost and limits.",
+    "es": "En Zevi, el modelo lee los números de la cuenta y devuelve diagnóstico y plan de acción, con cuota, costo y límite controlados.",
+    "fr": "Dans Zevi, le modèle lit les chiffres du compte et renvoie un diagnostic et un plan d’action, avec quota, coût et limites maîtrisés.",
+    "de": "In Zevi liest das Modell die Zahlen des Kontos und liefert Diagnose und Aktionsplan, mit kontrolliertem Kontingent, Kosten und Limits.",
+    "ja": "Zeviでは、モデルがアカウントの数字を読み、診断とアクションプランを返します。利用回数、コスト、上限は制御しています。"
+  },
+  {
+    "pt": "Já liderei",
+    "en": "I’ve led before",
+    "es": "Ya lideré",
+    "fr": "J’ai déjà dirigé",
+    "de": "Schon geführt",
+    "ja": "率いた経験"
+  },
+  {
+    "pt": "Liderei o time de front-end em React e TypeScript: arquitetura das telas, divisão dos épicos e acompanhamento de quem estava travado.",
+    "en": "I led the front-end team in React and TypeScript: screen architecture, splitting epics and supporting whoever was stuck.",
+    "es": "Lideré el equipo de front-end en React y TypeScript: arquitectura de pantallas, división de épicas y seguimiento de quien estaba bloqueado.",
+    "fr": "J’ai dirigé l’équipe front-end en React et TypeScript : architecture des écrans, découpage des epics et accompagnement de ceux qui étaient bloqués.",
+    "de": "Ich habe das Frontend-Team mit React und TypeScript geleitet: Screen-Architektur, Epics aufteilen und Unterstützung bei Blockaden.",
+    "ja": "ReactとTypeScriptのフロントエンドチームを率いました。画面設計、エピックの分割、つまずいているメンバーのフォロー。"
+  },
+  {
+    "pt": "Dos dois lados da mesa",
+    "en": "Both sides of the table",
+    "es": "Los dos lados de la mesa",
+    "fr": "Les deux côtés de la table",
+    "de": "Beide Seiten des Tisches",
+    "ja": "テーブルの両側"
+  },
+  {
+    "pt": "ESX e Automais",
+    "en": "ESX and Automais",
+    "es": "ESX y Automais",
+    "fr": "ESX et Automais",
+    "de": "ESX und Automais",
+    "ja": "ESXとAutomais"
+  },
+  {
+    "pt": "Já fui product owner e Scrum Master. Sei escolher o que não fazer.",
+    "en": "I’ve been a product owner and a Scrum Master. I know how to choose what not to do.",
+    "es": "Fui product owner y Scrum Master. Sé elegir qué no hacer.",
+    "fr": "J’ai été product owner et Scrum Master. Je sais choisir ce qu’il ne faut pas faire.",
+    "de": "Ich war Product Owner und Scrum Master. Ich weiß, wie man entscheidet, was man nicht tut.",
+    "ja": "プロダクトオーナーもスクラムマスターも経験しました。やらないことを選べます。"
+  },
+  {
+    "pt": "Sem microgerenciar",
+    "en": "No micromanaging",
+    "es": "Sin microgestionar",
+    "fr": "Sans microgérer",
+    "de": "Ohne Mikromanagement",
+    "ja": "任せて率いる"
+  },
+  {
+    "pt": "Em desenvolvimento",
+    "en": "In development",
+    "es": "En desarrollo",
+    "fr": "En développement",
+    "de": "In Entwicklung",
+    "ja": "開発中"
+  },
+  {
+    "pt": "Confiar no time e cuidar do caminho.",
+    "en": "Trusting the team and taking care of the path.",
+    "es": "Confiar en el equipo y cuidar el camino.",
+    "fr": "Faire confiance à l’équipe et prendre soin du chemin.",
+    "de": "Dem Team vertrauen und den Weg freihalten.",
+    "ja": "チームを信じ、道を整える。"
+  },
+  {
+    "pt": "O próximo time",
+    "en": "The next team",
+    "es": "El próximo equipo",
+    "fr": "La prochaine équipe",
+    "de": "Das nächste Team",
+    "ja": "次のチーム"
+  },
+  {
+    "pt": "Próxima fase",
+    "en": "Next level",
+    "es": "Próxima fase",
+    "fr": "Prochain niveau",
+    "de": "Nächstes Level",
+    "ja": "次のステージ"
+  },
+  {
+    "pt": "Um time de produto do começo ao fim: organizar, destravar e garantir que o que sai é o que o cliente precisava.",
+    "en": "A product team from start to finish: organizing, unblocking and making sure what ships is what the client needed.",
+    "es": "Un equipo de producto de principio a fin: organizar, destrabar y garantizar que lo que sale es lo que el cliente necesitaba.",
+    "fr": "Une équipe produit du début à la fin : organiser, débloquer et garantir que ce qui sort est ce dont le client avait besoin.",
+    "de": "Ein Produktteam von Anfang bis Ende: organisieren, Blockaden lösen und sicherstellen, dass das Ergebnis das ist, was der Kunde gebraucht hat.",
+    "ja": "最初から最後までのプロダクトチーム。整理し、障害を取り除き、出てくるものが顧客に必要なものであることを確かめる。"
+  },
+  {
+    "pt": "O que eu procuro",
+    "en": "What I’m looking for",
+    "es": "Lo que busco",
+    "fr": "Ce que je recherche",
+    "de": "Was ich suche",
+    "ja": "探していること"
+  },
+  {
+    "pt": "O problema",
+    "en": "The problem",
+    "es": "El problema",
+    "fr": "Le problème",
+    "de": "Das Problem",
+    "ja": "課題"
+  },
+  {
+    "pt": "Um sistema pra construir, um legado pra modernizar ou um agente de IA pra colocar de pé em produção.",
+    "en": "A system to build, a legacy to modernize or an AI agent to get running in production.",
+    "es": "Un sistema para construir, un legado para modernizar o un agente de IA para poner en marcha en producción.",
+    "fr": "Un système à construire, un existant à moderniser ou un agent IA à mettre en production.",
+    "de": "Ein System, das gebaut, eine Altlast, die modernisiert, oder ein KI-Agent, der in Produktion gebracht werden soll.",
+    "ja": "つくるべきシステム、刷新すべきレガシー、本番に載せたいAIエージェント。"
+  },
+  {
+    "pt": "O time",
+    "en": "The team",
+    "es": "El equipo",
+    "fr": "L’équipe",
+    "de": "Das Team",
+    "ja": "チーム"
+  },
+  {
+    "pt": "Gente que mostra cedo, conversa com o cliente e gosta de perguntar o porquê antes do como.",
+    "en": "People who show things early, talk to the client and like to ask why before how.",
+    "es": "Gente que muestra temprano, conversa con el cliente y pregunta el porqué antes del cómo.",
+    "fr": "Des gens qui montrent tôt, parlent au client et aiment demander pourquoi avant comment.",
+    "de": "Leute, die früh zeigen, mit dem Kunden sprechen und gern nach dem Warum fragen, bevor es ums Wie geht.",
+    "ja": "早く見せ、顧客と話し、「どうやるか」の前に「なぜ」を問うのが好きな人たち。"
+  },
+  {
+    "pt": "O papel",
+    "en": "The role",
+    "es": "El rol",
+    "fr": "Le rôle",
+    "de": "Die Rolle",
+    "ja": "役割"
+  },
+  {
+    "pt": "Engenharia full stack com espaço pra produto e pra crescer até a liderança.",
+    "en": "Full stack engineering with room for product and to grow into leadership.",
+    "es": "Ingeniería full stack con espacio para producto y para crecer hacia el liderazgo.",
+    "fr": "De l’ingénierie full stack avec de la place pour le produit et pour évoluer vers le management.",
+    "de": "Full-Stack-Engineering mit Raum für Produktarbeit und Wachstum in Richtung Führung.",
+    "ja": "プロダクトにも関われて、リーダーへと成長できるフルスタックエンジニアリング。"
+  },
+  {
+    "pt": "O jeito",
+    "en": "The setup",
+    "es": "La modalidad",
+    "fr": "Le cadre",
+    "de": "Das Setup",
+    "ja": "働き方"
+  },
+  {
+    "pt": "Remoto, no Brasil ou fora. Português e inglês no dia a dia.",
+    "en": "Remote, in Brazil or abroad. Portuguese and English every day.",
+    "es": "Remoto, en Brasil o afuera. Portugués e inglés en el día a día.",
+    "fr": "À distance, au Brésil ou à l’étranger. Portugais et anglais au quotidien.",
+    "de": "Remote, in Brasilien oder im Ausland. Portugiesisch und Englisch im Alltag.",
+    "ja": "リモート、ブラジルでも海外でも。日常的にポルトガル語と英語。"
+  },
+  {
+    "pt": "Próximas atualizações",
+    "en": "Upcoming updates",
+    "es": "Próximas actualizaciones",
+    "fr": "Prochaines mises à jour",
+    "de": "Kommende Updates",
+    "ja": "今後のアップデート"
+  },
+  {
+    "pt": "Pós em IA",
+    "en": "AI postgrad",
+    "es": "Posgrado en IA",
+    "fr": "Master en IA",
+    "de": "KI-Aufbaustudium",
+    "ja": "AI大学院"
+  },
+  {
+    "pt": "FIAP, em andamento",
+    "en": "FIAP, in progress",
+    "es": "FIAP, en curso",
+    "fr": "FIAP, en cours",
+    "de": "FIAP, läuft",
+    "ja": "FIAP、在学中"
+  },
+  {
+    "pt": "Em andamento: LLMs, RAG e agentes.",
+    "en": "In progress: LLMs, RAG and agents.",
+    "es": "En curso: LLMs, RAG y agentes.",
+    "fr": "En cours : LLM, RAG et agents.",
+    "de": "Läuft: LLMs, RAG und Agenten.",
+    "ja": "在学中：LLM、RAG、エージェント。"
+  },
+  {
+    "pt": "Arquitetura antes",
+    "en": "Architecture first",
+    "es": "Arquitectura primero",
+    "fr": "L’architecture d’abord",
+    "de": "Architektur zuerst",
+    "ja": "まず設計"
+  },
+  {
+    "pt": "No trabalho",
+    "en": "At work",
+    "es": "En el trabajo",
+    "fr": "Au travail",
+    "de": "Bei der Arbeit",
+    "ja": "仕事で"
+  },
+  {
+    "pt": "Enxergar a arquitetura antes de começar. Menos refazer, mais acertar de primeira.",
+    "en": "Seeing the architecture before starting. Less redoing, more getting it right the first time.",
+    "es": "Ver la arquitectura antes de empezar. Menos rehacer, más acertar a la primera.",
+    "fr": "Voir l’architecture avant de commencer. Moins refaire, plus viser juste du premier coup.",
+    "de": "Die Architektur sehen, bevor ich anfange. Weniger nacharbeiten, öfter beim ersten Mal treffen.",
+    "ja": "始める前にアーキテクチャを見通す。やり直しを減らし、一度で当てる。"
+  },
+  {
+    "pt": "Desenhar melhor",
+    "en": "Drawing better",
+    "es": "Dibujar mejor",
+    "fr": "Mieux dessiner",
+    "de": "Besser zeichnen",
+    "ja": "絵を上達させる"
+  },
+  {
+    "pt": "Fora do trabalho",
+    "en": "Outside of work",
+    "es": "Fuera del trabajo",
+    "fr": "En dehors du travail",
+    "de": "Außerhalb der Arbeit",
+    "ja": "仕事の外で"
+  },
+  {
+    "pt": "Voltar a desenhar com frequência.",
+    "en": "Getting back to drawing regularly.",
+    "es": "Volver a dibujar con frecuencia.",
+    "fr": "Me remettre à dessiner régulièrement.",
+    "de": "Wieder regelmäßig zeichnen.",
+    "ja": "また定期的に描くこと。"
+  },
+  {
+    "pt": "Um instrumento",
+    "en": "An instrument",
+    "es": "Un instrumento",
+    "fr": "Un instrument",
+    "de": "Ein Instrument",
+    "ja": "楽器"
+  },
+  {
+    "pt": "Porque cantar mal já está dominado.",
+    "en": "Because singing badly is already mastered.",
+    "es": "Porque cantar mal ya lo domino.",
+    "fr": "Parce que chanter faux, je maîtrise déjà.",
+    "de": "Denn schlecht singen kann ich schon perfekt.",
+    "ja": "下手な歌はもう極めたので。"
+  },
+  {
+    "pt": "Me conhecer",
+    "en": "Knowing myself",
+    "es": "Conocerme",
+    "fr": "Me connaître",
+    "de": "Mich kennenlernen",
+    "ja": "自分を知る"
+  },
+  {
+    "pt": "Sem data prevista",
+    "en": "No release date",
+    "es": "Sin fecha prevista",
+    "fr": "Pas de date de sortie",
+    "de": "Kein Release-Datum",
+    "ja": "リリース日未定"
+  },
+  {
+    "pt": "Me conhecer um pouco mais a cada ano. Sem data prevista, e tudo bem.",
+    "en": "Getting to know myself a little more every year. No release date, and that’s fine.",
+    "es": "Conocerme un poco más cada año. Sin fecha prevista, y está bien.",
+    "fr": "Me connaître un peu plus chaque année. Pas de date de sortie, et c’est très bien.",
+    "de": "Mich jedes Jahr ein bisschen besser kennenlernen. Kein Release-Datum, und das ist okay.",
+    "ja": "毎年少しずつ自分を知っていく。リリース日は未定。それでいい。"
+  },
+  {
+    "pt": "Amanhecer",
+    "en": "Dawn",
+    "es": "Amanecer",
+    "fr": "Aube",
+    "de": "Morgen",
+    "ja": "夜明け"
+  },
+  {
+    "pt": "22° 54′ S, 43° 10′ O",
+    "en": "22° 54′ S, 43° 10′ W",
+    "es": "22° 54′ S, 43° 10′ O",
+    "fr": "22° 54′ S, 43° 10′ O",
+    "de": "22° 54′ S, 43° 10′ W",
+    "ja": "南緯22°54′、西経43°10′"
+  }
+]

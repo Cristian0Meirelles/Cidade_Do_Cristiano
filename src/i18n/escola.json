@@ -1,0 +1,666 @@
+[
+  {
+    "pt": "Tema",
+    "en": "Theme",
+    "es": "Tema",
+    "fr": "Thème",
+    "de": "Design",
+    "ja": "テーマ"
+  },
+  {
+    "pt": "O que eu sei, e onde aprendi",
+    "en": "What I know, and where I learned it",
+    "es": "Lo que sé, y dónde lo aprendí",
+    "fr": "Ce que je sais, et où je l’ai appris",
+    "de": "Was ich kann und wo ich es gelernt habe",
+    "ja": "知っていること、学んだ場所"
+  },
+  {
+    "pt": "Aula de hoje: formação, idiomas e habilidades",
+    "en": "Today’s lesson: education, languages and skills",
+    "es": "Clase de hoy: formación, idiomas y habilidades",
+    "fr": "Leçon du jour : formation, langues et compétences",
+    "de": "Heutige Stunde: Ausbildung, Sprachen und Fähigkeiten",
+    "ja": "今日の授業：学歴、言語、スキル"
+  },
+  {
+    "pt": "Formação",
+    "en": "Education",
+    "es": "Formación",
+    "fr": "Formation",
+    "de": "Ausbildung",
+    "ja": "学歴"
+  },
+  {
+    "pt": "Ensino médio no Canadá",
+    "en": "High school in Canada",
+    "es": "Secundaria en Canadá",
+    "fr": "Lycée au Canada",
+    "de": "Highschool in Kanada",
+    "ja": "カナダの高校"
+  },
+  {
+    "pt": "Inglês de verdade, aulas de artes e as primeiras linhas de código.",
+    "en": "Real English, art classes and my first lines of code.",
+    "es": "Inglés de verdad, clases de arte y mis primeras líneas de código.",
+    "fr": "De l’anglais pour de vrai, des cours d’art et mes premières lignes de code.",
+    "de": "Echtes Englisch, Kunstunterricht und meine ersten Zeilen Code.",
+    "ja": "本物の英語、美術の授業、そして初めてのコード。"
+  },
+  {
+    "pt": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+    "en": "Associate degree in Systems Analysis and Development",
+    "es": "Tecnicatura en Análisis y Desarrollo de Sistemas",
+    "fr": "Diplôme en analyse et développement de systèmes",
+    "de": "Abschluss in Systemanalyse und -entwicklung",
+    "ja": "システム分析・開発 学位（短期課程）"
+  },
+  {
+    "pt": "IFSC, Canoinhas, Santa Catarina. Média 8,8.",
+    "en": "IFSC, Canoinhas, Santa Catarina. GPA 8.8 out of 10.",
+    "es": "IFSC, Canoinhas, Santa Catarina. Promedio 8,8 sobre 10.",
+    "fr": "IFSC, Canoinhas, Santa Catarina. Moyenne 8,8 sur 10.",
+    "de": "IFSC, Canoinhas, Santa Catarina. Notendurchschnitt 8,8 von 10.",
+    "ja": "IFSC、サンタカタリーナ州カノイーニャス。成績平均8.8（10点満点）。"
+  },
+  {
+    "pt": "Onde eu fiz a ADOSAREC e o Mercado Virtual.",
+    "en": "Where I built ADOSAREC and Mercado Virtual.",
+    "es": "Donde hice ADOSAREC y Mercado Virtual.",
+    "fr": "Là où j’ai fait ADOSAREC et Mercado Virtual.",
+    "de": "Wo ich ADOSAREC und Mercado Virtual gebaut habe.",
+    "ja": "ADOSARECとMercado Virtualをつくった場所。"
+  },
+  {
+    "pt": "Pós-graduação em Inteligência Artificial",
+    "en": "Postgraduate program in Artificial Intelligence",
+    "es": "Posgrado en Inteligencia Artificial",
+    "fr": "Master spécialisé en intelligence artificielle",
+    "de": "Aufbaustudium Künstliche Intelligenz",
+    "ja": "人工知能 大学院課程"
+  },
+  {
+    "pt": "FIAP. LLMs, RAG e agentes generativos.",
+    "en": "FIAP. LLMs, RAG and generative agents.",
+    "es": "FIAP. LLMs, RAG y agentes generativos.",
+    "fr": "FIAP. LLM, RAG et agents génératifs.",
+    "de": "FIAP. LLMs, RAG und generative Agenten.",
+    "ja": "FIAP。LLM、RAG、生成AIエージェント。"
+  },
+  {
+    "pt": "Primeiro Tech Challenge: machine learning pra prever recorrência de câncer de tireoide.",
+    "en": "First Tech Challenge: machine learning to predict thyroid cancer recurrence.",
+    "es": "Primer Tech Challenge: machine learning para predecir la recurrencia del cáncer de tiroides.",
+    "fr": "Premier Tech Challenge : du machine learning pour prédire la récidive du cancer de la thyroïde.",
+    "de": "Erste Tech Challenge: Machine Learning zur Vorhersage von Schilddrüsenkrebs-Rückfällen.",
+    "ja": "最初のTech Challenge：甲状腺がんの再発を機械学習で予測。"
+  },
+  {
+    "pt": "Idiomas",
+    "en": "Languages",
+    "es": "Idiomas",
+    "fr": "Langues",
+    "de": "Sprachen",
+    "ja": "言語"
+  },
+  {
+    "pt": "Português<small>nativo</small>",
+    "en": "Portuguese<small>native</small>",
+    "es": "Portugués<small>nativo</small>",
+    "fr": "Portugais<small>langue maternelle</small>",
+    "de": "Portugiesisch<small>Muttersprache</small>",
+    "ja": "ポルトガル語<small>母語</small>"
+  },
+  {
+    "pt": "Inglês<small>fluente, morei no Canadá</small>",
+    "en": "English<small>fluent, lived in Canada</small>",
+    "es": "Inglés<small>fluido, viví en Canadá</small>",
+    "fr": "Anglais<small>courant, j’ai vécu au Canada</small>",
+    "de": "Englisch<small>fließend, in Kanada gelebt</small>",
+    "ja": "英語<small>流暢、カナダ在住経験</small>"
+  },
+  {
+    "pt": "Francês<small>básico</small>",
+    "en": "French<small>basic</small>",
+    "es": "Francés<small>básico</small>",
+    "fr": "Français<small>notions</small>",
+    "de": "Französisch<small>Grundkenntnisse</small>",
+    "ja": "フランス語<small>初級</small>"
+  },
+  {
+    "pt": "Habilidades",
+    "en": "Skills",
+    "es": "Habilidades",
+    "fr": "Compétences",
+    "de": "Fähigkeiten",
+    "ja": "スキル"
+  },
+  {
+    "pt": "Toque em qualquer uma pra ver onde eu usei.",
+    "en": "Tap any of them to see where I used it.",
+    "es": "Toca cualquiera para ver dónde la usé.",
+    "fr": "Touchez-en une pour voir où je l’ai utilisée.",
+    "de": "Tippe auf eine, um zu sehen, wo ich sie eingesetzt habe.",
+    "ja": "タップすると、どこで使ったかが見られます。"
+  },
+  {
+    "pt": "O que o Cristiano sabe",
+    "en": "What Cristiano knows",
+    "es": "Lo que sabe Cristiano",
+    "fr": "Ce que sait Cristiano",
+    "de": "Was Cristiano kann",
+    "ja": "クリスティアーノができること"
+  },
+  {
+    "pt": "em andamento",
+    "en": "in progress",
+    "es": "en curso",
+    "fr": "en cours",
+    "de": "läuft",
+    "ja": "在学中"
+  },
+  {
+    "pt": "Back-end e APIs",
+    "en": "Back-end and APIs",
+    "es": "Back-end y APIs",
+    "fr": "Back-end et API",
+    "de": "Backend und APIs",
+    "ja": "バックエンドとAPI"
+  },
+  {
+    "pt": "Java 8 e 11",
+    "en": "Java 8 and 11",
+    "es": "Java 8 y 11",
+    "fr": "Java 8 et 11",
+    "de": "Java 8 und 11",
+    "ja": "Java 8・11"
+  },
+  {
+    "pt": "ESX, CI&T e a API do E-TCG (Java 21)",
+    "en": "ESX, CI&T and the E-TCG API (Java 21)",
+    "es": "ESX, CI&T y la API de E-TCG (Java 21)",
+    "fr": "ESX, CI&T et l’API d’E-TCG (Java 21)",
+    "de": "ESX, CI&T und die E-TCG-API (Java 21)",
+    "ja": "ESX、CI&T、E-TCGのAPI（Java 21）"
+  },
+  {
+    "pt": "CI&T, na plataforma BEES, e no E-TCG",
+    "en": "CI&T, on the BEES platform, and E-TCG",
+    "es": "CI&T, en la plataforma BEES, y E-TCG",
+    "fr": "CI&T, sur la plateforme BEES, et E-TCG",
+    "de": "CI&T auf der BEES-Plattform und E-TCG",
+    "ja": "CI&TのBEESプラットフォームとE-TCG"
+  },
+  {
+    "pt": "Sigaway, ESX e o Tech Challenge da FIAP",
+    "en": "Sigaway, ESX and the FIAP Tech Challenge",
+    "es": "Sigaway, ESX y el Tech Challenge de FIAP",
+    "fr": "Sigaway, ESX et le Tech Challenge de la FIAP",
+    "de": "Sigaway, ESX und die FIAP Tech Challenge",
+    "ja": "Sigaway、ESX、FIAPのTech Challenge"
+  },
+  {
+    "pt": "FastAPI e Flask",
+    "en": "FastAPI and Flask",
+    "es": "FastAPI y Flask",
+    "fr": "FastAPI et Flask",
+    "de": "FastAPI und Flask",
+    "ja": "FastAPI・Flask"
+  },
+  {
+    "pt": "APIs em Python",
+    "en": "APIs in Python",
+    "es": "APIs en Python",
+    "fr": "API en Python",
+    "de": "APIs in Python",
+    "ja": "PythonのAPI"
+  },
+  {
+    "pt": "ADOSAREC e automações",
+    "en": "ADOSAREC and automations",
+    "es": "ADOSAREC y automatizaciones",
+    "fr": "ADOSAREC et automatisations",
+    "de": "ADOSAREC und Automatisierungen",
+    "ja": "ADOSARECと自動化"
+  },
+  {
+    "pt": "REST e WebSockets",
+    "en": "REST and WebSockets",
+    "es": "REST y WebSockets",
+    "fr": "REST et WebSockets",
+    "de": "REST und WebSockets",
+    "ja": "RESTとWebSocket"
+  },
+  {
+    "pt": "Integrações em todos os trabalhos e streaming de respostas de IA",
+    "en": "Integrations in every job, and streaming AI responses",
+    "es": "Integraciones en todos los trabajos y streaming de respuestas de IA",
+    "fr": "Des intégrations dans chaque poste et le streaming de réponses d’IA",
+    "de": "Integrationen in jedem Job und Streaming von KI-Antworten",
+    "ja": "すべての仕事での連携と、AI応答のストリーミング"
+  },
+  {
+    "pt": "Microsserviços",
+    "en": "Microservices",
+    "es": "Microservicios",
+    "fr": "Microservices",
+    "de": "Microservices",
+    "ja": "マイクロサービス"
+  },
+  {
+    "pt": "CI&T e ESX",
+    "en": "CI&T and ESX",
+    "es": "CI&T y ESX",
+    "fr": "CI&T et ESX",
+    "de": "CI&T und ESX",
+    "ja": "CI&TとESX"
+  },
+  {
+    "pt": "Front-end e mobile",
+    "en": "Front-end and mobile",
+    "es": "Front-end y mobile",
+    "fr": "Front-end et mobile",
+    "de": "Frontend und Mobile",
+    "ja": "フロントエンドとモバイル"
+  },
+  {
+    "pt": "Automais, ADOSAREC, Zevi e o app de treino",
+    "en": "Automais, ADOSAREC, Zevi and the workout app",
+    "es": "Automais, ADOSAREC, Zevi y la app de entrenamiento",
+    "fr": "Automais, ADOSAREC, Zevi et l’appli de musculation",
+    "de": "Automais, ADOSAREC, Zevi und die Trainings-App",
+    "ja": "Automais、ADOSAREC、Zevi、トレーニングアプリ"
+  },
+  {
+    "pt": "Liderando o front-end na Automais",
+    "en": "Leading the front-end at Automais",
+    "es": "Liderando el front-end en Automais",
+    "fr": "En dirigeant le front-end chez Automais",
+    "de": "Als Frontend-Lead bei Automais",
+    "ja": "Automaisでフロントエンドを率いて"
+  },
+  {
+    "pt": "O Zevi, hospedado na Vercel",
+    "en": "Zevi, hosted on Vercel",
+    "es": "Zevi, alojado en Vercel",
+    "fr": "Zevi, hébergé sur Vercel",
+    "de": "Zevi, gehostet auf Vercel",
+    "ja": "VercelでホストしているZevi"
+  },
+  {
+    "pt": "Projetos web",
+    "en": "Web projects",
+    "es": "Proyectos web",
+    "fr": "Projets web",
+    "de": "Webprojekte",
+    "ja": "Webプロジェクト"
+  },
+  {
+    "pt": "Interfaces rápidas e consistentes",
+    "en": "Fast, consistent interfaces",
+    "es": "Interfaces rápidas y consistentes",
+    "fr": "Des interfaces rapides et cohérentes",
+    "de": "Schnelle, konsistente Oberflächen",
+    "ja": "速く、一貫したUI"
+  },
+  {
+    "pt": "Consumo de APIs com cache",
+    "en": "Consuming APIs with caching",
+    "es": "Consumo de APIs con caché",
+    "fr": "Consommation d’API avec cache",
+    "de": "API-Nutzung mit Caching",
+    "ja": "キャッシュ付きのAPI利用"
+  },
+  {
+    "pt": "Android e iOS",
+    "en": "Android and iOS",
+    "es": "Android e iOS",
+    "fr": "Android et iOS",
+    "de": "Android und iOS",
+    "ja": "AndroidとiOS"
+  },
+  {
+    "pt": "Biometria em apps num projeto hospitalar, na Automais",
+    "en": "Biometrics in apps for a hospital project, at Automais",
+    "es": "Biometría en apps de un proyecto hospitalario, en Automais",
+    "fr": "La biométrie dans les applis d’un projet hospitalier, chez Automais",
+    "de": "Biometrie in Apps für ein Krankenhausprojekt bei Automais",
+    "ja": "Automaisの病院向けプロジェクトでアプリに生体認証"
+  },
+  {
+    "pt": "O app do E-TCG",
+    "en": "The E-TCG app",
+    "es": "La app de E-TCG",
+    "fr": "L’appli d’E-TCG",
+    "de": "Die E-TCG-App",
+    "ja": "E-TCGのアプリ"
+  },
+  {
+    "pt": "Nuvem e infra",
+    "en": "Cloud and infrastructure",
+    "es": "Nube e infraestructura",
+    "fr": "Cloud et infrastructure",
+    "de": "Cloud und Infrastruktur",
+    "ja": "クラウドとインフラ"
+  },
+  {
+    "pt": "AWS Kinesis, Glue e Athena",
+    "en": "AWS Kinesis, Glue and Athena",
+    "es": "AWS Kinesis, Glue y Athena",
+    "fr": "AWS Kinesis, Glue et Athena",
+    "de": "AWS Kinesis, Glue und Athena",
+    "ja": "AWS Kinesis・Glue・Athena"
+  },
+  {
+    "pt": "Pipeline de telemetria na Sigaway",
+    "en": "Telemetry pipeline at Sigaway",
+    "es": "Pipeline de telemetría en Sigaway",
+    "fr": "Pipeline de télémétrie chez Sigaway",
+    "de": "Telemetrie-Pipeline bei Sigaway",
+    "ja": "Sigawayのテレマティクス・パイプライン"
+  },
+  {
+    "pt": "Sigaway e as fotos do E-TCG",
+    "en": "Sigaway and the E-TCG photos",
+    "es": "Sigaway y las fotos de E-TCG",
+    "fr": "Sigaway et les photos d’E-TCG",
+    "de": "Sigaway und die Fotos von E-TCG",
+    "ja": "SigawayとE-TCGの写真"
+  },
+  {
+    "pt": "A nova arquitetura da Sigaway",
+    "en": "Sigaway’s new architecture",
+    "es": "La nueva arquitectura de Sigaway",
+    "fr": "La nouvelle architecture de Sigaway",
+    "de": "Die neue Architektur bei Sigaway",
+    "ja": "Sigawayの新しいアーキテクチャ"
+  },
+  {
+    "pt": "Ambientes de desenvolvimento e deploy",
+    "en": "Development and deploy environments",
+    "es": "Entornos de desarrollo y deploy",
+    "fr": "Environnements de développement et de déploiement",
+    "de": "Entwicklungs- und Deployment-Umgebungen",
+    "ja": "開発・デプロイ環境"
+  },
+  {
+    "pt": "Serviços da CI&T",
+    "en": "CI&T services",
+    "es": "Servicios de CI&T",
+    "fr": "Les services de CI&T",
+    "de": "Services bei CI&T",
+    "ja": "CI&Tのサービス"
+  },
+  {
+    "pt": "Deploy contínuo e o agendador do Zevi no GitHub Actions",
+    "en": "Continuous deploy and Zevi’s scheduler on GitHub Actions",
+    "es": "Deploy continuo y el programador de Zevi en GitHub Actions",
+    "fr": "Déploiement continu et le planificateur de Zevi sur GitHub Actions",
+    "de": "Continuous Deployment und Zevis Zeitplaner auf GitHub Actions",
+    "ja": "継続的デプロイと、GitHub Actions上のZeviのスケジューラー"
+  },
+  {
+    "pt": "DNS, SPF, DKIM e MX",
+    "en": "DNS, SPF, DKIM and MX",
+    "es": "DNS, SPF, DKIM y MX",
+    "fr": "DNS, SPF, DKIM et MX",
+    "de": "DNS, SPF, DKIM und MX",
+    "ja": "DNS・SPF・DKIM・MX"
+  },
+  {
+    "pt": "Minha infra de e-mail, montada na mão",
+    "en": "My email infrastructure, set up by hand",
+    "es": "Mi infraestructura de email, armada a mano",
+    "fr": "Mon infrastructure e-mail, montée à la main",
+    "de": "Meine E-Mail-Infrastruktur, von Hand aufgesetzt",
+    "ja": "手作業で構築した自分のメール基盤"
+  },
+  {
+    "pt": "Dados e mensageria",
+    "en": "Data and messaging",
+    "es": "Datos y mensajería",
+    "fr": "Données et messagerie",
+    "de": "Daten und Messaging",
+    "ja": "データとメッセージング"
+  },
+  {
+    "pt": "Sigaway e E-TCG",
+    "en": "Sigaway and E-TCG",
+    "es": "Sigaway y E-TCG",
+    "fr": "Sigaway et E-TCG",
+    "de": "Sigaway und E-TCG",
+    "ja": "SigawayとE-TCG"
+  },
+  {
+    "pt": "Mercado Virtual e projetos da faculdade",
+    "en": "Mercado Virtual and college projects",
+    "es": "Mercado Virtual y proyectos de la universidad",
+    "fr": "Mercado Virtual et projets de fac",
+    "de": "Mercado Virtual und Studienprojekte",
+    "ja": "Mercado Virtualと大学の課題"
+  },
+  {
+    "pt": "Microsserviços na CI&T",
+    "en": "Microservices at CI&T",
+    "es": "Microservicios en CI&T",
+    "fr": "Microservices chez CI&T",
+    "de": "Microservices bei CI&T",
+    "ja": "CI&Tのマイクロサービス"
+  },
+  {
+    "pt": "Mensageria na CI&T",
+    "en": "Messaging at CI&T",
+    "es": "Mensajería en CI&T",
+    "fr": "Messagerie chez CI&T",
+    "de": "Messaging bei CI&T",
+    "ja": "CI&Tのメッセージング"
+  },
+  {
+    "pt": "Sistemas corporativos",
+    "en": "Corporate systems",
+    "es": "Sistemas corporativos",
+    "fr": "Systèmes d’entreprise",
+    "de": "Unternehmenssysteme",
+    "ja": "業務システム"
+  },
+  {
+    "pt": "Filas e mensageria",
+    "en": "Queues and messaging",
+    "es": "Colas y mensajería",
+    "fr": "Files et messagerie",
+    "de": "Queues und Messaging",
+    "ja": "キューとメッセージング"
+  },
+  {
+    "pt": "Inteligência artificial",
+    "en": "Artificial intelligence",
+    "es": "Inteligencia artificial",
+    "fr": "Intelligence artificielle",
+    "de": "Künstliche Intelligenz",
+    "ja": "人工知能"
+  },
+  {
+    "pt": "Diagnóstico e plano de ação do Zevi",
+    "en": "Zevi’s diagnosis and action plan",
+    "es": "Diagnóstico y plan de acción de Zevi",
+    "fr": "Diagnostic et plan d’action de Zevi",
+    "de": "Zevis Diagnose und Aktionsplan",
+    "ja": "Zeviの診断とアクションプラン"
+  },
+  {
+    "pt": "Projetos com LLM",
+    "en": "LLM projects",
+    "es": "Proyectos con LLM",
+    "fr": "Projets avec des LLM",
+    "de": "LLM-Projekte",
+    "ja": "LLMのプロジェクト"
+  },
+  {
+    "pt": "LLM dentro de aplicação real",
+    "en": "LLMs inside a real application",
+    "es": "LLM dentro de una aplicación real",
+    "fr": "Des LLM dans une vraie application",
+    "de": "LLMs in einer echten Anwendung",
+    "ja": "実際のアプリに組み込んだLLM"
+  },
+  {
+    "pt": "MCP servers e tool calling",
+    "en": "MCP servers and tool calling",
+    "es": "MCP servers y tool calling",
+    "fr": "Serveurs MCP et tool calling",
+    "de": "MCP-Server und Tool Calling",
+    "ja": "MCPサーバーとツール呼び出し"
+  },
+  {
+    "pt": "Dar ao modelo acesso controlado a sistema e ação, como no chat do app de treino",
+    "en": "Giving the model controlled access to systems and actions, like in the workout app chat",
+    "es": "Dar al modelo acceso controlado a sistemas y acciones, como en el chat de la app de entrenamiento",
+    "fr": "Donner au modèle un accès contrôlé aux systèmes et aux actions, comme dans le chat de l’appli de musculation",
+    "de": "Dem Modell kontrollierten Zugriff auf Systeme und Aktionen geben, wie im Chat der Trainings-App",
+    "ja": "トレーニングアプリのチャットのように、モデルにシステムや操作への制御されたアクセスを与える"
+  },
+  {
+    "pt": "RAG e agentes",
+    "en": "RAG and agents",
+    "es": "RAG y agentes",
+    "fr": "RAG et agents",
+    "de": "RAG und Agenten",
+    "ja": "RAGとエージェント"
+  },
+  {
+    "pt": "Pós na FIAP",
+    "en": "Postgraduate studies at FIAP",
+    "es": "Posgrado en FIAP",
+    "fr": "Master à la FIAP",
+    "de": "Aufbaustudium an der FIAP",
+    "ja": "FIAPの大学院課程"
+  },
+  {
+    "pt": "Visão computacional",
+    "en": "Computer vision",
+    "es": "Visión computacional",
+    "fr": "Vision par ordinateur",
+    "de": "Computer Vision",
+    "ja": "コンピュータビジョン"
+  },
+  {
+    "pt": "Leitura de placas com OCR na Automais e CNN no Tech Challenge",
+    "en": "License plate reading with OCR at Automais, and a CNN in the Tech Challenge",
+    "es": "Lectura de matrículas con OCR en Automais y CNN en el Tech Challenge",
+    "fr": "Lecture de plaques par OCR chez Automais et CNN dans le Tech Challenge",
+    "de": "Kennzeichenerkennung mit OCR bei Automais und ein CNN in der Tech Challenge",
+    "ja": "AutomaisでのOCRによるナンバー読み取りと、Tech ChallengeのCNN"
+  },
+  {
+    "pt": "scikit-learn e SHAP",
+    "en": "scikit-learn and SHAP",
+    "es": "scikit-learn y SHAP",
+    "fr": "scikit-learn et SHAP",
+    "de": "scikit-learn und SHAP",
+    "ja": "scikit-learn・SHAP"
+  },
+  {
+    "pt": "Tech Challenge da FIAP",
+    "en": "FIAP Tech Challenge",
+    "es": "Tech Challenge de FIAP",
+    "fr": "Tech Challenge de la FIAP",
+    "de": "FIAP Tech Challenge",
+    "ja": "FIAPのTech Challenge"
+  },
+  {
+    "pt": "Produto e gestão",
+    "en": "Product and management",
+    "es": "Producto y gestión",
+    "fr": "Produit et management",
+    "de": "Produkt und Management",
+    "ja": "プロダクトとマネジメント"
+  },
+  {
+    "pt": "ESX e Automais",
+    "en": "ESX and Automais",
+    "es": "ESX y Automais",
+    "fr": "ESX et Automais",
+    "de": "ESX und Automais",
+    "ja": "ESXとAutomais"
+  },
+  {
+    "pt": "Scrum e Kanban",
+    "en": "Scrum and Kanban",
+    "es": "Scrum y Kanban",
+    "fr": "Scrum et Kanban",
+    "de": "Scrum und Kanban",
+    "ja": "ScrumとKanban"
+  },
+  {
+    "pt": "Organização de time na ESX e na Automais",
+    "en": "Team organization at ESX and Automais",
+    "es": "Organización de equipo en ESX y Automais",
+    "fr": "Organisation d’équipe chez ESX et Automais",
+    "de": "Teamorganisation bei ESX und Automais",
+    "ja": "ESXとAutomaisでのチーム運営"
+  },
+  {
+    "pt": "A reestruturação da Automais, com tempo de resposta 66% menor",
+    "en": "The Automais restructuring, with 66% faster response time",
+    "es": "La reestructuración de Automais, con tiempo de respuesta 66% menor",
+    "fr": "La restructuration d’Automais, avec un temps de réponse réduit de 66 %",
+    "de": "Die Neuaufstellung bei Automais, mit 66 % kürzerer Reaktionszeit",
+    "ja": "応答時間を66%短縮したAutomaisの再編"
+  },
+  {
+    "pt": "Levantamento de requisitos",
+    "en": "Requirements gathering",
+    "es": "Levantamiento de requisitos",
+    "fr": "Recueil des besoins",
+    "de": "Anforderungsanalyse",
+    "ja": "要件定義"
+  },
+  {
+    "pt": "ADOSAREC, Automais e o Zevi",
+    "en": "ADOSAREC, Automais and Zevi",
+    "es": "ADOSAREC, Automais y Zevi",
+    "fr": "ADOSAREC, Automais et Zevi",
+    "de": "ADOSAREC, Automais und Zevi",
+    "ja": "ADOSAREC、Automais、Zevi"
+  },
+  {
+    "pt": "Figma e design de interface",
+    "en": "Figma and interface design",
+    "es": "Figma y diseño de interfaces",
+    "fr": "Figma et design d’interface",
+    "de": "Figma und Interface-Design",
+    "ja": "Figmaとインターフェースデザイン"
+  },
+  {
+    "pt": "Telas da Sigaway e protótipos",
+    "en": "Sigaway screens and prototypes",
+    "es": "Pantallas de Sigaway y prototipos",
+    "fr": "Écrans de Sigaway et prototypes",
+    "de": "Screens bei Sigaway und Prototypen",
+    "ja": "Sigawayの画面とプロトタイプ"
+  },
+  {
+    "pt": "Desde que eu perdi um jogo inteiro",
+    "en": "Ever since I lost an entire game",
+    "es": "Desde que perdí un juego entero",
+    "fr": "Depuis que j’ai perdu un jeu entier",
+    "de": "Seit ich ein ganzes Spiel verloren habe",
+    "ja": "ゲームをまるごと失ってから"
+  },
+  {
+    "pt": "Quadro branco",
+    "en": "Whiteboard",
+    "es": "Pizarra blanca",
+    "fr": "Tableau blanc",
+    "de": "Whiteboard",
+    "ja": "ホワイトボード"
+  },
+  {
+    "pt": "Quadro-negro",
+    "en": "Chalkboard",
+    "es": "Pizarra negra",
+    "fr": "Tableau noir",
+    "de": "Tafel",
+    "ja": "黒板"
+  }
+]

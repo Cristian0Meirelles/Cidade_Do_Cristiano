@@ -1,0 +1,850 @@
+[
+  {
+    "pt": "Jogo de plataforma. A versão em texto de todas as fases está mais abaixo.",
+    "en": "Platform game. The text version of every level is further down.",
+    "es": "Juego de plataformas. La versión en texto de todas las fases está más abajo.",
+    "fr": "Jeu de plateforme. La version texte de tous les niveaux est plus bas.",
+    "de": "Jump’n’Run. Die Textversion aller Level findest du weiter unten.",
+    "ja": "プラットフォームゲーム。全ステージのテキスト版は下にあります。"
+  },
+  {
+    "pt": "Cristiano: o jogo",
+    "en": "Cristiano: the game",
+    "es": "Cristiano: el juego",
+    "fr": "Cristiano : le jeu",
+    "de": "Cristiano: das Spiel",
+    "ja": "クリスティアーノ：ザ・ゲーム"
+  },
+  {
+    "pt": "Um jogo de plataforma de verdade. Corra pela minha carreira, bata nos blocos com interrogação pra revelar o que eu conquistei em cada lugar e pise nos bugs pelo caminho.",
+    "en": "A real platform game. Run through my career, hit the question blocks to reveal what I achieved at each place and stomp the bugs along the way.",
+    "es": "Un juego de plataformas de verdad. Recorre mi carrera, golpea los bloques con signo de pregunta para revelar lo que logré en cada lugar y pisa los bugs en el camino.",
+    "fr": "Un vrai jeu de plateforme. Parcours ma carrière, frappe les blocs à point d’interrogation pour révéler ce que j’ai accompli à chaque étape et écrase les bugs en chemin.",
+    "de": "Ein echtes Jump’n’Run. Lauf durch meine Karriere, triff die Fragezeichen-Blöcke, um zu sehen, was ich an jeder Station erreicht habe, und spring auf die Bugs unterwegs.",
+    "ja": "本物のプラットフォームゲーム。キャリアを走り抜け、はてなブロックを叩いて各地での成果を明かし、道中のバグを踏みつけよう。"
+  },
+  {
+    "pt": "Assistir sozinho",
+    "en": "Watch it play",
+    "es": "Mirar solo",
+    "fr": "Regarder",
+    "de": "Zuschauen",
+    "ja": "オートで見る"
+  },
+  {
+    "pt": "Noite",
+    "en": "Night",
+    "es": "Noche",
+    "fr": "Nuit",
+    "de": "Nacht",
+    "ja": "夜"
+  },
+  {
+    "pt": "Setas ou A e D pra andar, espaço pra pular. No celular, use os botões embaixo.",
+    "en": "Arrows or A and D to walk, space to jump. On mobile, use the buttons below.",
+    "es": "Flechas o A y D para caminar, espacio para saltar. En el móvil, usa los botones de abajo.",
+    "fr": "Flèches ou A et D pour marcher, espace pour sauter. Sur mobile, utilise les boutons en bas.",
+    "de": "Pfeiltasten oder A und D zum Laufen, Leertaste zum Springen. Auf dem Handy die Buttons unten.",
+    "ja": "矢印キーかA・Dで移動、スペースでジャンプ。スマホは下のボタンで。"
+  },
+  {
+    "pt": "Começar",
+    "en": "Start",
+    "es": "Empezar",
+    "fr": "Commencer",
+    "de": "Start",
+    "ja": "スタート"
+  },
+  {
+    "pt": "Só assistir",
+    "en": "Just watch",
+    "es": "Solo mirar",
+    "fr": "Juste regarder",
+    "de": "Nur zuschauen",
+    "ja": "見るだけ"
+  },
+  {
+    "pt": "Pular",
+    "en": "Jump",
+    "es": "Saltar",
+    "fr": "Sauter",
+    "de": "Springen",
+    "ja": "ジャンプ"
+  },
+  {
+    "pt": "Controles: <kbd>←</kbd> <kbd>→</kbd> ou <kbd>A</kbd> <kbd>D</kbd> pra andar, <kbd>espaço</kbd> ou <kbd>↑</kbd> pra pular.",
+    "en": "Controls: <kbd>←</kbd> <kbd>→</kbd> or <kbd>A</kbd> <kbd>D</kbd> to walk, <kbd>space</kbd> or <kbd>↑</kbd> to jump.",
+    "es": "Controles: <kbd>←</kbd> <kbd>→</kbd> o <kbd>A</kbd> <kbd>D</kbd> para caminar, <kbd>espacio</kbd> o <kbd>↑</kbd> para saltar.",
+    "fr": "Commandes : <kbd>←</kbd> <kbd>→</kbd> ou <kbd>A</kbd> <kbd>D</kbd> pour marcher, <kbd>espace</kbd> ou <kbd>↑</kbd> pour sauter.",
+    "de": "Steuerung: <kbd>←</kbd> <kbd>→</kbd> oder <kbd>A</kbd> <kbd>D</kbd> zum Laufen, <kbd>Leertaste</kbd> oder <kbd>↑</kbd> zum Springen.",
+    "ja": "操作：<kbd>←</kbd> <kbd>→</kbd> または <kbd>A</kbd> <kbd>D</kbd> で移動、<kbd>スペース</kbd> または <kbd>↑</kbd> でジャンプ。"
+  },
+  {
+    "pt": "Pular pra uma fase",
+    "en": "Jump to a level",
+    "es": "Ir a una fase",
+    "fr": "Aller à un niveau",
+    "de": "Zu einem Level springen",
+    "ja": "ステージへ移動"
+  },
+  {
+    "pt": "Ver todas as fases em texto",
+    "en": "See every level as text",
+    "es": "Ver todas las fases en texto",
+    "fr": "Voir tous les niveaux en texte",
+    "de": "Alle Level als Text ansehen",
+    "ja": "全ステージをテキストで見る"
+  },
+  {
+    "pt": "A fase 4-5 abre com uma conversa",
+    "en": "Level 4-5 opens with a conversation",
+    "es": "La fase 4-5 se abre con una conversación",
+    "fr": "Le niveau 4-5 s’ouvre avec une conversation",
+    "de": "Level 4-5 öffnet sich mit einem Gespräch",
+    "ja": "ステージ4-5は会話で開きます"
+  },
+  {
+    "pt": "Se você tem um sistema pra construir, um legado pra modernizar, um agente de IA pra colocar em produção ou um time pra eu ajudar a liderar, me chama.",
+    "en": "If you have a system to build, a legacy to modernize, an AI agent to put into production or a team for me to lead, get in touch.",
+    "es": "Si tienes un sistema para construir, un legado para modernizar, un agente de IA para poner en producción o un equipo para que yo lidere, escríbeme.",
+    "fr": "Si tu as un système à construire, un existant à moderniser, un agent IA à mettre en production ou une équipe à me confier, écris-moi.",
+    "de": "Wenn du ein System bauen, eine Altlast modernisieren, einen KI-Agenten in Produktion bringen oder mir ein Team anvertrauen willst, melde dich.",
+    "ja": "つくるべきシステム、刷新したいレガシー、本番に載せたいAIエージェント、あるいは率いてほしいチームがあれば、ご連絡ください。"
+  },
+  {
+    "pt": "Mandar e-mail",
+    "en": "Send an email",
+    "es": "Mandar un email",
+    "fr": "Envoyer un e-mail",
+    "de": "E-Mail schreiben",
+    "ja": "メールを送る"
+  },
+  {
+    "pt": "Meu jogo no itch.io",
+    "en": "My game on itch.io",
+    "es": "Mi juego en itch.io",
+    "fr": "Mon jeu sur itch.io",
+    "de": "Mein Spiel auf itch.io",
+    "ja": "itch.ioの自作ゲーム"
+  },
+  {
+    "pt": "Chefão",
+    "en": "Boss",
+    "es": "Jefe final",
+    "fr": "Boss",
+    "de": "Endgegner",
+    "ja": "ボス"
+  },
+  {
+    "pt": "<a class=\"btn\" href=\"https://crifalcon.itch.io/zombie-apocalypse-stage-test\" target=\"_blank\" rel=\"noopener\">Jogar o que sobrou</a>",
+    "en": "<a class=\"btn\" href=\"https://crifalcon.itch.io/zombie-apocalypse-stage-test\" target=\"_blank\" rel=\"noopener\">Play what’s left</a>",
+    "es": "<a class=\"btn\" href=\"https://crifalcon.itch.io/zombie-apocalypse-stage-test\" target=\"_blank\" rel=\"noopener\">Jugar lo que quedó</a>",
+    "fr": "<a class=\"btn\" href=\"https://crifalcon.itch.io/zombie-apocalypse-stage-test\" target=\"_blank\" rel=\"noopener\">Jouer à ce qui reste</a>",
+    "de": "<a class=\"btn\" href=\"https://crifalcon.itch.io/zombie-apocalypse-stage-test\" target=\"_blank\" rel=\"noopener\">Spielen, was übrig ist</a>",
+    "ja": "<a class=\"btn\" href=\"https://crifalcon.itch.io/zombie-apocalypse-stage-test\" target=\"_blank\" rel=\"noopener\">残ったものを遊ぶ</a>"
+  },
+  {
+    "pt": "<a class=\"btn on\" href=\"mailto:cristianocmeirelles@gmail.com\">Abrir essa fase</a>",
+    "en": "<a class=\"btn on\" href=\"mailto:cristianocmeirelles@gmail.com\">Open this level</a>",
+    "es": "<a class=\"btn on\" href=\"mailto:cristianocmeirelles@gmail.com\">Abrir esta fase</a>",
+    "fr": "<a class=\"btn on\" href=\"mailto:cristianocmeirelles@gmail.com\">Ouvrir ce niveau</a>",
+    "de": "<a class=\"btn on\" href=\"mailto:cristianocmeirelles@gmail.com\">Dieses Level öffnen</a>",
+    "ja": "<a class=\"btn on\" href=\"mailto:cristianocmeirelles@gmail.com\">このステージを開く</a>"
+  },
+  {
+    "pt": "Cristiano Meirelles, o jogo",
+    "en": "Cristiano Meirelles, the game",
+    "es": "Cristiano Meirelles, el juego",
+    "fr": "Cristiano Meirelles, le jeu",
+    "de": "Cristiano Meirelles, das Spiel",
+    "ja": "クリスティアーノ・メイレレス、ザ・ゲーム"
+  },
+  {
+    "pt": "Fase 1-1",
+    "en": "Level 1-1",
+    "es": "Fase 1-1",
+    "fr": "Niveau 1-1",
+    "de": "Level 1-1",
+    "ja": "ステージ1-1"
+  },
+  {
+    "pt": "Moedas 0",
+    "en": "Coins 0",
+    "es": "Monedas 0",
+    "fr": "Pièces 0",
+    "de": "Münzen 0",
+    "ja": "コイン 0"
+  },
+  {
+    "pt": "Bugs corrigidos 0",
+    "en": "Bugs fixed 0",
+    "es": "Bugs corregidos 0",
+    "fr": "Bugs corrigés 0",
+    "de": "Behobene Bugs 0",
+    "ja": "修正したバグ 0"
+  },
+  {
+    "pt": "Aperte começar",
+    "en": "Press start",
+    "es": "Presiona empezar",
+    "fr": "Appuie sur commencer",
+    "de": "Drück auf Start",
+    "ja": "スタートを押してね"
+  },
+  {
+    "pt": "Rio de Janeiro, 2000",
+    "en": "Rio de Janeiro state, 2000",
+    "es": "Estado de Río de Janeiro, 2000",
+    "fr": "État de Rio de Janeiro, 2000",
+    "de": "Bundesstaat Rio de Janeiro, 2000",
+    "ja": "リオデジャネイロ州、2000年"
+  },
+  {
+    "pt": "Começar do zero",
+    "en": "Starting from zero",
+    "es": "Empezar de cero",
+    "fr": "Partir de zéro",
+    "de": "Bei null anfangen",
+    "ja": "ゼロからのスタート"
+  },
+  {
+    "pt": "Nasci em Itaboraí e morei em outros estados antes de sair do país. Mudar de lugar virou costume cedo.",
+    "en": "I was born in Itaboraí and lived in other states before leaving the country. Moving around became a habit early.",
+    "es": "Nací en Itaboraí y viví en otros estados antes de salir del país. Mudarme se volvió costumbre temprano.",
+    "fr": "Je suis né à Itaboraí et j’ai vécu dans d’autres États avant de quitter le pays. Déménager est vite devenu une habitude.",
+    "de": "Ich wurde in Itaboraí geboren und habe in anderen Bundesstaaten gelebt, bevor ich das Land verließ. Umziehen wurde früh zur Gewohnheit.",
+    "ja": "イタボライで生まれ、国を出る前にほかの州にも住みました。引っ越しは早くから当たり前でした。"
+  },
+  {
+    "pt": "Facilidade pra recomeçar em qualquer lugar.",
+    "en": "Ease starting over anywhere.",
+    "es": "Facilidad para empezar de nuevo en cualquier lugar.",
+    "fr": "La facilité à recommencer n’importe où.",
+    "de": "Leichtigkeit, überall neu anzufangen.",
+    "ja": "どこでもやり直せる力。"
+  },
+  {
+    "pt": "Canadá",
+    "en": "Canada",
+    "es": "Canadá",
+    "fr": "Canada",
+    "de": "Kanada",
+    "ja": "カナダ"
+  },
+  {
+    "pt": "Bridgewater, Nova Scotia. 2018 a 2019",
+    "en": "Bridgewater, Nova Scotia. 2018 to 2019",
+    "es": "Bridgewater, Nueva Escocia. 2018 a 2019",
+    "fr": "Bridgewater, Nouvelle-Écosse. 2018 à 2019",
+    "de": "Bridgewater, Nova Scotia. 2018 bis 2019",
+    "ja": "ノバスコシア州ブリッジウォーター。2018〜2019年"
+  },
+  {
+    "pt": "Viver em inglês aos 17",
+    "en": "Living in English at 17",
+    "es": "Vivir en inglés a los 17",
+    "fr": "Vivre en anglais à 17 ans",
+    "de": "Mit 17 auf Englisch leben",
+    "ja": "17歳で英語の生活"
+  },
+  {
+    "pt": "Ensino médio no Canadá, com skate, trilha e neve. Participei de uma exposição de arte como artista e escrevi minhas primeiras linhas de código.",
+    "en": "High school in Canada, with skateboarding, trails and snow. I took part in an art exhibition as an artist and wrote my first lines of code.",
+    "es": "Secundaria en Canadá, con skate, senderos y nieve. Participé en una exposición de arte como artista y escribí mis primeras líneas de código.",
+    "fr": "Le lycée au Canada, avec du skate, des sentiers et de la neige. J’ai participé à une exposition d’art en tant qu’artiste et écrit mes premières lignes de code.",
+    "de": "Highschool in Kanada, mit Skaten, Wanderwegen und Schnee. Ich habe als Künstler an einer Kunstausstellung teilgenommen und meine ersten Zeilen Code geschrieben.",
+    "ja": "スケートボードとトレイルと雪のカナダの高校。アーティストとして美術展に参加し、初めてのコードを書きました。"
+  },
+  {
+    "pt": "Inglês do dia a dia e o olho de quem desenha, que depois virou olho pra interface.",
+    "en": "Everyday English and an artist’s eye, which later became an eye for interfaces.",
+    "es": "Inglés del día a día y el ojo de quien dibuja, que después se volvió ojo para interfaces.",
+    "fr": "L’anglais du quotidien et l’œil de quelqu’un qui dessine, devenu ensuite un œil pour les interfaces.",
+    "de": "Alltagsenglisch und der Blick eines Zeichners, der später zum Blick für Interfaces wurde.",
+    "ja": "日常の英語と、描く人の目。それがのちにインターフェースを見る目になりました。"
+  },
+  {
+    "pt": "Aprendiz bilíngue. 2019 a 2020",
+    "en": "Bilingual apprentice. 2019 to 2020",
+    "es": "Aprendiz bilingüe. 2019 a 2020",
+    "fr": "Apprenti bilingue. 2019 à 2020",
+    "de": "Zweisprachiger Auszubildender. 2019 bis 2020",
+    "ja": "バイリンガル研修生。2019〜2020年"
+  },
+  {
+    "pt": "Cliente estrangeiro em pleno congresso",
+    "en": "A foreign client in the middle of a conference",
+    "es": "Cliente extranjero en pleno congreso",
+    "fr": "Un client étranger en plein congrès",
+    "de": "Ein ausländischer Kunde mitten im Kongress",
+    "ja": "学会の最中の海外顧客"
+  },
+  {
+    "pt": "Atendi estrangeiros e fiz tradução no congresso IGCS 2019.",
+    "en": "I served foreigners and translated at the IGCS 2019 conference.",
+    "es": "Atendí a extranjeros e hice traducción en el congreso IGCS 2019.",
+    "fr": "J’ai accueilli des étrangers et fait de la traduction au congrès IGCS 2019.",
+    "de": "Ich habe Gäste aus dem Ausland betreut und auf dem Kongress IGCS 2019 übersetzt.",
+    "ja": "海外からの来場者を案内し、IGCS 2019の学会で通訳をしました。"
+  },
+  {
+    "pt": "Primeira escola de cliente: entender o que a pessoa quer vem antes de qualquer resposta.",
+    "en": "My first school of clients: understanding what the person wants comes before any answer.",
+    "es": "Mi primera escuela de clientes: entender qué quiere la persona va antes de cualquier respuesta.",
+    "fr": "Ma première école du client : comprendre ce que la personne veut passe avant toute réponse.",
+    "de": "Meine erste Schule im Umgang mit Kunden: verstehen, was jemand will, kommt vor jeder Antwort.",
+    "ja": "顧客対応の最初の学校。どんな答えよりも先に、相手が何を求めているかを理解すること。"
+  },
+  {
+    "pt": "Análise e Desenvolvimento de Sistemas. 2020 a 2022",
+    "en": "Systems Analysis and Development. 2020 to 2022",
+    "es": "Análisis y Desarrollo de Sistemas. 2020 a 2022",
+    "fr": "Analyse et développement de systèmes. 2020 à 2022",
+    "de": "Systemanalyse und -entwicklung. 2020 bis 2022",
+    "ja": "システム分析・開発。2020〜2022年"
+  },
+  {
+    "pt": "Uma cidade nova que ninguém conhecia",
+    "en": "A new town nobody knew",
+    "es": "Una ciudad nueva que nadie conocía",
+    "fr": "Une nouvelle ville que personne ne connaissait",
+    "de": "Eine neue Stadt, die niemand kannte",
+    "ja": "誰も知らない新しい町"
+  },
+  {
+    "pt": "Passei na faculdade e fui morar em Santa Catarina.",
+    "en": "I got into college and moved to Santa Catarina.",
+    "es": "Entré en la universidad y me mudé a Santa Catarina.",
+    "fr": "Je suis entré à la fac et j’ai déménagé à Santa Catarina.",
+    "de": "Ich kam an die Hochschule und zog nach Santa Catarina.",
+    "ja": "大学に合格し、サンタカタリーナ州へ引っ越しました。"
+  },
+  {
+    "pt": "A base técnica toda, e média 8,8 no fim.",
+    "en": "All the technical foundation, and a GPA of 8.8 out of 10 at the end.",
+    "es": "Toda la base técnica, y promedio 8,8 sobre 10 al final.",
+    "fr": "Toute la base technique, et une moyenne de 8,8 sur 10 à la fin.",
+    "de": "Das ganze technische Fundament und am Ende ein Schnitt von 8,8 von 10.",
+    "ja": "技術の基礎すべてと、最終的な成績平均8.8（10点満点）。"
+  },
+  {
+    "pt": "Projeto financiado por edital. 2021",
+    "en": "Grant-funded project. 2021",
+    "es": "Proyecto financiado por convocatoria. 2021",
+    "fr": "Projet financé par appel à projets. 2021",
+    "de": "Gefördertes Projekt. 2021",
+    "ja": "公募で資金を得たプロジェクト。2021年"
+  },
+  {
+    "pt": "Fichas de papel no meio da pandemia",
+    "en": "Paper forms in the middle of the pandemic",
+    "es": "Fichas de papel en plena pandemia",
+    "fr": "Des fiches papier en pleine pandémie",
+    "de": "Papierbögen mitten in der Pandemie",
+    "ja": "パンデミック中の紙の記録"
+  },
+  {
+    "pt": "Três meses de pesquisa, reunião e protótipo, validando cada etapa com a secretária da associação de doadores de sangue.",
+    "en": "Three months of research, meetings and prototypes, validating every step with the blood donor association’s secretary.",
+    "es": "Tres meses de investigación, reuniones y prototipos, validando cada etapa con la secretaria de la asociación de donantes de sangre.",
+    "fr": "Trois mois de recherche, de réunions et de prototypes, en validant chaque étape avec la secrétaire de l’association des donneurs de sang.",
+    "de": "Drei Monate Recherche, Meetings und Prototypen, jeder Schritt abgestimmt mit der Sekretärin des Blutspendevereins.",
+    "ja": "献血者協会の事務担当の方と、3か月かけて調査、打ち合わせ、プロトタイプを重ね、一つずつ確認しました。"
+  },
+  {
+    "pt": "Mais de 5.000 doadores no sistema, busca 65% mais rápida, e o projeto virou notícia.",
+    "en": "More than 5,000 donors in the system, 65% faster search, and the project made the news.",
+    "es": "Más de 5.000 donantes en el sistema, búsqueda 65% más rápida, y el proyecto salió en las noticias.",
+    "fr": "Plus de 5 000 donneurs dans le système, une recherche 65 % plus rapide, et le projet est passé dans la presse.",
+    "de": "Über 5.000 Spender im System, 65 % schnellere Suche, und das Projekt kam in die Presse.",
+    "ja": "5,000人以上の献血者を登録、検索は65%高速化、ニュースにもなりました。"
+  },
+  {
+    "pt": "O jogo perdido",
+    "en": "The lost game",
+    "es": "El juego perdido",
+    "fr": "Le jeu perdu",
+    "de": "Das verlorene Spiel",
+    "ja": "失われたゲーム"
+  },
+  {
+    "pt": "Fase bônus. 2021",
+    "en": "Bonus level. 2021",
+    "es": "Fase extra. 2021",
+    "fr": "Niveau bonus. 2021",
+    "de": "Bonuslevel. 2021",
+    "ja": "ボーナスステージ。2021年"
+  },
+  {
+    "pt": "PC queimado, sem backup",
+    "en": "Burned-out PC, no backup",
+    "es": "PC quemada, sin backup",
+    "fr": "PC grillé, sans sauvegarde",
+    "de": "Durchgebrannter PC, kein Backup",
+    "ja": "壊れたPC、バックアップなし"
+  },
+  {
+    "pt": "Eu estava terminando meu jogo em Unity quando o PC queimou e levou tudo. Sobrou só o teste de fase no itch.io.",
+    "en": "I was finishing my Unity game when the PC burned out and took everything. Only the level test on itch.io survived.",
+    "es": "Estaba terminando mi juego en Unity cuando la PC se quemó y se llevó todo. Solo quedó la prueba de nivel en itch.io.",
+    "fr": "Je terminais mon jeu sous Unity quand le PC a grillé et a tout emporté. Il ne reste que le test de niveau sur itch.io.",
+    "de": "Ich war dabei, mein Unity-Spiel fertigzustellen, als der PC durchbrannte und alles mitnahm. Nur der Level-Test auf itch.io blieb übrig.",
+    "ja": "Unityのゲームを仕上げているときにPCが壊れ、すべて消えました。残ったのはitch.ioのステージテストだけです。"
+  },
+  {
+    "pt": "Perdi essa. Mas saí com o item mais importante do jogo inteiro: nunca mais começo nada sem Git.",
+    "en": "I lost this one. But I came out with the most important item in the whole game: I never start anything without Git again.",
+    "es": "Esta la perdí. Pero salí con el ítem más importante de todo el juego: nunca más empiezo nada sin Git.",
+    "fr": "J’ai perdu celui-là. Mais j’en suis sorti avec l’objet le plus important du jeu : je ne commence plus jamais rien sans Git.",
+    "de": "Das hier habe ich verloren. Aber ich bin mit dem wichtigsten Item des ganzen Spiels rausgekommen: Ich fange nie wieder etwas ohne Git an.",
+    "ja": "このステージは負けました。でも、ゲーム全体でいちばん大事なアイテムを手に入れました。もうGitなしでは何も始めません。"
+  },
+  {
+    "pt": "Desenvolvedor full stack. 2022",
+    "en": "Full stack developer. 2022",
+    "es": "Desarrollador full stack. 2022",
+    "fr": "Développeur full stack. 2022",
+    "de": "Full-Stack-Entwickler. 2022",
+    "ja": "フルスタック開発者。2022年"
+  },
+  {
+    "pt": "Software em escala global",
+    "en": "Software at global scale",
+    "es": "Software a escala global",
+    "fr": "Du logiciel à l’échelle mondiale",
+    "de": "Software im globalen Maßstab",
+    "ja": "グローバル規模のソフトウェア"
+  },
+  {
+    "pt": "Time internacional da BEES, da AB InBev, com Java, Spring Boot e Kafka, na expansão pra novos países.",
+    "en": "An international team on BEES, from AB InBev, with Java, Spring Boot and Kafka, during the expansion into new countries.",
+    "es": "Equipo internacional de BEES, de AB InBev, con Java, Spring Boot y Kafka, en la expansión a nuevos países.",
+    "fr": "Une équipe internationale sur BEES, d’AB InBev, avec Java, Spring Boot et Kafka, pendant l’expansion vers de nouveaux pays.",
+    "de": "Internationales Team bei BEES von AB InBev, mit Java, Spring Boot und Kafka, während der Expansion in neue Länder.",
+    "ja": "AB InBevのBEESの国際チーム。Java、Spring Boot、Kafkaで、新しい国への展開期に参加しました。"
+  },
+  {
+    "pt": "Menos bugs em produção com testes automatizados e processamento 10% mais rápido.",
+    "en": "Fewer bugs in production with automated tests and 10% faster processing.",
+    "es": "Menos bugs en producción con pruebas automatizadas y procesamiento 10% más rápido.",
+    "fr": "Moins de bugs en production grâce aux tests automatisés et un traitement 10 % plus rapide.",
+    "de": "Weniger Bugs in Produktion durch automatisierte Tests und 10 % schnellere Verarbeitung.",
+    "ja": "自動テストで本番のバグを減らし、処理を10%高速化。"
+  },
+  {
+    "pt": "Full stack, PO e Scrum Master. 2023 a 2024",
+    "en": "Full stack, PO and Scrum Master. 2023 to 2024",
+    "es": "Full stack, PO y Scrum Master. 2023 a 2024",
+    "fr": "Full stack, PO et Scrum Master. 2023 à 2024",
+    "de": "Full Stack, PO und Scrum Master. 2023 bis 2024",
+    "ja": "フルスタック、PO、スクラムマスター。2023〜2024年"
+  },
+  {
+    "pt": "Legado que não pode parar",
+    "en": "A legacy system that can’t stop",
+    "es": "Legado que no puede parar",
+    "fr": "Un existant qui ne peut pas s’arrêter",
+    "de": "Ein Altsystem, das nicht stillstehen darf",
+    "ja": "止められないレガシー"
+  },
+  {
+    "pt": "Testes estruturados num sistema em produção e um fluxo ágil de ponta a ponta como product owner.",
+    "en": "Structured tests in a production system and an end-to-end agile flow as product owner.",
+    "es": "Pruebas estructuradas en un sistema en producción y un flujo ágil de punta a punta como product owner.",
+    "fr": "Des tests structurés sur un système en production et un flux agile de bout en bout en tant que product owner.",
+    "de": "Strukturierte Tests in einem Produktivsystem und ein agiler Ablauf von Anfang bis Ende als Product Owner.",
+    "ja": "本番システムのテスト整備と、プロダクトオーナーとしてのエンドツーエンドのアジャイル運用。"
+  },
+  {
+    "pt": "Estabilidade 20% maior e entregas 30% mais rápidas.",
+    "en": "20% more stability and 30% faster deliveries.",
+    "es": "Estabilidad 20% mayor y entregas 30% más rápidas.",
+    "fr": "20 % de stabilité en plus et des livraisons 30 % plus rapides.",
+    "de": "20 % mehr Stabilität und 30 % schnellere Lieferungen.",
+    "ja": "安定性20%向上、デリバリー30%高速化。"
+  },
+  {
+    "pt": "Tech lead e product owner. 2024 a 2025",
+    "en": "Tech lead and product owner. 2024 to 2025",
+    "es": "Tech lead y product owner. 2024 a 2025",
+    "fr": "Tech lead et product owner. 2024 à 2025",
+    "de": "Tech Lead und Product Owner. 2024 bis 2025",
+    "ja": "テックリード兼プロダクトオーナー。2024〜2025年"
+  },
+  {
+    "pt": "Time travado e cliente na linha de frente",
+    "en": "A stuck team and the client on the front line",
+    "es": "Equipo trabado y cliente en primera línea",
+    "fr": "Une équipe bloquée et le client en première ligne",
+    "de": "Ein festgefahrenes Team und der Kunde an vorderster Front",
+    "ja": "止まったチームと最前線の顧客"
+  },
+  {
+    "pt": "Liderei o front-end, reorganizei a operação em Scrum e Jira e integrei o OCR do Google pra ler placas numa rede de postos.",
+    "en": "I led the front-end, reorganized operations with Scrum and Jira and integrated Google’s OCR to read license plates across a gas station network.",
+    "es": "Lideré el front-end, reorganicé la operación con Scrum y Jira e integré el OCR de Google para leer matrículas en una red de gasolineras.",
+    "fr": "J’ai dirigé le front-end, réorganisé le fonctionnement avec Scrum et Jira et intégré l’OCR de Google pour lire les plaques dans un réseau de stations-service.",
+    "de": "Ich habe das Frontend geleitet, die Abläufe mit Scrum und Jira neu organisiert und Googles OCR zur Kennzeichenerkennung in einer Tankstellenkette integriert.",
+    "ja": "フロントエンドを率い、ScrumとJiraで運用を立て直し、ガソリンスタンドのチェーンでナンバー読み取りにGoogleのOCRを組み込みました。"
+  },
+  {
+    "pt": "Tempo de resposta do time 66% menor, fluxo de placas 75% mais rápido e usabilidade 30% maior nos apps com biometria.",
+    "en": "66% less team response time, 75% faster license plate flow and 30% better usability in the biometric apps.",
+    "es": "Tiempo de respuesta del equipo 66% menor, flujo de matrículas 75% más rápido y usabilidad 30% mayor en las apps con biometría.",
+    "fr": "Un temps de réponse de l’équipe réduit de 66 %, un flux de plaques 75 % plus rapide et une utilisabilité 30 % meilleure dans les applis biométriques.",
+    "de": "66 % kürzere Reaktionszeit im Team, 75 % schnellerer Kennzeichen-Workflow und 30 % bessere Bedienbarkeit in den Biometrie-Apps.",
+    "ja": "チームの応答時間66%短縮、ナンバー照合75%高速化、生体認証アプリの使いやすさ30%向上。"
+  },
+  {
+    "pt": "Desenvolvedor full stack. 2025 a 2026",
+    "en": "Full stack developer. 2025 to 2026",
+    "es": "Desarrollador full stack. 2025 a 2026",
+    "fr": "Développeur full stack. 2025 à 2026",
+    "de": "Full-Stack-Entwickler. 2025 bis 2026",
+    "ja": "フルスタック開発者。2025〜2026年"
+  },
+  {
+    "pt": "Volume massivo de telemetria de frota",
+    "en": "A massive volume of fleet telemetry",
+    "es": "Volumen masivo de telemetría de flotas",
+    "fr": "Un volume massif de télémétrie de flotte",
+    "de": "Riesige Mengen an Flotten-Telemetrie",
+    "ja": "大量のフリート・テレマティクスデータ"
+  },
+  {
+    "pt": "Pipeline na AWS com Kinesis, Glue, Athena e S3, e migração de Java pra Python sem parar a operação.",
+    "en": "A pipeline on AWS with Kinesis, Glue, Athena and S3, and a migration from Java to Python without stopping operations.",
+    "es": "Pipeline en AWS con Kinesis, Glue, Athena y S3, y migración de Java a Python sin detener la operación.",
+    "fr": "Un pipeline sur AWS avec Kinesis, Glue, Athena et S3, et une migration de Java vers Python sans arrêter l’activité.",
+    "de": "Eine Pipeline auf AWS mit Kinesis, Glue, Athena und S3 und eine Migration von Java nach Python ohne Betriebsunterbrechung.",
+    "ja": "AWSのKinesis、Glue、Athena、S3によるパイプラインと、業務を止めないJavaからPythonへの移行。"
+  },
+  {
+    "pt": "Dados chegando rápido e uma arquitetura serverless no lugar do legado.",
+    "en": "Data arriving fast and a serverless architecture replacing the legacy.",
+    "es": "Datos llegando rápido y una arquitectura serverless en lugar del legado.",
+    "fr": "Des données qui arrivent vite et une architecture serverless à la place de l’existant.",
+    "de": "Schnell eintreffende Daten und eine Serverless-Architektur anstelle des Altsystems.",
+    "ja": "データがすぐ届き、レガシーはサーバーレス構成に置き換わりました。"
+  },
+  {
+    "pt": "Pós em IA",
+    "en": "AI postgraduate program",
+    "es": "Posgrado en IA",
+    "fr": "Master en IA",
+    "de": "KI-Aufbaustudium",
+    "ja": "AI大学院課程"
+  },
+  {
+    "pt": "IA que funciona fora da demo",
+    "en": "AI that works outside the demo",
+    "es": "IA que funciona fuera de la demo",
+    "fr": "De l’IA qui marche en dehors de la démo",
+    "de": "KI, die auch außerhalb der Demo funktioniert",
+    "ja": "デモの外でも動くAI"
+  },
+  {
+    "pt": "Estudando LLMs, RAG e agentes, e colocando isso em produto que alguém usa, onde aparecem custo, latência e erro do modelo.",
+    "en": "Studying LLMs, RAG and agents, and putting them into products people use, where cost, latency and model errors show up.",
+    "es": "Estudiando LLMs, RAG y agentes, y llevándolos a productos que alguien usa, donde aparecen costo, latencia y errores del modelo.",
+    "fr": "J’étudie les LLM, le RAG et les agents, et je les mets dans des produits utilisés pour de vrai, là où apparaissent le coût, la latence et les erreurs du modèle.",
+    "de": "Ich studiere LLMs, RAG und Agenten und bringe sie in Produkte, die wirklich genutzt werden, wo Kosten, Latenz und Modellfehler sichtbar werden.",
+    "ja": "LLM、RAG、エージェントを学び、実際に使われるプロダクトに組み込んでいます。コスト、レイテンシ、モデルの誤りが現れるのはそこです。"
+  },
+  {
+    "pt": "MCP servers, tool calling, Bedrock e streaming em tempo real no repertório.",
+    "en": "MCP servers, tool calling, Bedrock and real-time streaming in the toolkit.",
+    "es": "MCP servers, tool calling, Bedrock y streaming en tiempo real en el repertorio.",
+    "fr": "Serveurs MCP, tool calling, Bedrock et streaming en temps réel dans la boîte à outils.",
+    "de": "MCP-Server, Tool Calling, Bedrock und Echtzeit-Streaming im Werkzeugkasten.",
+    "ja": "MCPサーバー、ツール呼び出し、Bedrock、リアルタイムストリーミングを習得。"
+  },
+  {
+    "pt": "Projeto próprio, em desenvolvimento",
+    "en": "Personal project, in development",
+    "es": "Proyecto propio, en desarrollo",
+    "fr": "Projet personnel, en développement",
+    "de": "Eigenes Projekt, in Entwicklung",
+    "ja": "個人プロジェクト、開発中"
+  },
+  {
+    "pt": "Gastar em anúncio sem saber se está lucrando",
+    "en": "Spending on ads without knowing if you’re profiting",
+    "es": "Gastar en anuncios sin saber si estás ganando",
+    "fr": "Dépenser en pub sans savoir si on est rentable",
+    "de": "Geld für Werbung ausgeben, ohne zu wissen, ob es sich lohnt",
+    "ja": "利益が出ているかわからないまま広告費を使う"
+  },
+  {
+    "pt": "Um painel que lê as contas de Meta, TikTok, Google Ads e YouTube e cruza com as vendas reais. Fiz produto, arquitetura, design system e OAuth multi-cliente.",
+    "en": "A dashboard that reads Meta, TikTok, Google Ads and YouTube accounts and cross-checks them with real sales. I did product, architecture, design system and multi-client OAuth.",
+    "es": "Un panel que lee las cuentas de Meta, TikTok, Google Ads y YouTube y las cruza con las ventas reales. Hice producto, arquitectura, design system y OAuth multicliente.",
+    "fr": "Un tableau de bord qui lit les comptes Meta, TikTok, Google Ads et YouTube et les croise avec les ventes réelles. J’ai fait le produit, l’architecture, le design system et l’OAuth multi-client.",
+    "de": "Ein Dashboard, das Meta-, TikTok-, Google-Ads- und YouTube-Konten ausliest und mit den echten Verkäufen abgleicht. Ich habe Produkt, Architektur, Designsystem und Multi-Client-OAuth gemacht.",
+    "ja": "Meta、TikTok、Google Ads、YouTubeのアカウントを読み込み、実際の売上と照合するダッシュボード。プロダクト、アーキテクチャ、デザインシステム、マルチクライアントOAuthを担当しました。"
+  },
+  {
+    "pt": "Descobri que o Meta inflava as compras em 33%. A IA devolve diagnóstico e plano de 30 dias.",
+    "en": "I found out Meta was inflating purchases by 33%. The AI returns a diagnosis and a 30-day plan.",
+    "es": "Descubrí que Meta inflaba las compras en un 33%. La IA devuelve diagnóstico y plan de 30 días.",
+    "fr": "J’ai découvert que Meta gonflait les achats de 33 %. L’IA renvoie un diagnostic et un plan sur 30 jours.",
+    "de": "Ich habe herausgefunden, dass Meta die Käufe um 33 % zu hoch angab. Die KI liefert Diagnose und 30-Tage-Plan.",
+    "ja": "Metaが購入数を33%多く報告していることを発見。AIが診断と30日間の計画を返します。"
+  },
+  {
+    "pt": "515 e E-TCG",
+    "en": "515 and E-TCG",
+    "es": "515 y E-TCG",
+    "fr": "515 et E-TCG",
+    "de": "515 und E-TCG",
+    "ja": "515とE-TCG"
+  },
+  {
+    "pt": "Duas lojas",
+    "en": "Two stores",
+    "es": "Dos tiendas",
+    "fr": "Deux boutiques",
+    "de": "Zwei Shops",
+    "ja": "2つのストア"
+  },
+  {
+    "pt": "Loja do zero, e carta avulsa sem ver a condição",
+    "en": "A store from scratch, and single cards without seeing their condition",
+    "es": "Tienda desde cero, y cartas sueltas sin ver el estado",
+    "fr": "Une boutique partie de zéro, et des cartes à l’unité sans voir leur état",
+    "de": "Ein Shop von null auf, und Einzelkarten, deren Zustand man nicht sieht",
+    "ja": "ゼロからのストアと、状態が見えないシングルカード"
+  },
+  {
+    "pt": "A 515 Sanctuary Beauty, projeto de família, na Shopify. O E-TCG, loja de cartas Pokémon TCG com cartas em 3D, zoom de 8x e API em Spring Boot.",
+    "en": "515 Sanctuary Beauty, a family project, on Shopify. E-TCG, a Pokémon TCG card store with 3D cards, 8x zoom and an API in Spring Boot.",
+    "es": "515 Sanctuary Beauty, proyecto familiar, en Shopify. E-TCG, tienda de cartas Pokémon TCG con cartas en 3D, zoom de 8x y API en Spring Boot.",
+    "fr": "515 Sanctuary Beauty, projet familial, sur Shopify. E-TCG, une boutique de cartes Pokémon TCG avec des cartes en 3D, un zoom 8x et une API en Spring Boot.",
+    "de": "515 Sanctuary Beauty, ein Familienprojekt, auf Shopify. E-TCG, ein Shop für Pokémon-TCG-Karten mit 3D-Karten, 8-fach-Zoom und API in Spring Boot.",
+    "ja": "家族のプロジェクト515 Sanctuary BeautyをShopifyで。E-TCGは3Dカード、8倍ズーム、Spring BootのAPIを備えたポケモンカードのストア。"
+  },
+  {
+    "pt": "Duas lojas no ar, e foi da 515 que nasceu o Zevi.",
+    "en": "Two stores up and running, and 515 is where Zevi was born.",
+    "es": "Dos tiendas funcionando, y de 515 nació Zevi.",
+    "fr": "Deux boutiques en ligne, et c’est de 515 qu’est né Zevi.",
+    "de": "Zwei Shops online, und aus 515 ist Zevi entstanden.",
+    "ja": "2つのストアが稼働中。Zeviは515から生まれました。"
+  },
+  {
+    "pt": "App de treino",
+    "en": "Workout app",
+    "es": "App de entrenamiento",
+    "fr": "Appli de muscu",
+    "de": "Trainings-App",
+    "ja": "トレーニングアプリ"
+  },
+  {
+    "pt": "React e IA",
+    "en": "React and AI",
+    "es": "React e IA",
+    "fr": "React et IA",
+    "de": "React und KI",
+    "ja": "ReactとAI"
+  },
+  {
+    "pt": "Ficha de academia no papel",
+    "en": "A gym plan on paper",
+    "es": "Rutina de gimnasio en papel",
+    "fr": "Un programme de salle sur papier",
+    "de": "Trainingsplan auf Papier",
+    "ja": "紙のジムメニュー"
+  },
+  {
+    "pt": "Lê a ficha por print e tem um chat com tool calling que troca exercício, registra série e ajusta o treino.",
+    "en": "It reads the plan from a screenshot and has a tool-calling chat that swaps exercises, logs sets and adjusts the workout.",
+    "es": "Lee la rutina desde una captura y tiene un chat con tool calling que cambia ejercicios, registra series y ajusta el entrenamiento.",
+    "fr": "Elle lit le programme depuis une capture et a un chat avec tool calling qui change les exercices, note les séries et ajuste la séance.",
+    "de": "Sie liest den Plan aus einem Screenshot und hat einen Chat mit Tool Calling, der Übungen tauscht, Sätze protokolliert und das Training anpasst.",
+    "ja": "スクリーンショットからメニューを読み取り、ツール呼び出し付きのチャットが種目の入れ替え、セットの記録、トレーニングの調整をします。"
+  },
+  {
+    "pt": "Um app que eu mesmo uso todo dia.",
+    "en": "An app I use myself every day.",
+    "es": "Una app que yo mismo uso todos los días.",
+    "fr": "Une appli que j’utilise moi-même tous les jours.",
+    "de": "Eine App, die ich selbst jeden Tag nutze.",
+    "ja": "自分で毎日使っているアプリ。"
+  },
+  {
+    "pt": "O próximo desafio",
+    "en": "The next challenge",
+    "es": "El próximo desafío",
+    "fr": "Le prochain défi",
+    "de": "Die nächste Herausforderung",
+    "ja": "次の挑戦"
+  },
+  {
+    "pt": "Próxima fase",
+    "en": "Next level",
+    "es": "Próxima fase",
+    "fr": "Prochain niveau",
+    "de": "Nächstes Level",
+    "ja": "次のステージ"
+  },
+  {
+    "pt": "Um problema que ainda ninguém resolveu",
+    "en": "A problem nobody has solved yet",
+    "es": "Un problema que nadie resolvió todavía",
+    "fr": "Un problème que personne n’a encore résolu",
+    "de": "Ein Problem, das noch niemand gelöst hat",
+    "ja": "まだ誰も解いていない問題"
+  },
+  {
+    "pt": "Já liderei time e já fui product owner. A porta dessa fase precisa de alguém do outro lado: o próximo time.",
+    "en": "I’ve already led a team and been a product owner. This level’s door needs someone on the other side: the next team.",
+    "es": "Ya lideré equipo y fui product owner. La puerta de esta fase necesita a alguien del otro lado: el próximo equipo.",
+    "fr": "J’ai déjà dirigé une équipe et été product owner. La porte de ce niveau a besoin de quelqu’un de l’autre côté : la prochaine équipe.",
+    "de": "Ich habe schon ein Team geleitet und war Product Owner. Die Tür zu diesem Level braucht jemanden auf der anderen Seite: das nächste Team.",
+    "ja": "チームを率いた経験も、プロダクトオーナーの経験もあります。このステージの扉には、向こう側に誰かが必要です。次のチームが。"
+  },
+  {
+    "pt": "Mande um e-mail pra cristianocmeirelles@gmail.com e vamos abrir juntos.",
+    "en": "Send an email to cristianocmeirelles@gmail.com and let’s open it together.",
+    "es": "Manda un email a cristianocmeirelles@gmail.com y la abrimos juntos.",
+    "fr": "Envoie un e-mail à cristianocmeirelles@gmail.com et ouvrons-la ensemble.",
+    "de": "Schreib eine E-Mail an cristianocmeirelles@gmail.com und lass sie uns gemeinsam öffnen.",
+    "ja": "cristianocmeirelles@gmail.com にメールを送って、一緒に開けましょう。"
+  },
+  {
+    "pt": "Chame o Cristiano",
+    "en": "Call Cristiano",
+    "es": "Llama a Cristiano",
+    "fr": "Appelle Cristiano",
+    "de": "Ruf Cristiano",
+    "ja": "クリスティアーノを呼ぼう"
+  },
+  {
+    "pt": "Recompensa revelada",
+    "en": "Reward revealed",
+    "es": "Recompensa revelada",
+    "fr": "Récompense révélée",
+    "de": "Belohnung enthüllt",
+    "ja": "報酬を獲得"
+  },
+  {
+    "pt": "Bug corrigido",
+    "en": "Bug fixed",
+    "es": "Bug corregido",
+    "fr": "Bug corrigé",
+    "de": "Bug behoben",
+    "ja": "バグ修正"
+  },
+  {
+    "pt": "A porta precisa de alguém do outro lado",
+    "en": "The door needs someone on the other side",
+    "es": "La puerta necesita a alguien del otro lado",
+    "fr": "La porte a besoin de quelqu’un de l’autre côté",
+    "de": "Die Tür braucht jemanden auf der anderen Seite",
+    "ja": "扉の向こうに誰かが必要です"
+  },
+  {
+    "pt": "Como entrar",
+    "en": "How to get in",
+    "es": "Cómo entrar",
+    "fr": "Comment entrer",
+    "de": "So kommst du rein",
+    "ja": "入り方"
+  },
+  {
+    "pt": "Como eu passei",
+    "en": "How I beat it",
+    "es": "Cómo lo pasé",
+    "fr": "Comment je l’ai passé",
+    "de": "Wie ich es geschafft habe",
+    "ja": "クリアの仕方"
+  },
+  {
+    "pt": "O que eu levei mesmo assim",
+    "en": "What I took away anyway",
+    "es": "Lo que me llevé igual",
+    "fr": "Ce que j’en retiens quand même",
+    "de": "Was ich trotzdem mitgenommen habe",
+    "ja": "それでも得たもの"
+  },
+  {
+    "pt": "Bata no bloco com interrogação pra revelar.",
+    "en": "Hit the question block to reveal it.",
+    "es": "Golpea el bloque con signo de pregunta para revelarla.",
+    "fr": "Frappe le bloc à point d’interrogation pour la révéler.",
+    "de": "Triff den Fragezeichen-Block, um sie zu enthüllen.",
+    "ja": "はてなブロックを叩くと表示されます。"
+  },
+  {
+    "pt": "Parar de assistir",
+    "en": "Stop watching",
+    "es": "Dejar de mirar",
+    "fr": "Arrêter de regarder",
+    "de": "Nicht mehr zuschauen",
+    "ja": "オートを止める"
+  },
+  {
+    "pt": "Dia",
+    "en": "Day",
+    "es": "Día",
+    "fr": "Jour",
+    "de": "Tag",
+    "ja": "昼"
+  },
+  {
+    "pt": "Fase {id}",
+    "en": "Level {id}",
+    "es": "Fase {id}",
+    "fr": "Niveau {id}",
+    "de": "Level {id}",
+    "ja": "ステージ{id}"
+  },
+  {
+    "pt": "Fase {id} completa",
+    "en": "Level {id} complete",
+    "es": "Fase {id} completada",
+    "fr": "Niveau {id} terminé",
+    "de": "Level {id} geschafft",
+    "ja": "ステージ{id} クリア"
+  },
+  {
+    "pt": "Moedas",
+    "en": "Coins",
+    "es": "Monedas",
+    "fr": "Pièces",
+    "de": "Münzen",
+    "ja": "コイン"
+  },
+  {
+    "pt": "Bugs corrigidos",
+    "en": "Bugs fixed",
+    "es": "Bugs corregidos",
+    "fr": "Bugs corrigés",
+    "de": "Behobene Bugs",
+    "ja": "修正したバグ"
+  },
+  {
+    "pt": "Fase {id}, {nm}.",
+    "en": "Level {id}, {nm}.",
+    "es": "Fase {id}, {nm}.",
+    "fr": "Niveau {id}, {nm}.",
+    "de": "Level {id}, {nm}.",
+    "ja": "ステージ{id}、{nm}。"
+  },
+  {
+    "pt": "Chefão: {boss}.",
+    "en": "Boss: {boss}.",
+    "es": "Jefe final: {boss}.",
+    "fr": "Boss : {boss}.",
+    "de": "Endgegner: {boss}.",
+    "ja": "ボス：{boss}。"
+  },
+  {
+    "pt": "Recompensa",
+    "en": "Reward",
+    "es": "Recompensa",
+    "fr": "Récompense",
+    "de": "Belohnung",
+    "ja": "報酬"
+  }
+]

@@ -1,0 +1,402 @@
+[
+  {
+    "pt": "Carta do Cristiano. Clique pra virar.",
+    "en": "Cristiano’s card. Click to flip it.",
+    "es": "Carta de Cristiano. Haz clic para girarla.",
+    "fr": "Carte de Cristiano. Cliquez pour la retourner.",
+    "de": "Cristianos Karte. Zum Umdrehen klicken.",
+    "ja": "クリスティアーノのカード。クリックで裏返せます。"
+  },
+  {
+    "pt": "Foto do Cristiano sorrindo, de óculos",
+    "en": "Photo of Cristiano smiling, wearing glasses",
+    "es": "Foto de Cristiano sonriendo, con gafas",
+    "fr": "Photo de Cristiano souriant, avec des lunettes",
+    "de": "Foto von Cristiano, lächelnd, mit Brille",
+    "ja": "眼鏡をかけて笑っているクリスティアーノの写真"
+  },
+  {
+    "pt": "Tema",
+    "en": "Theme",
+    "es": "Tema",
+    "fr": "Thème",
+    "de": "Design",
+    "ja": "テーマ"
+  },
+  {
+    "pt": "Persistência<b>95</b>",
+    "en": "Persistence<b>95</b>",
+    "es": "Persistencia<b>95</b>",
+    "fr": "Persévérance<b>95</b>",
+    "de": "Ausdauer<b>95</b>",
+    "ja": "粘り強さ<b>95</b>"
+  },
+  {
+    "pt": "Criatividade<b>90</b>",
+    "en": "Creativity<b>90</b>",
+    "es": "Creatividad<b>90</b>",
+    "fr": "Créativité<b>90</b>",
+    "de": "Kreativität<b>90</b>",
+    "ja": "創造力<b>90</b>"
+  },
+  {
+    "pt": "Falar com cliente<b>92</b>",
+    "en": "Talking to clients<b>92</b>",
+    "es": "Hablar con clientes<b>92</b>",
+    "fr": "Parler aux clients<b>92</b>",
+    "de": "Kundengespräche<b>92</b>",
+    "ja": "顧客との対話<b>92</b>"
+  },
+  {
+    "pt": "Organizar o caos<b>90</b>",
+    "en": "Organizing chaos<b>90</b>",
+    "es": "Ordenar el caos<b>90</b>",
+    "fr": "Organiser le chaos<b>90</b>",
+    "de": "Chaos ordnen<b>90</b>",
+    "ja": "混沌の整理<b>90</b>"
+  },
+  {
+    "pt": "Paciência<b>61</b>",
+    "en": "Patience<b>61</b>",
+    "es": "Paciencia<b>61</b>",
+    "fr": "Patience<b>61</b>",
+    "de": "Geduld<b>61</b>",
+    "ja": "忍耐<b>61</b>"
+  },
+  {
+    "pt": "Cantar<b>12</b>",
+    "en": "Singing<b>12</b>",
+    "es": "Cantar<b>12</b>",
+    "fr": "Chanter<b>12</b>",
+    "de": "Singen<b>12</b>",
+    "ja": "歌<b>12</b>"
+  },
+  {
+    "pt": "Super trunfo",
+    "en": "Trump card",
+    "es": "Carta ganadora",
+    "fr": "Atout",
+    "de": "Trumpf",
+    "ja": "切り札"
+  },
+  {
+    "pt": "Persistência e criatividade. Fico no problema até ele sair, e normalmente saio por um caminho que ninguém tinha olhado.",
+    "en": "Persistence and creativity. I stay with a problem until it’s solved, and I usually get out through a path nobody had looked at.",
+    "es": "Persistencia y creatividad. Me quedo con el problema hasta resolverlo, y normalmente salgo por un camino que nadie había mirado.",
+    "fr": "Persévérance et créativité. Je reste sur un problème jusqu’à ce qu’il soit résolu, et j’en sors souvent par un chemin que personne n’avait regardé.",
+    "de": "Ausdauer und Kreativität. Ich bleibe an einem Problem dran, bis es gelöst ist, und finde meist einen Weg, den niemand beachtet hatte.",
+    "ja": "粘り強さと創造力。問題が解けるまで向き合い続け、たいていは誰も見ていなかった道から抜け出します。"
+  },
+  {
+    "pt": "Fraqueza",
+    "en": "Weakness",
+    "es": "Debilidad",
+    "fr": "Faiblesse",
+    "de": "Schwäche",
+    "ja": "弱点"
+  },
+  {
+    "pt": "A mesma persistência virando teimosia. Estou aprendendo a soltar mais cedo o que não vale o esforço.",
+    "en": "That same persistence turning into stubbornness. I’m learning to let go sooner of what isn’t worth the effort.",
+    "es": "Esa misma persistencia volviéndose terquedad. Estoy aprendiendo a soltar antes lo que no vale la pena.",
+    "fr": "Cette même persévérance qui tourne à l’entêtement. J’apprends à lâcher plus tôt ce qui n’en vaut pas la peine.",
+    "de": "Dieselbe Ausdauer, die in Sturheit umschlägt. Ich lerne, früher loszulassen, was den Aufwand nicht wert ist.",
+    "ja": "その粘り強さが頑固さに変わること。見合わない努力は早めに手放すことを学んでいます。"
+  },
+  {
+    "pt": "Curiosidade",
+    "en": "Fun fact",
+    "es": "Curiosidad",
+    "fr": "Anecdote",
+    "de": "Kurioses",
+    "ja": "豆知識"
+  },
+  {
+    "pt": "Morei no Canadá e participei de uma exposição de arte como artista.",
+    "en": "I lived in Canada and took part in an art exhibition as an artist.",
+    "es": "Viví en Canadá y participé en una exposición de arte como artista.",
+    "fr": "J’ai vécu au Canada et j’ai participé à une exposition d’art en tant qu’artiste.",
+    "de": "Ich habe in Kanada gelebt und als Künstler an einer Kunstausstellung teilgenommen.",
+    "ja": "カナダに住んでいたとき、アーティストとして美術展に参加しました。"
+  },
+  {
+    "pt": "Oi, eu sou o Cristiano.",
+    "en": "Hi, I’m Cristiano.",
+    "es": "Hola, soy Cristiano.",
+    "fr": "Salut, je suis Cristiano.",
+    "de": "Hi, ich bin Cristiano.",
+    "ja": "こんにちは、クリスティアーノです。"
+  },
+  {
+    "pt": "Engenheiro de software full stack, tech lead e product owner. Construo software pra resolver o problema certo.",
+    "en": "Full stack software engineer, tech lead and product owner. I build software to solve the right problem.",
+    "es": "Ingeniero de software full stack, tech lead y product owner. Construyo software para resolver el problema correcto.",
+    "fr": "Ingénieur logiciel full stack, tech lead et product owner. Je construis des logiciels pour résoudre le bon problème.",
+    "de": "Full-Stack-Softwareentwickler, Tech Lead und Product Owner. Ich baue Software, die das richtige Problem löst.",
+    "ja": "フルスタックのソフトウェアエンジニア、テックリード、プロダクトオーナー。正しい問題を解くためのソフトウェアをつくっています。"
+  },
+  {
+    "pt": "Quem eu sou",
+    "en": "Who I am",
+    "es": "Quién soy",
+    "fr": "Qui je suis",
+    "de": "Wer ich bin",
+    "ja": "わたしについて"
+  },
+  {
+    "pt": "Comecei a programar porque queria entender como os jogos funcionavam por dentro. Fiquei porque descobri que gosto do caminho inteiro: conversar com quem tem o problema, desenhar a solução e ver ela funcionando na mão de alguém.",
+    "en": "I started programming because I wanted to understand how games worked on the inside. I stayed because I found out I love the whole journey: talking to the people who have the problem, designing the solution and seeing it work in someone’s hands.",
+    "es": "Empecé a programar porque quería entender cómo funcionaban los videojuegos por dentro. Me quedé porque descubrí que me gusta todo el camino: hablar con quien tiene el problema, diseñar la solución y verla funcionando en manos de alguien.",
+    "fr": "J’ai commencé à programmer parce que je voulais comprendre comment les jeux vidéo fonctionnaient de l’intérieur. Je suis resté parce que j’ai découvert que j’aime tout le chemin : parler avec ceux qui ont le problème, concevoir la solution et la voir fonctionner entre les mains de quelqu’un.",
+    "de": "Ich habe mit dem Programmieren angefangen, weil ich verstehen wollte, wie Spiele von innen funktionieren. Geblieben bin ich, weil ich den ganzen Weg liebe: mit den Menschen reden, die das Problem haben, die Lösung entwerfen und sehen, wie sie bei jemandem funktioniert.",
+    "ja": "ゲームの中身がどう動いているのか知りたくて、プログラミングを始めました。続けているのは、課題を抱える人と話し、解決策を設計し、それが誰かの手で動くのを見る、その道のり全体が好きだと気づいたからです。"
+  },
+  {
+    "pt": "Faço banco, back-end, API, tela e deploy. Não dependo de alguém pra fechar a outra metade do problema. Hoje estou mergulhado em IA que entra em produção, com a pós da FIAP e com o Zevi, meu produto.",
+    "en": "I do database, back-end, API, UI and deploy. I don’t depend on someone else to close the other half of the problem. Right now I’m deep into AI that goes to production, with my postgraduate studies at FIAP and with Zevi, my product.",
+    "es": "Hago base de datos, back-end, API, interfaz y deploy. No dependo de nadie para cerrar la otra mitad del problema. Hoy estoy metido de lleno en IA que llega a producción, con el posgrado en FIAP y con Zevi, mi producto.",
+    "fr": "Je fais base de données, back-end, API, interface et déploiement. Je ne dépends de personne pour boucler l’autre moitié du problème. Aujourd’hui, je suis plongé dans l’IA qui va en production, avec mon master spécialisé à la FIAP et avec Zevi, mon produit.",
+    "de": "Ich mache Datenbank, Backend, API, Oberfläche und Deployment. Ich brauche niemanden, um die andere Hälfte des Problems zu lösen. Gerade stecke ich tief in KI, die in Produktion geht: mit meinem Aufbaustudium an der FIAP und mit Zevi, meinem Produkt.",
+    "ja": "データベース、バックエンド、API、画面、デプロイまで担当します。問題の残り半分を誰かに頼る必要はありません。いまはFIAPの大学院課程と、自分のプロダクトであるZeviを通じて、本番で動くAIに取り組んでいます。"
+  },
+  {
+    "pt": "O papel que eu gosto",
+    "en": "The role I enjoy",
+    "es": "El rol que me gusta",
+    "fr": "Le rôle que j’aime",
+    "de": "Die Rolle, die mir liegt",
+    "ja": "好きな役割"
+  },
+  {
+    "pt": "Entre o time e o cliente. Escrevo código, mas o que me move é organizar: entender a demanda, quebrar em tarefa, destravar quem está travado e garantir que o que sai é o que o cliente precisava.",
+    "en": "Between the team and the client. I write code, but what drives me is organizing: understanding the demand, breaking it into tasks, unblocking whoever is stuck and making sure what ships is what the client needed.",
+    "es": "Entre el equipo y el cliente. Escribo código, pero lo que me mueve es organizar: entender la demanda, dividirla en tareas, destrabar a quien está bloqueado y asegurar que lo que sale es lo que el cliente necesitaba.",
+    "fr": "Entre l’équipe et le client. J’écris du code, mais ce qui me motive, c’est d’organiser : comprendre la demande, la découper en tâches, débloquer ceux qui sont coincés et garantir que ce qui sort est ce dont le client avait besoin.",
+    "de": "Zwischen Team und Kunde. Ich schreibe Code, aber was mich antreibt, ist Organisieren: den Bedarf verstehen, in Aufgaben zerlegen, Blockaden lösen und sicherstellen, dass das Ergebnis das ist, was der Kunde gebraucht hat.",
+    "ja": "チームと顧客のあいだ。コードも書きますが、原動力は整理することです。要望を理解し、タスクに分け、止まっている人を動かし、出てくるものが顧客に本当に必要だったものかを確かめます。"
+  },
+  {
+    "pt": "O fio que liga tudo que eu fiz é pegar um processo que alguém faz no escuro, no olho, na planilha ou no papel, e transformar em algo que mostra o número certo e aponta a decisão.",
+    "en": "The thread that connects everything I’ve done is taking a process someone does in the dark, by eye, on a spreadsheet or on paper, and turning it into something that shows the right number and points to the decision.",
+    "es": "El hilo que une todo lo que hice es tomar un proceso que alguien hace a ciegas, a ojo, en una planilla o en papel, y convertirlo en algo que muestra el número correcto y señala la decisión.",
+    "fr": "Le fil qui relie tout ce que j’ai fait, c’est de prendre un processus que quelqu’un fait à l’aveugle, à l’œil, sur un tableur ou sur papier, et d’en faire quelque chose qui montre le bon chiffre et indique la décision.",
+    "de": "Der rote Faden in allem, was ich gemacht habe: einen Prozess, den jemand im Dunkeln erledigt, nach Augenmaß, in einer Tabelle oder auf Papier, in etwas zu verwandeln, das die richtige Zahl zeigt und auf die Entscheidung hinweist.",
+    "ja": "これまでの仕事に共通するのは、誰かが勘や表計算、紙で手探りにやっている作業を、正しい数字を示し、判断を指し示すものに変えることです。"
+  },
+  {
+    "pt": "Como eu trabalho",
+    "en": "How I work",
+    "es": "Cómo trabajo",
+    "fr": "Comment je travaille",
+    "de": "Wie ich arbeite",
+    "ja": "働き方"
+  },
+  {
+    "pt": "Com o problema",
+    "en": "With the problem",
+    "es": "Con el problema",
+    "fr": "Avec le problème",
+    "de": "Mit dem Problem",
+    "ja": "課題に対して"
+  },
+  {
+    "pt": "Pergunto o problema, não a solução. Quando chega a tela já desenhada, eu volto duas casas.",
+    "en": "I ask about the problem, not the solution. When a screen arrives already designed, I go back two steps.",
+    "es": "Pregunto por el problema, no por la solución. Cuando llega la pantalla ya diseñada, retrocedo dos casillas.",
+    "fr": "Je pose des questions sur le problème, pas sur la solution. Quand un écran arrive déjà dessiné, je recule de deux cases.",
+    "de": "Ich frage nach dem Problem, nicht nach der Lösung. Wenn ein fertig gestalteter Screen ankommt, gehe ich zwei Schritte zurück.",
+    "ja": "聞くのは解決策ではなく課題です。完成済みの画面が届いたら、二歩戻ります。"
+  },
+  {
+    "pt": "Falo sem jargão com quem é de negócio e traduzo de volta pra quem é de código.",
+    "en": "I speak without jargon to business people and translate back to the people who code.",
+    "es": "Hablo sin jerga con la gente de negocio y lo traduzco de vuelta para quien programa.",
+    "fr": "Je parle sans jargon aux gens du métier et je traduis dans l’autre sens pour ceux qui codent.",
+    "de": "Ich spreche ohne Fachjargon mit dem Business und übersetze zurück für die Leute, die coden.",
+    "ja": "ビジネス側とは専門用語なしで話し、それを開発側の言葉に訳し直します。"
+  },
+  {
+    "pt": "Mostro cedo. Prefiro algo tosco em uma semana do que algo bonito em dois meses.",
+    "en": "I show things early. I’d rather bring something rough in one week than something pretty in two months.",
+    "es": "Muestro temprano. Prefiero algo tosco en una semana que algo bonito en dos meses.",
+    "fr": "Je montre tôt. Je préfère quelque chose de brut en une semaine que quelque chose de beau en deux mois.",
+    "de": "Ich zeige früh. Lieber etwas Grobes nach einer Woche als etwas Schönes nach zwei Monaten.",
+    "ja": "早く見せます。2か月後のきれいなものより、1週間後の荒削りなものを選びます。"
+  },
+  {
+    "pt": "Com o time",
+    "en": "With the team",
+    "es": "Con el equipo",
+    "fr": "Avec l’équipe",
+    "de": "Mit dem Team",
+    "ja": "チームに対して"
+  },
+  {
+    "pt": "Já fui product owner e Scrum Master. Sei escolher o que não fazer.",
+    "en": "I’ve been a product owner and a Scrum Master. I know how to choose what not to do.",
+    "es": "Fui product owner y Scrum Master. Sé elegir qué no hacer.",
+    "fr": "J’ai été product owner et Scrum Master. Je sais choisir ce qu’il ne faut pas faire.",
+    "de": "Ich war Product Owner und Scrum Master. Ich weiß, wie man entscheidet, was man nicht tut.",
+    "ja": "プロダクトオーナーもスクラムマスターも経験しました。やらないことを選べます。"
+  },
+  {
+    "pt": "Já liderei um time de front-end: arquitetura de tela, divisão de épicos e destravar quem estava parado.",
+    "en": "I’ve led a front-end team: screen architecture, splitting epics and unblocking whoever was stuck.",
+    "es": "Lideré un equipo de front-end: arquitectura de pantallas, división de épicas y destrabar a quien estaba parado.",
+    "fr": "J’ai dirigé une équipe front-end : architecture des écrans, découpage des epics et déblocage de ceux qui étaient coincés.",
+    "de": "Ich habe ein Frontend-Team geleitet: Screen-Architektur, Epics aufteilen und Blockaden lösen.",
+    "ja": "フロントエンドチームを率いました。画面設計、エピックの分割、止まっている人のフォロー。"
+  },
+  {
+    "pt": "Sou desenvolvedor antes de tudo, mas já sentei dos dois lados da mesa.",
+    "en": "I’m a developer first, but I’ve sat on both sides of the table.",
+    "es": "Soy desarrollador ante todo, pero ya me senté en los dos lados de la mesa.",
+    "fr": "Je suis développeur avant tout, mais je me suis déjà assis des deux côtés de la table.",
+    "de": "Ich bin zuerst Entwickler, habe aber schon auf beiden Seiten des Tisches gesessen.",
+    "ja": "まずは開発者ですが、テーブルの両側に座った経験があります。"
+  },
+  {
+    "pt": "Introvertido ou extrovertido?",
+    "en": "Introvert or extrovert?",
+    "es": "¿Introvertido o extrovertido?",
+    "fr": "Introverti ou extraverti ?",
+    "de": "Introvertiert oder extrovertiert?",
+    "ja": "内向的？外向的？"
+  },
+  {
+    "pt": "Bem mais pro lado de cá.",
+    "en": "Much more on this side.",
+    "es": "Mucho más de este lado.",
+    "fr": "Bien plus de ce côté-ci.",
+    "de": "Deutlich mehr auf dieser Seite.",
+    "ja": "かなりこっち側です。"
+  },
+  {
+    "pt": "O que eu gosto de fazer",
+    "en": "What I like to do",
+    "es": "Lo que me gusta hacer",
+    "fr": "Ce que j’aime faire",
+    "de": "Was ich gern mache",
+    "ja": "好きなこと"
+  },
+  {
+    "pt": "<b>Jogar com os amigos</b>Foi por causa dos jogos que eu entrei na programação.",
+    "en": "<b>Playing games with friends</b>Games are the reason I got into programming.",
+    "es": "<b>Jugar con amigos</b>Por los videojuegos entré en la programación.",
+    "fr": "<b>Jouer avec mes amis</b>C’est grâce aux jeux vidéo que je suis entré dans la programmation.",
+    "de": "<b>Mit Freunden zocken</b>Wegen Spielen bin ich zum Programmieren gekommen.",
+    "ja": "<b>友だちとゲーム</b>プログラミングを始めたのはゲームがきっかけです。"
+  },
+  {
+    "pt": "<b>Desenhar</b>Desde criança. Me deu o olho pra interface.",
+    "en": "<b>Drawing</b>Since I was a kid. It gave me an eye for interfaces.",
+    "es": "<b>Dibujar</b>Desde niño. Me dio el ojo para las interfaces.",
+    "fr": "<b>Dessiner</b>Depuis l’enfance. Ça m’a donné l’œil pour les interfaces.",
+    "de": "<b>Zeichnen</b>Seit meiner Kindheit. Es hat mir das Auge für Interfaces gegeben.",
+    "ja": "<b>絵を描く</b>子どものころから。インターフェースを見る目はここで育ちました。"
+  },
+  {
+    "pt": "<b>Música o dia inteiro</b>E cantar, mesmo sem ser bom cantor.",
+    "en": "<b>Music all day long</b>And singing, even though I’m not a good singer.",
+    "es": "<b>Música todo el día</b>Y cantar, aunque no sea buen cantante.",
+    "fr": "<b>De la musique toute la journée</b>Et chanter, même si je ne chante pas bien.",
+    "de": "<b>Den ganzen Tag Musik</b>Und singen, auch wenn ich kein guter Sänger bin.",
+    "ja": "<b>一日中音楽</b>歌も歌います。上手ではないけれど。"
+  },
+  {
+    "pt": "<b>Andar de skate</b>Me ensinou que cair faz parte de aprender.",
+    "en": "<b>Skateboarding</b>It taught me that falling is part of learning.",
+    "es": "<b>Andar en skate</b>Me enseñó que caer es parte de aprender.",
+    "fr": "<b>Faire du skate</b>Ça m’a appris que tomber fait partie de l’apprentissage.",
+    "de": "<b>Skateboarden</b>Hat mir beigebracht, dass Hinfallen zum Lernen gehört.",
+    "ja": "<b>スケートボード</b>転ぶのも学びのうちだと教わりました。"
+  },
+  {
+    "pt": "<b>Olhar pro céu</b>Principalmente nos dias difíceis.",
+    "en": "<b>Looking at the sky</b>Especially on hard days.",
+    "es": "<b>Mirar el cielo</b>Sobre todo en los días difíciles.",
+    "fr": "<b>Regarder le ciel</b>Surtout les jours difficiles.",
+    "de": "<b>In den Himmel schauen</b>Vor allem an schweren Tagen.",
+    "ja": "<b>空を見上げる</b>特につらい日に。"
+  },
+  {
+    "pt": "O que eu quero ficar bom",
+    "en": "What I want to get better at",
+    "es": "En qué quiero mejorar",
+    "fr": "Ce que je veux améliorer",
+    "de": "Worin ich besser werden will",
+    "ja": "もっと上手くなりたいこと"
+  },
+  {
+    "pt": "Enxergar melhor a arquitetura antes de começar. Liderar sem microgerenciar. E, fora do trabalho, desenhar melhor, aprender a tocar um instrumento e me conhecer um pouco mais a cada ano.",
+    "en": "Seeing the architecture better before I start. Leading without micromanaging. And, outside of work, drawing better, learning to play an instrument and getting to know myself a little more every year.",
+    "es": "Ver mejor la arquitectura antes de empezar. Liderar sin microgestionar. Y, fuera del trabajo, dibujar mejor, aprender a tocar un instrumento y conocerme un poco más cada año.",
+    "fr": "Mieux voir l’architecture avant de commencer. Diriger sans microgérer. Et, en dehors du travail, mieux dessiner, apprendre à jouer d’un instrument et me connaître un peu plus chaque année.",
+    "de": "Die Architektur besser sehen, bevor ich anfange. Führen, ohne zu mikromanagen. Und außerhalb der Arbeit: besser zeichnen, ein Instrument lernen und mich jedes Jahr ein bisschen besser kennenlernen.",
+    "ja": "始める前にアーキテクチャをもっと見通すこと。マイクロマネジメントせずに率いること。仕事以外では、絵を上達させ、楽器を覚え、毎年少しずつ自分を知っていくこと。"
+  },
+  {
+    "pt": "Sobre o Cristiano",
+    "en": "About Cristiano",
+    "es": "Sobre Cristiano",
+    "fr": "À propos de Cristiano",
+    "de": "Über Cristiano",
+    "ja": "クリスティアーノについて"
+  },
+  {
+    "pt": "Clique pra virar a carta",
+    "en": "Click to flip the card",
+    "es": "Haz clic para girar la carta",
+    "fr": "Cliquez pour retourner la carte",
+    "de": "Klicken, um die Karte umzudrehen",
+    "ja": "クリックでカードを裏返す"
+  },
+  {
+    "pt": "Clique pra desvirar",
+    "en": "Click to flip it back",
+    "es": "Haz clic para darla vuelta",
+    "fr": "Cliquez pour la remettre",
+    "de": "Klicken, um sie zurückzudrehen",
+    "ja": "クリックで表に戻す"
+  },
+  {
+    "pt": "Inspirada no card de Super Trunfo que eu fiz em 2022.",
+    "en": "Inspired by the Super Trunfo card I made in 2022.",
+    "es": "Inspirada en la carta de Super Trunfo que hice en 2022.",
+    "fr": "Inspirée de la carte Super Trunfo que j’ai faite en 2022.",
+    "de": "Inspiriert von der Super-Trunfo-Karte, die ich 2022 gemacht habe.",
+    "ja": "2022年に作ったスーパートルンフォ（ブラジルのカードゲーム）のカードがもとになっています。"
+  },
+  {
+    "pt": "Introvertido",
+    "en": "Introvert",
+    "es": "Introvertido",
+    "fr": "Introverti",
+    "de": "Introvertiert",
+    "ja": "内向的"
+  },
+  {
+    "pt": "Extrovertido",
+    "en": "Extrovert",
+    "es": "Extrovertido",
+    "fr": "Extraverti",
+    "de": "Extrovertiert",
+    "ja": "外向的"
+  },
+  {
+    "pt": "Claro",
+    "en": "Light",
+    "es": "Claro",
+    "fr": "Clair",
+    "de": "Hell",
+    "ja": "ライト"
+  },
+  {
+    "pt": "Escuro",
+    "en": "Dark",
+    "es": "Oscuro",
+    "fr": "Sombre",
+    "de": "Dunkel",
+    "ja": "ダーク"
+  }
+]

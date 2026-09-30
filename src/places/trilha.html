@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Por onde o Cristiano passou</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,600;0,800;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/shared/base.css" />
+    <style>
+      :root {
+        --bg: #ffffff;
+        --board: #f2f4f6;
+        --ink: #101418;
+        --muted: #5a6470;
+        --line: #e2342f;
+        --br: #7b5cd6;
+        --ok: #12824a;
+        color-scheme: light;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --bg: #0e1a2b;
+          --board: #16263d;
+          --ink: #f3f6fa;
+          --muted: #9fb0c6;
+          --line: #ff5a52;
+          --br: #a58bff;
+          --ok: #39c47c;
+          color-scheme: dark;
+        }
+      }
+      :root[data-theme="dark"] {
+        --bg: #0e1a2b;
+        --board: #16263d;
+        --ink: #f3f6fa;
+        --muted: #9fb0c6;
+        --line: #ff5a52;
+        --br: #a58bff;
+        --ok: #39c47c;
+        color-scheme: dark;
+      }
+      body {
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Overpass", system-ui, sans-serif;
+        font-size: 1.05rem;
+        line-height: 1.55;
+      }
+      .wrap {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 56px 24px 70px;
+      }
+      .sign {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        background: var(--ink);
+        color: var(--bg);
+        padding: 6px 16px 4px 8px;
+        border-radius: 6px;
+        font-weight: 900;
+        margin-bottom: 18px;
+      }
+      .sign i {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: var(--line);
+        display: grid;
+        place-items: center;
+        font-style: normal;
+        color: #fff;
+        font-size: 1rem;
+      }
+      h1 {
+        font-weight: 900;
+        font-size: clamp(2.2rem, 6vw, 4rem);
+        line-height: 0.98;
+        margin: 0 0 12px;
+        letter-spacing: -0.02em;
+      }
+      .intro {
+        color: var(--muted);
+        max-width: 56ch;
+        margin: 0 0 20px;
+        font-size: 1.12rem;
+      }
+      .legend {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 22px;
+        margin: 0 0 36px;
+        padding: 0;
+        list-style: none;
+        font-size: 0.92rem;
+        color: var(--muted);
+      }
+      .legend span {
+        display: inline-block;
+        width: 28px;
+        height: 6px;
+        border-radius: 4px;
+        background: var(--line);
+        vertical-align: middle;
+        margin-right: 8px;
+      }
+      .legend .b span {
+        background: repeating-linear-gradient(
+          90deg,
+          var(--br) 0 6px,
+          transparent 6px 10px
+        );
+      }
+      .map {
+        position: relative;
+        overflow-x: auto;
+        padding: 10px 0 20px;
+      }
+      .stations {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(7, minmax(120px, 1fr));
+        position: relative;
+        min-width: 900px;
+      }
+      .stations::before {
+        content: "";
+        position: absolute;
+        left: calc(100% / 14);
+        right: calc(100% / 14);
+        top: 118px;
+        height: 10px;
+        border-radius: 10px;
+        background: var(--line);
+      }
+      .st {
+        position: relative;
+        height: 270px;
+      }
+      .st > button {
+        position: absolute;
+        left: 50%;
+        top: 106px;
+        transform: translateX(-50%);
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: var(--bg);
+        border: 6px solid var(--line);
+        cursor: pointer;
+        padding: 0;
+        z-index: 2;
+        transition: transform 0.2s;
+      }
+      .st > button:hover,
+      .st.sel > button {
+        transform: translateX(-50%) scale(1.2);
+      }
+      .st.sel > button {
+        background: var(--ink);
+      }
+      .st.trip > button {
+        border-color: var(--br);
+        top: 30px;
+      }
+      .st.trip::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 60px;
+        height: 52px;
+        border-left: 6px dashed var(--br);
+        transform: translateX(-50%);
+      }
+      .lbl {
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 0 4px;
+        line-height: 1.2;
+      }
+      .lbl b {
+        display: block;
+        font-weight: 800;
+        font-size: 1rem;
+      }
+      .lbl span {
+        display: block;
+        color: var(--muted);
+        font-size: 0.86rem;
+        margin-top: 3px;
+      }
+      .st:nth-child(odd) .lbl {
+        top: 160px;
+      }
+      .st:nth-child(even) .lbl {
+        top: 10px;
+      }
+      .st.trip .lbl {
+        top: 74px;
+        left: 58%;
+        text-align: left;
+        right: auto;
+        width: 120px;
+      }
+      .here .lbl b::after {
+        content: "Você está aqui";
+        display: block;
+        font-size: 0.72rem;
+        font-weight: 900;
+        color: var(--ok);
+        margin-top: 4px;
+      }
+      .train {
+        position: absolute;
+        top: 92px;
+        width: 46px;
+        height: 22px;
+        background: var(--ink);
+        border-radius: 8px 14px 4px 4px;
+        z-index: 3;
+        transition:
+          left 0.9s cubic-bezier(0.4, 0, 0.2, 1),
+          top 0.5s;
+        pointer-events: none;
+        transform: translateX(-50%);
+      }
+      .train::before {
+        content: "";
+        position: absolute;
+        right: 6px;
+        top: 4px;
+        width: 12px;
+        height: 8px;
+        background: var(--bg);
+        border-radius: 2px;
+      }
+      .train::after {
+        content: "";
+        position: absolute;
+        left: 6px;
+        top: 4px;
+        width: 18px;
+        height: 8px;
+        background: var(--bg);
+        border-radius: 2px;
+      }
+      .info {
+        position: relative;
+        z-index: 5;
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 26px;
+        background: var(--board);
+        border-radius: 14px;
+        padding: 24px 28px;
+        margin-top: 10px;
+        align-items: start;
+      }
+      .info .yr {
+        font-weight: 900;
+        font-size: clamp(2rem, 5vw, 3rem);
+        line-height: 1;
+        color: var(--line);
+      }
+      .info .n {
+        font-size: 0.9rem;
+        color: var(--muted);
+        margin-top: 6px;
+      }
+      .info h2 {
+        font-weight: 900;
+        font-size: 1.6rem;
+        margin: 0 0 6px;
+        line-height: 1.1;
+      }
+      .info p {
+        margin: 0 0 8px;
+        max-width: 64ch;
+      }
+      .info .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: 10px;
+      }
+      .info .tags span {
+        background: var(--bg);
+        border-radius: 30px;
+        padding: 2px 10px;
+        font-size: 0.85rem;
+        font-weight: 600;
+      }
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 14px;
+        gap: 10px;
+      }
+      .nav button {
+        background: var(--ink);
+        color: var(--bg);
+        border: 0;
+        border-radius: 30px;
+        padding: 8px 16px;
+        cursor: pointer;
+        font-weight: 800;
+      }
+      .nav button[disabled] {
+        opacity: 0.3;
+        cursor: default;
+      }
+      @media (max-width: 760px) {
+        .stations {
+          display: block;
+          min-width: 0;
+          padding-left: 8px;
+        }
+        .stations::before {
+          left: 22px;
+          right: auto;
+          top: 10px;
+          bottom: 10px;
+          width: 10px;
+          height: auto;
+        }
+        .st {
+          height: auto;
+          min-height: 72px;
+          padding-left: 64px;
+        }
+        .st > button {
+          left: 27px;
+          top: 6px;
+        }
+        .st.trip {
+          padding-left: 96px;
+        }
+        .st.trip > button {
+          left: 66px;
+          top: 6px;
+        }
+        .st.trip::before {
+          left: 40px;
+          top: 22px;
+          height: 6px;
+          width: 26px;
+          border-left: 0;
+          border-top: 6px dashed var(--br);
+          transform: none;
+        }
+        .lbl,
+        .st:nth-child(odd) .lbl,
+        .st:nth-child(even) .lbl,
+        .st.trip .lbl {
+          position: static;
+          text-align: left;
+          width: auto;
+          padding: 6px 0 14px;
+        }
+        .train {
+          display: none;
+        }
+        .info {
+          grid-template-columns: 1fr;
+          gap: 6px;
+          margin: 4px 0 18px;
+          padding: 18px;
+        }
+        .info .yr {
+          font-size: 1.6rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button
+      class="theme-btn"
+      id="themeBtn"
+      data-key="cm-trilha-theme"
+      data-dark-label="Dia"
+      data-light-label="Noite"
+    >
+      Tema
+    </button>
+    <main class="wrap">
+      <div class="sign"><i>C</i>Linha Cristiano</div>
+      <h1>Por onde eu passei</h1>
+      <p class="intro">
+        Todos os lugares onde eu morei, de Itaboraí até hoje. Mudar tanto me
+        ensinou a chegar num lugar novo e recomeçar. Toque numa estação pra
+        saber o que aconteceu ali.
+      </p>
+      <ul class="legend">
+        <li><span></span>Onde eu morei</li>
+        <li>7 paradas, 5 cidades, 3 estados e 2 países</li>
+      </ul>
+      <div class="map">
+        <ol class="stations" id="st"></ol>
+        <div class="train" id="train" aria-hidden="true"></div>
+      </div>
+      <section class="info" id="info" aria-live="polite"></section>
+    </main>
+    <script type="module">
+      const STATION = "Estação {n} de {total}";
+      const S = [
+        {
+          n: "Itaboraí",
+          uf: "Rio de Janeiro",
+          y: "2000",
+          h: "Onde eu nasci.",
+          t: "O começo de tudo, numa cidade pequena do Rio. É daqui que eu me vejo quando olho pra cima.",
+          tags: ["Nascimento"],
+        },
+        {
+          n: "Méier",
+          uf: "Rio de Janeiro",
+          y: "2012",
+          h: "A cidade grande.",
+          t: "A primeira mudança grande de verdade: da cidade pequena pro Rio. Gente nova, escola nova e muito mais coisa acontecendo.",
+          tags: ["Primeira mudança", "Rio"],
+        },
+        {
+          n: "Salvador",
+          uf: "Bahia",
+          y: "Entre 2012 e 2018",
+          h: "Outro estado, outro sotaque.",
+          t: "Chegar num lugar onde ninguém me conhecia e começar de novo. Foi aqui que eu aprendi que recomeçar não assusta tanto.",
+          tags: ["Outro estado", "Recomeço"],
+        },
+        {
+          n: "Tijuca",
+          uf: "Rio de Janeiro",
+          y: "Entre 2012 e 2018",
+          h: "De volta ao Rio.",
+          t: "O bairro onde eu estava antes de sair do país pela primeira vez.",
+          tags: ["Rio"],
+        },
+        {
+          n: "Bridgewater",
+          uf: "Nova Scotia, Canadá",
+          y: "2018 a 2019",
+          h: "Tudo em inglês.",
+          t: "Fui aos 17 anos fazer o ensino médio na Park View Education Centre. Neve, skate, bike e trilha. Participei de uma exposição de arte como artista e escrevi as primeiras linhas de código.",
+          tags: ["Ensino médio", "Inglês", "Exposição de arte"],
+        },
+        {
+          n: "Canoinhas",
+          uf: "Santa Catarina",
+          y: "2020 a 2022",
+          h: "A faculdade.",
+          t: "Análise e Desenvolvimento de Sistemas no IFSC. Uma cidade que quase ninguém conhecia e que era cheia de coisa nova. Aqui nasceu o sistema da ADOSAREC.",
+          tags: ["IFSC", "ADOSAREC"],
+        },
+        {
+          n: "Rio de Janeiro",
+          uf: "Rio de Janeiro",
+          y: "Hoje",
+          here: 1,
+          h: "De volta ao Rio.",
+          t: "Onde eu moro hoje, trabalhando com times de vários lugares, fazendo a pós em IA na FIAP e terminando o Zevi. A próxima estação ainda não está no mapa.",
+          tags: ["Pós em IA", "Zevi", "Próxima estação"],
+        },
+      ];
+      const ol = document.getElementById("st");
+      const info = document.getElementById("info");
+      const train = document.getElementById("train");
+      let cur = 0;
+      function esc(s) {
+        return s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+      }
+      ol.innerHTML = S.map(
+        (s, i) =>
+          `<li class="st${s.trip ? " trip" : ""}${s.here ? " here" : ""}"><button aria-label="${esc(s.n)}, ${esc(s.y)}"></button><div class="lbl"><b>${esc(s.n)}</b><span>${esc(s.y)}</span></div></li>`,
+      ).join("");
+      const li = [].slice.call(ol.children);
+      function show(i) {
+        cur = i;
+        const s = S[i];
+        li.forEach((l, k) => {
+          l.classList.toggle("sel", k === i);
+        });
+        info.innerHTML = `<div><div class="yr">${esc(s.y)}</div><div class="n">${STATION.replace("{n}", i + 1).replace("{total}", S.length)}</div></div><div><h2>${esc(s.n)}, ${esc(s.uf)}</h2><p><b>${esc(s.h)}</b></p><p>${esc(s.t)}</p><div class="tags">${s.tags
+          .map((t) => `<span>${esc(t)}</span>`)
+          .join(
+            "",
+          )}</div><div class="nav"><button id="pv" ${i ? "" : "disabled"}>Estação anterior</button><button id="nx" ${i < S.length - 1 ? "" : "disabled"}>Próxima estação</button></div></div>`;
+        document.getElementById("pv").onclick = () => {
+          show(i - 1);
+        };
+        document.getElementById("nx").onclick = () => {
+          show(i + 1);
+        };
+        if (innerWidth <= 760) {
+          li[i].appendChild(info);
+        } else if (info.parentNode !== document.querySelector(".wrap")) {
+          document.querySelector(".wrap").appendChild(info);
+        }
+        const b = li[i].querySelector(":scope>button");
+        const r = b.getBoundingClientRect();
+        const m = ol.getBoundingClientRect();
+        train.style.left = `${r.left - m.left + r.width / 2}px`;
+        train.style.top = `${s.trip ? 16 : 92}px`;
+      }
+      li.forEach((l, i) => {
+        l.querySelector(":scope>button").onclick = () => {
+          show(i);
+        };
+      });
+      addEventListener("resize", () => {
+        show(cur);
+      });
+      show(0);
+    </script>
+    <script type="module" src="/shared/theme.js"></script>
+    <script type="module" src="/shared/bridge.js"></script>
+  </body>
+</html>

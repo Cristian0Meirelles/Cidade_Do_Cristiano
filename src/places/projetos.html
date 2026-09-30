@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Projetos do Cristiano</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/shared/base.css" />
+    <style>
+      :root {
+        --bg: #f4f7fb;
+        --sheet: #ffffff;
+        --grid: #dbe6f3;
+        --ink: #123a6b;
+        --text: #1b2a3d;
+        --muted: #50627c;
+        --line: #123a6b;
+        --hl: #e8612c;
+        color-scheme: light;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --bg: #123d73;
+          --sheet: #15467f;
+          --grid: #2a5a92;
+          --ink: #e9f2ff;
+          --text: #e9f2ff;
+          --muted: #b3c9e6;
+          --line: #cfe0f7;
+          --hl: #ffb070;
+          color-scheme: dark;
+        }
+      }
+      :root[data-theme="dark"] {
+        --bg: #123d73;
+        --sheet: #15467f;
+        --grid: #2a5a92;
+        --ink: #e9f2ff;
+        --text: #e9f2ff;
+        --muted: #b3c9e6;
+        --line: #cfe0f7;
+        --hl: #ffb070;
+        color-scheme: dark;
+      }
+      body {
+        background-color: var(--bg);
+        background-image:
+          linear-gradient(var(--grid) 1px, transparent 1px),
+          linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+        background-size: 24px 24px;
+        color: var(--text);
+        font-family: "Barlow", system-ui, sans-serif;
+        font-size: 1.05rem;
+        line-height: 1.6;
+      }
+      .wrap {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 56px 24px 70px;
+      }
+      h1 {
+        font-family: "Share Tech Mono", monospace;
+        font-weight: 400;
+        color: var(--ink);
+        font-size: clamp(2rem, 5vw, 3.2rem);
+        line-height: 1.05;
+        margin: 0 0 10px;
+      }
+      .intro {
+        color: var(--muted);
+        max-width: 62ch;
+        margin: 0 0 24px;
+        font-size: 1.1rem;
+      }
+      .filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 0 0 30px;
+      }
+      .filters button {
+        font-family: "Share Tech Mono", monospace;
+        background: var(--sheet);
+        color: var(--ink);
+        border: 1.5px solid var(--line);
+        padding: 4px 12px;
+        cursor: pointer;
+      }
+      .filters button[aria-pressed="true"] {
+        background: var(--ink);
+        color: var(--sheet);
+      }
+      .sheets {
+        display: grid;
+        gap: 28px;
+      }
+      .sheet {
+        background: var(--sheet);
+        border: 2px solid var(--line);
+        position: relative;
+        display: grid;
+        grid-template-columns: 230px 1fr;
+        box-shadow: 6px 6px 0 color-mix(in srgb, var(--line) 20%, transparent);
+      }
+      .sheet[hidden] {
+        display: none;
+      }
+      .draw {
+        border-right: 2px solid var(--line);
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .draw svg {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .draw svg * {
+        fill: none;
+        stroke: var(--ink);
+        stroke-width: 1.6;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .draw svg .acc {
+        stroke: var(--hl);
+      }
+      .draw svg .dash {
+        stroke-dasharray: 4 4;
+        opacity: 0.6;
+      }
+      .tb {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        border: 1.5px solid var(--line);
+        font-family: "Share Tech Mono", monospace;
+        font-size: 0.78rem;
+      }
+      .tb span {
+        padding: 3px 7px;
+        border-bottom: 1px solid var(--line);
+      }
+      .tb span:nth-child(odd) {
+        border-right: 1px solid var(--line);
+        color: var(--muted);
+      }
+      .tb span:nth-last-child(-n + 2) {
+        border-bottom: 0;
+      }
+      .body {
+        padding: 20px 24px 22px;
+      }
+      .body h2 {
+        font-family: "Share Tech Mono", monospace;
+        font-weight: 400;
+        color: var(--ink);
+        font-size: 1.8rem;
+        margin: 0;
+        line-height: 1.1;
+      }
+      .body .kind {
+        margin: 2px 0 14px;
+        color: var(--muted);
+      }
+      .cols {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px 28px;
+      }
+      .lbl {
+        font-family: "Share Tech Mono", monospace;
+        color: var(--hl);
+        font-size: 0.85rem;
+        margin: 0 0 4px;
+      }
+      .cols p {
+        margin: 0 0 12px;
+      }
+      .feat {
+        margin: 4px 0 14px;
+        padding: 0;
+        list-style: none;
+      }
+      .feat li {
+        padding: 5px 0 5px 22px;
+        position: relative;
+        border-bottom: 1px dashed var(--grid);
+      }
+      .feat li::before {
+        content: "";
+        position: absolute;
+        left: 2px;
+        top: 13px;
+        width: 9px;
+        height: 9px;
+        border: 1.5px solid var(--hl);
+        transform: rotate(45deg);
+      }
+      .stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .stack li {
+        font-family: "Share Tech Mono", monospace;
+        font-size: 0.8rem;
+        border: 1px solid var(--line);
+        color: var(--ink);
+        padding: 1px 7px;
+      }
+      .link {
+        display: inline-block;
+        margin-top: 14px;
+        font-family: "Share Tech Mono", monospace;
+        color: var(--ink);
+        border: 1.5px solid var(--line);
+        padding: 4px 12px;
+        text-decoration: none;
+      }
+      .link:hover {
+        background: var(--ink);
+        color: var(--sheet);
+      }
+      .shots {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+      .shots figure {
+        margin: 0;
+      }
+      .shot {
+        display: block;
+        width: 100%;
+        padding: 0;
+        border: 1.5px solid var(--line);
+        background: none;
+        cursor: zoom-in;
+      }
+      .shot img {
+        width: 100%;
+        aspect-ratio: 2/1;
+        object-fit: cover;
+        object-position: top left;
+      }
+      .shots figcaption {
+        font-size: 0.85rem;
+        color: var(--muted);
+        margin-top: 6px;
+        line-height: 1.4;
+      }
+      @media (max-width: 640px) {
+        .shots {
+          grid-template-columns: 1fr;
+        }
+      }
+      dialog {
+        border: 0;
+        padding: 0;
+        background: transparent;
+        max-width: 96vw;
+      }
+      dialog::backdrop {
+        background: rgba(8, 20, 40, 0.88);
+      }
+      dialog img {
+        max-width: 94vw;
+        max-height: 80vh;
+        border: 2px solid #cfe0f7;
+      }
+      dialog p {
+        color: #e9f2ff;
+        margin: 10px 0 0;
+        text-align: center;
+      }
+      dialog button {
+        position: fixed;
+        top: 14px;
+        right: 14px;
+        background: #e9f2ff;
+        color: #123a6b;
+        border: 0;
+        padding: 6px 14px;
+        cursor: pointer;
+        font-family: "Share Tech Mono", monospace;
+      }
+      .sheet > * {
+        min-width: 0;
+      }
+      .tb span {
+        overflow-wrap: anywhere;
+      }
+      .body h2,
+      .body .kind {
+        overflow-wrap: anywhere;
+      }
+      @media (max-width: 420px) {
+        .draw svg {
+          width: 84px !important;
+        }
+        .draw {
+          gap: 8px;
+          padding: 12px;
+        }
+        .body {
+          padding: 16px 16px 18px;
+        }
+      }
+      @media (max-width: 820px) {
+        .sheet {
+          grid-template-columns: 1fr;
+        }
+        .draw {
+          border-right: 0;
+          border-bottom: 2px solid var(--line);
+          flex-direction: row;
+          align-items: center;
+        }
+        .draw svg {
+          width: 120px;
+          flex: none;
+        }
+        .tb {
+          flex: 1;
+        }
+        .cols {
+          grid-template-columns: 1fr;
+        }
+        .shots {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 14px;
+        }
+        .shots figure {
+          margin: 0;
+        }
+        .shot {
+          display: block;
+          width: 100%;
+          padding: 0;
+          border: 1.5px solid var(--line);
+          background: none;
+          cursor: zoom-in;
+        }
+        .shot img {
+          width: 100%;
+          aspect-ratio: 2/1;
+          object-fit: cover;
+          object-position: top left;
+        }
+        .shots figcaption {
+          font-size: 0.85rem;
+          color: var(--muted);
+          margin-top: 6px;
+          line-height: 1.4;
+        }
+        @media (max-width: 640px) {
+          .shots {
+            grid-template-columns: 1fr;
+          }
+        }
+        dialog {
+          border: 0;
+          padding: 0;
+          background: transparent;
+          max-width: 96vw;
+        }
+        dialog::backdrop {
+          background: rgba(8, 20, 40, 0.88);
+        }
+        dialog img {
+          max-width: 94vw;
+          max-height: 80vh;
+          border: 2px solid #cfe0f7;
+        }
+        dialog p {
+          color: #e9f2ff;
+          margin: 10px 0 0;
+          text-align: center;
+        }
+        dialog button {
+          position: fixed;
+          top: 14px;
+          right: 14px;
+          background: #e9f2ff;
+          color: #123a6b;
+          border: 0;
+          padding: 6px 14px;
+          cursor: pointer;
+          font-family: "Share Tech Mono", monospace;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button
+      class="theme-btn"
+      id="themeBtn"
+      data-key="cm-proj-theme"
+      data-dark-label="Papel"
+      data-light-label="Planta"
+    >
+      Tema
+    </button>
+    <main class="wrap">
+      <h1>Oficina de projetos</h1>
+      <p class="intro">
+        Tudo que eu construí por conta própria, na faculdade ou por paixão. Cada
+        projeto com o problema, o que eu fiz e as ferramentas.
+      </p>
+      <div
+        class="filters"
+        role="group"
+        aria-label="Filtrar projetos"
+        id="filters"
+      >
+        <button aria-pressed="true" data-f="all">Todos</button
+        ><button aria-pressed="false" data-f="prod">Produtos</button
+        ><button aria-pressed="false" data-f="ia">Com IA</button
+        ><button aria-pressed="false" data-f="facul">Faculdade</button
+        ><button aria-pressed="false" data-f="jogo">Jogos</button>
+      </div>
+      <div class="sheets" id="sheets"></div>
+      <dialog id="lb">
+        <button id="lbx">Fechar</button><img id="lbi" alt="" />
+        <p id="lbc"></p>
+      </dialog>
+    </main>
+    <script type="module">
+      const S = {
+        chart:
+          '<rect x="10" y="10" width="180" height="120"/><line x1="10" y1="30" x2="190" y2="30"/><rect class="acc" x="30" y="90" width="18" height="30"/><rect x="58" y="70" width="18" height="50"/><rect x="86" y="80" width="18" height="40"/><rect class="acc" x="114" y="50" width="18" height="70"/><polyline points="145,110 158,85 170,95 182,55"/><line class="dash" x1="10" y1="140" x2="190" y2="140"/>',
+        shop: '<rect x="20" y="50" width="160" height="85"/><path d="M14 50 L186 50 L176 25 L24 25 Z"/><path class="acc" d="M24 50 q10 14 20 0 q10 14 20 0 q10 14 20 0 q10 14 20 0 q10 14 20 0 q10 14 20 0 q10 14 20 0 q10 14 20 0"/><rect x="36" y="75" width="46" height="60"/><rect x="110" y="84" width="14" height="36"/><rect x="132" y="92" width="14" height="28"/><rect x="154" y="80" width="14" height="40"/>',
+        card: '<rect x="40" y="10" width="80" height="120" rx="6"/><rect class="acc" x="50" y="22" width="60" height="50"/><line x1="50" y1="84" x2="110" y2="84"/><line x1="50" y1="96" x2="96" y2="96"/><circle cx="150" cy="85" r="26"/><line x1="168" y1="104" x2="188" y2="128"/><line class="dash" x1="120" y1="70" x2="128" y2="75"/>',
+        phone:
+          '<rect x="60" y="6" width="80" height="132" rx="10"/><rect x="72" y="26" width="42" height="14"/><rect class="acc" x="86" y="48" width="42" height="14"/><rect x="72" y="70" width="48" height="14"/><rect x="72" y="118" width="56" height="10"/><line x1="10" y1="100" x2="44" y2="100"/><rect x="6" y="90" width="7" height="20"/><rect x="41" y="90" width="7" height="20"/>',
+        drop: '<rect x="20" y="14" width="110" height="120"/><line x1="32" y1="36" x2="80" y2="36"/><rect x="32" y="42" width="86" height="12"/><line x1="32" y1="66" x2="80" y2="66"/><rect x="32" y="72" width="86" height="12"/><rect class="acc" x="70" y="106" width="48" height="14"/><path class="acc" d="M165 40 Q185 72 185 88 Q185 110 165 110 Q145 110 145 88 Q145 72 165 40"/>',
+        net: '<circle cx="30" cy="30" r="8"/><circle cx="30" cy="70" r="8"/><circle cx="30" cy="110" r="8"/><circle class="acc" cx="100" cy="50" r="8"/><circle class="acc" cx="100" cy="90" r="8"/><circle cx="170" cy="70" r="10"/><path d="M38 30 L92 50 M38 30 L92 90 M38 70 L92 50 M38 70 L92 90 M38 110 L92 50 M38 110 L92 90 M108 50 L160 70 M108 90 L160 70"/>',
+        cart: '<path d="M10 20 L35 20 L55 100 L165 100 L185 45 L45 45"/><circle cx="70" cy="120" r="10"/><circle cx="150" cy="120" r="10"/><rect class="acc" x="70" y="55" width="30" height="30"/><rect x="110" y="60" width="40" height="25"/>',
+        check:
+          '<rect x="30" y="10" width="140" height="125"/><rect x="45" y="30" width="14" height="14"/><path class="acc" d="M47 37 L51 41 L58 32"/><line x1="70" y1="37" x2="150" y2="37"/><rect x="45" y="62" width="14" height="14"/><path class="acc" d="M47 69 L51 73 L58 64"/><line x1="70" y1="69" x2="140" y2="69"/><rect x="45" y="94" width="14" height="14"/><line x1="70" y1="101" x2="130" y2="101"/>',
+        zombie:
+          '<rect x="40" y="16" width="100" height="100" rx="14"/><rect x="62" y="48" width="16" height="12"/><rect class="acc" x="102" y="48" width="16" height="12"/><path d="M66 90 L76 84 L86 90 L96 84 L106 90 L116 84"/><path class="dash" d="M150 30 L180 20 M150 60 L185 60 M150 90 L180 100"/><path class="acc" d="M20 126 L40 116 L60 128 L80 118 L100 128 L120 116 L140 128 L160 118"/>',
+        server:
+          '<rect x="40" y="14" width="120" height="30"/><rect x="40" y="54" width="120" height="30"/><rect x="40" y="94" width="120" height="30"/><circle class="acc" cx="60" cy="29" r="4"/><circle cx="60" cy="69" r="4"/><circle cx="60" cy="109" r="4"/><line x1="80" y1="29" x2="140" y2="29"/><line x1="80" y1="69" x2="140" y2="69"/><line x1="80" y1="109" x2="140" y2="109"/>',
+      };
+      const SHEET = "{n} de {total}";
+      const P = [
+        {
+          s: "chart",
+          t: "Zevi",
+          k: "Plataforma de análise de anúncios com IA",
+          st: "Em desenvolvimento",
+          yr: "2026",
+          tag: ["prod", "ia"],
+          prob: "Quem tem loja online gasta em anúncio sem saber direito se está lucrando. Os números do Meta, do Google e do TikTok não batem com as vendas reais.",
+          sol: "Um painel que lê as contas de anúncio, cruza com os pedidos reais da loja e diz onde a verba está vazando e o que fazer. Nasceu da 515, a loja da minha família.",
+          f: [
+            "Quatro plataformas no mesmo formato: Meta, TikTok, Google Ads e YouTube.",
+            "Auditoria contra a Shopify: descobri que o Meta estava inflando as compras em 33%.",
+            "Análise com IA que devolve diagnóstico e plano de 30 dias em linguagem de dono de loja, com cota e custo controlados.",
+            "Alertas diários por e-mail e WhatsApp: anúncio queimando verba, fadiga, carrinho fantasma e vencedores pra escalar.",
+            "Pausar e ativar anúncios pelo painel, com um agendador de horários que roda no GitHub Actions e se desliga antes de estourar a franquia.",
+            "Mapa de calor de dia e hora, funil completo do anúncio ao pedido pago e integração com o Microsoft Clarity.",
+            "OAuth multi-cliente com token cifrado, sessão assinada, limite de tentativas de login e tema claro e escuro com contraste verificado.",
+          ],
+          stack: [
+            "Next.js",
+            "React",
+            "Chart.js",
+            "Claude API",
+            "APIs do Meta, Google Ads e TikTok",
+            "Shopify",
+            "Clarity",
+            "OAuth 2.0",
+            "Vercel",
+          ],
+          role: "Tudo: produto, arquitetura, design system e código",
+          note: "Já funciona e dá pra usar no dia a dia. Faltam alguns detalhes antes do lançamento.",
+          shots: [
+            [
+              "/assets/img/zevi_alertas.jpg",
+              "Aba de alertas: o que precisa de decisão hoje, do mais grave pro menos grave, com botão pra pausar o anúncio ali mesmo.",
+            ],
+            [
+              "/assets/img/zevi_graficos.jpg",
+              "Aba de gráficos: evolução diária de gasto e receita, com combinações prontas de indicadores e filtro por campanha, conjunto e anúncio.",
+            ],
+          ],
+        },
+        {
+          s: "shop",
+          t: "515 Sanctuary Beauty",
+          k: "Loja de cosméticos de banho",
+          st: "No ar",
+          yr: "",
+          tag: ["prod"],
+          prob: "Um projeto de família, de inspiração cristã, que nasceu depois que minha avó faleceu lendo um devocional. O nome carrega isso.",
+          sol: "Estruturei a loja inteira na Shopify, do template à operação.",
+          f: [
+            "Template da loja configurado e ajustado.",
+            "Webhooks de checkout e rastreio de pedido.",
+            "Segmentação de clientes.",
+            "Foi daqui que nasceu o Zevi: a gente anunciava sem saber se estava lucrando.",
+          ],
+          stack: ["Shopify", "Webhooks", "515sb.com.br"],
+          role: "Estrutura da loja e operação digital",
+        },
+        {
+          s: "card",
+          t: "E-TCG",
+          k: "E-commerce de cartas Pokémon TCG",
+          st: "Site, app e API",
+          yr: "2026",
+          tag: ["prod"],
+          prob: "Quem compra carta avulsa precisa ver a condição de cada canto antes de pagar, e foto parada não mostra isso.",
+          sol: "Uma loja completa com vitrine holográfica em 3D e zoom de inspeção, mais API, banco e app.",
+          f: [
+            "Carta 3D holográfica e efeito de inclinação, que funciona também com as fotos reais enviadas pelo admin.",
+            "Zoom de inspeção de até 8x, com arrastar pros cantos e pinça no celular.",
+            "API em Java 21 com Spring Boot e JWT. Rotas de admin protegidas no servidor e preço sempre calculado a partir do banco.",
+            "PostgreSQL com variações de idioma e condição em JSONB, migrações com Flyway e fotos no S3.",
+            "App iOS e Android com Capacitor, reaproveitando o mesmo site.",
+            "Painel admin com produtos, estoque, pedidos, rastreio, banners e troca de logo.",
+          ],
+          stack: [
+            "JavaScript",
+            "Java 21",
+            "Spring Boot",
+            "JWT",
+            "PostgreSQL",
+            "Flyway",
+            "AWS S3",
+            "Capacitor",
+          ],
+          role: "Front, back, banco e app",
+        },
+        {
+          s: "phone",
+          t: "App de treino",
+          k: "Ficha de academia com IA",
+          st: "Em uso",
+          yr: "2026",
+          tag: ["prod", "ia"],
+          prob: "Ficha de academia no papel, cronômetro no celular, histórico em lugar nenhum.",
+          sol: "Um app que marca série por série e tem um chat com IA que executa de verdade.",
+          f: [
+            "Você manda o print da ficha e ele lê os exercícios sozinho.",
+            "Cronômetro de descanso automático e histórico.",
+            "Chat com tool calling que troca o exercício quando a máquina está ocupada, registra o que já foi feito e ajusta a série.",
+          ],
+          stack: ["React", "LLMs", "Tool calling"],
+          role: "Tudo",
+        },
+        {
+          s: "net",
+          t: "Tech Challenge FIAP",
+          k: "Prever a recorrência de câncer de tireoide",
+          st: "Pós em IA",
+          yr: "2026",
+          tag: ["ia"],
+          prob: "Prever se o câncer de tireoide volta depois do tratamento, com 383 pacientes acompanhados por pelo menos 10 anos. Aqui deixar passar uma recorrência é o pior erro.",
+          sol: "Comparei cinco modelos priorizando recall e F1 em vez de acurácia, e expliquei o escolhido.",
+          f: [
+            "Cada variável codificada pela natureza dela: binária, ordinal ou nominal.",
+            "Treino, validação e teste com estratificação, e o scaler dentro de um Pipeline pra não vazar dado.",
+            "KNN, regressão logística, árvore, Random Forest e SVM comparados.",
+            "Random Forest escolhido e explicado com feature importance e SHAP.",
+            "Extra: uma CNN com MobileNetV2 e transfer learning pra classificar ultrassom de tireoide.",
+          ],
+          stack: ["Python", "Pandas", "scikit-learn", "SHAP", "TensorFlow"],
+          role: "Análise, modelagem e conclusões",
+        },
+        {
+          s: "drop",
+          t: "ADOSAREC",
+          k: "Sistema de doadores de sangue",
+          st: "Entregue",
+          yr: "2021",
+          tag: ["facul"],
+          prob: "A associação de doadores de sangue de Canoinhas fazia tudo em fichas de papel, no meio da pandemia.",
+          sol: "O front-end de um sistema web de cadastro, construído junto com quem ia usar.",
+          f: [
+            "Três meses de pesquisa, reunião e protótipo com a secretária da associação.",
+            "Mais de 5.000 doadores no sistema.",
+            "Busca 65% mais rápida.",
+            "Financiado por edital do IFSC, virou notícia.",
+          ],
+          stack: ["React", "Node.js", "Yarn"],
+          role: "Front-end e conversa com a associação",
+        },
+        {
+          s: "cart",
+          t: "Mercado Virtual",
+          k: "Loja virtual em Django",
+          st: "Projeto de faculdade",
+          yr: "2022",
+          tag: ["facul"],
+          prob: "Um exercício de faculdade que eu quis levar a sério.",
+          sol: "Uma loja em Django com layout por herança de templates, cadastro e listagem de registros.",
+          f: [
+            "Banco modelado no MySQL Workbench: administrador, clientes, itens e pagamentos.",
+            "Templates do Django com layout base herdado.",
+            "Usei a estrutura da ADOSAREC como ponto de partida.",
+          ],
+          stack: ["Python", "Django", "MySQL"],
+          role: "Tudo",
+          link: [
+            "Ver no GitHub",
+            "https://github.com/Cristian0Meirelles/MercadoVirtual",
+          ],
+        },
+        {
+          s: "check",
+          t: "Task Manager",
+          k: "Organizador de tarefas",
+          st: "Web",
+          yr: "",
+          tag: ["facul"],
+          prob: "Tarefa esquecida é tarefa que não acontece, sozinho ou em time.",
+          sol: "Uma aplicação web pra pessoas e times organizarem, acompanharem e fecharem tarefas, com uma interface direta.",
+          f: [
+            "Criar, acompanhar e concluir tarefas.",
+            "Pensado pra uso individual e em equipe.",
+          ],
+          stack: ["JavaScript", "React"],
+          role: "Tudo",
+        },
+        {
+          s: "server",
+          t: "Infra própria",
+          k: "E-mail, DNS e hospedagem",
+          st: "Rodando",
+          yr: "",
+          tag: ["prod"],
+          prob: "A parte chata que ninguém quer fazer, e que derruba tudo quando dá errado.",
+          sol: "Configurei na mão toda a infraestrutura dos meus projetos.",
+          f: [
+            "DNS, SPF, DKIM e MX.",
+            "Servidor de e-mail corporativo.",
+            "Hospedagem segura.",
+            "Aprendi quebrando o meu próprio.",
+          ],
+          stack: ["DNS", "SPF", "DKIM", "MX"],
+          role: "Tudo",
+        },
+        {
+          s: "zombie",
+          t: "Zombie Apocalypse",
+          k: "Meu jogo em Unity",
+          st: "Parcialmente perdido",
+          yr: "2021",
+          tag: ["jogo"],
+          prob: "Foi por causa de jogos que eu comecei a programar, e esse era o meu.",
+          sol: "Um jogo de zumbi em Unity. O que está no itch.io é o primeiro teste de fase.",
+          f: [
+            "A versão final eu perdi inteira quando o PC queimou, sem backup e sem repositório.",
+            "A lição ficou: hoje tudo que eu começo vai pro Git no primeiro dia.",
+          ],
+          stack: ["Unity", "C#", "WebGL"],
+          role: "Tudo",
+          link: [
+            "Jogar a versão de teste",
+            "https://crifalcon.itch.io/zombie-apocalypse-stage-test",
+          ],
+        },
+      ];
+      function esc(s) {
+        return s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+      }
+      document.getElementById("sheets").innerHTML = P.map(
+        (p, i) =>
+          `<article class="sheet" data-tag="${p.tag.join(" ")}"><div class="draw"><svg viewBox="0 0 200 145" aria-hidden="true">${S[p.s]}</svg><div class="tb"><span>Projeto</span><span>${esc(p.t)}</span><span>Status</span><span>${esc(p.st)}</span>${p.yr ? `<span>Ano</span><span>${p.yr}</span>` : ""}<span>Folha</span><span>${SHEET.replace("{n}", i + 1).replace("{total}", P.length)}</span></div></div><div class="body"><h2>${esc(p.t)}</h2><p class="kind">${esc(p.k)}</p><div class="cols"><div><p class="lbl">Problema</p><p>${esc(p.prob)}</p></div><div><p class="lbl">O que eu fiz</p><p>${esc(p.sol)}</p></div></div><p class="lbl">Detalhes</p><ul class="feat">${p.f
+            .map((x) => `<li>${esc(x)}</li>`)
+            .join(
+              "",
+            )}</ul><p class="lbl">Ferramentas</p><ul class="stack">${p.stack
+            .map((x) => `<li>${esc(x)}</li>`)
+            .join(
+              "",
+            )}</ul><p class="lbl" style="margin-top:14px">Minha parte</p><p style="margin:0">${esc(p.role)}</p>${
+            p.note
+              ? `<p class="lbl" style="margin-top:14px">Status</p><p style="margin:0">${esc(p.note)}</p>`
+              : ""
+          }${
+            p.shots
+              ? `<p class="lbl" style="margin-top:18px">Telas reais</p><div class="shots">${p.shots
+                  .map(
+                    (x) =>
+                      `<figure><button class="shot" data-cap="${esc(x[1])}"><img src="${x[0]}" alt="${esc(x[1])}" loading="lazy"></button><figcaption>${esc(x[1])}</figcaption></figure>`,
+                  )
+                  .join("")}</div>`
+              : ""
+          }${
+            p.link
+              ? `<a class="link" href="${p.link[1]}" target="_blank" rel="noopener">${esc(p.link[0])}</a>`
+              : ""
+          }</div></article>`,
+      ).join("");
+      const lb = document.getElementById("lb");
+      [].forEach.call(document.querySelectorAll(".shot"), (b) => {
+        b.onclick = () => {
+          const im = b.querySelector("img");
+          document.getElementById("lbi").src = im.src;
+          document.getElementById("lbi").alt = im.alt;
+          document.getElementById("lbc").textContent = b.dataset.cap;
+          lb.showModal();
+        };
+      });
+      document.getElementById("lbx").onclick = () => {
+        lb.close();
+      };
+      lb.onclick = (e) => {
+        if (e.target === lb) lb.close();
+      };
+      const fb = [].slice.call(document.querySelectorAll("#filters button"));
+      fb.forEach((b) => {
+        b.onclick = () => {
+          fb.forEach((o) => {
+            o.setAttribute("aria-pressed", o === b);
+          });
+          const f = b.dataset.f;
+          [].forEach.call(document.querySelectorAll(".sheet"), (s) => {
+            s.hidden = !(f === "all" || s.dataset.tag.split(" ").includes(f));
+          });
+        };
+      });
+    </script>
+    <script type="module" src="/shared/theme.js"></script>
+    <script type="module" src="/shared/bridge.js"></script>
+  </body>
+</html>
